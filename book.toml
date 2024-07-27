@@ -1,0 +1,8 @@
+[book]
+authors = ["Lucas Zawacki"]
+language = "pt-BR"
+multilingual = false
+src = "src"
+title = "Tecnologia e Classe"
+
+[preprocessor.embed]
