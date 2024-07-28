@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>18/07/24 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="apagao.html"><strong aria-hidden="true">1.</strong> Crowdstrike / Apagão Tecnológico</a></li><li class="chapter-item expanded "><a href="18_07_24.html" class="active"><strong aria-hidden="true">2.</strong> 18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html"><strong aria-hidden="true">3.</strong> 11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html"><strong aria-hidden="true">4.</strong> 04/07/24</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tecnologia-e-classe-de-180724"><a class="header" href="#tecnologia-e-classe-de-180724">Tecnologia e Classe de 18/07/24</a></h1>
+<h3 id="notícias-rápidas"><a class="header" href="#notícias-rápidas">Notícias rápidas</a></h3>
+<p><strong>Meta suspende recursos de IA e coleta de dados no Brasil:</strong>  a decisão foi tomada em resposta à exigência da Autoridade Nacional de  Proteção de Dados para que a empresa cessasse o uso de dados pessoais de  usuários no treinamento de seus modelos, afetando plataformas e  funcionalidades como criação de figurinhas no WhatsApp com a tecnologia.  A Meta afirma estar em diálogo com a ANPD para garantir a conformidade  com as normas de proteção de dados. As informações são dos sites Olhar  Digital e Correio Braziliense.</p>
+<p><a href="https://tecnoblog.net/noticias/meta-suspende-ia-generativa-no-brasil-apos-pressao-da-anpd/">https://tecnoblog.net/noticias/meta-suspende-ia-generativa-no-brasil-apos-pressao-da-anpd/</a></p>
+<h3 id="infosec"><a class="header" href="#infosec">INFOSEC</a></h3>
+<p><strong>Profissionais  de tecnologia estão descontentes com falta de entendimento sobre  problemas de segurança por +chefes de outras áreas:</strong> 60% dos  líderes “não-TI” estão “muito” ou “extremamente” confiantes de que suas  organizações são capazes de prevenir um ataque cibernético destrutivo  nos próximos 12 meses, enquanto apenas 46% dos especialistas na área  compartilham esse pensamento. Considera-se que líderes não técnicos  estejam mais focados nos impactos financeiros e reputacionais de  vulnerabilidades. As informações são do site TechRadar.</p>
+<p><strong>Portal GovBR passará a aceitar denúncias e petições relacionadas à Lei Geral de Proteção de Dados:</strong>  as reclamações poderão ser enviadas utilizando uma conta ou de forma  anônima, podendo envolver casos sobre vazamento de dados, exigências  abusivas de informações e situações onde empresas e órgãos públicos não  respondem a uma solicitação de resgate dos dados armazenados. As  informações são do site Tecnoblog.</p>
+<p><a href="https://tecnoblog.net/noticias/portal-gov-br-passa-a-receber-denuncias-e-peticoes-relacionadas-a-lgpd/">https://tecnoblog.net/noticias/portal-gov-br-passa-a-receber-denuncias-e-peticoes-relacionadas-a-lgpd/</a></p>
+<p><strong>Indonésia é alvo de ataque hacker e descobre que 98% dos dados governamentais não possuem backup:</strong>  o grupo “Brain Cipher” utilizou uma variante do malware LockBit 3.0  para extrair dados sensíveis e criptografar os servidores, afetando mais  de 230 agências públicas, ministérios, serviços de imigração e  operações em aeroportos. Um oficial do governo descreveu a falta de  backups como uma "estupidez", destacando uma grave falha na governança e  na política de TI. As informações são do site TechRadar.</p>
+<p><a href="https://www.tecmundo.com.br/seguranca/286729-hackers-infectam-indonesia-ransomware-liberam-chave-graca-pedem-doacoes-gentileza.htm">https://www.tecmundo.com.br/seguranca/286729-hackers-infectam-indonesia-ransomware-liberam-chave-graca-pedem-doacoes-gentileza.htm</a></p>
+<h3 id="país-da-liberdade-ataca-novamente"><a class="header" href="#país-da-liberdade-ataca-novamente">País da Liberdade ataca novamente</a></h3>
+<p><strong>Kaspersky decide encerrar operações nos EUA e demitir seus funcionários:</strong>  a decisão ocorre após proibição imposta pelo Departamento de Comércio  do país em junho deste ano, que a empresa planejava contestar  judicialmente, mas voltou atrás ao avaliar o impacto das exigências  legais. O encerramento das operações será gradual, a partir do dia 20  deste mês. As informações são do site Zero Day.</p>
+<p><a href="https://br.ign.com/tech/127063/news/a-proibicao-do-kaspersky-nos-eua-ja-tem-as-primeiras-vitimas-todos-os-funcionarios-da-empresa-no-pai">https://br.ign.com/tech/127063/news/a-proibicao-do-kaspersky-nos-eua-ja-tem-as-primeiras-vitimas-todos-os-funcionarios-da-empresa-no-pai</a></p>
+<h3 id="relembrar-é-viver"><a class="header" href="#relembrar-é-viver">Relembrar é viver</a></h3>
+<p><strong>Pesquisa  realizada pela Comissão Federal de Comércio dos EUA indica que 76% dos  serviços de assinatura implementam “dark patterns” em suas plataformas:</strong>  a análise, que abrangeu 642 sites e aplicativos, identificou métodos  utilizados pelas empresas, como impedir que renovações automáticas de  assinaturas sejam desativadas, preenchimento obrigatório de informações  de pagamento para participar de testes gratuitos e pré-seleção  automática de opções mais lucrativas de assinatura. Os nomes dos  serviços envolvidos não foram revelados. As informações são do site  TechCrunch.</p>
+<p><strong>Amazon alega que 100% de seus data centers operam com energia limpa, mas funcionários contestam:</strong>  os colaboradores argumentam que, com os dispositivos funcionando 24  horas por dia, não é garantido que eles utilizem energia renovável  durante à noite, horário no qual aparelhos solares não operam, por  exemplo. O grupo sugere que a Amazon adote a abordagem do Google, que  busca utilizar energia livre de carbono 100% do tempo em todas as suas  plantas. As informações são do site Fast Company.</p>
+<p>{{#embed https://www.youtube.com/watch?v=5hTaTrJowJk }}</p>
+<p><a href="https://sustainability.aboutamazon.com/climate-solutions/carbon-free-energy?energyType=true">https://sustainability.aboutamazon.com/climate-solutions/carbon-free-energy?energyType=true</a></p>
+<p><a href="https://www-datacenterdynamics-com.translate.goog/en/news/amazon-staff-say-company-is-distorting-the-truth-on-renewable-energy-progress/?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp">https://www-datacenterdynamics-com.translate.goog/en/news/amazon-staff-say-company-is-distorting-the-truth-on-renewable-energy-progress/?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp</a></p>
+<h3 id="humor-piada"><a class="header" href="#humor-piada">Humor Piada$</a></h3>
+<p><strong>Microsoft admite limitações de PCs Copilot+ sobre incompatibilidade com drivers e softwares:</strong>  a empresa explica que certos hardwares e aplicativos, como programas  antivírus, só irão funcionar se forem projetados especificamente para  Windows 11 com Arm. Jogos online também podem apresentar problemas para  executar, devido à falta de compatibilidade com softwares anti-trapaça.  Mais detalhes estão disponíveis na página de FAQ da Microsoft. As  informações são do site TechRadar.</p>
+<p><strong>Diretor  de IA da Microsoft afirma que conteúdos na web são como “freewares”  para treinar modelos de linguagem, a menos que proprietários de sites  declarem explicitamente o contrário:</strong> para Mustafa Suleyman, há  um entendimento de que os dados na internet são de “uso justo”,  permitindo que qualquer pessoa copie, recrie e reproduza o material de  maneira gratuita. As informações são do site Slashdot.</p>
+<p><img src="./18_07_24/1.jpg" alt="photo_2024-07-17_16-38-19.jpg" /></p>
+<p><strong>YouTube anuncia ferramenta que utiliza IA para remover músicas protegidas por direitos autorais sem prejudicar vídeos:</strong>  a novidade está disponível no Studio, com opções para silenciar,  substituir ou remover o áudio por completo de forma precisa, sendo útil  para criadores de conteúdo que dependem da monetização pelo programa de  parceria do YouTube. As informações são do site TechRadar.</p>
+<p><strong>Signal,  aplicativo de mensagens rival do WhatsApp e Telegram, armazena chaves  de criptografia em texto simples na versão de desktop para macOS e  Linux:</strong> pesquisadores de segurança utilizaram um script Python  que copia o diretório de armazenamento local do mensageiro em um Mac e  transfere os dados para uma instalação virtual do sistema operacional,  permitindo clonar a sessão com todo o histórico de conversas, sem que o  Signal emita qualquer aviso. No Windows, as chaves são armazenadas no  arquivo “config.json” do diretório AppData. Recomenda-se que usuários  desvinculem dispositivos desktop de suas contas. As informações são do  site Stack Diary.</p>
+<p><strong>Navegador  web construído totalmente do zero e financiado pelo cofundador do  GitHub, não utilizará “nenhum código” de softwares rivais:</strong> o  Ladybird é um projeto open-source, atualmente em estágio pré-alfa e com  uma equipe de apenas três funcionários até o momento, que além dos  desafios técnicos, precisará concorrer com Chrome, Safari e Edge, que  juntos dominam 88% do mercado. Mais detalhes estão disponíveis no  repositório “LadybirdBrowser/ladybird” do GitHub. As informações são do  site DevClass.</p>
+<p><a href="https://ladybird.org/">https://ladybird.org/</a></p>
+<h3 id="isso-aqui-é-a-maior-viagem-que-eu-li-nos-últimos-dias"><a class="header" href="#isso-aqui-é-a-maior-viagem-que-eu-li-nos-últimos-dias">Isso aqui é a maior viagem que eu li nos últimos dias</a></h3>
+<p><a href="https://www-huffpost-com.translate.goog/entry/opinion-joe-biden-campaign-ai_n_668482b9e4b038babc7d56f2?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp">https://www-huffpost-com.translate.goog/entry/opinion-joe-biden-campaign-ai_n_668482b9e4b038babc7d56f2?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="apagao.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="11_07_24.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="apagao.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="11_07_24.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
