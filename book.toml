@@ -5,4 +5,19 @@ multilingual = false
 src = "src"
 title = "Tecnologia e Classe"
 
+[rust]
+edition = "2021"
+
+[output.html]
+git-repository-url = "https://github.com/Soberana-TV/tecnologiaeclasse/tree/main"
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 2
+
 [preprocessor.embed]
