@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>23/05/24 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="25_07_24.html"><strong aria-hidden="true">1.</strong> 25/07/24</a></li><li class="chapter-item expanded "><a href="apagao.html"><strong aria-hidden="true">2.</strong> Crowdstrike / Apagão Cibernético</a></li><li class="chapter-item expanded "><a href="18_07_24.html"><strong aria-hidden="true">3.</strong> 18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html"><strong aria-hidden="true">4.</strong> 11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html"><strong aria-hidden="true">5.</strong> 04/07/24</a></li><li class="chapter-item expanded "><a href="27_06_24.html"><strong aria-hidden="true">6.</strong> 27/06/24</a></li><li class="chapter-item expanded "><a href="20_06_24.html"><strong aria-hidden="true">7.</strong> 20/06/24</a></li><li class="chapter-item expanded "><a href="comunistas_internet.html"><strong aria-hidden="true">8.</strong> Comunistas na Internet</a></li><li class="chapter-item expanded "><a href="13_06_24.html"><strong aria-hidden="true">9.</strong> 13/06/24</a></li><li class="chapter-item expanded "><a href="ideologia_californiana.html"><strong aria-hidden="true">10.</strong> A Ideologia Californiana</a></li><li class="chapter-item expanded "><a href="anticheat.html"><strong aria-hidden="true">11.</strong> Vanguard, LoL e Anticheat</a></li><li class="chapter-item expanded "><a href="23_05_24.html" class="active"><strong aria-hidden="true">12.</strong> 23/05/24</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tecnologia-e-classe-de-230524"><a class="header" href="#tecnologia-e-classe-de-230524">Tecnologia e Classe de 23/05/24</a></h1>
+<h3 id="notícias-rápidas"><a class="header" href="#notícias-rápidas">Notícias rápidas</a></h3>
+<p><strong>Desenvolvedor  brasileiro anuncia linguagem de programação de alto nível que utiliza  threads de CPUs e GPUs para realizar operações paralelas:</strong> o  Bend, criado por Victor Taelin, possui uma sintaxe similar ao do Python e  utiliza o runtime HVM2 para trabalhar com rotinas complexas mais  rápido. Uma soma paralela simples em um chip M3 Max com um único thread  demorou 147 segundos para rodar, enquanto a mesma operação em uma Nvidia  RTX 4090 levou apenas 0,82 segundo. O projeto pode ser visualizado no  repositório “HigherOrderCO/Bend” do GitHub. As informações são do site  Medium.</p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/HCOQmKTFzYY "></iframe>
+<p><a href="https://github.com/ensine-se-ciencia-da-computacao/sicp-portugues/">https://github.com/ensine-se-ciencia-da-computacao/sicp-portugues/</a></p>
+<p><strong>Meta,  Match Group e Coinbase anunciam coalizão para proteção contra fraudes  em aplicativos de namoro, mídia social e moedas digitais:</strong> o  grupo "Tech Against Scam" surgiu com o objetivo das empresas  compartilharem dados e educarem usuários, especialmente após o  surgimentos das IAs, que possibilitou a criação de golpes mais  convincentes. As informações são do site TechCrunch.</p>
+<p><a href="https://www-engadget-com.translate.goog/match-group-meta-coinbase-and-more-form-anti-scam-coalition-145346680.html?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://www-engadget-com.translate.goog/match-group-meta-coinbase-and-more-form-anti-scam-coalition-145346680.html?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
+<h3 id="criptomoedas"><a class="header" href="#criptomoedas">Criptomoedas</a></h3>
+<p><strong>Banco Central adotará medidas para regulamentar moedas digitais ainda neste ano:</strong>  o processo será dividido em três etapas, com uma segunda consulta  pública sobre normas gerais de atuação dos operadores no setor, criação  de planejamento interno sobre a regulamentação de stablecoins e  desenvolvimento de um conjunto de regras para as empresas de ativos  digitais, conhecidas como VASPs. As informações são do site Olhar  Digital.</p>
+<blockquote>
+<p>É iminente a diluição da moeda em meio a um potencial colapso social, o Bitcoin é uma alternativa crucial. É a analogia com a queda do Império Romano reforça a importância de evitar consequências prejudiciais para as famílias. Expresso a esperança de que, ao compreender a tecnologia subjacente ao Bitcoin, o banco central não apenas evite sua própria ruína financeira, mas também permita que os cidadãos brasileiros preservem sua capacidade de planejamento financeiro e continuem a viver livremente em um novo sistema econômico.</p>
+</blockquote>
+<p><strong>Dois irmãos roubam 25 milhões de dólares com falha no Ethereum em poucos segundos:</strong>  a dupla – alunos Ciência da Computação do MIT – criou uma série de  transações a fim atrair bots utilizados por traders para explorar uma  vulnerabilidade no código da rede (que já foi corrigida). As informações  são do site The Verge.</p>
+<p><a href="https://www.theregister.com/2024/05/18/brother_etherium_heist/">https://www.theregister.com/2024/05/18/brother_etherium_heist/</a></p>
+<p><strong>Salto no preço do Bitcoin aumenta em 300% a busca por empresas de recuperação de carteiras digitais:</strong>  é comum investidores esquecerem a senha de suas contas ou perderem  acesso ao dispositivo de autenticação de dois fatores. Geralmente, essas  empresas cobram uma taxa de 20% sobre o conteúdo recuperado da  carteira, que só é paga depois que o procedimento é concluído. As  informações são da Reuters.</p>
+<h4 id="só-engraçado"><a class="header" href="#só-engraçado">Só engraçado</a></h4>
+<p><a href="https://br.cointelegraph.com/news/crypto-trader-46m-3k-pepe-price-soars">https://br.cointelegraph.com/news/crypto-trader-46m-3k-pepe-price-soars</a></p>
+<h3 id="n64"><a class="header" href="#n64">N64</a></h3>
+<p><strong>Nova  ferramenta consegue recompilar praticamente todos os jogos do Nintendo  64 para rodar nativamente em PCs, com melhorias gráficas, ray tracing e  FPS destravado:</strong> apenas um arquivo ROM é necessário. O projeto  está disponível no repositório “Mr-Wiseguy/N64Recomp” do GitHub. As  informações são do site Tom’s Hardware.</p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ywWwUuWRgsM "></iframe>
+<p><a href="https://github.com/N64Recomp/N64Recomp">https://github.com/N64Recomp/N64Recomp</a></p>
+<p><strong>Winamp, primeiro reprodutor de arquivos MP3 popular para PCs, terá seu código-fonte aberto:</strong>  a equipe atualmente está focada na portabilidade do programa para  mobile e outras plataformas, mas alega que a decisão possibilitará novas  experiências na versão tradicional de desktop. As informações são do  site do Winamp.</p>
+<p><a href="https://about.winamp.com/free-llama">https://about.winamp.com/free-llama</a></p>
+<h3 id="pc-copilot"><a class="header" href="#pc-copilot">PC+ Copilot</a></h3>
+<p><a href="https://support.microsoft.com/en-us/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c">https://support.microsoft.com/en-us/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c</a></p>
+<p><strong>Desenvolvedor  cria programa de código aberto para Windows que registra todas as ações  realizadas no computador, inspirado em episódio da série Black Mirror:</strong>  o Windrecorder funciona como um “mecanismo de busca de memória  pessoal”, utilizando FFmpeg para gravar a atividade da tela em  fragmentos de 15 minutos através de uma API local de OCR do sistema  operacional. O software não requer uma conexão com a internet e os dados  são mantidos na máquina local. O aplicativo está disponível no  repositório "yuka-friends/Windrecorder" do GitHub. As informações são do  site TechRadar.</p>
+<p><a href="https://github.com/yuka-friends/Windrecorder">https://github.com/yuka-friends/Windrecorder</a></p>
+<h3 id="broadcom-compra-vmware"><a class="header" href="#broadcom-compra-vmware">Broadcom compra VMWare</a></h3>
+<p><a href="https://www.cnnbrasil.com.br/economia/fabricante-de-chips-broadcom-compra-empresa-de-servicos-em-nuvem-vmware-por-us-61-bi/">https://www.cnnbrasil.com.br/economia/fabricante-de-chips-broadcom-compra-empresa-de-servicos-em-nuvem-vmware-por-us-61-bi/</a></p>
+<p><a href="https://assetit.com.br/blog-e-noticias/vmware-by-broadcom-como-pagar-essa-conta/">https://assetit.com.br/blog-e-noticias/vmware-by-broadcom-como-pagar-essa-conta/</a></p>
+<h3 id="mais-ia"><a class="header" href="#mais-ia">Mais IA</a></h3>
+<p><a href="https://www.instagram.com/reel/C7PF_C4ACDK/?igsh=MzlsamoycHcxNXZu">https://www.instagram.com/reel/C7PF_C4ACDK/?igsh=MzlsamoycHcxNXZu</a></p>
+<p><strong>Atriz do filme "Ela" acusa OpenAI de usar voz muito semelhante à sua na atualização recente do ChatGPT:</strong>  Scarlett Johansson disse que Sam Altman tentou contratá-la no ano  passado e novamente dois dias antes do lançamento da voz "Sky", junto do  modelo GPT-4o. A OpenAI afirma que a voz não é a da atriz e nunca teve a  intenção de deixá-la semelhante – é difícil, entretanto, notar  diferença entre a voz da atriz e da sintética Sky, gravada por uma  profissional distinta. As informações são do site TechCrunch.</p>
+<p><strong>Membros do time de superalinhamento da OpenAI estão pedindo demissão em massa:</strong>  Jan Leike, que também já passou pelo Google DeepMind, fez uma série de  críticas públicas, afirmando que a OpenAI não está dando atenção  necessária às questões de segurança da tecnologia e os meios técnicos  para alinhar uma AGI (Inteligência Artificial Geral) a objetivos  humanos. À equipe foi prometido 20% dos recursos computacionais da  startup, mas nem uma fração disso seria atendida. As informações são do  site TechCrunch.</p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/8BlRT7Ktw1c "></iframe>
+<p><strong>Microsoft quebra promessa e aumenta produção de gases de efeito estufa em 30% para treinar modelos de IA:</strong>  ao todo, a empresa emitiu 15,3 milhões de toneladas métricas de dióxido  de carbono no último ano fiscal, comparável à poluição anual de carbono  em países como Haiti, devido ao fato de que data centers para treinar  IA consomem mais energia do que os tradicionais. As informações são do  site The Verge.</p>
+<p><strong>Engenheiros de IA relatam Síndrome de Burnout devido ao excesso de trabalho para se manterem competitivos no mercado:</strong>  além das longas horas, os profissionais mencionam lançamentos de  produtos sem testes adequados por parte de grandes companhias, como  Amazon, Google e Microsoft, estendendo-se para startups e agências  governamentais. Muitos funcionários consideram deixar seus empregos ou  mudar de departamento devido a esse “ritmo insustentável”. As  informações são da CNBC.</p>
+<p><a href="https://www.cnbc.com/2024/05/03/ai-engineers-face-burnout-as-rat-race-to-stay-competitive-hits-tech.html">https://www.cnbc.com/2024/05/03/ai-engineers-face-burnout-as-rat-race-to-stay-competitive-hits-tech.html</a></p>
+<h3 id="apple-e-ia"><a class="header" href="#apple-e-ia">Apple e IA</a></h3>
+<p><strong>Apple lança oito modelos pequenos de linguagem de código aberto que poderão ser executados diretamente no celular:</strong>  os sistemas, batizados de OpenELM, possuem entre 270 milhões a 3  bilhões de parâmetros e estão disponíveis no site Hugging Face. As  informações são do site Ars Technica.</p>
+<p><a href="https://arstechnica-com.translate.goog/information-technology/2024/04/apple-releases-eight-small-ai-language-models-aimed-at-on-device-use/?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://arstechnica-com.translate.goog/information-technology/2024/04/apple-releases-eight-small-ai-language-models-aimed-at-on-device-use/?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/tkZ-ajarTks "></iframe>
+<p><a href="https://github.com/apple/corenet">https://github.com/apple/corenet</a></p>
+<p><a href="https://huggingface.co/apple/OpenELM">https://huggingface.co/apple/OpenELM</a></p>
+<h3 id="infosec"><a class="header" href="#infosec">INFOSEC</a></h3>
+<p><strong>Falha crítica em padrão Wi-Fi 802.11 afeta todos os sistemas operacionais, incluindo redes domésticas:</strong>  o ataque "SSID Confusion attack" (CVE-2023-52424) envolve falsificar o  nome de uma rede confiável para confundir e interceptar o tráfego de  dados das vítimas. Mitigações propostas incluem atualizar o padrão  802.11 para incluir o SSID na negociação de conexão segura. As  informações são do site The Hacker News.</p>
+<p><strong>Voz clonada do CEO da LastPass foi utilizada na tentativa de enganar funcionário:</strong> o colaborador recebeu ligações e mensagens de áudio de uma conta falsa do empresário no WhatsApp, ignorando as solicitações e relatando o caso à equipe interna de segurança. As informações são do site TechSpot.</p>
+<p><a href="https://www-techspot-com.translate.goog/news/102667-hackers-attempted-trick-lastpass-employee-cloned-voice-ceo.html?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://www-techspot-com.translate.goog/news/102667-hackers-attempted-trick-lastpass-employee-cloned-voice-ceo.html?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
+<p><strong>Falha na seção de comentários do GitHub permite distribuir malwares em repositórios confiáveis:</strong> ao comentar uma issue ou commit, o usuário pode anexar um arquivo que será associado permanentemente ao projeto através de uma URL contendo o nome do repositório e a conta associada a ele. O GitHub ainda não forneceu uma solução para o problema. As informações são do site Bleeping Computer.</p>
+<p><a href="https://www-techspot-com.translate.goog/news/102667-hackers-attempted-trick-lastpass-employee-cloned-voice-ceo.html?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://www-bleepingcomputer-com.translate.goog/news/security/github-comments-abused-to-push-malware-via-microsoft-repo-urls/?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
+<p><strong>Pesquisa revela que 2,81 milhões de repositórios do Docker Hub foram infectados com campanhas de malware e phishing:</strong>  o número representa 18,7% de toda a base de dados da plataforma. As  imagens contendo código malicioso promoviam conteúdo falso de cheats  para videogames e e-books gratuitos. A equipe de segurança do Docker já  removeu os repositórios infectados. As informações são do site Bleeping  Computer.</p>
+<p><a href="https://www-bleepingcomputer-com.translate.goog/news/security/millions-of-docker-repos-found-pushing-malware-phishing-sites/?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://www-bleepingcomputer-com.translate.goog/news/security/millions-of-docker-repos-found-pushing-malware-phishing-sites/?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
+<p><strong>Vulnerabilidade grave afeta quase todos os aplicativos de VPN, permitindo que dados de usuários sejam expostos:</strong>  a falha “TunnelVision” (CVE-2024-3661) permite que o invasor crie seu  pŕoprio servidor DHCP, que terá prioridade sobre as regras de roteamento  padrão por onde o tráfego é enviado, recebendo todos os dados em  trânsito da rede de forma descriptografada. O único sistema operacional  não afetado é o Android, por não implementar de forma completa a  especificação do DHCP. As informações são do site Leviathan Security.</p>
+<h3 id="stack-overflow-e-openai"><a class="header" href="#stack-overflow-e-openai">Stack Overflow e OpenAI</a></h3>
+<p><a href="https://arstechnica-com.translate.goog/information-technology/2024/05/stack-overflow-users-sabotage-their-posts-after-openai-deal/?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://arstechnica-com.translate.goog/information-technology/2024/05/stack-overflow-users-sabotage-their-posts-after-openai-deal/?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
+<p><strong>Parceria entre Reddit e OpenAI vai trazer conteúdo da rede social para dentro do ChatGPT:</strong>  a OpenAI utilizará a API do Reddit para treinar seus modelos com  conteúdo e informar sobre acontecimentos recentes. O Reddit também  pretende trazer recursos de IA generativa para a sua plataforma. As  informações são do Reddit.</p>
+<p><strong>Slack estaria coletando dados de conversas para treinar seus recursos de IA sem consentimento:</strong>  usuários que desejam encerrar o compartilhamento precisam entrar em  contato com a administração da organização onde trabalham, solicitando o  envio de um e-mail ao Slack com o assunto “Pedido para não participar  do modo global do Slack”. A empresa afirma que os dados são utilizados  somente para treinar seus modelos de busca e recomendações. As  informações são do site TechSpot.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="anticheat.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="anticheat.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
