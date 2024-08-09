@@ -1,5 +1,7 @@
 # Tecnologia e Classe
 
+- [08/08/24](./08_08_24.md)
+- [01/08/24](./01_08_24.md)
 - [25/07/24](./25_07_24.md)
 - [Crowdstrike / Apagão Cibernético](./apagao.md)
 - [18/07/24](./18_07_24.md)
