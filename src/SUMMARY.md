@@ -1,5 +1,7 @@
 # Tecnologia e Classe
 
+- [15/08/24](./15_08_24.md)
+- [Cookie Clicker](./cookie_clicker.md)
 - [08/08/24](./08_08_24.md)
 - [01/08/24](./01_08_24.md)
 - [25/07/24](./25_07_24.md)
