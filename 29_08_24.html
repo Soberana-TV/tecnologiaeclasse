@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>29/08/24 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="o_que.html"><strong aria-hidden="true">1.</strong> O que é Tecnologia e Classe?</a></li><li class="chapter-item expanded "><a href="29_08_24.html" class="active"><strong aria-hidden="true">2.</strong> 29/08/24</a></li><li class="chapter-item expanded "><a href="22_08_24.html"><strong aria-hidden="true">3.</strong> 22/08/24</a></li><li class="chapter-item expanded "><a href="15_08_24.html"><strong aria-hidden="true">4.</strong> 15/08/24</a></li><li class="chapter-item expanded "><a href="cookie_clicker.html"><strong aria-hidden="true">5.</strong> Cookie Clicker</a></li><li class="chapter-item expanded "><a href="08_08_24.html"><strong aria-hidden="true">6.</strong> 08/08/24</a></li><li class="chapter-item expanded "><a href="01_08_24.html"><strong aria-hidden="true">7.</strong> 01/08/24</a></li><li class="chapter-item expanded "><a href="25_07_24.html"><strong aria-hidden="true">8.</strong> 25/07/24</a></li><li class="chapter-item expanded "><a href="apagao.html"><strong aria-hidden="true">9.</strong> Crowdstrike / Apagão Cibernético</a></li><li class="chapter-item expanded "><a href="18_07_24.html"><strong aria-hidden="true">10.</strong> 18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html"><strong aria-hidden="true">11.</strong> 11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html"><strong aria-hidden="true">12.</strong> 04/07/24</a></li><li class="chapter-item expanded "><a href="27_06_24.html"><strong aria-hidden="true">13.</strong> 27/06/24</a></li><li class="chapter-item expanded "><a href="20_06_24.html"><strong aria-hidden="true">14.</strong> 20/06/24</a></li><li class="chapter-item expanded "><a href="comunistas_internet.html"><strong aria-hidden="true">15.</strong> Comunistas na Internet</a></li><li class="chapter-item expanded "><a href="13_06_24.html"><strong aria-hidden="true">16.</strong> 13/06/24</a></li><li class="chapter-item expanded "><a href="ideologia_californiana.html"><strong aria-hidden="true">17.</strong> A Ideologia Californiana</a></li><li class="chapter-item expanded "><a href="anticheat.html"><strong aria-hidden="true">18.</strong> Vanguard, LoL e Anticheat</a></li><li class="chapter-item expanded "><a href="23_05_24.html"><strong aria-hidden="true">19.</strong> 23/05/24</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tecnologia-e-classe-de-290824"><a class="header" href="#tecnologia-e-classe-de-290824">Tecnologia e Classe de 29/08/24</a></h1>
+<h2 id="hoje-é-o-dia-x"><a class="header" href="#hoje-é-o-dia-x">Hoje é o dia X</a></h2>
+<h3 id="notícias-rápidas"><a class="header" href="#notícias-rápidas">Notícias rápidas</a></h3>
+<p><strong>Nothing,  fabricante britânica de eletrônicos, exige retorno ao escritório e  sugere que funcionários insatisfeitos busquem outro emprego:</strong> a  decisão é uma grande mudança em relação ao trabalho remoto adotado desde  sua fundação em 2020. Carl Pei, CEO da empresa, afirma que o modelo  híbrido “não é compatível com o alto nível de ambição e velocidade” que a  companhia almeja, mas reconhece que “esta é uma decisão controversa que  pode não ser adequada para todos”. A Nothing conta com 450  colaboradores, dos quais nenhum se manifestou até o momento. As  informações são do site The Verge.</p>
+<p><strong>Relatório indica que Google frequentemente exibe números de telefone falsos para empresas legítimas em suas buscas:</strong>  esses registros podem ser utilizados por golpistas para enganar pessoas  e roubar dinheiro, e são muitas vezes listados na seção “as pessoas  também perguntam” com sinais claros de fraude, como fontes suspeitas e  sites não afiliados às empresas reais. Um caso notável envolveu um  indivíduo que, ao procurar pelo suporte ao cliente da Coinbase, acabou  ligando para um impostor que lhe roubou 100 mil dólares. Recomenda-se  cautela ao usar números de telefone encontrados no Google ou Google Maps  e verificar cuidadosamente as informações de contato. As informações  são do site Slashdot.</p>
+<p><strong>Anthropic divulga prompts de sistema que controlam seus modelos Claude:</strong>  essas são instruções iniciais fornecidas à tecnologia para definir suas  qualidades básicas e comportamentos, que normalmente são mantidas em  sigilo por motivos competitivos e para impedir que usuários tentem  contornar restrições. Os prompts revelados especificam, por exemplo, que  os modelos Claude não podem abrir URLs, links ou vídeos, e devem agir  como se fossem totalmente incapazes de reconhecer rostos. Além disso,  devem tratar assuntos controversos com imparcialidade e objetividade. A  decisão da Anthropic pode pressionar concorrentes do setor a seguirem o  mesmo caminho. As informações são do site TechCrunch.</p>
+<p><a href="https://docs.anthropic.com/en/release-notes/system-prompts#july-12th-2024">https://docs.anthropic.com/en/release-notes/system-prompts#july-12th-2024</a></p>
+<p><strong>Justiça dos EUA desliga “fazenda de laptops” utilizada por profissionais remotos de TI norte-coreanos:</strong>  um indivíduo foi detido sob acusação de auxiliar na operação criminosa,  utilizando a identidade roubada de um cidadão norte-americano,  realizando lavagem de dinheiro e fornecendo um local para os notebooks  enviados pelas empresas, para que os trabalhadores pudessem acessar  remotamente as redes das companhias como se estivessem nos EUA. Entre  julho de 2022 e agosto de 2023, cada profissional envolvido no esquema  recebeu mais de 250 mil dólares pelo seu trabalho. As informações são do  site BleepingComputer.</p>
+<p><strong>Infosys, empresa indiana de TI, é acusada de “explorar” mais de 2 mil graduados com empregos prometidos há dois anos:</strong>  as ofertas são para os cargos de Engenheiro de Sistemas e Engenheiro  Especialista em Digital. Durante esse período, a companhia manteve essas  pessoas ocupadas com treinamentos e avaliações, tanto virtuais como  presenciais, com duração de até seis semanas, mas sem remuneração. O  sindicato de TI do país alega que a organização está prejudicando o  crescimento econômico da Índia, que enfrenta uma grande escassez de  profissionais qualificados em áreas de tecnologia. O CFO da Infosys  afirma que a mesma planeja contratar entre 15 e 20 mil novos graduados  este ano, mas não esclarece se isso inclui os 2 mil em espera. As  informações são do site The Register.</p>
+<p><strong>Microsoft transfere projeto Mono para desenvolvedores do WineHQ:</strong>  a ferramenta permite o desenvolvimento de aplicativos multiplataforma,  sendo uma implementação do.NET Framework baseada no padrões ECMA para a  linguagem C# e o Common Language Runtime. O Wine é um software que  permite a execução de aplicativos Windows em sistemas operacionais  Unix-like, como Linux e macOS. A Microsoft reconhece o Mono como  pioneiro na implementação do .NET em plataformas como Android e iOS. As  informações são do site Slashdot.</p>
+<p><a href="https://github.com/mono/mono/issues/21796">https://github.com/mono/mono/issues/21796</a></p>
+<h3 id="pavel-durov"><a class="header" href="#pavel-durov">Pavel Durov</a></h3>
+<p><strong>Pavel Durov, fundador do Telegram, é preso na França:</strong>  segundo uma emissora do país, o CEO foi alvo de um mandado com base em  uma investigação preliminar, alegando que a falta de moderação de  conteúdo na plataforma e a recusa de cooperar com as autoridades fazem  de Durov um cúmplice de atividades ilícitas realizadas dentro do  aplicativo. Em comunicado, o Telegram declara que suas práticas de  moderação estão “dentro dos padrões da indústria”, e argumenta que é  “absurdo afirmar que uma plataforma ou seu proprietário são responsáveis  pelo uso indevido” da mesma. As informações são do site TechCrunch.</p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/39rBzRd4M0k"></iframe>
+<h4 id="sobre-o-telegram"><a class="header" href="#sobre-o-telegram">Sobre o Telegram</a></h4>
+<p><a href="https://www.vox.com/recode/22238755/telegram-messaging-social-media-extremists">https://www.vox.com/recode/22238755/telegram-messaging-social-media-extremists</a></p>
+<p><a href="https://www-dw-com.translate.goog/en/conspiracy-fake-news-crime-why-is-telegram-controversial/a-70074670?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp">https://www-dw-com.translate.goog/en/conspiracy-fake-news-crime-why-is-telegram-controversial/a-70074670?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp</a></p>
+<h4 id="o-que-eu-acho"><a class="header" href="#o-que-eu-acho">O que eu acho?</a></h4>
+<ul>
+<li>Esse papo de liberdade é sinalização de virtude</li>
+<li>Eu sou muito desconfiado do Telegram como organização</li>
+<li>Na realidade o Telegram por padrão é menos seguro 'tecnicamente' do que os concorrentes</li>
+<li>A moderação e a localização dos servidores é o ponto chave da adoção e 'segurança'</li>
+<li>Pavel Durov dá um um tiro em seu próprio pé</li>
+</ul>
+<h3 id="filtros-da-meta"><a class="header" href="#filtros-da-meta">Filtros da Meta</a></h3>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/bdgvro22oy0"></iframe>
+<p><a href="https://www.cnnbrasil.com.br/tecnologia/meta-anuncia-atualizacao-para-filtros-do-instagram-veja-o-que-muda/">https://www.cnnbrasil.com.br/tecnologia/meta-anuncia-atualizacao-para-filtros-do-instagram-veja-o-que-muda/</a></p>
+<p><strong>Bug em iPhones e iPads faz interface do iOS travar ao digitar apenas 4 caracteres:</strong>  o problema ocorre ao inserir uma sequência de aspas de abertura,  fechamento, e dois-pontos, seguido de qualquer outro caractere na barra  de pesquisa do aplicativo de configurações ou da biblioteca de apps,  fazendo com que a tela do dispositivo reinicie. Embora a falha cause uma  interrupção temporária, pesquisadores indicam que ela não representa  uma ameaça de segurança, pois não pode ser explorada remotamente por  terceiros. A Apple ainda não se pronunciou a respeito do problema. As  informações são do site TechCrunch.</p>
+<p><a href="https://techcrunch.com/2024/08/21/typing-these-four-characters-could-crash-your-iphone/">https://techcrunch.com/2024/08/21/typing-these-four-characters-could-crash-your-iphone/</a></p>
+<h4 id=""><a class="header" href="#">“”::</a></h4>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/aznM_NK15Vc"></iframe>
+<p><a href="https://www.tecmundo.com.br/ios/43918-blog-nao-salvo-espalha-o-caos-entre-usuarios-de-ios-com-codigo-via-twitter.htm">https://www.tecmundo.com.br/ios/43918-blog-nao-salvo-espalha-o-caos-entre-usuarios-de-ios-com-codigo-via-twitter.htm</a></p>
+<h3 id="-1"><a class="header" href="#-1"></a></h3>
+<h3 id="greve-da-serpro"><a class="header" href="#greve-da-serpro">Greve da Serpro</a></h3>
+<p><a href="https://www.baguete.com.br/noticias/27/08/2024/serpro-entra-em-greve-hoje">https://www.baguete.com.br/noticias/27/08/2024/serpro-entra-em-greve-hoje</a></p>
+<p><a href="https://www.serpro.gov.br/menu/noticias/noticias-2024/serpro-garante-manutencao-servicos">https://www.serpro.gov.br/menu/noticias/noticias-2024/serpro-garante-manutencao-servicos</a></p>
+<h3 id="o-google-pode-treinar-ias-com-nosso-conteúdo"><a class="header" href="#o-google-pode-treinar-ias-com-nosso-conteúdo">O Google pode treinar IAs com nosso conteúdo?</a></h3>
+<p><strong>Adoção de IA pelo Google em buscas coloca criadores de conteúdo em posição delicada:</strong>  as respostas automáticas fornecidas pela tecnologia podem ser  suficientes para muitos usuários, reduzindo a necessidade de clicar nos  links que originam essas informações, resultando em uma queda no tráfego  dos sites e impactando suas receitas. Embora os criadores possam  impedir que seu conteúdo seja utilizado por IA, a mesma ferramenta que  gera as respostas também é responsável por indexar as páginas nos  resultados de busca, fazendo com que as mesmas corram o risco de não  serem listadas. As informações são do site Slashdot.</p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/JiMXb2NkAxQ"></iframe>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/QghbHQq6eHw"></iframe>
+<h3 id="sobremesa"><a class="header" href="#sobremesa">Sobremesa</a></h3>
+<p><a href="https://jacobin.com.br/2024/08/como-os-sovieticos-quase-inventaram-a-internet-e-porque-nao-deu-certo/">https://jacobin.com.br/2024/08/como-os-sovieticos-quase-inventaram-a-internet-e-porque-nao-deu-certo/</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="22_08_24.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="22_08_24.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
