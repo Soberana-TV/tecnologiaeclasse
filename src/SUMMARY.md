@@ -1,5 +1,7 @@
 # Tecnologia e Classe
 
+- [O que é Tecnologia e Classe?](./o_que.md)
+- [29/08/24](29_08_24.md)
 - [22/08/24](./22_08_24.md)
 - [15/08/24](./15_08_24.md)
 - [Cookie Clicker](./cookie_clicker.md)
