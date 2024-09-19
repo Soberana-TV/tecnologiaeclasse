@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>11/04/24 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="o_que.html"><strong aria-hidden="true">1.</strong> O que é Tecnologia e Classe?</a></li><li class="chapter-item expanded "><a href="16_09_24.html"><strong aria-hidden="true">2.</strong> 16/09/24</a></li><li class="chapter-item expanded "><a href="05_09_24.html"><strong aria-hidden="true">3.</strong> 05/09/24</a></li><li class="chapter-item expanded "><a href="29_08_24.html"><strong aria-hidden="true">4.</strong> 29/08/24</a></li><li class="chapter-item expanded "><a href="22_08_24.html"><strong aria-hidden="true">5.</strong> 22/08/24</a></li><li class="chapter-item expanded "><a href="15_08_24.html"><strong aria-hidden="true">6.</strong> 15/08/24</a></li><li class="chapter-item expanded "><a href="cookie_clicker.html"><strong aria-hidden="true">7.</strong> Cookie Clicker</a></li><li class="chapter-item expanded "><a href="08_08_24.html"><strong aria-hidden="true">8.</strong> 08/08/24</a></li><li class="chapter-item expanded "><a href="01_08_24.html"><strong aria-hidden="true">9.</strong> 01/08/24</a></li><li class="chapter-item expanded "><a href="25_07_24.html"><strong aria-hidden="true">10.</strong> 25/07/24</a></li><li class="chapter-item expanded "><a href="apagao.html"><strong aria-hidden="true">11.</strong> Crowdstrike / Apagão Cibernético</a></li><li class="chapter-item expanded "><a href="18_07_24.html"><strong aria-hidden="true">12.</strong> 18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html"><strong aria-hidden="true">13.</strong> 11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html"><strong aria-hidden="true">14.</strong> 04/07/24</a></li><li class="chapter-item expanded "><a href="27_06_24.html"><strong aria-hidden="true">15.</strong> 27/06/24</a></li><li class="chapter-item expanded "><a href="20_06_24.html"><strong aria-hidden="true">16.</strong> 20/06/24</a></li><li class="chapter-item expanded "><a href="comunistas_internet.html"><strong aria-hidden="true">17.</strong> Comunistas na Internet</a></li><li class="chapter-item expanded "><a href="13_06_24.html"><strong aria-hidden="true">18.</strong> 13/06/24</a></li><li class="chapter-item expanded "><a href="06_06_24.html"><strong aria-hidden="true">19.</strong> 06/06/24</a></li><li class="chapter-item expanded "><a href="extrema_direita_ti.html"><strong aria-hidden="true">20.</strong> A Ideologia de Extrema Direita na TI</a></li><li class="chapter-item expanded "><a href="30_05_24.html"><strong aria-hidden="true">21.</strong> 30/05/24</a></li><li class="chapter-item expanded "><a href="23_05_24.html"><strong aria-hidden="true">22.</strong> 23/05/24</a></li><li class="chapter-item expanded "><a href="09_05_24.html"><strong aria-hidden="true">23.</strong> 09/05/24</a></li><li class="chapter-item expanded "><a href="02_05_24.html"><strong aria-hidden="true">24.</strong> 02/05/24</a></li><li class="chapter-item expanded "><a href="30_04_24.html"><strong aria-hidden="true">25.</strong> 30/04/24</a></li><li class="chapter-item expanded "><a href="18_04_24.html"><strong aria-hidden="true">26.</strong> 18/04/24</a></li><li class="chapter-item expanded "><a href="11_04_24.html" class="active"><strong aria-hidden="true">27.</strong> 11/04/24</a></li><li class="chapter-item expanded "><a href="04_04_24.html"><strong aria-hidden="true">28.</strong> 04/04/24</a></li><li class="chapter-item expanded "><a href="ideologia_californiana.html"><strong aria-hidden="true">29.</strong> A Ideologia Californiana</a></li><li class="chapter-item expanded "><a href="anticheat.html"><strong aria-hidden="true">30.</strong> Vanguard, LoL e Anticheat</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tecnologia-e-classe-de-110424"><a class="header" href="#tecnologia-e-classe-de-110424">Tecnologia e Classe de 11/04/24</a></h1>
+<h3 id="notícias-rápidas"><a class="header" href="#notícias-rápidas">Notícias Rápidas</a></h3>
+<p><strong>Threads, concorrente do X, possui várias dívidas técnicas após sua produção de apenas 5 meses:</strong>  os engenheiros da Meta  reutilizaram a arquitetura monolítica do  Instagram para agilizar o processo de desenvolvimento. A equipe agora  está trabalhando para separar gradualmente as duas redes, à medida que o  Threads ganha novas funcionalidades.. As informações são do site InfoQ.</p>
+<p><img src="./11_04_24/fail-whale.png" alt="fail-whale.png" /></p>
+<p><strong>Backdoor atinge mais de 92 mil dispositivos NAS antigos da D-Link:</strong>  a vulnerabilidade – rastreada como CVE-2024-3273 – permite a execução  de códigos arbitrários no sistema, abrindo acesso a informações  confidenciais e modificação de configurações no dispositivo de  armazenamento. Entre os equipamentos afetados está o DNS-320L, lançado  no Brasil em 2012. As informações são dos sites Ciso Advisor e Techenet.</p>
+<p><strong>Instagram gera mais receita com publicidade do que o YouTube:</strong>  documentos judiciais disponíveis recentemente, mostram que a rede  social arrecadou 32,4 bilhões de dólares com anúncios, contra os 28,8  bilhões do YouTube – os dados são de 2021. A diferença pode estar ligada  ao fato do YouTube distribuir 55% da sua receita para criadores de  conteúdo. As informações são do site The Verge.</p>
+<p><strong>Eclipse solar total na América do Norte tem efeito significativo no tráfego da internet:</strong>  com milhões de pessoas acompanhando o fenômeno, estados nos EUA  registraram uma queda de até 60% no tráfego durante as poucas horas do  evento. Situação similar também foi registrada no Canadá e México, onde  também era possível ver o eclipse. As informações são do blog da  Cloudflare.</p>
+<p><img src="./11_04_24/touchgrass.png" alt="touchgrass.png" /></p>
+<p><strong>Apple libera inclusão de emuladores de jogos na App Store, após mudanças nas suas diretrizes:</strong>  os títulos poderão ser baixados diretamente desses aplicativos, e os  desenvolvedores precisam garantir que eles estejam em conformidade com  as leis de direitos autorais. As informações são do site 9to5Mac.</p>
+<p><strong>Matrix  Foundation, mantenedora do protocolo para comunicações  descentralizadas, sugere modelo de financiamento público para projetos  de código aberto:</strong> os ataques direcionados à infraestrutura open  source, como o recente descoberto backdoor no projeto liblzma (XZ  Utils) e  que atingiria boa parte do ecossistema Linux, evidenciaria a  precariedade do modelo atual. A solução proposta seria no financiamento  governamental não atrelado ao desenvolvimento de recursos específicos,  mas apenas para garantir a segurança e viabilidade de projetos de  infraestrutura digital. As informações são do blog da Matrix.</p>
+<p><a href="https://matrix.org/blog/2024/04/open-source-publicly-funded-service/">https://matrix.org/blog/2024/04/open-source-publicly-funded-service/</a></p>
+<h4 id="avibras"><a class="header" href="#avibras">Avibras</a></h4>
+<p><a href="https://www.cartacapital.com.br/politica/os-riscos-na-venda-da-avibras-icone-belico-do-brasil-para-uma-rival-australiana/">https://www.cartacapital.com.br/politica/os-riscos-na-venda-da-avibras-icone-belico-do-brasil-para-uma-rival-australiana/</a></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/PzsGzmWHi14"></iframe>
+<h3 id="ceee-equatorial"><a class="header" href="#ceee-equatorial">CEEE Equatorial</a></h3>
+<p><a href="https://www.estado.rs.gov.br/grupo-equatorial-e-o-vencedor-de-leilao-de-privatizacao-da-ceee-d">https://www.estado.rs.gov.br/grupo-equatorial-e-o-vencedor-de-leilao-de-privatizacao-da-ceee-d</a></p>
+<blockquote>
+<p>“Estamos vivendo uma data histórica para o Rio Grande do Sul. Abrimos  um processo de privatizações com a venda da CEEE-D, logo em seguida  teremos a venda da CEEE-G e da CEEE-T, da Sulgás, e no segundo semestre  teremos concessões de estradas, já com modelagens sendo feitas também  com apoio importante do Banco Nacional de Desenvolvimento Econômico e  Social (BNDES). Essa venda por R$ 100 mil vem com um conjunto de  obrigações que é levado pela iniciativa privada, a começar pelos  próprios investimentos que são exigidos em um contrato de concessão e  que a companhia estatal não conseguia fazer. Estamos garantindo  investimentos para a população em energia elétrica e também transferindo  pelo menos R$ 4,4 bilhões em passivo acumulado pela companhia só em  ICMS, que serão assumidos pela Equatorial”, destacou o governador  Eduardo Leite.</p>
+<p>O Grupo Equatorial atende quase 10% do total de consumidores  brasileiros e responde por 6,5% do mercado de distribuição do país. O  grupo apresentou proposta de R$ 100 mil. Não houve disputa, uma vez que  essa foi a única empresa participante. O processo de transição para o  novo acionista deve levar de 60 a 90 dias.</p>
+</blockquote>
+<p><a href="https://sintrajufe.org.br/privada-de-energia-no-rs-deixa-milhoes-de-gauchos-no-escuro-mas-acoes-da-empresa-dobraram-de-valor-na-bolsa-em-cinco-anos-veja-os-deputados-que-votaram-pela-privatizacao-da-ceee/">https://sintrajufe.org.br/privada-de-energia-no-rs-deixa-milhoes-de-gauchos-no-escuro-mas-acoes-da-empresa-dobraram-de-valor-na-bolsa-em-cinco-anos-veja-os-deputados-que-votaram-pela-privatizacao-da-ceee/</a></p>
+<blockquote>
+<h6 id="equatorial-reduziu-quase-metade-quadro-de-pessoal-mas-valor-na-bolsa-mais-do-que-dobrou-em-cinco-anos"><a class="header" href="#equatorial-reduziu-quase-metade-quadro-de-pessoal-mas-valor-na-bolsa-mais-do-que-dobrou-em-cinco-anos"><strong>Equatorial reduziu quase metade quadro de pessoal, mas valor na bolsa mais do que dobrou em cinco anos</strong></a></h6>
+<p>O  leilão que vendeu a CEEE í  Equatorial aconteceu em março de 2021, com o  valor de apenas R$ 100 mil. Logo a seguir, a empresa deu iní­cio a uma  onda de demissões que levou embora quase metade do quadro de  funcionários. Dos cerca de 2,5 mil funcionários, 998 aderiram ao plano  de demissões voluntárias (PDV) lançado pela Equatorial, e a empresa  demitiu outros tantos. Conforme o presidente do Sindicato dos  Eletricitários do Rio Grande do Sul (Senergisul), Antonio Silveira,  há  muita precarização e hoje mais de 90% das atividades da Equatorial são  terceirizadas , apontou. Segundo Antônio,  é mão de obra barata, com  pouca qualificação técnica e, desta forma, não conseguem atender  qualquer evento fora da normalidade, além da precariedade da manutenção  de suas instalações, que refletem negativamente no seu desempenho  operacional .</p>
+</blockquote>
+<p><a href="https://gauchazh.clicrbs.com.br/ultimas-noticias/tag/ceee-equatorial/">https://gauchazh.clicrbs.com.br/ultimas-noticias/tag/ceee-equatorial/</a></p>
+<p><a href="https://gauchazh.clicrbs.com.br/geral/noticia/2024/04/ceee-equatorial-nao-tinha-equipes-carros-e-planejamento-para-tempestade-de-16-de-janeiro-diz-relatorio-de-fiscalizacao-cluk9m0z1017y0124h6ho0o3l.html">https://gauchazh.clicrbs.com.br/geral/noticia/2024/04/ceee-equatorial-nao-tinha-equipes-carros-e-planejamento-para-tempestade-de-16-de-janeiro-diz-relatorio-de-fiscalizacao-cluk9m0z1017y0124h6ho0o3l.html</a></p>
+<p><a href="https://epocanegocios.globo.com/ciencia-e-saude/noticia/2024/02/apagao-em-universidade-federal-da-prejuizo-de-milhoes-em-pesquisas-todas-as-plantas-morreram.ghtml">https://epocanegocios.globo.com/ciencia-e-saude/noticia/2024/02/apagao-em-universidade-federal-da-prejuizo-de-milhoes-em-pesquisas-todas-as-plantas-morreram.ghtml</a></p>
+<blockquote>
+<p>"A CPFL informa que, durante escavações para a obra de expansão da subestação Porto Alegre 6, houve a ruptura acidental de cabos, o que ocasionou a interrupção no fornecimento de energia para uma das linhas de transmissão da rede da distribuidora CEEE Equatorial".</p>
+</blockquote>
+<p><a href="https://g1.globo.com/economia/negocios/noticia/2024/04/17/eletrobras-quer-permitir-demissoes-em-massa-e-cortar-salarios-de-funcionarios-em-125percent.ghtml">https://g1.globo.com/economia/negocios/noticia/2024/04/17/eletrobras-quer-permitir-demissoes-em-massa-e-cortar-salarios-de-funcionarios-em-125percent.ghtml</a></p>
+<h3 id="googleamazon-e-israel"><a class="header" href="#googleamazon-e-israel">Google/Amazon e Israel</a></h3>
+<p><a href="https://time-com.translate.goog/6964364/exclusive-no-tech-for-apartheid-google-workers-protest-project-nimbus-1-2-billion-contract-with-israel/?_x_tr_sl=auto&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp&amp;_x_tr_hist=true">https://time-com.translate.goog/6964364/exclusive-no-tech-for-apartheid-google-workers-protest-project-nimbus-1-2-billion-contract-with-israel/?_x_tr_sl=auto&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp&amp;_x_tr_hist=true</a></p>
+<p><a href="https://www-theguardian-com.translate.goog/commentisfree/2021/oct/12/google-amazon-workers-condemn-project-nimbus-israeli-military-contract?_x_tr_sl=auto&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://www-theguardian-com.translate.goog/commentisfree/2021/oct/12/google-amazon-workers-condemn-project-nimbus-israeli-military-contract?_x_tr_sl=auto&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
+<p><a href="https://www.haaretz.com/israel-news/tech-news/2021-04-21/ty-article/israel-picks-google-amazon-for-official-state-cloud/0000017f-e896-dc91-a17f-fc9fd1ce0000">https://www.haaretz.com/israel-news/tech-news/2021-04-21/ty-article/israel-picks-google-amazon-for-official-state-cloud/0000017f-e896-dc91-a17f-fc9fd1ce0000</a></p>
+<p><a href="https://www-theverge-com.translate.goog/2024/3/8/24094687/google-israel-project-nimbus-employee-fired?_x_tr_sl=auto&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://www-theverge-com.translate.goog/2024/3/8/24094687/google-israel-project-nimbus-employee-fired?_x_tr_sl=auto&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
+<p><a href="https://theintercept.com/2022/07/24/google-israel-artificial-intelligence-project-nimbus/">https://theintercept.com/2022/07/24/google-israel-artificial-intelligence-project-nimbus/</a></p>
+<blockquote>
+<p>De acordo com uma série de documentos e vídeos de treinamento obtidos pelo The Intercept por meio de um portal educacional de acesso público destinado a usuários do Nimbus, o Google está fornecendo ao governo israelense o conjunto completo de ferramentas de aprendizado de máquina e IA disponíveis através do Google Cloud Platform. Embora não forneçam detalhes sobre como o Nimbus será usado, os documentos indicam que a nova nuvem daria a Israel capacidades para detecção facial, categorização automatizada de imagens, rastreamento de objetos e até mesmo análise de sentimento que afirma avaliar o conteúdo emocional de imagens, fala e escrevendo. Os materiais da Nimbus faziam referência a treinamentos específicos de agências disponíveis para funcionários do governo por meio do serviço de aprendizagem on-line Coursera, citando o Ministério da Defesa como exemplo.</p>
+</blockquote>
+<h3 id="elon-musk-vs-o-brasil"><a class="header" href="#elon-musk-vs-o-brasil">Elon Musk VS O Brasil</a></h3>
+<p><img src="./11_04_24/xandao.jpg" alt="xandao.jpg" /></p>
+<ul>
+<li>A gente não morre de amores pelo Xandão, mas...</li>
+<li>Esse é o modus operandi do Elon, vamos relemebrar:
+<ul>
+<li>#bitcoin no perfil do twitter e 'Tesla vai aceitar bitcoin'</li>
+<li>tweets sobre dogecoin e depois logo do X</li>
+<li>tweets sobre a Tesla privando o capital (2018)</li>
+<li>tweets sobre o valor da Tesla estar muito alto em 2020</li>
+<li>tweets sobre o etsy e gamestop</li>
+</ul>
+</li>
+<li>A compra do Twitter deu ao Elon muito poder de manipular narrativas</li>
+</ul>
+<p><img src="./11_04_24/golpes.png" alt="golpes.png" /></p>
+<h3 id="a-preocupação-do-elon-com-a-verdade"><a class="header" href="#a-preocupação-do-elon-com-a-verdade">A preocupação do Elon com A VERDADE</a></h3>
+<ul>
+<li>Diversas acusações silenciadas de funcionários da Tesla</li>
+<li>Acusando aquele mergulhador britânico que salvou as crianças da caverna de 'pedofilo' (2018)</li>
+<li>Tentou destruir a vida do whistleblower da Tesla (2019)</li>
+<li>Negação da Covid, tanto em palavras quanto desrespeitando ordens sanitárias (2020/2021)</li>
+<li>Banindo contas de jornalistas que falavam do seu avião no twitter (2022)</li>
+<li>Teorias de conspiração antissemitas (2023)</li>
+<li>A moderação negativa que existe no Twitter hoje</li>
+</ul>
+<p><img src="./11_04_24/Selection_999%28595%29.png" alt="Selection_999(595).png" /></p>
+<p><strong>Elon Musk diz que precisará de 100 mil GPUs H100 da Nvidia para treinar o Grok 3:</strong>  um datacenter com essa capacidade consumiria 100 megawatts de energia,  equivalente a uma cidade pequena. Em comparação, o Grok 2 – ainda em  fase de desenvolvimento – exigiu 20 mil GPUs H100 para ser treinado. As  informações são do site Tom’s Hardware.</p>
+<p><strong>BYD, fabricante chinesa de veículos elétricos, estuda adquirir a maior mineradora de lítio do Brasil:</strong>  a Sigma Lithium também já esteve no radar da Tesla. A empresa está  avaliada em 2,9 bilhões de dólares. As informações são do site  Canaltech.</p>
+<p><strong>Elon Musk afirma que escritório do X/Twitter no Brasil pode ser fechado, após restrições impostas pelo STF:</strong>  nas palavras do CEO, o Supremo realiza uma “censura agressiva” que  viola “a lei e a vontade do povo”, citando, inclusive, funcionários da  rede social ameaçados de prisão e que planeja reabrir contas suspensas  pela justiça brasileira. As informações são do site Canaltech.</p>
+<p><a href="https://www.intercept.com.br/2024/04/08/seguimos-o-dinheiro-que-movimenta-os-ataques-de-elon-musk-a-alexandre-de-moraes/">https://www.intercept.com.br/2024/04/08/seguimos-o-dinheiro-que-movimenta-os-ataques-de-elon-musk-a-alexandre-de-moraes/</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="18_04_24.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="04_04_24.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="18_04_24.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="04_04_24.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
