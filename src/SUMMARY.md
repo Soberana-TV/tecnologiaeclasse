@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [16/09/24](16_09_24.md)
 - [05/09/24](05_09_24.md)
 - [29/08/24](29_08_24.md)
 - [22/08/24](./22_08_24.md)
@@ -21,5 +22,11 @@
 - [A Ideologia de Extrema Direita na TI](./extrema_direita_ti.md)
 - [30/05/24](./30_05_24.md)
 - [23/05/24](./23_05_24.md)
+- [09/05/24](./09_05_24.md)
+- [02/05/24](./02_05_24.md)
+- [30/04/24](./30_04_24.md)
+- [18/04/24](./18_04_24.md)
+- [11/04/24](./11_04_24.md)
+- [04/04/24](./04_04_24.md)
 - [A Ideologia Californiana](ideologia_californiana.md)
 - [Vanguard, LoL e Anticheat](anticheat.md)
