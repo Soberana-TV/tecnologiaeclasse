@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>19/09/24 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="o_que.html"><strong aria-hidden="true">1.</strong> O que é Tecnologia e Classe?</a></li><li class="chapter-item expanded "><a href="19_09_24.html" class="active"><strong aria-hidden="true">2.</strong> 19/09/24</a></li><li class="chapter-item expanded "><a href="16_09_24.html"><strong aria-hidden="true">3.</strong> 16/09/24</a></li><li class="chapter-item expanded "><a href="05_09_24.html"><strong aria-hidden="true">4.</strong> 05/09/24</a></li><li class="chapter-item expanded "><a href="29_08_24.html"><strong aria-hidden="true">5.</strong> 29/08/24</a></li><li class="chapter-item expanded "><a href="22_08_24.html"><strong aria-hidden="true">6.</strong> 22/08/24</a></li><li class="chapter-item expanded "><a href="15_08_24.html"><strong aria-hidden="true">7.</strong> 15/08/24</a></li><li class="chapter-item expanded "><a href="cookie_clicker.html"><strong aria-hidden="true">8.</strong> Cookie Clicker</a></li><li class="chapter-item expanded "><a href="08_08_24.html"><strong aria-hidden="true">9.</strong> 08/08/24</a></li><li class="chapter-item expanded "><a href="01_08_24.html"><strong aria-hidden="true">10.</strong> 01/08/24</a></li><li class="chapter-item expanded "><a href="25_07_24.html"><strong aria-hidden="true">11.</strong> 25/07/24</a></li><li class="chapter-item expanded "><a href="apagao.html"><strong aria-hidden="true">12.</strong> Crowdstrike / Apagão Cibernético</a></li><li class="chapter-item expanded "><a href="18_07_24.html"><strong aria-hidden="true">13.</strong> 18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html"><strong aria-hidden="true">14.</strong> 11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html"><strong aria-hidden="true">15.</strong> 04/07/24</a></li><li class="chapter-item expanded "><a href="27_06_24.html"><strong aria-hidden="true">16.</strong> 27/06/24</a></li><li class="chapter-item expanded "><a href="20_06_24.html"><strong aria-hidden="true">17.</strong> 20/06/24</a></li><li class="chapter-item expanded "><a href="comunistas_internet.html"><strong aria-hidden="true">18.</strong> Comunistas na Internet</a></li><li class="chapter-item expanded "><a href="13_06_24.html"><strong aria-hidden="true">19.</strong> 13/06/24</a></li><li class="chapter-item expanded "><a href="06_06_24.html"><strong aria-hidden="true">20.</strong> 06/06/24</a></li><li class="chapter-item expanded "><a href="extrema_direita_ti.html"><strong aria-hidden="true">21.</strong> A Ideologia de Extrema Direita na TI</a></li><li class="chapter-item expanded "><a href="30_05_24.html"><strong aria-hidden="true">22.</strong> 30/05/24</a></li><li class="chapter-item expanded "><a href="23_05_24.html"><strong aria-hidden="true">23.</strong> 23/05/24</a></li><li class="chapter-item expanded "><a href="09_05_24.html"><strong aria-hidden="true">24.</strong> 09/05/24</a></li><li class="chapter-item expanded "><a href="02_05_24.html"><strong aria-hidden="true">25.</strong> 02/05/24</a></li><li class="chapter-item expanded "><a href="30_04_24.html"><strong aria-hidden="true">26.</strong> 30/04/24</a></li><li class="chapter-item expanded "><a href="18_04_24.html"><strong aria-hidden="true">27.</strong> 18/04/24</a></li><li class="chapter-item expanded "><a href="11_04_24.html"><strong aria-hidden="true">28.</strong> 11/04/24</a></li><li class="chapter-item expanded "><a href="04_04_24.html"><strong aria-hidden="true">29.</strong> 04/04/24</a></li><li class="chapter-item expanded "><a href="ideologia_californiana.html"><strong aria-hidden="true">30.</strong> A Ideologia Californiana</a></li><li class="chapter-item expanded "><a href="anticheat.html"><strong aria-hidden="true">31.</strong> Vanguard, LoL e Anticheat</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tecnologia-e-classe-de-190924"><a class="header" href="#tecnologia-e-classe-de-190924">Tecnologia e Classe de 19/09/24</a></h1>
+<h3 id="elon-musk-e-x-em-altas-confusões"><a class="header" href="#elon-musk-e-x-em-altas-confusões">Elon Musk e X em altas confusões:</a></h3>
+<p><strong>X volta a ficar indisponível no Brasil após contornar bloqueio utilizando proxy reverso da Cloudflare:</strong>  o recurso atuava como um filtro de tráfego, direcionando-o para um  servidor intermediário que utiliza um sistema de resolução de endereços  (DNS) distinto e, consequentemente, IPs diferentes, sendo frequentemente  empregado como medida de segurança para prevenir ataques de negação de  serviço (DDoS). No entanto, com o apoio da Cloudflare, a Anatel  conseguiu isolar o tráfego do X sem impactar outros serviços que  utilizam a mesma rede. As informações são dos sites Convergência  Digital, Olhar Digital e G1.</p>
+<p><img src="./19_09_24/Screenshot_20240918-232817.webp" alt="Screenshot_20240918-232817.webp" /></p>
+<p><img src="./19_09_24/Screenshot_20240918-232720.webp" alt="Screenshot_20240918-232720.webp" /></p>
+<p><a href="https://agenciabrasil.ebc.com.br/radioagencia-nacional/geral/audio/2024-09/anatel-informa-que-obteve-apoio-da-cloudflare-para-voltar-bloquear-x">https://agenciabrasil.ebc.com.br/radioagencia-nacional/geral/audio/2024-09/anatel-informa-que-obteve-apoio-da-cloudflare-para-voltar-bloquear-x</a></p>
+<h5 id="breaking-news-cnn"><a class="header" href="#breaking-news-cnn">Breaking News CNN</a></h5>
+<p><a href="https://www.cnnbrasil.com.br/blogs/caio-junqueira/politica/x-decide-cumprir-decisoes-de-moraes-para-voltar-a-atuar-no-brasil-dizem-advogados/">https://www.cnnbrasil.com.br/blogs/caio-junqueira/politica/x-decide-cumprir-decisoes-de-moraes-para-voltar-a-atuar-no-brasil-dizem-advogados/</a></p>
+<h3 id="israel-conduz-ataque-cibernético-ao-hezbollah-no-líbano"><a class="header" href="#israel-conduz-ataque-cibernético-ao-hezbollah-no-líbano">Israel conduz 'ataque cibernético' ao Hezbollah no Líbano</a></h3>
+<p><a href="https://www.nytimes.com/live/2024/09/17/world/israel-hamas-war-news">https://www.nytimes.com/live/2024/09/17/world/israel-hamas-war-news</a></p>
+<ul>
+<li>
+<p>Pagers (no Brasil chamados de 'beep') explodiram simultaneamente no Líbano, matando 11 pessoas, incluindo membros do Hezbollah uma jovem e ferindo mais de 2.700.</p>
+</li>
+<li>
+<p>A estimativa é que tenham sido envolvidos 4000 aparelhos, sendo a maioria do modelo AR924 da Gold Apollo.</p>
+<p><img src="./19_09_24/image.png" alt="image.png" /></p>
+</li>
+<li>
+<p>Israel supostamente implantou explosivos em pagers comprados por Hezbollah de uma empresa taiwanesa. Isso parece ser confirmado por fontes dos EUA</p>
+</li>
+<li>
+<p>Pequenas quantidades de explosivos foram inseridas nos pagers antes de sua chegada ao Líbano. Se mostrando um ataque da cadeia de suprimentos e não um 'cíberataque' como primeiro reportado. Uma mensagem falsa enviada aos pagers supostamente ativou os explosivos.</p>
+</li>
+<li>
+<p>O Hezbollah usava pagers para evitar vigilância por celulares, porém esses aparelhos também são usados por civis como por exemplo <strong>médicos</strong></p>
+</li>
+<li>
+<p>Hospitais estão sobrecarregados e Beirute está enviando feridos para outras regiões, com apoio da OMS. Aleḿ disso alguns pagers chegaram a aliados do Hezbollah no Irã e Síria.</p>
+</li>
+<li>
+<p>Está sendo tratado de um ataque "cirúrgico", mas como a gente chama um ataque em território estrangeiro e com alvos civis?</p>
+</li>
+<li>
+<p>Os influenciadores sionistas como o professor HOC e o seu público não conseguem deixar de trair a empolgação com o ataque e a desumanização que eles fazem dos inimigos de Israel</p>
+</li>
+<li>
+<p>Isso pode intensificar mais ainda as tensões entre Israel, Líbano, Irã e Síria</p>
+</li>
+</ul>
+<h3 id="vamos-falar-mal-de-ia"><a class="header" href="#vamos-falar-mal-de-ia">Vamos falar mal de IA:</a></h3>
+<p><a href="https://www.techrepublic.com/article/ai-generated-code-outages/">https://www.techrepublic.com/article/ai-generated-code-outages/</a></p>
+<ul>
+<li>Eles 'ouviram' que cada vez mais produtos estão experienciando interrupções devido a código de IA</li>
+<li>O problema não é apenas que o código está errado, é que ele está sutilmente errado, geralmente na parte de lógica e matemática.</li>
+<li><a href="https://www.ioccc.org/">https://www.ioccc.org/</a></li>
+<li>Pressão por eficiência e entregas geram uma falta de revisão de código. Ao mesmo tempo programadores tendem a confiar na IA (porque são humanos) e tendem a imaginar ela como 'um algoritmo' (resultados previsíveis e lógicos) o que é mentira.</li>
+<li>Além disso existe um nível de remoção: "esse código não é meu, é da IA"</li>
+<li>Desenvolvedores e gerentes relatam um aumento da produtividade (tempo de entrega) com o uso das ferramentas de IA, porém um aumento do 'code churn'</li>
+<li>No entanto os estudos mostrados indicam um aumento do uso das ferramentas de IA para produção de código. Por quê?</li>
+<li>O deslocamento do capital para ferramentas de IA serve um duplo propósito de inflar uma nova 'corrida das tulipas' e diminuir o poder da classe trabalhadora. Nós pagamos o custos com nossos empregos, meio ambiente e interagindo com produtos piores.</li>
+</ul>
+<h3 id="2024-será-como-1984"><a class="header" href="#2024-será-como-1984">2024 será como 1984</a></h3>
+<p><strong>Cofundador da Oracle prevê um futuro com vigilância controlada por IA para garantir o cumprimento das leis:</strong>  Larry Ellison acredita que a tecnologia poderia monitorar  constantemente a população por meio de uma vasta rede de câmeras,  incluindo as de segurança, corporais e de painéis de veículos,  reportando qualquer irregularidade às autoridades competentes. Além  disso, ele acredita que drones equipados com IA substituirão veículos  policiais em perseguições de alta velocidade. As informações são do site  Ars Technica.</p>
+<p><a href="https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/">https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/</a></p>
+<ul>
+<li>Sim ele estava se referindo a isso positivamente</li>
+<li>Lembrando do vídeo que já trouxemos aqui sobre o Bruce Schneier falando basicamente a mesma coisa</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/SG-lyDD_USs "></iframe>
+<ul>
+<li>1984 GEORGE ORWELL</li>
+<li>Obviamente o artigo tem que citar a China</li>
+<li>Lembremos do que as redes sociais são hoje, Cambridge Analytica, monitoramento por drones, Londres é a cidade mais vigiada, etc...</li>
+</ul>
+<h3 id="exemplo-de-aplicação"><a class="header" href="#exemplo-de-aplicação">Exemplo de aplicação:</a></h3>
+<p>Bots de IA que procuram violações de propriedade intelectual:</p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/vtwa8ffkxJs "></iframe>
+<p><strong>Artigo sugere que emissões de carbono de data centers podem ser 662% maiores do que as divulgadas pelas big techs:</strong>  empresas como Google, Microsoft e Apple alegam utilizar eletricidade  limpa ao adquirir certificados de energia renovável (RECs), que nem  sempre refletem a quantidade realmente consumida. Além disso, as  companhias costumam divulgar emissões "baseadas no mercado", enquanto as  “baseadas na localização” — efetivamente geradas nos locais dos centros  de dados — podem ser mais elevadas. A Meta, por exemplo, havia relatado  oficialmente 273 toneladas de CO2, seguindo o primeiro tipo de métrica,  enquanto a medição baseada na segunda foi de 3,8 milhões. As  informações são do site The Guardian.</p>
+<p><a href="https://www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech">https://www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="16_09_24.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="16_09_24.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
