@@ -1,6 +1,8 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [10/10/24](10_10_24.md)
+- [O Fork da Godot](godot.md)
 - [07/10/24](07_10_24.md)
 - [28/09/24](28_09_24.md)
 - [19/09/24](19_09_24.md)
