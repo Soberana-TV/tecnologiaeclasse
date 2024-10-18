@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>17/10/24 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="o_que.html"><strong aria-hidden="true">1.</strong> O que é Tecnologia e Classe?</a></li><li class="chapter-item expanded "><a href="17_10_24.html" class="active"><strong aria-hidden="true">2.</strong> 17/10/24</a></li><li class="chapter-item expanded "><a href="10_10_24.html"><strong aria-hidden="true">3.</strong> 10/10/24</a></li><li class="chapter-item expanded "><a href="godot.html"><strong aria-hidden="true">4.</strong> O Fork da Godot</a></li><li class="chapter-item expanded "><a href="07_10_24.html"><strong aria-hidden="true">5.</strong> 07/10/24</a></li><li class="chapter-item expanded "><a href="28_09_24.html"><strong aria-hidden="true">6.</strong> 28/09/24</a></li><li class="chapter-item expanded "><a href="19_09_24.html"><strong aria-hidden="true">7.</strong> 19/09/24</a></li><li class="chapter-item expanded "><a href="16_09_24.html"><strong aria-hidden="true">8.</strong> 16/09/24</a></li><li class="chapter-item expanded "><a href="05_09_24.html"><strong aria-hidden="true">9.</strong> 05/09/24</a></li><li class="chapter-item expanded "><a href="29_08_24.html"><strong aria-hidden="true">10.</strong> 29/08/24</a></li><li class="chapter-item expanded "><a href="22_08_24.html"><strong aria-hidden="true">11.</strong> 22/08/24</a></li><li class="chapter-item expanded "><a href="15_08_24.html"><strong aria-hidden="true">12.</strong> 15/08/24</a></li><li class="chapter-item expanded "><a href="cookie_clicker.html"><strong aria-hidden="true">13.</strong> Cookie Clicker</a></li><li class="chapter-item expanded "><a href="08_08_24.html"><strong aria-hidden="true">14.</strong> 08/08/24</a></li><li class="chapter-item expanded "><a href="01_08_24.html"><strong aria-hidden="true">15.</strong> 01/08/24</a></li><li class="chapter-item expanded "><a href="25_07_24.html"><strong aria-hidden="true">16.</strong> 25/07/24</a></li><li class="chapter-item expanded "><a href="apagao.html"><strong aria-hidden="true">17.</strong> Crowdstrike / Apagão Cibernético</a></li><li class="chapter-item expanded "><a href="18_07_24.html"><strong aria-hidden="true">18.</strong> 18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html"><strong aria-hidden="true">19.</strong> 11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html"><strong aria-hidden="true">20.</strong> 04/07/24</a></li><li class="chapter-item expanded "><a href="27_06_24.html"><strong aria-hidden="true">21.</strong> 27/06/24</a></li><li class="chapter-item expanded "><a href="20_06_24.html"><strong aria-hidden="true">22.</strong> 20/06/24</a></li><li class="chapter-item expanded "><a href="comunistas_internet.html"><strong aria-hidden="true">23.</strong> Comunistas na Internet</a></li><li class="chapter-item expanded "><a href="13_06_24.html"><strong aria-hidden="true">24.</strong> 13/06/24</a></li><li class="chapter-item expanded "><a href="06_06_24.html"><strong aria-hidden="true">25.</strong> 06/06/24</a></li><li class="chapter-item expanded "><a href="extrema_direita_ti.html"><strong aria-hidden="true">26.</strong> A Ideologia de Extrema Direita na TI</a></li><li class="chapter-item expanded "><a href="30_05_24.html"><strong aria-hidden="true">27.</strong> 30/05/24</a></li><li class="chapter-item expanded "><a href="23_05_24.html"><strong aria-hidden="true">28.</strong> 23/05/24</a></li><li class="chapter-item expanded "><a href="09_05_24.html"><strong aria-hidden="true">29.</strong> 09/05/24</a></li><li class="chapter-item expanded "><a href="02_05_24.html"><strong aria-hidden="true">30.</strong> 02/05/24</a></li><li class="chapter-item expanded "><a href="30_04_24.html"><strong aria-hidden="true">31.</strong> 30/04/24</a></li><li class="chapter-item expanded "><a href="18_04_24.html"><strong aria-hidden="true">32.</strong> 18/04/24</a></li><li class="chapter-item expanded "><a href="11_04_24.html"><strong aria-hidden="true">33.</strong> 11/04/24</a></li><li class="chapter-item expanded "><a href="04_04_24.html"><strong aria-hidden="true">34.</strong> 04/04/24</a></li><li class="chapter-item expanded "><a href="ideologia_californiana.html"><strong aria-hidden="true">35.</strong> A Ideologia Californiana</a></li><li class="chapter-item expanded "><a href="anticheat.html"><strong aria-hidden="true">36.</strong> Vanguard, LoL e Anticheat</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tecnologia-e-classe-de-171024"><a class="header" href="#tecnologia-e-classe-de-171024">Tecnologia e Classe de 17/10/24</a></h1>
+<h3 id="sobre-o-canal-central-pandora"><a class="header" href="#sobre-o-canal-central-pandora">Sobre o canal 'Central Pandora'</a></h3>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/5UB6GX-Bd7Y "></iframe>
+<p><strong>que maneiro</strong>
+<strong>horrores feitos pelo homem</strong>
+<strong>além da minha compreensão</strong></p>
+<p><img src="./17_10_24/image.png" alt="image.png" /></p>
+<h4 id="isso-é-tipo-o-filme-her-né"><a class="header" href="#isso-é-tipo-o-filme-her-né">Isso é tipo o filme HER né?</a></h4>
+<p><a href="https://arstechnica.com/ai/2024/10/man-learns-hes-being-dumped-via-dystopian-ai-summary-of-texts">https://arstechnica.com/ai/2024/10/man-learns-hes-being-dumped-via-dystopian-ai-summary-of-texts</a></p>
+<h4 id="ia-para-mandar-currículo"><a class="header" href="#ia-para-mandar-currículo">IA para mandar currículo</a></h4>
+<p><a href="https://www.404media.co/i-applied-to-2-843-roles-the-rise-of-ai-powered-job-application-bots">https://www.404media.co/i-applied-to-2-843-roles-the-rise-of-ai-powered-job-application-bots</a></p>
+<ul>
+<li>A ferramenta <strong>Auto_Jobs_Applier_AIHawk</strong> usa o LinkedIn para encontrar vagas, preencher informações biográficas, gera currículos e cartas de apresentação personalizados, e aplica automaticamente para várias vagas em minutos</li>
+<li>Pode ser configurado em 15 minutos por qualquer pessoa com conhecimentos básicos de Python, exigindo apenas ajustes no código e uma chave de API da <strong>OpenAI</strong>.</li>
+<li>Se tornou viral no GitHub, com milhares de usuários utilizando-a para se candidatar a empregos em massa, resultando em entrevistas e até ofertas de trabalho para alguns.</li>
+<li>O uso de IA na candidatura e triagem de currículos está criando um ciclo automatizado, onde bots escrevem cartas de apresentação que são lidas por outros bots. Teoria da Internet 💀</li>
+<li>Federico Elia, criador do AI Hawk, afirmou que sua intenção é <strong>nivelar o campo de jogo</strong> entre candidatos e empresas, automatizando tarefas repetitivas e personalizando candidaturas a vagas.</li>
+<li>O LinkedIn veta o uso de ferramentas de IA para esse tipo de atividade, porém promete em breve lançar as suas próprias ferramentas.</li>
+</ul>
+<p><a href="https://github.com/feder-cr/Auto_Jobs_Applier_AIHawk/">https://github.com/feder-cr/Auto_Jobs_Applier_AIHawk/</a></p>
+<h3 id="wikipedia-vs-ia"><a class="header" href="#wikipedia-vs-ia">Wikipedia VS IA</a></h3>
+<p><strong>Editores da Wikipedia formam grupo para combater conteúdos gerados por IA:</strong>  de acordo com os membros, o objetivo é proteger o site contra  desinformação, que já está afetando resultados de busca no Google,  livros na Amazon e revistas acadêmicas. Para isso, o grupo detecta  conteúdos que apresentam sinais claros de serem artificiais, focando em  termos comumente utilizados pelos modelos. Um exemplo é o artigo sobre o  Chester Mental Health Center, que, em novembro de 2023, incluía a frase  “Até a minha última atualização de conhecimento em janeiro de 2022”. As  informações são do site Slashdot.</p>
+<p><a href="https://www.404media.co/the-editors-protecting-wikipedia-from-ai-hoaxes/">https://www.404media.co/the-editors-protecting-wikipedia-from-ai-hoaxes/</a></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/in4e91tK4cg "></iframe>
+<h3 id="o-robô-do-elon-musk"><a class="header" href="#o-robô-do-elon-musk">O robô do Elon Musk</a></h3>
+<p><strong>Evento “We, Robot” da Tesla apresenta robotáxis e destaca capacidades do robô Optimus:</strong>  o Cybercab, previsto para antes de 2027, não contará com volante ou  pedais, e poderá ser carregado por indução, dispensando o uso de cabos; o  Robovan é uma van autônoma projetada para transportar até 20  passageiros; o robô humanoide Optimus ganhou destaque no evento, com  vídeos mostrando que ele poderia realizar tarefas do dia a dia, como  levar pacotes para dentro de casa e regar plantas. Depois da  apresentação, o público pôde interagir com eles, que fizeram gestos  simples, como acenar, segurar um copo de gelo e entregar pequenas  sacolas de presentes, além de jogar pedra, papel e tesoura com um dos  convidados. Elon Musk afirma que o Optimus poderá custar entre 20 mil e  30 mil dólares a longo prazo, e prevê que ele será o “maior produto de  todos os tempos” e representará uma “transformação fundamental para a  civilização”. As informações são dos sites The Guardian e The Verge.</p>
+<h4 id="dança-robozinho-dança"><a class="header" href="#dança-robozinho-dança">Dança robozinho dança</a></h4>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/TsNc4nEX3c4 "></iframe>
+<p><a href="https://gizmodo-com.translate.goog/elon-musks-beer-pouring-optimus-robots-are-not-autonomous-2000510899?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp&amp;p=1">https://gizmodo-com.translate.goog/elon-musks-beer-pouring-optimus-robots-are-not-autonomous-2000510899?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp&amp;p=1</a></p>
+<h3 id="ibm-e-outras-32-multinacionais-acusadas-de-cartel-de-contratação"><a class="header" href="#ibm-e-outras-32-multinacionais-acusadas-de-cartel-de-contratação">IBM e outras 32 multinacionais acusadas de cartel de contratação</a></h3>
+<p><a href="https://www.sindpd.org.br/sindpd/site/noticia.jsp?id=1728659964862&amp;p=1">https://www.sindpd.org.br/sindpd/site/noticia.jsp?id=1728659964862&amp;p=1</a></p>
+<p><a href="https://www.baguete.com.br/noticias/rhs-de-multinacionais-acusados-de-cartel?p=1">https://www.baguete.com.br/noticias/rhs-de-multinacionais-acusados-de-cartel?p=1</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="10_10_24.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="10_10_24.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
