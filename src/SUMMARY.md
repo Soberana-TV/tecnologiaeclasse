@@ -1,6 +1,8 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [31/10/24](31_10_24.md)
+- [Fetiche da Tecnologia 2](fetiche_tecnologia2.md)
 - [Wordpress VS WP Engine](wordpress.md)
 - [24/10/24](24_10_24.md)
 - [17/10/24](17_10_24.md)
