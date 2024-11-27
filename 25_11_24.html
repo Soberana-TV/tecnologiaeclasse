@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>25/11/24 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tecnologia-e-classe-de-251124"><a class="header" href="#tecnologia-e-classe-de-251124">Tecnologia e Classe de 25/11/24</a></h1>
+<h3 id="recomendações-de-vídeos"><a class="header" href="#recomendações-de-vídeos">Recomendações de Vídeos</a></h3>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/lPG6vIN8Kx8 "></iframe>
+<h4 id="john-oliver-sobre-o-tiktok"><a class="header" href="#john-oliver-sobre-o-tiktok">John Oliver sobre o TikTok</a></h4>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/5CZNlaeZAtw "></iframe>
+<h4 id="vinheteiro-perdeu-seus-btc"><a class="header" href="#vinheteiro-perdeu-seus-btc">Vinheteiro perdeu seus BTC?</a></h4>
+<p><a href="https://portaldobitcoin.uol.com.br/brasileiro-vai-parar-no-hospital-por-estresse-apos-perder-carteira-com-r-2-milhoes-em-bitcoin/">https://portaldobitcoin.uol.com.br/brasileiro-vai-parar-no-hospital-por-estresse-apos-perder-carteira-com-r-2-milhoes-em-bitcoin/</a></p>
+<ul>
+<li>Cara, simplesmente é fic OU o cara tem fetiche em humilhações públicas na internet</li>
+<li>Segundo ele: comprou 4 BTC, tirou da corretora para uma carteira Ledger Nano X, e guardou a senha dentro de uma partitura
+<ul>
+<li>Ainda cria uma historinha de que talvez esteja 'com o filho da empregada' ou em um sebo</li>
+</ul>
+</li>
+<li>Daí descreve a tentativa de pagar alguém para recuperar a senha (só esqueçam pessoal, não dá)</li>
+<li>Depois no outro dia estava triste e um <strong>sorvete de pistache</strong> fez ele passar mal e ser hospitalizado</li>
+<li>Esse é mais um dos hits do nosso boça fake que já comprou ação de empresas falidas, foi enganado pela BTG Pactual, grava cringe pelas ruas de Nova Iorque e etc...</li>
+<li>Enfim, é fic, mas obrigado ao paulista mais fraco por nos chamar atenção a esse problema das criptomoedas.</li>
+</ul>
+<h4 id="notícias-rápidas"><a class="header" href="#notícias-rápidas">Notícias rápidas</a></h4>
+<p><strong>Teams permitirá clonagem de voz para tradução em tempo real em reuniões:</strong>  o “Interpreter” possibilitará imitar o timbre do usuário em nove  idiomas, incluindo Português. A Microsoft assegura que a ferramenta não  armazena dados biométricos e não altera os sentimentos transmitidos pela  locução, mantendo apenas o tom “naturalmente presente”. O recurso,  previsto para o início de 2025, estará disponível exclusivamente para  assinantes do Microsoft 365. As informações são do site TechCrunch.</p>
+<p><a href="https://techcrunch.com/2024/11/19/soon-microsoft-will-let-teams-meeting-attendees-clone-their-voices/">https://techcrunch.com/2024/11/19/soon-microsoft-will-let-teams-meeting-attendees-clone-their-voices/</a></p>
+<p><strong>Departamento de Justiça dos EUA força o Google a vender o navegador Chrome como solução para monopólio em buscas online:</strong>  não se avaliou, entretanto, o impacto no Chromium — projeto de código  aberto no qual muitos outros navegadores são baseados — e se o Google  poderia continuar contribuindo com o seu desenvolvimento. Outras  propostas incluem desvincular o Android da loja de aplicativos Google  Play e permitir que sites indexados em buscas optem por não participar  de treinamentos de IA. Uma decisão final é esperada para agosto do ano  que vem. As informações são do site 9to5Google.</p>
+<p><a href="https://br.ign.com/google/132663/news/departamento-de-justica-dos-eua-quer-que-google-venda-o-chrome-e-saia-do-mercado-de-navegadores-por">https://br.ign.com/google/132663/news/departamento-de-justica-dos-eua-quer-que-google-venda-o-chrome-e-saia-do-mercado-de-navegadores-por</a></p>
+<p><a href="https://www.theverge.com/2024/11/20/24300617/doj-google-search-antitrust-chrome-breakup">https://www.theverge.com/2024/11/20/24300617/doj-google-search-antitrust-chrome-breakup</a></p>
+<p><a href="https://blog.google/outreach-initiatives/public-policy/doj-search-remedies-nov-2024/">https://blog.google/outreach-initiatives/public-policy/doj-search-remedies-nov-2024/</a></p>
+<ul>
+<li>O DOJ diz que o Google deve desinvestir do Chrome para reestabelecer a competição nas buscas online</li>
+<li>É uma extensão do caso antitruste que vem sendo movido contra o Google</li>
+<li>A recomendação de venda é isso, uma recomendação, e se falou do Android também. Porém o julgamento que vai decidir isso vai rolar em Abril de 2025</li>
+<li>Outras remediações sugeridas são impedir os tratos que o Google tem com Apple, <strong>Mozilla</strong> e outros serviços para uso de sua busca</li>
+<li>Google publicou uma postagem em seu blog em resposta dizendo "nada a ver irmão" e "as pessoas gostam dos nossos produtos"</li>
+<li>A decisão é anunciada no DOJ do Biden e continua no DOJ do Trump. Isso pode ter alguma influência? Talvez não porque o processo original já se arrasta do governo Trump, mas...</li>
+<li>Isso vai ser realmente efetivo, não sei, MAS...</li>
+</ul>
+<p><strong>Bluesky afirma que não utilizará postagens de usuários para treinar IA:</strong> a empresa esclarece que a tecnologia é limitada à moderação de conteúdo e aos algoritmos que organizam o feed de descoberta. Contudo, a plataforma reconhece que seu arquivo “robots.txt” não impede que companhias como OpenAI e Google acessem os dados das pessoas, embora esteja explorando maneiras de contornar isso. O anúncio foi feito no mesmo dia em que os novos termos de serviço do X entraram em vigor, permitindo que terceiros utilizem postagens de usuários para treinar IA. As informações são do site Engadget.</p>
+<p><a href="https://www.engadget.com/social-media/the-suddenly-hot-bluesky-says-it-wont-train-ai-on-your-posts-220034195.html">https://www.engadget.com/social-media/the-suddenly-hot-bluesky-says-it-wont-train-ai-on-your-posts-220034195.html</a></p>
+<h4 id="vamos-falar-de-twitter"><a class="header" href="#vamos-falar-de-twitter">Vamos falar de Twitter?</a></h4>
+<p><a href="https://apublica.org/2024/09/a-suspensao-do-twitter-afetou-a-desinformacao-eleitoral/">https://apublica.org/2024/09/a-suspensao-do-twitter-afetou-a-desinformacao-eleitoral/</a></p>
+<h4 id="como-funciona-a-monetizaçao-do-xwitter"><a class="header" href="#como-funciona-a-monetizaçao-do-xwitter">Como funciona a monetizaçao do Xwitter?</a></h4>
+<p><a href="https://www.bbc.com/portuguese/articles/c937q4p7g09o">https://www.bbc.com/portuguese/articles/c937q4p7g09o</a></p>
+<blockquote>
+<p>Alguns usuários do <a href="https://www.bbc.com/portuguese/topics/c95y354j2pgt">X</a> (antigo Twitter) que passam os dias compartilhando conteúdo que inclui <a href="https://www.bbc.com/portuguese/topics/c95y354381pt">desinformação</a> eleitoral, imagens geradas por <a href="https://www.bbc.com/portuguese/topics/c6vzyv5dd9nt">inteligência artificial</a> (IA) e <a href="https://www.bbc.com/portuguese/articles/cgr4g3m39nlo">teorias de conspiração</a> infundadas dizem que estão ganhando "milhares de dólares" pela plataforma de <a href="https://www.bbc.com/portuguese/topics/c340q4k1dq3t">rede social</a>.</p>
+<p>...</p>
+<p>Vários dizem que os ganhos de suas próprias contas e de outras contas variam de algumas centenas a milhares de dólares.</p>
+<p>Eles  também dizem que coordenam o compartilhamento das publicações uns dos  outros em fóruns e bate-papos em grupo. "É uma forma de tentar ajudar  uns aos outros", afirmou um usuário.</p>
+</blockquote>
+<ul>
+<li>Em resumo o X monetiza baseado em visualizações, likes, compartilhamentos. Não baseado em qualidade ou em algum tipo de incentivo para falar a verdade. É o 'livre mercado das ideias'</li>
+</ul>
+<blockquote>
+<p>Entre as publicações enganosas compartilhadas por algumas destas redes de perfis, estavam alegações sobre fraude eleitoral que haviam sido refutadas pelas autoridades, e alegações extremas e infundadas de pedofilia e abuso sexual contra os candidatos à presidência e vice-presidência.</p>
+</blockquote>
+<ul>
+<li>Mesmo que o X/Twitter seja cada vez menor, ele tem sido um hub desse tipo de desinformação</li>
+<li>Na matéria eles entrevistam um trumpista que supostamente ganha muita grana com milhões de impressões mensais. Com memes de Trump e conteúdo que beira o 'fake news' mas ele considera 'arte' e maneiras de 'começar a conversa'</li>
+<li>Já sobre algumas pessoas que postam coisas comprovadamente mentira ele se refere como 'maneiras fáceis de ganhar grana'</li>
+</ul>
+<blockquote>
+<p>O  X afirma online que sua prioridade é proteger e defender a voz do  usuário. O site adiciona rótulos de mídia manipulada a alguns vídeos,  áudios e imagens gerados por IA e adulterados. Também possui um recurso  chamado Notas da Comunidade, que faz a verificação de fatos por meio da  colaboração coletiva dos usuários.</p>
+<p>Durante  a eleição no Reino Unido, o X tomou medidas sobre uma rede de contas  que compartilhavam vídeos falsos que eu investiguei.</p>
+<p>Na  campanha eleitoral dos EUA, no entanto, não recebi nenhuma resposta às  minhas perguntas ou solicitações para entrevistar Elon Musk.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="aeria.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="aeria.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
