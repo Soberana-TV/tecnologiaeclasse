@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [25/11/24](25_11_24.md)
 - [Projeto com Aeria](aeria.md)
 - [14/11/24](14_11_24.md)
 - [07/11/24](07_11_24.md)
