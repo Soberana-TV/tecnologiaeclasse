@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [12/12/24](12_12_24.md)
 - [05/12/24](05_12_24.md)
 - [28/11/24](28_11_24.md)
 - [25/11/24](25_11_24.md)
