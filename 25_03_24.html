@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>25/03/24 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="notícias-250324"><a class="header" href="#notícias-250324">Notícias 25/03/24</a></h1>
+<h3 id="teclas-no-linkedin"><a class="header" href="#teclas-no-linkedin">TeClas no Linkedin</a></h3>
+<p><img src="./25_03_24/linkedin.png" alt="linkedin.png" /></p>
+<p><a href="https://www.linkedin.com/company/teclas/posts">https://www.linkedin.com/company/teclas/posts</a></p>
+<h1 id="humor--piadas"><a class="header" href="#humor--piadas">Humor &amp; Piadas</a></h1>
+<p><strong>Justiça proíbe Meta de usar marca no Brasil:</strong> uma empresa sediada no Rio Grande do Sul, também do setor de tecnologia, detém o registro da marca “Meta” desde 2008, causando transtornos para a empresa brasileira – desde que o Facebook mudou de nome, em 2021, a Meta brasileira já foi citada por engano em 143 processos judiciais que tinham como alvo a empresa norte-americana, sendo obrigada a participar de audiências apenas para explicar a confusão. Além da proibição, a Meta de Mark Zuckerberg também foi obrigada a divulgar em seus canais de comunicação que não tem relação com a Meta brasileira, com multa diária de 100 mil reais em caso de não cumprimento. As informações são do site Convergência Digital.</p>
+<p><strong>Linux atinge participação de 4% no mercado de desktops:</strong> o crescimento de 30% nos últimos 8 meses é significativo, considerando que levou 30 anos para o Linux alcançar uma participação de 3%. Fatores como sua natureza de código aberto, segurança, juntamente com melhorias significativas na estabilidade e usabilidade de distribuições como Ubuntu, Fedora e Mint, têm contribuído para tornar o Linux mais acessível a um público mais amplo. As informações são do site Linuxiac.</p>
+<p><strong>Instalações do Firefox e Brave registram aumento significativo em iPhones na Europa após lei que obriga tela para escolha de navegador nesses dispositivos:</strong> o Firefox viu o número de instalações subir 40% na Alemanha e 30% na França. O Brave registrou alta de 37% na primeira semana da medida, que visa limitar a tendência das Big Techs de promoverem seus próprios serviços e aplicativos em detrimento dos concorrentes. As informações são do site The Register.</p>
+<h3 id="meio-ambiente-e-ti"><a class="header" href="#meio-ambiente-e-ti">Meio Ambiente e TI</a></h3>
+<p><strong>Estudo aborda “inchaço” de páginas e aplicativos web não otimizados, sobrecarregando dispositivos de entrada:</strong> a análise destacou páginas como a do Wix, que fazem o download de 21MB de dados, levando até 33 segundos para carregar em alguns dispositivos. As plataformas de redes sociais também possuem um desempenho ruim, chegando a ser inutilizáveis em alguns casos. A pesquisa evidencia uma tendência no design de páginas na web que assume incorretamente uma disponibilidade constante de largura de banda e processamento alto, prejudicando a usabilidade em dispositivos menos potentes. As informações são do site Tom's Hardware.</p>
+<p><strong>Lixo eletrônico está se acumulando globalmente, com taxas de reciclagem em declínio:</strong> até o final da década, serão 82 milhões de toneladas acumuladas, com menos de 20% sendo recicladas, devido ao aumento do consumo, ciclos de vida mais curtos e opções limitadas de reparo. Os metais – incluindo cobre, ouro e ferro – representaram metade do lixo produzido, avaliado em 91 bilhões de dólares. Cerca de 50% é produzida na Ásia, enquanto a Europa apresenta as maiores taxas de reciclagem, superando 40%. As informações são do site TechXplore.</p>
+<p><strong>Movimento “Software Verde” está crescendo para combater impacto ambiental do desenvolvimento e uso de softwares:</strong> em 2040, o setor tecnologia da informação e comunicação pode ser responsável pela emissão de 14% de gases do efeito estufa, quase tanto carbono quanto o emitido pelos transportes aéreo, terrestre e marítimo combinados. A engenharia de software verde está sendo adotada por grandes empresas, como Google, Intel e Microsoft, implementando práticas para a construção de aplicações que usem melhor o hardware e computação disponíveis, um caminho de volta para as raízes de eficiência da disciplina. As informações são do site IEEE Spectrum.</p>
+<h3 id="mapeamento-sindical-mlc"><a class="header" href="#mapeamento-sindical-mlc">Mapeamento Sindical MLC</a></h3>
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLScso6ieYGSWYRn2TQoRZN9WuHSAFIkXcqdatNy8vnNdCE60qg/viewform">https://docs.google.com/forms/d/e/1FAIpQLScso6ieYGSWYRn2TQoRZN9WuHSAFIkXcqdatNy8vnNdCE60qg/viewform</a></p>
+<h3 id="demissões-youtube-music"><a class="header" href="#demissões-youtube-music">Demissões YouTube Music</a></h3>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/pZBtjNGes6s "></iframe>
+<ul>
+<li>
+<p>Trabalham como terceirizados da Cognizant</p>
+</li>
+<li>
+<p>Se sindicalizaram na Alphabet Workers Union</p>
+</li>
+<li>
+<p>U$19 / hora =~ 3k dólares ao mês</p>
+</li>
+<li>
+<p>Estavam em greve devido às políticas de retorno ao escritório (layoff disfarçado)</p>
+</li>
+<li>
+<p>Google não considera os terceirizados como empregados, não negociou suas demandas com o sindicato</p>
+<p><a href="https://www-yahoo-com.translate.goog/tech/not-interrupt-just-laid-us-184027116.html?_x_tr_sl=auto&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://www-yahoo-com.translate.goog/tech/not-interrupt-just-laid-us-184027116.html?_x_tr_sl=auto&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
+</li>
+</ul>
+<h3 id="cit"><a class="header" href="#cit">CI&amp;T</a></h3>
+<p><a href="https://www.youtube.com/shorts/S5Or8ZPPzaU">https://www.youtube.com/shorts/S5Or8ZPPzaU</a></p>
+<ul>
+<li>Mudança do cálculo do PLR
+<ul>
+<li>Ficou pior, mas potencialmente ficaria "melhor" se a empresa crescesse mais</li>
+<li>O problema é que o cálculo mudou pensando nos resultados piores (trapaceou para pagar menos)</li>
+<li>Resultado o PLR passou de 52% do salario a 3%</li>
+</ul>
+</li>
+<li>Uma discrepância de impostos poderia ser responsável por uma diminuição dos resultados e o novo cálculo da PLR uma resposta direta a isso (especulação)</li>
+<li>É possível que aconteça uma greve na CI&amp;T?</li>
+</ul>
+<p><a href="https://www.linkedin.com/posts/sindpd-sp_ceo-promove-festival-de-horrores-em-reuni%C3%A3o-activity-7170794168410066944-lkEC/?utm_source=share&amp;utm_medium=member_android">https://www.linkedin.com/posts/sindpd-sp_ceo-promove-festival-de-horrores-em-reuni%C3%A3o-activity-7170794168410066944-lkEC/?utm_source=share&amp;utm_medium=member_android</a></p>
+<p><a href="https://www.baguete.com.br/noticias/04/03/2024/vem-ai-uma-greve-na-cit">https://www.baguete.com.br/noticias/04/03/2024/vem-ai-uma-greve-na-cit</a></p>
+<p><a href="https://valor.globo.com/google/amp/empresas/noticia/2024/03/07/ciandt-divulga-resultados-preliminares-apos-encontrar-inconsistencias-contabeis.ghtml">https://valor.globo.com/google/amp/empresas/noticia/2024/03/07/ciandt-divulga-resultados-preliminares-apos-encontrar-inconsistencias-contabeis.ghtml</a></p>
+<h3 id="yuzu"><a class="header" href="#yuzu">Yuzu</a></h3>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/gIv0AuKe01A "></iframe>
+<p><a href="https://www.tecmundo.com.br/voxel/280561-yuzu-popular-emulador-nintendo-switch-fechado-processo.htm">https://www.tecmundo.com.br/voxel/280561-yuzu-popular-emulador-nintendo-switch-fechado-processo.htm</a></p>
+<h3 id=""><a class="header" href="#"></a></h3>
+<h3 id="devin-ai"><a class="header" href="#devin-ai">Devin AI</a></h3>
+<p><strong>Startup lança o que chama de “primeiro engenheiro de software baseado em IA” do mundo:</strong> o Devin, da Cognition Labs, é capaz de planejar e executar projetos de forma autônoma, contando com um terminal, editor de código e navegador próprio. O sistema também pode treinar suas próprias IAs para resolver problemas específicos. Desenvolvedores experientes podem tratar o Devin como um colaborador, permanecendo mais envolvido na tomada de decisões e design, ou simplesmente usá-lo como uma equipe de teste ou um especialista em documentação. Em comparação a outros modelos na resolução de problemas do mundo real com projetos de código aberto no GitHub, o Devin conseguiu resolver quase 14% das tarefas, seguido por Claude 2 (resolveu 4,8%) e GPT-4 (1,7%). Há, entretanto, preocupações sobre o uso de sistemas totalmente automatizados na manutenção de sistemas críticos, modificando uma base de código de maneiras que podem não ser totalmente compreendidas, com efeitos difíceis de serem previstos. O Devin se encontra ainda em acesso restrito à medida que a Cognition Labs aumenta sua capacidade. As informações são do site New Atlas.</p>
+<p><a href="https://www.cognition-labs.com/introducing-devin">https://www.cognition-labs.com/introducing-devin</a></p>
+<h3 id="apple-processada-pelo-doj-nos-eua"><a class="header" href="#apple-processada-pelo-doj-nos-eua">Apple processada pelo DOJ nos EUA</a></h3>
+<p><strong>Apple volta atrás e retoma funcionalidade de instalação de web apps na tela inicial de iPhones e iPads para usuários na União Europeia:</strong> a decisão anterior, de impedir a instalação de PWAs devido a dificuldades técnicas e preocupações de segurança, havia sido criticada por reguladores e grupos de defesa da web aberta, levando a uma investigação da Comissão Europeia. A reversão se aplica apenas a web apps baseados em WebKit, destacando a dependência de muitos cidadãos a aplicativos essenciais na região. As informações são do site TechCrunch.</p>
+<p><strong>Apple classifica a Epic Games como uma “ameaça” ao ecossistema iOS e encerra sua conta de desenvolvedor na plataforma:</strong> a ação seria justificada por violações contratuais passadas da Epic e impede que o estúdio de jogos lance uma loja paralela à App Store na União Europeia. A Epic alega que a decisão viola leis anticompetitivas. As informações são do site TechCrunch.</p>
+<p><strong>Apple reverte posição mais uma vez e restabelece conta de desenvolvedor da Epic Games:</strong> a decisão abre novamente caminho para a Epic lançar uma loja paralela à App Store na União Europeia. A mudança de posição da Apple ocorreu um dia após a Comissão Europeia anunciar uma investigação sobre a conduta e que poderia resultar em multas e sanções significativas. As informações são do site Ars Technica.</p>
+<p>Pontos importantes:</p>
+<ul>
+<li>
+<p>Apple retira 30% de todas as compras dentro de aplicativos no iOS</p>
+</li>
+<li>
+<p>Apple proibia o redirecionamento para sites de compras externas</p>
+</li>
+<li>
+<p>Apple proibe a implementação de sistemas de cartão de terceiros no iOS</p>
+</li>
+<li>
+<p>Isso afeta jogos (Fortnite), serviços de streaming (netflix, twitch, youtube, spotify) e outros tipos de aplicações (mas e um app de banco?)</p>
+</li>
+<li>
+<p>Apple fez tratos específicos de desconto de taxas e/ou liberação de funcionalidade com alguns parceiros</p>
+</li>
+<li>
+<p>Epic processou a Apple por isso e perdeu (mais ou menos)</p>
+</li>
+<li>
+<p>Spotify tem o mesmo problema e reclama pra EU</p>
+</li>
+<li>
+<p>EU dá uma dura na Apple</p>
+</li>
+<li>
+<p>Várias empresas se junta para acusar a Apple (Meta, Match Group, X, Microsoft, Spotify)</p>
+</li>
+<li>
+<p>DOJ está processando a Apple</p>
+<p>Theo Rants</p>
+</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/A69-8XxLbJ4 "></iframe>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/_O5XMMvGJ1M "></iframe>
+<h4 id="doj-vs-apple"><a class="header" href="#doj-vs-apple">DOJ vs Apple</a></h4>
+<p><a href="https://www.theverge.com/2024/3/21/24105363/apple-doj-monopoly-lawsuit">https://www.theverge.com/2024/3/21/24105363/apple-doj-monopoly-lawsuit</a></p>
+<ul>
+<li>Bloqueando a interoperabilidade com "super apps" e deixando a migração pra fora do iOS mais difícil</li>
+<li>Bloqueando modalidades inteiras de aplicativo como streaming de jogos (Microsoft)</li>
+<li>Sabotando protocolos abertos de mensagens sms*</li>
+<li>Limitando a funcionalidade de smartwatches e carteiras digitais de terceiros</li>
+</ul>
+<p>A Apple diz: a gente é foda e a gente tá só pela inovação, vocês querem impedir a gente de inovar e querem que a gente fique igual a esse lixo que se chama Android.</p>
+<h1 id="-1"><a class="header" href="#-1"></a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="28_03_24.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="28_03_24.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
