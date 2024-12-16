@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>12/12/24 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tecnologia-e-classe-de-121224"><a class="header" href="#tecnologia-e-classe-de-121224">Tecnologia e Classe de 12/12/24</a></h1>
+<h3 id="denúncia-de-10x1-no-zaffari"><a class="header" href="#denúncia-de-10x1-no-zaffari">Denúncia de 10x1 no Zaffari</a></h3>
+<p><a href="https://www.brasildefato.com.br/2024/12/05/escala-de-10x1-e-denunciada-por-trabalhadores-da-rede-de-supermercados-zaffari-no-rio-grande-do-sul">https://www.brasildefato.com.br/2024/12/05/escala-de-10x1-e-denunciada-por-trabalhadores-da-rede-de-supermercados-zaffari-no-rio-grande-do-sul</a></p>
+<h4 id="bourbon-condenado-por-racismo"><a class="header" href="#bourbon-condenado-por-racismo">Bourbon condenado por racismo</a></h4>
+<p><a href="https://g1.globo.com/sp/sao-paulo/noticia/2023/04/18/justica-de-sp-condena-shopping-a-pagar-r-10-mil-de-indenizacao-a-menino-negro-que-foi-impedido-de-entrar-no-estabelecimento.ghtml">https://g1.globo.com/sp/sao-paulo/noticia/2023/04/18/justica-de-sp-condena-shopping-a-pagar-r-10-mil-de-indenizacao-a-menino-negro-que-foi-impedido-de-entrar-no-estabelecimento.ghtml</a></p>
+<h4 id="casos-de-racismo-e-morte-no-carrefour"><a class="header" href="#casos-de-racismo-e-morte-no-carrefour">Casos de racismo e morte no Carrefour</a></h4>
+<p><a href="https://www.brasildefato.com.br/2020/11/21/racismo-e-morte-no-carrefour-sao-a-ponta-de-um-iceberg-envolvendo-multinacionais">https://www.brasildefato.com.br/2020/11/21/racismo-e-morte-no-carrefour-sao-a-ponta-de-um-iceberg-envolvendo-multinacionais</a></p>
+<p><a href="https://oglobo.globo.com/brasil/noticia/2023/05/relembre-outros-casos-em-que-o-grupo-carrefour-foi-cenario-de-acoes-violentas-e-racismo.ghtml">https://oglobo.globo.com/brasil/noticia/2023/05/relembre-outros-casos-em-que-o-grupo-carrefour-foi-cenario-de-acoes-violentas-e-racismo.ghtml</a></p>
+<h3 id="notícias-rápidas"><a class="header" href="#notícias-rápidas">Notícias rápidas</a></h3>
+<p><strong>Califórnia pode tornar-se primeiro estado do mundo a exigir rótulos de advertência em redes sociais:</strong>  o projeto de lei visa alertar sobre os riscos potenciais dessas  plataformas para crianças e adolescentes. Caso aprovado, as empresas  serão obrigadas a exibir um “aviso em caixa preta” durante os primeiros  90 segundos de uso inicial para qualquer usuário, independentemente da  idade, devendo ser reapresentado pelo menos uma vez por semana. O  procurador-geral da Califórnia critica essas companhias por promoverem  “recursos viciantes” e conteúdo prejudicial. As informações são do site  The Verge.</p>
+<ul>
+<li>A proibição das redes sociais para crianças e adolescentes na Australia</li>
+<li>Brasil e outros países exigindo que redes sociais não tenham um feed 'sem login' para garantir a identidade e idade dos usuários</li>
+<li>Proibição de filtros em plataformas como o TikTok</li>
+<li>Pergunta: será que não é um pouco tarde para isso agora?</li>
+</ul>
+<p><a href="https://www.theverge.com/2024/12/10/24317835/california-social-media-warning-labels-bill">https://www.theverge.com/2024/12/10/24317835/california-social-media-warning-labels-bill</a></p>
+<p><strong>Devin, primeiro engenheiro de software de IA, é disponibilizado ao público geral:</strong>  o modelo está disponível por meio de uma assinatura mensal de 500  dólares, direcionada a equipes de desenvolvedores, a qual inclui acesso  ilimitado, integração com o Slack, e ferramentas como IDE e API. A  Cognition, empresa responsável, destaca que a tecnologia pode ser  aplicada em diversas áreas, e recomenda seu uso para resolver bugs de  frontend e realizar refatorações de código. O Devin também interage de  forma automática em comentários de Pull Requests no GitHub. As  informações são do blog da Cognition.</p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/oU3H581uCsA "></iframe>
+<p><a href="https://www.cursor.com/">https://www.cursor.com/</a></p>
+<p><strong>65% dos funcionários ignoram políticas de segurança cibernética em prol da eficiência:</strong>  segundo um estudo com cerca de 14 mil trabalhadores de diversos países,  muitos deles consideram os protocolos incômodos e uma barreira à  produtividade, como a exigência de senhas complexas, logins frequentes e  autenticação multifator. Como resultado, muitos reutilizam e  compartilham credenciais, por exemplo. Recomenda-se que empresas  invistam em treinamentos para conscientizar os colaboradores sobre a  importância da segurança digital. As informações são da Forbes e do site  Help Net Security.</p>
+<p><strong>54% dos textos longos no LinkedIn são gerados por IA, segundo estudo:</strong>  ao todo, foram analisados mais de 8,7 mil postagens entre janeiro de  2018 e outubro de 2024, que continham 100 palavras ou mais. Foi  identificado um aumento significativo no uso de modelos após o  lançamento do ChatGPT em 2022, com um crescimento de 189% entre janeiro e  fevereiro de 2023. Em resposta, o LinkedIn afirma que busca limitar a  visibilidade de postagens de baixa qualidade, e que o conteúdo  identificado no estudo era “assistido por IA”, e não inteiramente criado  por essas ferramentas. As informações são do site The Register.</p>
+<p><a href="https://www.theregister.com/2024/11/28/linkedin_ai_posts/">https://www.theregister.com/2024/11/28/linkedin_ai_posts/</a></p>
+<p><strong>API do Bluesky permite extrair postagens de usuários para treinar modelos de linguagem:</strong>  Daniel van Strien, especialista em curadoria de machine learning da  Hugging Face, conseguiu utilizar a API Firehose da própria plataforma  para extrair um milhão de posts públicos, a fim de viabilizar pesquisas e  estudos relacionados ao aprendizado de máquina. O Bluesky afirma que  está explorando formas de permitir que os usuários expressem  externamente suas preferências de consentimento quanto ao uso de  informações, e promete divulgar mais detalhes “em breve”. As informações  são do site TechCrunch.</p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/i1NlQixGW2I "></iframe>
+<h3 id="memes-do-luigi"><a class="header" href="#memes-do-luigi">Memes do Luigi</a></h3>
+<p><img src="./12_12_24/Selection_999%28997%29.png" alt="Selection_999(997).png" /></p>
+<p><img src="./12_12_24/luigi.jpeg" alt="luigi.jpeg" /></p>
+<p><img src="./12_12_24/luigi2.jpeg" alt="luigi2.jpeg" /></p>
+<p><img src="./12_12_24/luigi3.jpeg" alt="luigi3.jpeg" /></p>
+<p><img src="./12_12_24/1.png" alt="1.png" /></p>
+<p><img src="./12_12_24/2.png" alt="2.png" /></p>
+<p><img src="./12_12_24/3.png" alt="3.png" /></p>
+<p><img src="./12_12_24/4.png" alt="4.png" /></p>
+<p><img src="./12_12_24/5.png" alt="5.png" /></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/1b7Jo2u5Qfs"></iframe>
+<h3 id="o-que-é-relevante-sobre-luigi-mangione"><a class="header" href="#o-que-é-relevante-sobre-luigi-mangione">O que é relevante sobre Luigi Mangione</a></h3>
+<ul>
+<li>
+<p>No dia 04/12 ele assassinou o CEO da United Healthcare Group, Brain Thompson, com 3 tiros no momento que ele saía do hotel Hilton no centro de Manhattan.</p>
+</li>
+<li>
+<p>Aparentemente ele é formado em Ciência da Computação e Engenharia por uma Ivy League (universidade de bacana)</p>
+</li>
+<li>
+<p>O que não me surpreende porque ele parece alguns colegas mais 'amostradinhos' que eu tive</p>
+</li>
+<li>
+<p>Politicamente é muito mais interessante o que <strong>ele representa</strong> do que as postagens nas redes sociais.</p>
+</li>
+<li>
+<p>O pessoal raspou tudo nas redes e encontrou admiração por Elon Musk (babaca) e Peter Thiel (vampiro babaca), um review do manifesto do Unabomber e um manifesto dele mesmo (bem simples)</p>
+<ul>
+<li>
+<p>O hábito de procurar a presença de uma pessoa na internet para 'entender como ela pensa' é hoje quase um reflexo. Mas pense, por exemplo, o que isso diria sobre você hoje? Seria preciso?</p>
+<p><img src="./12_12_24/6.png" alt="6.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Algumas mídias tem tentado pintar a situação como 'um lunático' radicalizado, mas uma análise do que temos até agora mostra um sujeito bastante inteligente e com um senso de justiça, que provavelmente teve problemas de saúde e experiências negativas com seguradoras. Ou até mesmo está apenas tendo empatia pelas pessoas que sofrem com isso.</p>
+</li>
+<li>
+<p>Também falaram que ele jogava o jogo de assassinato 'Among Us' kkkkkkk</p>
+</li>
+<li>
+<p>Muita gente se 'surpreendeu' com o apoio quase unânime do seu ato. Porém, esses são <strong>sintomas da luta de classes</strong> e não existe polarização quando os interesses dos trabalhadores ficam claros. O necessário é a consciência de como usar essa raiva.</p>
+</li>
+<li>
+<p>Vídeo da 404 Media tocou em diversos desses assuntos em mais detalhes e o resumo do mimimidias também ficou ótimo</p>
+</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/HuyJp3QDTbk "></iframe>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ulSsOBRyyTA "></iframe>
+<ul>
+<li>A UHG aparentemente estava usando uma inteligência artificial para cortar custos e negar o máximo de pedidos de cobertura</li>
+<li>Logo após o assassinato diversas empresas de seguros de saúde removeram de seus sites e redes as informações públicos sobre seus CEOs</li>
+<li>A arma usada para o crime era uma 'arma fantasma', sem registro e trilha de documentos. Por que ela foi feita com impressão 3D e peças compradas avulsas. Talvez seja o primeiro assassinato desse <strong>calibre</strong> feito com uma arma de impressora 3D</li>
+<li>A UHG já foi dona do Grupo Amil no brasil de 2012 a 2023</li>
+<li>O apoio majoritário que o assassinato recebeu na internet veio junto com diversos relatos de pessoas que tiveram seus entes queridos 'assassinados' lentamente por planos de saúde nos EUA.</li>
+<li>Diversas dessas manifestações foram censuradas pelas plataformas de redes sociais <strong>e eu peço encarecidamente que me encontrem alguém falando que o acontecimento é uma censura em massa</strong>?</li>
+<li>Em resumo: não é uma questão de elogiar esse ato e nem achar que esse tipo de ato pode resolver qualquer coisa. A UHG continua lá.</li>
+<li>Porém temos que usar esses momentos para conscientizar sobre a luta de classes, incentivar o ódio à burguesia e a esse sistema doente. Um exemplo é a discussão que isso abriu nos EUA e no mundo e a queda nas ações da empresa.</li>
+<li>CEOs são representantes políticos da burguesia e não podem andar tranquilos pelas ruas.</li>
+</ul>
+<p><a href="https://www.cnnbrasil.com.br/economia/negocios/unitedhealth-group-perdeu-us-45-bi-em-valor-desde-assassinato-de-ceo/">https://www.cnnbrasil.com.br/economia/negocios/unitedhealth-group-perdeu-us-45-bi-em-valor-desde-assassinato-de-ceo/</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="05_12_24.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="05_12_24.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
