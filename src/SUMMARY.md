@@ -47,3 +47,5 @@
 - [04/04/24](./04_04_24.md)
 - [A Ideologia Californiana](ideologia_californiana.md)
 - [Vanguard, LoL e Anticheat](anticheat.md)
+- [28/03/24](28_03_24.md)
+- [25/03/24](25_03_24.md)
