@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>19/12/24 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tecnologia-e-classe-de-191224"><a class="header" href="#tecnologia-e-classe-de-191224">Tecnologia e Classe de 19/12/24</a></h1>
+<h2 id="aha-uhu-é-40k"><a class="header" href="#aha-uhu-é-40k">Aha-uhu é 40k!</a></h2>
+<p><img src="../19_12_24/Selection_999%281012%29.png" alt="Selection_999(1012).png" /></p>
+<h3 id="natal-sem-fome"><a class="header" href="#natal-sem-fome">Natal sem Fome</a></h3>
+<p><img src="../19_12_24/natalsemfome.webp" alt="natalsemfome.webp" /></p>
+<h3 id="recomendação-de-vídeos"><a class="header" href="#recomendação-de-vídeos">Recomendação de vídeos</a></h3>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/YsXCVsDFiXA "></iframe>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/X28gzRwTsoE "></iframe>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/cDYyKDqgLoQ "></iframe>
+<h3 id="a-cada-dia-que-passa-nos-afastamos-mais-de-𝒹ₑᵤₛ"><a class="header" href="#a-cada-dia-que-passa-nos-afastamos-mais-de-𝒹ₑᵤₛ">A cada dia que passa nos afastamos mais de 𝒹ₑᵤₛ</a></h3>
+<h5 id="filtro-de-minions-no-tiktok"><a class="header" href="#filtro-de-minions-no-tiktok">Filtro de minions no tiktok</a></h5>
+<p><img src="../19_12_24/image.png" alt="image.png" /></p>
+<p><a href="./19_12_24/ssstik.io_%40spermamantitan_1734638263924.mp4">ssstik.io_@spermamantitan_1734638263924.mp4</a></p>
+<p><a href="https://knowyourmeme.com/memes/minion-ai-gore-videos">https://knowyourmeme.com/memes/minion-ai-gore-videos</a></p>
+<h5 id="o-que-está-acontecendo-com-o-linkedin"><a class="header" href="#o-que-está-acontecendo-com-o-linkedin">O que está acontecendo com o Linkedin?</a></h5>
+<p><img src="../19_12_24/qqacontece.jpeg" alt="qqacontece.jpeg" /></p>
+<h5 id="exemplo-para-vocês-testarem"><a class="header" href="#exemplo-para-vocês-testarem">Exemplo para vocês testarem:</a></h5>
+<h3 id="liderança-consequências-e-a-responsabilidade-do-poder"><a class="header" href="#liderança-consequências-e-a-responsabilidade-do-poder">Liderança, Consequências e a Responsabilidade do Poder</a></h3>
+<p><a href="https://chatgpt.com/share/67639ce2-da0c-800c-9ff9-31c69f9fd497">https://chatgpt.com/share/67639ce2-da0c-800c-9ff9-31c69f9fd497</a></p>
+<blockquote>
+<p>A recente morte de Brian Thompson, CEO da United Healthcare Group, pelas mãos de Luigi Mangione, trouxe à tona reflexões importantes sobre a responsabilidade que vem com a liderança. Em vez de ser recebida com pesar universal, a notícia foi marcada por reações de alívio e até comemorações por parte de alguns. O motivo? A insatisfação generalizada com a postura da empresa que ele liderava.</p>
+<p>Liderar uma organização não é apenas tomar decisões estratégicas ou entregar resultados financeiros robustos – é, sobretudo, ter consciência do impacto que essas decisões têm sobre vidas reais. Empresas como a United Healthcare, acusadas de práticas injustas como negar seguros a pessoas em situações vulneráveis, mostram que o poder corporativo, quando mal exercido, pode gerar consequências catastróficas.</p>
+<p>Esse caso levanta uma questão crucial: o que significa ser um líder responsável? Quando escolhas corporativas colocam o lucro acima das pessoas, a liderança falha. Em mercados complexos e altamente regulados como o de seguros de saúde, cada decisão pode significar a diferença entre esperança e desespero para milhares. A sensação de abandono que se acumula em quem foi prejudicado transforma insatisfação em indignação – e, em casos extremos, tragédia.</p>
+<p>É alarmante que o descontentamento com uma figura de liderança chegue ao ponto em que sua morte seja celebrada. Isso é um alerta sobre como a desumanização e o descaso podem corroer a reputação e o legado de uma empresa – e de seus líderes. Mais do que nunca, a ética e a empatia precisam ser parte central da estratégia de negócios, e não apenas um item na lista de “valores corporativos”.</p>
+<p>Brian Thompson, como qualquer outro líder, tinha a chance de usar sua posição para transformar o mercado de saúde em algo mais acessível e justo. Sua liderança, no entanto, parece ter sido marcada pela priorização de números em detrimento de vidas. Essa abordagem deixa um vazio, não apenas por sua ausência, mas pela falta de um legado positivo que ele poderia ter deixado.</p>
+<p>Este evento nos convida a refletir: estamos, enquanto líderes, trabalhando para construir um impacto positivo e duradouro? Ou estamos permitindo que nossas decisões alimentem revolta e sofrimento? A verdadeira liderança está em servir, e não em ser servido – um valor que todos nós, em qualquer posição, devemos constantemente buscar.</p>
+</blockquote>
+<h3 id="greve-da-amazon"><a class="header" href="#greve-da-amazon">Greve da Amazon</a></h3>
+<p><a href="https://www.cnnbrasil.com.br/economia/negocios/milhares-de-funcionarios-da-amazon-entram-em-greve-nos-eua/">https://www.cnnbrasil.com.br/economia/negocios/milhares-de-funcionarios-da-amazon-entram-em-greve-nos-eua/</a></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/AI1kjUKL11Q "></iframe>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/rz11XylQ24w "></iframe>
+<h3 id="ex-funcionário-da-openai-que-acusou-a-empresa-é-encontrado-morto-em-sua-casa"><a class="header" href="#ex-funcionário-da-openai-que-acusou-a-empresa-é-encontrado-morto-em-sua-casa">Ex-funcionário da OpenAI que acusou a empresa é encontrado morto em sua casa</a></h3>
+<ul>
+<li>
+<p>Suchir Balaji, 26 anos. Foi encontrado morto em seu apartamento em São Franciso. Sem sinais de 'crime' segundo a polícia.</p>
+</li>
+<li>
+<p>Havia se demitido do seu cargo na OpenAI faziam 4 meses por enxergar que a empresa estava violando direitos autorais com seus produtos e 'tornando a internet um lugar pior'</p>
+</li>
+<li>
+<p>Começou a se interessar por IA por causa de um projeto da Deepmind que treinava redes neurais para jogar joguinhos.</p>
+</li>
+<li>
+<p>"Eu pensei que a I.A. era algo que poderia ser usado para resolver problemas insolúveis, como curar doenças e parar o envelhecimento", ele disse. "Eu pensei que poderíamos inventar algum tipo de cientista que pudesse ajudar a resolvê-los."</p>
+</li>
+<li>
+<p>A OpenAI discorda do Sr. Balaji, dizendo em uma declaração:</p>
+<blockquote>
+<p>“Construímos nossos modelos de I.A. usando dados disponíveis publicamente, de uma maneira protegida pelo uso justo e princípios relacionados, e apoiados por precedentes legais de longa data e amplamente aceitos. Vemos esse princípio como justo para os criadores, necessário para os inovadores e crítico para a competitividade dos EUA.”</p>
+</blockquote>
+</li>
+<li>
+<p>Temos que lembrar da 'missão inicial' da OpenAI que era 'criar uma tecnologia de IA que irá beneficiar toda humanidade'. Balaji afirma que enquanto eles se enxergavam desse jeito parecia OK usar esses dados para 'pesquisa'</p>
+</li>
+<li>
+<p>Vamos falar sobre os casos do books3, Whisper para vídeos do YouTube e processos que a OpenAI sofre (NY Times)</p>
+<blockquote>
+<p>Em uma carta de 18 de novembro protocolada em um tribunal federal, advogados do The New York Times nomearam Balaji como alguém que tinha “documentos únicos e relevantes” que apoiariam seu caso contra a OpenAI. Ele estava entre pelo menos 12 pessoas — muitas delas ex-funcionários ou atuais da OpenAI — que o jornal havia nomeado em processos judiciais como tendo material útil para seu caso, antes dos depoimentos.</p>
+</blockquote>
+</li>
+<li>
+<p>Impossível não lembrar do caso de Aaron Swartz... lembrem-se sempre: Swartz e Balaji não estão mais aqui e os CEOs de big techs cada vez mais mandam na internet. O que vamos fazer sobre isso?</p>
+</li>
+</ul>
+<p><a href="https://www.infomoney.com.br/mundo/ex-funcionario-da-openai-que-denunciou-praticas-da-companhia-e-encontrado-morto/">https://www.infomoney.com.br/mundo/ex-funcionario-da-openai-que-denunciou-praticas-da-companhia-e-encontrado-morto/</a></p>
+<p><a href="https://www.mercurynews.com/2024/12/13/openai-whistleblower-found-dead-in-san-francisco-apartment/">https://www.mercurynews.com/2024/12/13/openai-whistleblower-found-dead-in-san-francisco-apartment/</a></p>
+<p><a href="https://www.nytimes.com/2024/10/23/technology/openai-copyright-law.html">https://www.nytimes.com/2024/10/23/technology/openai-copyright-law.html</a></p>
+<p><a href="https://www.musicbusinessworldwide.com/why-just-resigned-from-my-job-generative-ai/">https://www.musicbusinessworldwide.com/why-just-resigned-from-my-job-generative-ai/</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="ia_do_inss.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="ia_do_inss.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
