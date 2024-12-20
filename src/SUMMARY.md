@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [19/12/24](19_12_24.md)
 - [IA do INSS](ia_do_inss.md)
 - [12/12/24](12_12_24.md)
 - [05/12/24](05_12_24.md)
