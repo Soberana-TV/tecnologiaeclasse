@@ -1,6 +1,9 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Como a Honey roubou todo mundo](honey.md)
+- [Investigando Golpes de e-mail](golpes_email.md)
+- [Especial Música de 2024](musica2024.md)
 - [19/12/24](19_12_24.md)
 - [IA do INSS](ia_do_inss.md)
 - [12/12/24](12_12_24.md)
