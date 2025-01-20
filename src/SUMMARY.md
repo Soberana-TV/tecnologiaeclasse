@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [16/01/25](16_01_25.md)
 - [09/01/25](09_01_25.md)
 - [Como a Honey roubou todo mundo](honey.md)
 - [Investigando Golpes de e-mail](golpes_email.md)
