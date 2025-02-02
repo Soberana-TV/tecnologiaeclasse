@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [30/01/25](30_01_25.md)
 - [Deepseek abala os EUA](deepseek.md)
 - [Redes sociais descentralizadas](descentralizadas.md)
 - [23/01/25](23_01_25.md)
