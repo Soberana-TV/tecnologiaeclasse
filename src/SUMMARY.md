@@ -1,6 +1,9 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [DOGE de Musk é hackeado](doge_hackeado.md)
+- [Sobre a preservação digital](preservação_digital.md)
+- [META pirateou 81TB de livros](meta_pirateou.md)
 - [06/02/25](06_02_25.md)
 - [30/01/25](30_01_25.md)
 - [Deepseek abala os EUA](deepseek.md)
