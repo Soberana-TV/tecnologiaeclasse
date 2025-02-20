@@ -5,6 +5,8 @@
 - Como muitos outros antes dele, Javier Milei divulgou uma memecoin construída sobre a Solana que descambou num esquema de *pump 'n dump*
 - Pesquisadores de blockchain relataram que aproximadamente $99 milhões em criptomoedas foram retirados do pool de liquidez do token $Libra, levando a uma investigação federal sobre o lançamento do token e o suposto envolvimento de Milei.
 
+<https://www.reuters.com/world/americas/crypto-worth-99-million-withdrawn-milei-backed-libra-token-researchers-say-2025-02-20/>
+
 ### Sequência de eventos:
 
 Baseado em:
@@ -37,6 +39,8 @@ Baseado em:
 #### Entrevista com Cofeezilla
 
 {{#embed https://www.youtube.com/watch?v=EqizJTbxAEM}}
+
+{{#embed https://www.youtube.com/watch?v=Ud6GuH7gSDw}}
 
 #### Impeachment e acusações posteriores?
 
