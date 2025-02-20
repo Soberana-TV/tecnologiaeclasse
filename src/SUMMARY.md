@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O golpe de cripto do Milei](milei_libra.md)
 - [DOGE de Musk é hackeado](doge_hackeado.md)
 - [Sobre a preservação digital](preservacao_digital.md)
 - [META pirateou 81TB de livros](meta_pirateou.md)
