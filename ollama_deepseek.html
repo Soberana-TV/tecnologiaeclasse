@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>O que é Tecnologia e Classe? - Tecnologia e Classe</title>
+        <title>Tutorial Ollama e Deepseek - Tecnologia e Classe</title>
 
 
         <!-- Custom HTML head -->
@@ -155,24 +155,71 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="o-que-é-isso"><a class="header" href="#o-que-é-isso">O que é isso?</a></h1>
-<p>Aqui você encontra todos os roteiros para os vídeos e lives do canal <a href="https://www.youtube.com/@TecnologiaeClasse"><em>Tecnologia e Classe</em></a>. Se você não conhece o nosso trabalho, somos um grupo de militantes marxistas leninistas organizados no <a href="https://soberana.tv">Coletivo Soberana</a> e prezamos por produzir conteúdos e análises da área de TI levando a luta de classes em consideração.</p>
-<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/qO7BI0UAj8c"></iframe>
-<h2 id="nos-sigam-em-todas-redes-sociais"><a class="header" href="#nos-sigam-em-todas-redes-sociais">Nos sigam em todas redes sociais:</a></h2>
+                        <h1 id="instalando-o-deepseek-localmente"><a class="header" href="#instalando-o-deepseek-localmente">Instalando o Deepseek localmente</a></h1>
+<h3 id="instalar-o-ollama"><a class="header" href="#instalar-o-ollama">Instalar o ollama</a></h3>
+<pre><code>curl -fsSL https://ollama.ai/install.sh | sh
+</code></pre>
+<h3 id="baixar-o-modelo"><a class="header" href="#baixar-o-modelo">Baixar o modelo</a></h3>
+<pre><code>ollama pull deepseek-r1
+</code></pre>
+<p>Ou por exemplo o modelo com menos parâmetros e mais otimizado:</p>
+<pre><code>ollama pull deepseek-r1:1.5b
+</code></pre>
+<p>Ou esse modelo que é bem mais rápido e com menos parâmetros:</p>
+<pre><code>ollama pull qwen:0.5b
+</code></pre>
+<h3 id="rodando-o-modelo"><a class="header" href="#rodando-o-modelo">Rodando o modelo</a></h3>
+<pre><code>ollama run deepseek-r1
+</code></pre>
+<h3 id="integrando-com-scripts-python"><a class="header" href="#integrando-com-scripts-python">Integrando com scripts python</a></h3>
+<pre><code>pip install ollama
+</code></pre>
+<p>Script Python:</p>
+<pre><code class="language-python">import ollama
+
+response = ollama.chat(
+    model="deepseek-r1",
+    messages=[
+        {"role": "user", "content": "Explique a segunda lei de Newton."},
+    ],
+)
+print(response["message"]["content"])
+</code></pre>
+<h3 id="instalando-o-open-webui"><a class="header" href="#instalando-o-open-webui">Instalando o open-webui</a></h3>
+<p>Se você está usando python 3.11</p>
+<pre><code class="language-bash">pip install open-webui
+</code></pre>
+<p>Se você como eu não está, e não quer ter que mexer com pyenv. User a versão com docker:</p>
+<pre><code>docker run -d --network=host -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+</code></pre>
+<p>O open-webui pode ser acessado via a porta <a href="http://localhost:8080">8080 do seu computador</a></p>
+<p>Caso não encontre os seus modelos disponíveis vá no botão de perfil, geralmente canto inferior esquerdo, e clique Settings -&gt; Admin Settings -&gt; Connections e certifique-se que o conteúdo de 'Manage Ollama API Connections' é o seguinte:</p>
+<pre><code>http://localhost:11434
+</code></pre>
+<h3 id="coisas-a-fazer-no-futuro"><a class="header" href="#coisas-a-fazer-no-futuro">Coisas a fazer no futuro:</a></h3>
 <ul>
-<li><a href="https://www.youtube.com/@TecnologiaeClasse">YouTube</a></li>
-<li><a href="https://www.instagram.com/tecnologiaeclasse/">Instagram</a></li>
-<li><a href="https://www.linkedin.com/company/teclas/">Linkedin</a></li>
-<li><a href="https://bsky.app/profile/tecnologiaeclasse.bsky.social">Bluesky</a></li>
-<li><a href="https://www.threads.net/@tecnologiaeclasse">Threads</a></li>
+<li>Hospedar isso num servidor local ou num servidor remoto (possibilidade de usar uma placa de vídeo)</li>
+<li>Criar um sistema de RAG (retrieval augmented generation)</li>
+<li>Criar pré-prompts ou sistemas que complementam o modelo para criar um 'assistente'</li>
 </ul>
+<h4 id="bônus-usando-placas-amd-antigas"><a class="header" href="#bônus-usando-placas-amd-antigas">Bônus: usando placas AMD antigas</a></h4>
+<ul>
+<li>O script de instalação do Ollama já baixa as bibliotecas necessárias para ativar o uso da sua GPU. Pra mim ele anunciou o uso da GPU AMD, porém só usou o processador.</li>
+<li>Isso acontece porque a minha GPU é muito antiga e não é suportada. Porém é possível rodar uma versão especial do <strong>ollama</strong> que tem suporte a mais placas.</li>
+</ul>
+<pre><code class="language-bash">docker run -d --device /dev/kfd --device /dev/dri -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama:rocm
+</code></pre>
+<p>Informações mais atualizadas em <a href="https://github.com/likelovewant/ollama-for-amd/wiki">https://github.com/likelovewant/ollama-for-amd/wiki</a></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
-                            <a rel="next prefetch" href="ollama_deepseek.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="milei_libra.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -182,8 +229,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
-                    <a rel="next prefetch" href="ollama_deepseek.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="milei_libra.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
