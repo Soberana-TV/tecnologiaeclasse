@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Sobre a Worldcoin de Sam Altman](worldcoin.md)
 - [Tutorial Ollama e Deepseek](ollama_deepseek.md)
 - [O golpe de cripto do Milei](milei_libra.md)
 - [DOGE de Musk é hackeado](doge_hackeado.md)
