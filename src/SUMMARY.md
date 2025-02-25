@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Baixe seus livros da Amazon](amazon_kindle.md)
 - [Sobre a Worldcoin de Sam Altman](worldcoin.md)
 - [Tutorial Ollama e Deepseek](ollama_deepseek.md)
 - [O golpe de cripto do Milei](milei_libra.md)
