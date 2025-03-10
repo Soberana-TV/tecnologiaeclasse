@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [06/03/25](06_03_25.md)
 - [27/02/25](27_02_25.md)
 - [A IA nos deixa burros?](ia_nos_deixa_burros.md)
 - [O futuro do trabalho?](futuro_do_trabalho.md)
