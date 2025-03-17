@@ -167,6 +167,104 @@
 <li><a href="https://bsky.app/profile/tecnologiaeclasse.bsky.social">Bluesky</a></li>
 <li><a href="https://www.threads.net/@tecnologiaeclasse">Threads</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rust-e-o-kernel-do-linux"><a class="header" href="#rust-e-o-kernel-do-linux">Rust e o Kernel do Linux</a></h1>
+<h4 id="resumo-da-situação"><a class="header" href="#resumo-da-situação">Resumo da situação</a></h4>
+<ul>
+<li>
+<p>Nas últimas semanas se intensificou um conflito latente na comunidade de desenvolvimento do <strong>Linux</strong>. Existe uma divergência quanto ao uso de Rust no código do Linux, tradicionalmente todo feito na linguagem <strong>C</strong></p>
+</li>
+<li>
+<p>O estopim que trouxe as tensões à tona foi a resposta de Christoph Hellwig à adição de <em>bindings</em> em Rust para o módulo DMA ao qual ele é o mantenedor.</p>
+<blockquote>
+<p>So we'll have these bindings creep everywhere like a <strong>cancer</strong> and are very quickly moving from a software project that allows for and strives for global changes that improve the overall project to increasing compartmentalization</p>
+</blockquote>
+</li>
+<li>
+<p>É uma situação que tem diversas 'camadas' para interpretar e muitos personagens e egos diferentes em conflito. É uma 'guerra fria' que já se arrasta desde meados de 2020 quando o projeto Rust For Linux</p>
+</li>
+</ul>
+<h4 id="um-pouco-sobre-rust--fundação-rust-e-suas-polêmicas"><a class="header" href="#um-pouco-sobre-rust--fundação-rust-e-suas-polêmicas">Um pouco sobre Rust / Fundação Rust e suas 'polêmicas'</a></h4>
+<blockquote>
+<p><strong>Rust</strong> é uma linguagem de programação de propósito geral que enfatiza desempenho, segurança de tipos e concorrência. Ele reforça a segurança de memória, o que significa que todas as referências apontam para uma memória válida. Ele faz isso sem um coletor de lixo convencional; em vez disso, erros de segurança de memória e disputas de dados são evitados pelo "verificador de empréstimo", que rastreia o tempo de vida útil das referências do objeto em tempo de compilação.</p>
+</blockquote>
+<p><a href="https://www.rust-lang.org/">https://www.rust-lang.org/</a></p>
+<h4 id="por-que-usar-rust"><a class="header" href="#por-que-usar-rust">Por que usar Rust?</a></h4>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/3e-nauaCkgo"></iframe>
+<h4 id="rápido-histórico"><a class="header" href="#rápido-histórico">Rápido histórico</a></h4>
+<ul>
+<li>Criada em 2006 por <strong>Graydon Hoare</strong> como um projeto pessoal e a partir de 2009 adotada como um projeto da Mozilla que viu potencial em criar uma engine de browser mais segura e eficiente com a linguagem.</li>
+<li>A partir de 2013 o <strong>Graydon Hoare</strong> se afastou do projeto e se formou um 'core team' de 6 pessoas inicialmente, diversos sub grupos e desenvolvimento baseado em RFCs</li>
+<li>A versão 1.0 da linguagem foi lançada em 15/05/2015 e com ela já começou a surgir uma comunidade</li>
+<li>Rust foi instrumental para o projeto <strong>Servo</strong> (e vice versa) da Mozilla que visava construir uma engine web moderna e teve seu primeiro lançamento em 2016</li>
+<li>Em 2020 a Mozilla demitiu 250 (1/4) de seus funcionários e deu sinais de abandonar o <strong>Servo</strong> o que colocou em cheque também o futuro da <strong>Rust</strong> e em 2021 o time da linguagem criou a <strong>Rust Foundation</strong> para ser dona dos domínios, marcas registradas relevantes além de financiar o projeto.</li>
+</ul>
+<p><img src="./rust_linux/rustfoundation.png" alt="rustfoundation.png" /></p>
+<ul>
+<li>Em 2021 a equipe de moderação da comunidade Rust rompeu com o projeto <em>"em protesto contra a Equipe Central que se coloca como alguém que não presta contas a ninguém além de si mesma"</em>, o que levou a uma reforma da governância do projeto e da fundação em 2022</li>
+<li>Em 06/04/2023 a fundação Rust sofreu represálias da comunidade pela proposta de uma política de marca registrada que incluía regras demasiado restritivas para o uso do nome da linguagem e de seu logo.</li>
+<li>Em 26/02/2024 a Casa Branca lançou um relatório pedindo que o desenvolvimento de software use linguagens mais <em>memory-safe</em>. Também lembrar do projeto TRACTOR do exército dos EUA</li>
+</ul>
+<h4 id="o-projeto-rust-for-linux"><a class="header" href="#o-projeto-rust-for-linux">O projeto Rust for Linux</a></h4>
+<ul>
+<li>O Linux é um sistema operacional e o papel de um SO é permitir uma camada de abstração entre o software e o hardware de um computador. É aqui ficam os drivers, gerenciamento de processos, de memória, sistemas de arquivos e mais</li>
+<li>A discussão de <strong>evoluir</strong> o código do Linux para outra linguagem é quase tão antiga quanto o kernel do Linux. Pórem existe um bom argumento para o Rust hoje e não sou só eu que concordo. Segundo <strong>Greg Kroah-Hartman</strong></li>
+</ul>
+<blockquote>
+<p>Como alguém que viu quase TODAS as correções de bugs e problemas de segurança do kernel nos últimos 15+ anos ... e que vê TODAS as CVEs do kernel emitidas, acho que posso falar sobre esse tópico.</p>
+<p>A maioria dos bugs (quantidade, não qualidade/gravidade) que temos são devidos aos pequenos casos idiotas em C que desapareceram totalmente no Rust. Coisas como sobrescritas simples de memória (não que o Rust consiga pegar tudo isso de longe), limpezas de caminho de erro, esquecimento de verificar valores de erro e erros de uso após liberação. É por isso que quero ver o Rust entrar no kernel, esses tipos de problemas simplesmente desaparecem, permitindo que desenvolvedores e mantenedores tenham mais tempo para se concentrar nos bugs REAIS que acontecem (por exemplo, problemas de lógica, condições de corrida, etc.)</p>
+</blockquote>
+<ul>
+<li>
+<p>Desde meados de 2020 então já existe um projeto que se chama <strong>Rust for Linux</strong> que possui um plano de progressivamente incluir a possibilidade de adicionar partes escritas em Rust no Linux</p>
+<p><a href="https://rust-for-linux.com/">https://rust-for-linux.com/</a></p>
+</li>
+<li>
+<p>Em 2022 os primeiros vestígios de Rust já estão dentro do Linux e o projeto conta com fincanciamento e o apoio do ditador benevolente Linus Torvalds</p>
+</li>
+</ul>
+<h4 id="ok-mas-quem-está-certo"><a class="header" href="#ok-mas-quem-está-certo">Ok, mas quem está certo?</a></h4>
+<ul>
+<li>Existe uma preocupação legítima no que Cristoph Hellwig levantou
+<ul>
+<li>A regra do 'você quebrou, você arruma'</li>
+<li>A regra do 'código deve ser útil'</li>
+</ul>
+</li>
+<li>Porém Rust desde 2020 chegou para ser a exceção em prol de evoluir o kernel e a maneira como está sendo feita parece ser uma conciliação bastante pesada já</li>
+<li>Também existe uma outra camada: o conflito entre os <em>dinossauros</em> do kernel, tradicionais em sua programação C e esses novos <em>jovens</em> do Rust</li>
+</ul>
+<p><img src="./rust_linux/2devsdoopensource.png" alt="2devsdoopensource.png" /></p>
+<ul>
+<li>Cristoph Hellwig abandonou seu posto de mantenedor</li>
+<li>Hector Martin (do projeto Asahi Linux) deixou seu posto de mantenedor</li>
+<li>Karol Herbst mantenedor do Nouveau deixou seu posto de mantenedor</li>
+</ul>
+<h4 id="resposta-de-linus-torvalds"><a class="header" href="#resposta-de-linus-torvalds">Resposta de Linus Torvalds</a></h4>
+<ul>
+<li>Depois de alguns dias de flame wars o Linus apareceu, distribuiu coice para todos os lados e esclareceu o que se espera de cada mantenedor no kernel e deixou claro que vai ser preciso um pouco de boa vontade para o Rust for Linux ir para frente.</li>
+<li>Por que o Linus teria interesse de manter o Rust dentro do Kernel? Provavelmente é uma questão de relevância do futuro do Linux e o medo de inclusive perder o controle se algum outro projeto mais moderno se impuser</li>
+</ul>
+<h4 id="conclusões"><a class="header" href="#conclusões">Conclusões</a></h4>
+<ul>
+<li>Devemos nos lembrar que isso é política e que as decisões técnicas todo dia passam por esse tipo conflito. Elas se misturam</li>
+<li>Quem acha que isso tem a ver com a comunidade Rust exclusivamente claramente chegou no software aberto e livre ontém</li>
+<li>Não abdiquem dos seus cargos se vocês acreditam nos seus projetos. A luta também é para termos os melhores projetos tecnicamente.</li>
+</ul>
+<h3 id="referências"><a class="header" href="#referências">Referências</a></h3>
+<p><a href="https://www.phoronix.com/news/Hellwig-DMA-Helpers-Removed">https://www.phoronix.com/news/Hellwig-DMA-Helpers-Removed</a></p>
+<p><a href="https://www.phoronix.com/news/Torvalds-On-Rust-Maintainers">https://www.phoronix.com/news/Torvalds-On-Rust-Maintainers</a></p>
+<p><a href="https://www.phoronix.com/news/Greg-KH-On-New-Rust-Code">https://www.phoronix.com/news/Greg-KH-On-New-Rust-Code</a></p>
+<p><a href="https://www.phoronix.com/news/Torvalds-Override-On-Rust-Code">https://www.phoronix.com/news/Torvalds-Override-On-Rust-Code</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Rust_for_Linux">https://en.wikipedia.org/wiki/Rust_for_Linux</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">https://en.wikipedia.org/wiki/Rust_(programming_language)</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tecnologia-e-classe-de-130325"><a class="header" href="#tecnologia-e-classe-de-130325">Tecnologia e Classe de 13/03/25</a></h1>
+<h4 id="vamos-na-cryptorave"><a class="header" href="#vamos-na-cryptorave">Vamos na Cryptorave?</a></h4>
+<p><a href="https://www.catarse.me/cryptorave2025">https://www.catarse.me/cryptorave2025</a></p>
+<h3 id="manus-ia"><a class="header" href="#manus-ia">Manus IA</a></h3>
+<p><a href="https://tecnologia.ig.com.br/2025-03-09/manus-ai-agente-de-ia-promete-revolucionar-o-setor.html">https://tecnologia.ig.com.br/2025-03-09/manus-ai-agente-de-ia-promete-revolucionar-o-setor.html</a></p>
+<p><a href="https://manus.im/">https://manus.im/</a></p>
+<h3 id="twitter-sob-ataque-tomara-"><a class="header" href="#twitter-sob-ataque-tomara-">Twitter sob ataque (tomara) ?</a></h3>
+<p><a href="https://www-newsweek-com.translate.goog/x-twitter-outage-dark-storm-live-updates-2042333">https://www-newsweek-com.translate.goog/x-twitter-outage-dark-storm-live-updates-2042333</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tecnologia-e-classe-de-060325"><a class="header" href="#tecnologia-e-classe-de-060325">Tecnologia e Classe de 06/03/25</a></h1>
 <h3 id="meteuexe"><a class="header" href="#meteuexe">Meteu.exe</a></h3>
 <h4 id="microsoft-copiando-o-drip-do-google"><a class="header" href="#microsoft-copiando-o-drip-do-google">Microsoft copiando o drip do Google</a></h4>
@@ -1547,7 +1645,7 @@ received-spf: Fail (protection.outlook.com: domain of hotmail.com does not
 <li>Fique atento a comportamentos estranhos em suas contas e logins / requisições de senhas suspeitas</li>
 <li>Use senhas seguras e diferenciadas. Busque aprender a usar um gerenciador de senhas</li>
 </ul>
-<h4 id="referências"><a class="header" href="#referências">Referências</a></h4>
+<h4 id="referências-1"><a class="header" href="#referências-1">Referências</a></h4>
 <p><a href="https://www.valimail.com/blog/what-is-spf/">https://www.valimail.com/blog/what-is-spf/</a></p>
 <p><a href="https://malwaretips.com/blogs/have-you-heard-about-pegasus-blackmail-email-scam/">https://malwaretips.com/blogs/have-you-heard-about-pegasus-blackmail-email-scam/</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="melhores-Álbuns-de-2024"><a class="header" href="#melhores-Álbuns-de-2024">Melhores Álbuns de 2024</a></h1>
@@ -4077,7 +4175,7 @@ next_price 4.775, 10 # 96.95025458670177
 <p><a href="https://gizmodo-com.translate.goog/amazon-reportedly-ditches-just-walk-out-grocery-stores-1851381116?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://gizmodo-com.translate.goog/amazon-reportedly-ditches-just-walk-out-grocery-stores-1851381116?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
 <h3 id="do-ideologia-californiana"><a class="header" href="#do-ideologia-californiana">Do "Ideologia Californiana"</a></h3>
 <p><img src="./04_04_24/ideologia.jpg" alt="ideologia.jpg" /></p>
-<h3 id="referências-1"><a class="header" href="#referências-1">Referências</a></h3>
+<h3 id="referências-2"><a class="header" href="#referências-2">Referências</a></h3>
 <p><a href="https://www.mturk.com/">https://www.mturk.com/</a></p>
 <p><a href="https://pt.wikipedia.org/wiki/O_Turco">https://pt.wikipedia.org/wiki/O_Turco</a></p>
 <p><img src="./04_04_24/800px-Racknitz_-_The_Turk_3.jpg" alt="800px-Racknitz_-_The_Turk_3.jpg" /></p>
@@ -4213,7 +4311,7 @@ next_price 4.775, 10 # 96.95025458670177
 <p>O que achar disso?</p>
 </li>
 </ul>
-<h4 id="referências-2"><a class="header" href="#referências-2">Referências:</a></h4>
+<h4 id="referências-3"><a class="header" href="#referências-3">Referências:</a></h4>
 <p><a href="https://www.keengamer.com/articles/features/opinion-pieces/kernel-level-anti-cheat-and-7-games-or-programs-that-use-it/">https://www.keengamer.com/articles/features/opinion-pieces/kernel-level-anti-cheat-and-7-games-or-programs-that-use-it/</a></p>
 <p><a href="https://www.pcgamer.com/according-to-experts-on-kernel-level-anticheat-two-things-are-abundantly-clear-1-its-not-perfect-and-2-its-not-going-anywhere/">https://www.pcgamer.com/according-to-experts-on-kernel-level-anticheat-two-things-are-abundantly-clear-1-its-not-perfect-and-2-its-not-going-anywhere/</a></p>
 <p><a href="https://levvvel.com/games-with-kernel-level-anti-cheat-software/">https://levvvel.com/games-with-kernel-level-anti-cheat-software/</a></p>
