@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [20/03/25](20_03_25.md)
 - [Vamos aprender Rust pt. 1](rustlings_pt1.md)
 - [Os Termos de Uso do Firefox](mozilla_firefox.md)
 - [Rust no Linux](rust_linux.md)
