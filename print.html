@@ -32,10 +32,11 @@
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -45,8 +46,8 @@
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -60,7 +61,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -73,8 +75,8 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -110,6 +112,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
@@ -167,6 +170,54 @@
 <li><a href="https://bsky.app/profile/tecnologiaeclasse.bsky.social">Bluesky</a></li>
 <li><a href="https://www.threads.net/@tecnologiaeclasse">Threads</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tecnologia-e-classe-de-030425"><a class="header" href="#tecnologia-e-classe-de-030425">Tecnologia e Classe de 03/04/25</a></h1>
+<h4 id="que-fazer"><a class="header" href="#que-fazer">Que fazer?</a></h4>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/a0KhLP4yTns"></iframe>
+<h4 id="vamos-começar-com-um-react"><a class="header" href="#vamos-começar-com-um-react">Vamos começar com um REACT</a></h4>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/AwZ8PtoqCeU"></iframe>
+<h4 id="vamos-rir-do-humor-involuntário-das-ias"><a class="header" href="#vamos-rir-do-humor-involuntário-das-ias">Vamos rir do humor involuntário das IAs</a></h4>
+<p><a href="https://bsky.app/profile/badenbynoir.bsky.social/post/3llqtyxtvu22m">https://bsky.app/profile/badenbynoir.bsky.social/post/3llqtyxtvu22m</a></p>
+<h4 id="notícias-de-ia-uhuuuuul"><a class="header" href="#notícias-de-ia-uhuuuuul">Notícias de IA, uhuuuuul...</a></h4>
+<p><strong>OpenAI conclui rodada de financiamento de 40 bilhões de dólares, maior captação privada da história da tecnologia:</strong>  o montante eleva a avaliação da empresa para 300 bilhões, ficando atrás  apenas da SpaceX — 350 bilhões — e empatando com a ByteDance no ranking  de startups mais valiosas. O SoftBank liderou o investimento aplicando  30 bilhões de dólares. No entanto, ele afirma que seu aporte pode ser  reduzido para até 20 bilhões, caso a OpenAI não se reestruture como uma  organização com fins lucrativos até 31 de dezembro. As informações são  da CNBC.</p>
+<p><a href="https://braziljournal.com/openai-conclui-rodada-recorde-e-valuation-vai-a-us-300-bi/">https://braziljournal.com/openai-conclui-rodada-recorde-e-valuation-vai-a-us-300-bi/</a></p>
+<p><strong>DeepMind estaria restringindo publicação de pesquisas para preservar vantagem competitiva:</strong>  segundo cientistas atuais e antigos da empresa, ela tem evitado  divulgar estudos que possam expor inovações exploráveis por concorrentes  ou que coloquem o Gemini em desvantagem frente a rivais, implementando  um embargo de seis meses para artigos considerados “estratégicos” sobre a  tecnologia. A medida teria gerado insatisfação interna e contribuído  para algumas demissões. A companhia, por sua vez, afirma estar  “comprometida com o avanço da pesquisa em IA”. As informações são do  site Ars Technica.</p>
+<p><a href="https://arstechnica.com/ai/2025/04/deepmind-is-holding-back-release-of-ai-research-to-give-google-an-edge/">https://arstechnica.com/ai/2025/04/deepmind-is-holding-back-release-of-ai-research-to-give-google-an-edge/</a></p>
+<h3 id="sobre-a-estabilidade-das-artes-do-novo-chatgpt"><a class="header" href="#sobre-a-estabilidade-das-artes-do-novo-chatgpt">Sobre a estabilidade das artes do novo ChatGPT:</a></h3>
+<p><img src="./03_04_25/Screenshot%20from%202025-04-03%2017-33-34.png" alt="image (3).png" /></p>
+<p><img src="./03_04_25/Screenshot%20from%202025-04-03%2017-43-41.png" alt="Screenshot from 2025-04-03 17-43-41.png" /></p>
+<p><img src="./03_04_25/Screenshot%20from%202025-04-03%2017-43-53.png" alt="Screenshot from 2025-04-03 17-43-53.png" /></p>
+<p><img src="./03_04_25/Screenshot%20from%202025-04-03%2017-44-06.png" alt="Screenshot from 2025-04-03 17-44-06.png" /></p>
+<p>Um experimento interessante que eu fiz:</p>
+<p><img src="./03_04_25/Screenshot%20from%202025-04-03%2017-31-56.png" alt="image (2).png" /></p>
+<p><strong>Gemini 2.5 é aparentemente muito bom pra código?</strong></p>
+<p>Eu queria mostrar pra vocês uma coisa 'vibe code' que eu fiz, mas ele não conseguiu hu3hu3</p>
+<p>Eu queria que ele me fizesse uma biblioteca em Rust e todos LLM que testei isso não conseguiram, mas talvez um dia...</p>
+<h4 id="elon-musk-trabalhando-duro-pra-destruir-os-eua-kkkkkk"><a class="header" href="#elon-musk-trabalhando-duro-pra-destruir-os-eua-kkkkkk">Elon Musk trabalhando duro pra destruir os EUA kkkkkk</a></h4>
+<h4 id=""><a class="header" href="#"></a></h4>
+<p><a href="https://www.wired.com/story/doge-rebuild-social-security-administration-cobol-benefits/">https://www.wired.com/story/doge-rebuild-social-security-administration-cobol-benefits/</a></p>
+<ul>
+<li>Musk e seus techbros acham que vão conseguir migrar o código do sistema de previdência dos EUA de Cobol para uma linguagem mais moderna, em alguns MESES</li>
+<li>Vocês devem lembrar que Elon Musk já nos agraciou com sua sabedoria técnica acusando que haviam vários tipos de fraude nesse sistema:
+<ul>
+<li>Pessoas com mais do que 150 anos recebendo benefícios</li>
+<li>Entradas repetidas no banco de dados</li>
+</ul>
+</li>
+<li>Quais as chances de isso dar certo?</li>
+</ul>
+<blockquote>
+<p>In order to migrate all COBOL code into a more modern language within a few months, DOGE would likely need to employ some form of generative artificial intelligence to help translate the millions of lines of code, sources tell WIRED. “DOGE thinks if they can say they got rid of all the COBOL in months, then their way is the right way, and we all just suck for not breaking shit,” says the SSA technologist.</p>
+<p>...</p>
+<p>“This is an environment that is held together with  bail wire and duct tape,” the former senior SSA technologist working in  the office of the chief information officer tells WIRED. “The leaders  need to understand that they’re dealing with a house of cards or Jenga.  If they start pulling pieces out, which they’ve already stated they’re  doing, things can break.”</p>
+</blockquote>
+<ul>
+<li>Adicionando sal à ferida aparentemente um site do Departamento de Defesa celebrando a criadora do Cobol, Grace Hopper, foi tirado do ar porque é DEI</li>
+</ul>
+<h4 id="google-está-fechando-o-android"><a class="header" href="#google-está-fechando-o-android">Google está fechando o Android?</a></h4>
+<p><strong>Google tornará desenvolvimento do Android privado:</strong> atualmente, a empresa atualiza frequentemente o repositório público Android  Open Source Project. Contudo, alguns recursos ainda são programados  apenas internamente. A partir da próxima semana, a companhia focará em  um desenvolvimento exclusivamente interno, adotando o método trunk-based  development. No entanto, isso não significa que o Android  se tornará um sistema fechado. O Google continuará disponibilizando o  código das novas versões, como o da futura versão 16, mas com menos  frequência. A mudança não impacta usuários comuns e desenvolvedores de  apps. As informações são dos sites Ars Technica e Android Authority.</p>
+<p><a href="https://arstechnica.com/gadgets/2025/03/google-makes-android-development-private-will-continue-open-source-releases/">https://arstechnica.com/gadgets/2025/03/google-makes-android-development-private-will-continue-open-source-releases/</a></p>
+<p>Recomendação de um vídeo bom sobre o assunto:</p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/1j4DBKRJebo"></iframe>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tecnologia-e-classe-de-270325"><a class="header" href="#tecnologia-e-classe-de-270325">Tecnologia e Classe de 27/03/25</a></h1>
 <h4 id="greve-dos-ferroviários-em-sp"><a class="header" href="#greve-dos-ferroviários-em-sp">Greve dos ferroviários em SP</a></h4>
 <p><a href="https://www.instagram.com/p/DHtVPH7utee">https://www.instagram.com/p/DHtVPH7utee</a></p>
@@ -332,7 +383,7 @@
 </ul>
 </li>
 </ul>
-<h4 id=""><a class="header" href="#"></a></h4>
+<h4 id="-1"><a class="header" href="#-1"></a></h4>
 <h3 id="deepseek-não-pára"><a class="header" href="#deepseek-não-pára">Deepseek não pára</a></h3>
 <p><a href="https://apidog.com/blog/deepseek-open-source-week/">https://apidog.com/blog/deepseek-open-source-week/</a></p>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/48GRiu-TMmg"></iframe>
@@ -3285,7 +3336,7 @@ They can come back in the future if sufficient documentation is provided.
 <p><a href="https://www-windowscentral-com.translate.goog/software-apps/google-drive-is-finally-coming-to-windows-on-arm?_x_tr_sl=es&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp">https://www-windowscentral-com.translate.goog/software-apps/google-drive-is-finally-coming-to-windows-on-arm?_x_tr_sl=es&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp</a></p>
 <p><strong>Após suspensão, Autoridade Nacional de Proteção de Dados autoriza Meta a coletar dados de usuários para treinar seus modelos:</strong>  a empresa deverá comunicar de maneira clara a ação, utilizando  notificações via e-mail, avisos de privacidade e banners específicos nos  aplicativos, além de incluir um processo simplificado permitindo que as  pessoas desativem o uso de seus dados. As informações são do site  Tecnoblog.</p>
 <p><a href="https://g1.globo.com/politica/noticia/2024/08/30/anpd-acata-plano-de-conformidade-da-meta-e-libera-uso-de-dados-de-brasileiros-para-treinar-ia-usuario-podera-negar-acesso.ghtml">https://g1.globo.com/politica/noticia/2024/08/30/anpd-acata-plano-de-conformidade-da-meta-e-libera-uso-de-dados-de-brasileiros-para-treinar-ia-usuario-podera-negar-acesso.ghtml</a></p>
-<h3 id="-1"><a class="header" href="#-1"></a></h3>
+<h3 id="-2"><a class="header" href="#-2"></a></h3>
 <p><strong>Moxie Marlinspike, criador do Signal, argumenta que metodologia Ágil compromete inovação no desenvolvimento de software:</strong>  segundo ele, a abordagem cria “camadas de abstração” que afastam os  programadores de um entendimento profundo do que estão construindo,  limitando a capacidade de serem criativos e inovadores. Marlinspike  também traça um paralelo entre desenvolvedores e pesquisadores de  segurança, alegando que o segundo se preocupa em entender como “as  coisas realmente funcionam”. Além disso, ele utiliza uma metáfora do  mundo de Harry Potter, comparando o entendimento profundo do software à  “magia”, capaz de “mudar o mundo”. As informações são do site The  Register.</p>
 <p><a href="https://www-theregister-com.translate.goog/2024/08/09/marlinspike/?_x_tr_sl=es&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp">https://www-theregister-com.translate.goog/2024/08/09/marlinspike/?_x_tr_sl=es&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapphttps://www-theregister-com.translate.goog/2024/08/09/marlinspike/?_x_tr_sl=es&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp</a></p>
 <p><strong>Ferramenta utilizada por desenvolvedores e pesquisadores de segurança é removida do Docker Hub a pedido da Apple:</strong>  com 750 mil downloads, o “Docker-OSX” possibilitava a virtualização do  macOS em sistemas Linux e Windows, podendo ser usado para testar  softwares ou encontrar vulnerabilidades. O código-fonte do projeto ainda  está disponível no repositório “sickcodes/Docker-OSX” do GitHub, mas  sem conter os binários de instalação do macOS, o que poderia evitar  futuros pedidos de remoção. As informações são do site BleepingComputer.</p>
@@ -3320,10 +3371,10 @@ They can come back in the future if sufficient documentation is provided.
 <p><a href="https://www.cnnbrasil.com.br/tecnologia/meta-anuncia-atualizacao-para-filtros-do-instagram-veja-o-que-muda/">https://www.cnnbrasil.com.br/tecnologia/meta-anuncia-atualizacao-para-filtros-do-instagram-veja-o-que-muda/</a></p>
 <p><strong>Bug em iPhones e iPads faz interface do iOS travar ao digitar apenas 4 caracteres:</strong>  o problema ocorre ao inserir uma sequência de aspas de abertura,  fechamento, e dois-pontos, seguido de qualquer outro caractere na barra  de pesquisa do aplicativo de configurações ou da biblioteca de apps,  fazendo com que a tela do dispositivo reinicie. Embora a falha cause uma  interrupção temporária, pesquisadores indicam que ela não representa  uma ameaça de segurança, pois não pode ser explorada remotamente por  terceiros. A Apple ainda não se pronunciou a respeito do problema. As  informações são do site TechCrunch.</p>
 <p><a href="https://techcrunch.com/2024/08/21/typing-these-four-characters-could-crash-your-iphone/">https://techcrunch.com/2024/08/21/typing-these-four-characters-could-crash-your-iphone/</a></p>
-<h4 id="-2"><a class="header" href="#-2">“”::</a></h4>
+<h4 id="-3"><a class="header" href="#-3">“”::</a></h4>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/aznM_NK15Vc"></iframe>
 <p><a href="https://www.tecmundo.com.br/ios/43918-blog-nao-salvo-espalha-o-caos-entre-usuarios-de-ios-com-codigo-via-twitter.htm">https://www.tecmundo.com.br/ios/43918-blog-nao-salvo-espalha-o-caos-entre-usuarios-de-ios-com-codigo-via-twitter.htm</a></p>
-<h3 id="-3"><a class="header" href="#-3"></a></h3>
+<h3 id="-4"><a class="header" href="#-4"></a></h3>
 <h3 id="greve-da-serpro"><a class="header" href="#greve-da-serpro">Greve da Serpro</a></h3>
 <p><a href="https://www.baguete.com.br/noticias/27/08/2024/serpro-entra-em-greve-hoje">https://www.baguete.com.br/noticias/27/08/2024/serpro-entra-em-greve-hoje</a></p>
 <p><a href="https://www.serpro.gov.br/menu/noticias/noticias-2024/serpro-garante-manutencao-servicos">https://www.serpro.gov.br/menu/noticias/noticias-2024/serpro-garante-manutencao-servicos</a></p>
@@ -3869,7 +3920,7 @@ next_price 4.775, 10 # 96.95025458670177
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tecnologia-e-classe-de-040724"><a class="header" href="#tecnologia-e-classe-de-040724">Tecnologia e Classe de 04/07/24</a></h1>
 <h3 id="polyfillio-comprometido"><a class="header" href="#polyfillio-comprometido">Polyfill.io comprometido</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/WCdgxAx4LUI "></iframe>
-<h1 id="-4"><a class="header" href="#-4"></a></h1>
+<h1 id="-5"><a class="header" href="#-5"></a></h1>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ILvNG1STUZU "></iframe>
 <p><a href="https://polykill.io/chrome-extension">https://polykill.io/chrome-extension</a></p>
 <p><strong>Polyfill JS, adquirida por uma empresa chinesa em fevereiro, infecta mais de 100 mil sites com malware:</strong>  o código malicioso é ativado apenas em dispositivos móveis e  redireciona usuários para páginas falsas de apostas. Recomenda-se que a  biblioteca seja removida imediatamente dos projetos. Os domínios CDN do  Polyfill foram derrubados pela Namecheap, sua principal registradora. As  informações são do site da Sansec.</p>
@@ -4019,7 +4070,7 @@ next_price 4.775, 10 # 96.95025458670177
 <h3 id="o-que-essas-duas-tem-a-ver"><a class="header" href="#o-que-essas-duas-tem-a-ver">O que essas duas tem a ver?</a></h3>
 <p><strong>Estudo prevê que dados públicos para treinamento de IAs irão se esgotar até 2032:</strong>  projetos de IAs serão obrigados a utilizar informações confidenciais,  como e-mails e mensagens de texto, ou dados sintéticos, gerados por seus  próprios modelos de linguagem, dificultando a escalabilidade e  aprimoramento no longo prazo. As informações são do site Tech Xplore.</p>
 <p><strong>Advocacia-Geral  da União, responsável pela defesa dos Poderes Executivo, Legislativo e  Judiciário, vai utilizar modelos da OpenAI, por meio do Microsoft Azure,  para acelerar triagem e análise de processos judiciais:</strong> o  sistema sinalizará a necessidade de tomadas de decisão antes de decisões  finais em processos, mapeando tendências e potenciais áreas de ação, a  fim de evitar perdas judiciais que têm pesado no orçamento federal. Não  foi divulgado quanto o Brasil pagará pelos serviços. As informações são  da Reuters.</p>
-<h3 id="-5"><a class="header" href="#-5"></a></h3>
+<h3 id="-6"><a class="header" href="#-6"></a></h3>
 <h3 id="nubank--brasil-paralelo"><a class="header" href="#nubank--brasil-paralelo">NUBANK 🤝 Brasil Paralelo</a></h3>
 <p><a href="https://www.instagram.com/p/C8ZG971OsIn">https://www.instagram.com/p/C8ZG971OsIn</a></p>
 <p><a href="https://apublica.org/2024/06/diretor-da-brasil-paralelo-criou-forum-chan-que-promovia-crimes-de-odio/?share=true">https://apublica.org/2024/06/diretor-da-brasil-paralelo-criou-forum-chan-que-promovia-crimes-de-odio/?share=true</a></p>
@@ -4704,7 +4755,7 @@ next_price 4.775, 10 # 96.95025458670177
 <h3 id="yuzu"><a class="header" href="#yuzu">Yuzu</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/gIv0AuKe01A "></iframe>
 <p><a href="https://www.tecmundo.com.br/voxel/280561-yuzu-popular-emulador-nintendo-switch-fechado-processo.htm">https://www.tecmundo.com.br/voxel/280561-yuzu-popular-emulador-nintendo-switch-fechado-processo.htm</a></p>
-<h3 id="-6"><a class="header" href="#-6"></a></h3>
+<h3 id="-7"><a class="header" href="#-7"></a></h3>
 <h3 id="devin-ai"><a class="header" href="#devin-ai">Devin AI</a></h3>
 <p><strong>Startup lança o que chama de “primeiro engenheiro de software baseado em IA” do mundo:</strong> o Devin, da Cognition Labs, é capaz de planejar e executar projetos de forma autônoma, contando com um terminal, editor de código e navegador próprio. O sistema também pode treinar suas próprias IAs para resolver problemas específicos. Desenvolvedores experientes podem tratar o Devin como um colaborador, permanecendo mais envolvido na tomada de decisões e design, ou simplesmente usá-lo como uma equipe de teste ou um especialista em documentação. Em comparação a outros modelos na resolução de problemas do mundo real com projetos de código aberto no GitHub, o Devin conseguiu resolver quase 14% das tarefas, seguido por Claude 2 (resolveu 4,8%) e GPT-4 (1,7%). Há, entretanto, preocupações sobre o uso de sistemas totalmente automatizados na manutenção de sistemas críticos, modificando uma base de código de maneiras que podem não ser totalmente compreendidas, com efeitos difíceis de serem previstos. O Devin se encontra ainda em acesso restrito à medida que a Cognition Labs aumenta sua capacidade. As informações são do site New Atlas.</p>
 <p><a href="https://www.cognition-labs.com/introducing-devin">https://www.cognition-labs.com/introducing-devin</a></p>
@@ -4757,7 +4808,7 @@ next_price 4.775, 10 # 96.95025458670177
 <li>Limitando a funcionalidade de smartwatches e carteiras digitais de terceiros</li>
 </ul>
 <p>A Apple diz: a gente é foda e a gente tá só pela inovação, vocês querem impedir a gente de inovar e querem que a gente fique igual a esse lixo que se chama Android.</p>
-<h1 id="-7"><a class="header" href="#-7"></a></h1>
+<h1 id="-8"><a class="header" href="#-8"></a></h1>
 
                     </main>
 
