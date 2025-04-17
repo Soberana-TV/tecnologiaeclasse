@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Quantos % da internet está morta](internet_morta_bots.md)
 - [03/04/25](03_04_25.md)
 - [27/03/25](27_03_25.md)
 - [20/03/25](20_03_25.md)
