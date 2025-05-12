@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [08/05/25](08_05_25.md)
 - [Sim você é manipulado por robôs](manipulado_robos.md)
 - [24/04/25](24_04_25.md)
 - [17/04/25](17_04_25.md)
