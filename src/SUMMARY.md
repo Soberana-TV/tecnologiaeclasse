@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Palestra Cryptorave 2025](palestra_cryptorave_2025.md)
 - [15/05/25](15_05_25.md)
 - [08/05/25](08_05_25.md)
 - [Sim você é manipulado por robôs](manipulado_robos.md)
