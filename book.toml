@@ -4,6 +4,7 @@ language = "pt-BR"
 multilingual = false
 src = "src"
 title = "Tecnologia e Classe"
+description = "Roteiros dos vídeos do canal Tecnologia e Classe."
 
 [rust]
 edition = "2021"
@@ -22,3 +23,8 @@ expand = true
 heading-split-level = 2
 
 [preprocessor.embed]
+
+[rss]
+title = "Roteiros Tecnologia e Classe"
+description = "Feed dos roteiros de vídeos do canal Tecnologia e Classe"
+base_url = "https://teclas.soberana.tv"
