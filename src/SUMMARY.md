@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [29/05/25](29_05_25.md)
 - [22/05/25](22_05_25.md)
 - [Palestra Cryptorave 2025](palestra_cryptorave_2025.md)
 - [15/05/25](15_05_25.md)
