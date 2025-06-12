@@ -80,6 +80,7 @@ def generate_rss(src_dir):
                 ET.SubElement(item, 'link').text = f"{base_url}/{html_filename}"
                 ET.SubElement(item, 'pubDate').text = date.strftime('%a, %d %b %Y %H:%M:%S +0000')
 
+    ET.indent(rss, space="  ", level=0)
     tree = ET.ElementTree(rss)
     output_path = os.path.join(src_dir, 'rss.xml')
     tree.write(output_path, encoding='utf-8', xml_declaration=True)
