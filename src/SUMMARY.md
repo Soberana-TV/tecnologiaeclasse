@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [JAV, Meta e regulamentação das redes](jav_meta.md)
 - [Builder.ai e os Indianos Assalariados](builderai.md)
 - [29/05/25](29_05_25.md)
 - [22/05/25](22_05_25.md)
