@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Soberania Digital: Uma perspectiva brasileira](soberania_digital.md)
 - [13/06/25](13_06_25.md)
 - [JAV, Meta e regulamentação das redes](jav_meta.md)
 - [Builder.ai e os Indianos Assalariados](builderai.md)
