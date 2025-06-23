@@ -1,6 +1,8 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [20/06/25](20_06_25.md)
+- [O Apocalíptico AI 2027](ai_2027.md)
 - [Soberania Digital: Uma perspectiva brasileira](soberania_digital.md)
 - [13/06/25](13_06_25.md)
 - [JAV, Meta e regulamentação das redes](jav_meta.md)

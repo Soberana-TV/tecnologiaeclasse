@@ -66,7 +66,7 @@ def generate_rss(src_dir):
     ET.SubElement(channel, 'description').text = feed_description
 
     for filename in sorted(os.listdir(src_dir)):
-        if filename.endswith('.md') and filename != "SUMMARY.md":
+        if filename.endswith('.md') and filename != "SUMMARY.md" and filename != "o_que.md":
             filepath = os.path.join(src_dir, filename)
 
             date = parse_date_from_filename(filename) or get_file_creation_date(filepath)
