@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Uma introdução à Soberania Digital](soberania_digital2.md)
 - [20/06/25](20_06_25.md)
 - [O Apocalíptico AI 2027](ai_2027.md)
 - [Soberania Digital: Uma perspectiva brasileira](soberania_digital.md)
