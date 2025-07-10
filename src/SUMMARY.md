@@ -1,6 +1,8 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O Artigo 19 do Marco Civil](artigo19.md)
+- [03/07/25](03_07_25.md)
 - [Uma introdução à Soberania Digital](soberania_digital2.md)
 - [20/06/25](20_06_25.md)
 - [O Apocalíptico AI 2027](ai_2027.md)
