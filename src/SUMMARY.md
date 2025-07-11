@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Stop Killing Games](stop_killing_games.md)
 - [O Artigo 19 do Marco Civil](artigo19.md)
 - [03/07/25](03_07_25.md)
 - [Uma introdução à Soberania Digital](soberania_digital2.md)
