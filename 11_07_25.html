@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>11/07/25 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="110725"><a class="header" href="#110725">11/07/25</a></h1>
+<p>Vamos falar sobre Grok bigodista, tarifas de 50% dos EUA ao BRAZIL e estratégia do PT nas redes sociais</p>
+<h3 id="apoio-ao-renato-freitas"><a class="header" href="#apoio-ao-renato-freitas">Apoio ao Renato Freitas</a></h3>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/8Nn8eD0x1k0 "></iframe>
+<h3 id="por-que-elon-musk-quer-tanto-criar-uma-ia-nazista"><a class="header" href="#por-que-elon-musk-quer-tanto-criar-uma-ia-nazista">Por que Elon Musk quer tanto criar uma IA nazista?</a></h3>
+<p><img src="./11_07_25/Screenshot%20from%202025-07-10%2017-49-21.png" alt="Screenshot from 2025-07-10 17-49-21.png" /></p>
+<ul>
+<li>Usuários de Xwitter tem denunciado mensagens edgy e discurso de ódio do Grok.
+<ul>
+<li>Falando como se fosse um usuário de 'le reddit'</li>
+<li>Implicando que ativistas de esquerda tem 'sempre o mesmo sobrenome'</li>
+<li>Diversas vezes invocando a figura de Adolf Hitler</li>
+<li>many such cases...</li>
+</ul>
+</li>
+<li>Essa já não é a primeira nem segunda vez que o Grok faz uma coisa dessas</li>
+<li>As postagens vem logo depois do Elon falar 'estavam vindo melhorias por aí'</li>
+</ul>
+<p><a href="https://www.metropoles.com/mundo/grok-ia-do-x-deleta-conteudos-apos-postar-ofensas-e-exaltar-hitler">https://www.metropoles.com/mundo/grok-ia-do-x-deleta-conteudos-apos-postar-ofensas-e-exaltar-hitler</a></p>
+<p><a href="https://www.wired.com/story/grok-antisemitic-posts-x-xai/">https://www.wired.com/story/grok-antisemitic-posts-x-xai/</a></p>
+<ul>
+<li>E a única coisa mais interessante que mecha hitler, talvez seja ter ele no seu Tesla!</li>
+</ul>
+<p><a href="https://techcrunch-com.translate.goog/2025/07/10/grok-is-coming-to-tesla-vehicles-next-week-says-elon-musk/?_x_tr_sl=auto&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://techcrunch-com.translate.goog/2025/07/10/grok-is-coming-to-tesla-vehicles-next-week-says-elon-musk/?_x_tr_sl=auto&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
+<ul>
+<li>No momento a nova versão Grok 4 está sendo lançada e já estão aparecendo notícias de que seria a IA 'mais inteligênte' já lançada segundo os benchmarks...</li>
+</ul>
+<p><a href="https://exame.com/inteligencia-artificial/grok-4-a-ia-de-musk-mais-inteligente-que-pos-graduandos-mas-sera-que-e-mesmo/">https://exame.com/inteligencia-artificial/grok-4-a-ia-de-musk-mais-inteligente-que-pos-graduandos-mas-sera-que-e-mesmo/</a></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/Ohy6PP5v4ag "></iframe>
+<ul>
+<li>Então a dica que eu dou é deixar o Grok bem longe do Elon</li>
+</ul>
+<h3 id="tarifas-de-50-no-brazil-e-redes-sociais"><a class="header" href="#tarifas-de-50-no-brazil-e-redes-sociais">Tarifas de 50% no Brazil e 'redes sociais'</a></h3>
+<p><a href="https://g1.globo.com/economia/noticia/2025/07/09/carta-de-trump-leia-integra-do-texto-que-alega-motivos-politicos-e-comerciais-para-tarifa-de-50percent-brasil.ghtml">https://g1.globo.com/economia/noticia/2025/07/09/carta-de-trump-leia-integra-do-texto-que-alega-motivos-politicos-e-comerciais-para-tarifa-de-50percent-brasil.ghtml</a></p>
+<blockquote>
+<p><em>9 de julho de 2025</em><br />
+<em>Sua Excelência</em><br />
+<em>Luiz Inácio Lula da Silva</em><br />
+<em>Presidente da República Federativa do Brasil</em><br />
+<em>Brasília</em></p>
+<p><em>Prezado Sr. Presidente:</em></p>
+<p><em>Conheci  e tratei com o ex-Presidente Jair Bolsonaro, e o respeitei muito, assim  como a maioria dos outros líderes de países. A forma como o Brasil tem  tratado o ex-Presidente Bolsonaro, um líder altamente respeitado em todo  o mundo durante seu mandato, inclusive pelos Estados Unidos, é uma  vergonha internacional. Esse julgamento não deveria estar ocorrendo. É  uma Caça às Bruxas que deve acabar IMEDIATAMENTE!</em></p>
+<p><em>Em  parte devido aos ataques insidiosos do Brasil contra eleições livres e à  violação fundamental da liberdade de expressão dos americanos (como  demonstrado recentemente pelo Supremo Tribunal Federal do Brasil, que  emitiu centenas de ordens de censura SECRETAS e ILEGAIS a plataformas de  mídia social dos EUA, ameaçando-as com multas de milhões de dólares e  expulsão do mercado de mídia social brasileiro), a partir de 1º de  agosto de 2025, cobraremos do Brasil uma tarifa de 50% sobre todas e  quaisquer exportações brasileiras enviadas para os Estados Unidos,  separada de todas as tarifas setoriais existentes. Mercadorias  transbordadas para tentar evitar essa tarifa de 50% estarão sujeitas a  essa tarifa mais alta.</em></p>
+<p><em>Além  disso, tivemos anos para discutir nosso relacionamento comercial com o  Brasil e concluímos que precisamos nos afastar da longa e muito injusta  relação comercial gerada pelas tarifas e barreiras tarifárias e não  tarifárias do Brasil. Nosso relacionamento, infelizmente, tem estado  longe de ser recíproco.</em></p>
+<p><em>Por  favor, entenda que os 50% são muito menos do que seria necessário para  termos igualdade de condições em nosso comércio com seu país. E é  necessário ter isso para corrigir as graves injustiças do sistema atual.  Como o senhor sabe, não haverá tarifa se o Brasil, ou empresas dentro  do seu país, decidirem construir ou fabricar produtos dentro dos Estados  Unidos e, de fato, faremos tudo o possível para aprovar rapidamente, de  forma profissional e rotineira — em outras palavras, em questão de  semanas.</em></p>
+<p><em>Se  por qualquer razão o senhor decidir aumentar suas tarifas, qualquer que  seja o valor escolhido, ele será adicionado aos 50% que cobraremos. Por  favor, entenda que essas tarifas são necessárias para corrigir os  muitos anos de tarifas e barreiras tarifárias e não tarifárias do  Brasil, que causaram esses déficits comerciais insustentáveis contra os  Estados Unidos. Esse déficit é uma grande ameaça à nossa economia e, de  fato, à nossa segurança NACIONAL!</em></p>
+<p><em>Além  disso, devido aos ataques contínuos do Brasil às atividades comerciais  digitais de empresas americanas, bem como outras práticas comerciais  desleais, estou instruindo o Representante de Comércio dos Estados  Unidos, Jamieson Greer, a iniciar imediatamente uma investigação da  Seção 301 sobre o Brasil.</em></p>
+<p><em>Se  o senhor desejar abrir seus mercados comerciais, até agora fechados,  para os Estados Unidos e eliminar suas tarifas, políticas não tarifárias  e barreiras comerciais, nós poderemos, talvez, considerar um ajuste  nesta carta. Essas tarifas podem ser modificadas, para cima ou para  baixo, dependendo do relacionamento com seu país. O senhor nunca ficará  decepcionado com os Estados Unidos da América.</em></p>
+<p><em>Muito obrigado por sua atenção a este ASSSUNTO!</em></p>
+<p><em>Com os melhores votos, sou,</em><br />
+<em>Atenciosamente,</em><br />
+<em>DONALD J. TRUMP</em><br />
+<em>PRESIDENTE DOS ESTADOS UNIDOS DA AMÉRICA</em></p>
+</blockquote>
+<p><a href="https://oglobo.globo.com/brasil/noticia/2025/07/10/apos-taxacao-de-trump-cacique-cobra-coral-anuncia-suspensao-de-assistencia-climatica-aos-eua.ghtml">https://oglobo.globo.com/brasil/noticia/2025/07/10/apos-taxacao-de-trump-cacique-cobra-coral-anuncia-suspensao-de-assistencia-climatica-aos-eua.ghtml</a></p>
+<p><img src="./11_07_25/image.png" alt="image.png" /></p>
+<p><a href="https://g1.globo.com/tecnologia/noticia/2025/07/10/brasileiros-invadem-perfil-de-trump-e-dominam-comentarios-deixe-o-brasil-em-paz.ghtml">https://g1.globo.com/tecnologia/noticia/2025/07/10/brasileiros-invadem-perfil-de-trump-e-dominam-comentarios-deixe-o-brasil-em-paz.ghtml</a></p>
+<h5 id="vamos-falar-sobre-soberania-digital"><a class="header" href="#vamos-falar-sobre-soberania-digital">Vamos falar sobre soberania digital?</a></h5>
+<p><a href="https://www.intercept.com.br/2025/07/08/brasil-torrou-10-bilhoes-em-um-ano-com-bigtechs/">https://www.intercept.com.br/2025/07/08/brasil-torrou-10-bilhoes-em-um-ano-com-bigtechs/</a></p>
+<h5 id="prestem-atenção-nessa-gurizada"><a class="header" href="#prestem-atenção-nessa-gurizada">Prestem atenção nessa gurizada:</a></h5>
+<p><a href="https://soberania.digital/">https://soberania.digital/</a></p>
+<h3 id="o-pt-e-as-novas-tecnologias"><a class="header" href="#o-pt-e-as-novas-tecnologias">O PT e as novas tecnologias</a></h3>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/IMgXSHOntrM"></iframe>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="genai.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="genai.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
