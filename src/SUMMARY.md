@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Trump ataca o Pix](trump_pix.md)
 - [11/07/25](11_07_25.md)
 - [A criação dos modelos de genAI](genai.md)
 - [Stop Killing Games](stop_killing_games.md)
