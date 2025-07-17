@@ -36,6 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -149,7 +153,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -170,6 +179,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="soberania-digital-uma-introdução"><a class="header" href="#soberania-digital-uma-introdução">Soberania Digital: Uma introdução</a></h1>
+<p>Vocês sabem o que é um país digitalmente soberano? Não? Então esse vídeo é pra ser uma introdução bem compreensiva de várias discussões importantes para começar a desenvolver a nossa própria soberania digital.</p>
 <h3 id="o-que-é-soberania-faz-sentido-falar-de-soberania-digital"><a class="header" href="#o-que-é-soberania-faz-sentido-falar-de-soberania-digital">O que é soberania? Faz sentido falar de soberania digital?</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/oreTIGSDLHM"></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/jnLG0m68txs"></iframe>
@@ -333,6 +343,7 @@
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

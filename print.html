@@ -37,6 +37,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -93,10 +94,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -150,7 +154,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -181,6 +190,90 @@
 <li><a href="https://bsky.app/profile/tecnologiaeclasse.bsky.social">Bluesky</a></li>
 <li><a href="https://www.threads.net/@tecnologiaeclasse">Threads</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="trump-ataca-o-nosso-pix-lgpd-pirataria-e-mais"><a class="header" href="#trump-ataca-o-nosso-pix-lgpd-pirataria-e-mais">Trump ataca o nosso Pix, LGPD, pirataria e mais...</a></h1>
+<ul>
+<li>Os pontos principal para entender aqui:
+<ul>
+<li>O cálculo das tarifas do Trump não tem lógica nenhuma, é simplesmente um movimento de mafioso para pressionar os países que abaixam a cabeça</li>
+<li>O que eles querem conseguir não tem a ver com o Bolsonaro e sim domínio comercial e informacional</li>
+<li>As tarifas são uma ferramenta de pressão para que o Brasil ceda aos interesses dos EUA
+<ul>
+<li>Um país soberano não deveria ceder</li>
+<li>Quem é a favor das tarifas é contra a soberania do país</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://cbn.globo.com/politica/noticia/2025/07/16/documento-em-que-eua-investiga-brasil-fala-da-25-de-marco-pix-e-falsificacoes.ghtml">https://cbn.globo.com/politica/noticia/2025/07/16/documento-em-que-eua-investiga-brasil-fala-da-25-de-marco-pix-e-falsificacoes.ghtml</a></p>
+<blockquote>
+<p>'O Brasil também parece se envolver em uma série de práticas desleais com relação a serviços de pagamento eletrônico, incluindo, entre outras, aproveitar seus serviços de pagamento eletrônico desenvolvidos pelo governo'.</p>
+</blockquote>
+<ul>
+<li>
+<p>Práticas desleais significa: "usar infraestrutura de pagamento própria do seu país"</p>
+</li>
+<li>
+<p>Vou usar o TeClas do mundo invertido para explicar essa situação:</p>
+</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/CwiW_Lez_Ug "></iframe>
+<p>2:12 O Zelle é controlado pelos bancos</p>
+<p>3:35 O Lula queria taxar o pix?</p>
+<ul>
+<li>Peter quer que a gente entenda que esses ataques do Pix são em relação ao 'uso do Pix para bloquear liberdade de expressão dentro das plataformas digitais americanas'
+<ul>
+<li>O relatório cita o julgamento da insconstitucionalidade do art. 19 do MCI</li>
+<li>Cita as famosas "cortes secretas" do Mark Zuckerberg</li>
+</ul>
+</li>
+</ul>
+<p>11:04 O Brasil impõe dificuldades para transferências de dados pessoais pra fora do Brasil</p>
+<ul>
+<li>Segundo o Peter é pro Brasil exigir que as empresas estejam aqui e o Xandão possa prender seus diretores</li>
+</ul>
+<p>12:00 bloqueia ou não bloqueia o Pix?</p>
+<p><a href="https://www.youtube.com/shorts/1gqPir1IoTs ">https://www.youtube.com/shorts/1gqPir1IoTs </a></p>
+<h3 id="o-que-o-trump-disse-sobre"><a class="header" href="#o-que-o-trump-disse-sobre">O que o Trump disse sobre?</a></h3>
+<blockquote>
+<p>'Estamos fazendo isso porque eu posso. Ninguém mais conseguiria fazer. Temos tarifas em vigor porque queremos tarifas e queremos que o dinheiro entre nos Estados Unidos. E o outro aspecto é que, em vez de pagar a tarifa, o país ou a empresa construirá nos Estados Unidos e isso gera empregos'.</p>
+</blockquote>
+<ul>
+<li>Quer dizer que os EUA faz... porque 'pode'?</li>
+<li>Pra eles é certo pedir que as coisas venham pro país deles?
+<ul>
+<li>Exercício: vamos operar uma rede social brasileira (ou chinesa?) no país deles? Vamos operar o sistema de pagamentos do país deles?</li>
+</ul>
+</li>
+<li>Trump é o presidente do 'Buy American, Hire American'</li>
+<li>Lembram do banimento do Tik Tok?</li>
+<li>Conhecem as sanções e restrições à Huwaei</li>
+<li>Restrição de exportação de chips</li>
+<li>Bloqueio da Rússia no sistema Swift</li>
+<li>Embargo criminoso de Cuba
+<ul>
+<li>E antes que falem que Cuba pode fazer negócio com qualquer país que não seja os EUA: <strong>é mentira</strong> pois os EUA embarga ou sanciona quem faz negócios com Cuba e bloqueia transações em dólar</li>
+</ul>
+</li>
+<li>A situação de perseguição a imigrantes e inimigos políticos do Trump. Se você só segue o conteúdo do Ancapsu deve achar que é bobagem, mas não é!</li>
+<li>O legal do Trump é que ele tira a máscara do imperialismo estadunidense e esse bando de sonso igual o Peter tem que ficar inventando lorota pra fingir que não.</li>
+<li>Pode me chamar de comuna, soça, esquerdista e dizer que sou burro e não entendo lógica. O otário aqui é 1000x você.</li>
+</ul>
+<h3 id="conteúdo-bônus"><a class="header" href="#conteúdo-bônus">Conteúdo Bônus</a></h3>
+<h4 id="o-que-o-bolsonaro-falou"><a class="header" href="#o-que-o-bolsonaro-falou">O que o Bolsonaro falou?</a></h4>
+<blockquote>
+<p><em>'Eu sou eternamente grato ao Trump, eu gosto dele, da maneira de negociar, de conversar. Eu não pedi taxação nenhuma. Todo mundo vai sofrer, não é só o empresariado, não. O pessoal embaixo, aqui na ponta da linha, o mais pobre, vai sofrer também, porque vem inflação aí, vem queda do PIB, vem fuga de investimento. Agora, está passando o tempo e o governo atual continua fustigando, em vez de buscar uma conversação'.</em></p>
+</blockquote>
+<p>E também...</p>
+<blockquote>
+<p><em>'O Relações Exteriores do Lula acabou de puxar a orelha do Tarcísio. Quem negocia é ele. Quando o Tarcísio vê que o governo não negocia, ele está buscando alguma coisa dentro do seu estado. O estado que mais vai ser prejudicado com a taxação vai ser São Paulo. O Tarcísio faz alguma coisa ao seu alcance. Agora, a solução não vai ser feita pelo Tarcísio. Tem que resolver para o Brasil. E quem está à frente dessa negociação chama-se Eduardo Nantes Bolsonaro. Pronto, não custa nada quem quiser estar em contato com ele, liga para mim que eu passo o telefone e converso com o Eduardo, que está dentro da Casa Branca'.</em></p>
+</blockquote>
+<h3 id="afinal-os-estados-unidos-tem-pix-então"><a class="header" href="#afinal-os-estados-unidos-tem-pix-então">Afinal os Estados Unidos tem PIX então?</a></h3>
+<p><a href="https://exame.com/invest/minhas-financas/pix-na-mira-de-trump-saiba-o-que-e-zelle-fednow-e-venmo-sistemas-de-pagamento-usados-nos-eua/">https://exame.com/invest/minhas-financas/pix-na-mira-de-trump-saiba-o-que-e-zelle-fednow-e-venmo-sistemas-de-pagamento-usados-nos-eua/</a></p>
+<ul>
+<li>Os EUA ameaçarem os meios de pagamentos do Brasil é OK, pois é pela democracia. O Lula falar em soberania é flertar com o 'nazismo'</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/tK5u7qIjgCY "></iframe>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="110725"><a class="header" href="#110725">11/07/25</a></h1>
 <p>Vamos falar sobre Grok bigodista, tarifas de 50% dos EUA ao BRAZIL e estratégia do PT nas redes sociais</p>
 <h3 id="apoio-ao-renato-freitas"><a class="header" href="#apoio-ao-renato-freitas">Apoio ao Renato Freitas</a></h3>
@@ -661,6 +754,7 @@ não remoção de conteúdo</li>
 <h3 id="react-2"><a class="header" href="#react-2">React 2</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/N0NNnq0Wyww "></iframe>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="soberania-digital-uma-introdução"><a class="header" href="#soberania-digital-uma-introdução">Soberania Digital: Uma introdução</a></h1>
+<p>Vocês sabem o que é um país digitalmente soberano? Não? Então esse vídeo é pra ser uma introdução bem compreensiva de várias discussões importantes para começar a desenvolver a nossa própria soberania digital.</p>
 <h3 id="o-que-é-soberania-faz-sentido-falar-de-soberania-digital"><a class="header" href="#o-que-é-soberania-faz-sentido-falar-de-soberania-digital">O que é soberania? Faz sentido falar de soberania digital?</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/oreTIGSDLHM"></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/jnLG0m68txs"></iframe>
@@ -6456,6 +6550,7 @@ next_price 4.775, 10 # 96.95025458670177
             window.setTimeout(window.print, 100);
         });
         </script>
+
 
     </div>
     </body>
