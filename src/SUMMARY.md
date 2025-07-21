@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [18/07/25](18_07_25.md)
 - [A assistente e-girl do Grok](ani_grok.md)
 - [Trump ataca o Pix](trump_pix.md)
 - [11/07/25](11_07_25.md)
