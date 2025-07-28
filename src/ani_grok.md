@@ -1,5 +1,7 @@
 ### A IA Waifu do Elon Musk
 
+Nessa semana a xAI, nova dona do X/Twitter, lançou os AI Companions que são assistentes baseados no Grok com personalidades variadas. E no caso as duas personalidades são menina de anime obcecada codependente e panda desaforado. Realmente a tecnologia é maravilhosa. 
+
 <https://canaltech.com.br/mercado/elon-musk-oferece-r-25-mi-por-ano-para-engenheiro-criar-garota-de-anime-com-ia/>
 
 - Daí Elon Musk novamente provou que é o incel que já transou alguma vez na vida.
