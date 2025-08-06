@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Steam, itch.io e censura dos meios  de pagamento - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="censura-no-mundo-dos-games"><a class="header" href="#censura-no-mundo-dos-games">Censura no mundo dos games?</a></h1>
+<h3 id="steam-e-itchio-pressionadas-a-remover-jogos-por-meios-de-pagamento"><a class="header" href="#steam-e-itchio-pressionadas-a-remover-jogos-por-meios-de-pagamento">Steam e Itch.io pressionadas a remover jogos por meios de pagamento</a></h3>
+<ul>
+<li>Mas falando um pouco mais seriamente. Resumo da situação: processadores de pagamento como Visa, Mastercard, Paypal e Stripe estão pressionando plataformas de distribuição de jogos a removerem ou moderarem jogos com conteúdo adulto ou ofensivo</li>
+<li>O problema óbvio é que essa pressão não está sendo feita diretamente aos desenvolvedores, nem diretamente às distribuidoras e sim nos processadores de pagamento. Lembra esse caso:</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/eUHLBRYjSxA "></iframe>
+<ul>
+<li>
+<p>A situação teve início há alguns meses com uma situação envolvendo um jogo acusado de ser um 'simulador de estupro e incesto' disponível na Steam:</p>
+<p><a href="https://www.404media.co/new-rape-and-incest-game-tests-the-limits-of-steams-sex-policy/">https://www.404media.co/new-rape-and-incest-game-tests-the-limits-of-steams-sex-policy/</a></p>
+</li>
+<li>
+<p>No final a Steam (e mais tarde a itch.io) removeu o jogo do Reino Unido, Canadá e Austrália por pressão governamental e finalmente o próprio estúdio responsável pelo jogo removeu ele da Steam</p>
+<p><a href="https://www.eurogamer.net/valve-quietly-removes-explicit-game-featuring-extreme-sexual-violence-from-steam-in-uk">https://www.eurogamer.net/valve-quietly-removes-explicit-game-featuring-extreme-sexual-violence-from-steam-in-uk</a></p>
+</li>
+</ul>
+<blockquote>
+<p>Em 9 de abril, conforme noticiado pelo GamesIndustry.biz, o secretário de tecnologia do Reino Unido, Peter Kyle, afirmou que o No Mercy era "profundamente preocupante" em comentários feitos na rádio britânica LBC. Ele explicou ainda que espera que "todas [empresas de tecnologia] removam o conteúdo o mais rápido possível após serem informadas. É isso que a [Lei de Segurança Online] exige, é o que eu exijo como secretário de Estado, e é certamente como esperamos que as plataformas que operam e têm o privilégio de acesso à sociedade e à economia britânicas façam".</p>
+</blockquote>
+<ul>
+<li>
+<p>Online Safety Act é a lei passada em 2023 com o intuito de 'proteger as crianças' no Reino Unido e instituiu controles de idade para o acesso a conteúdo adulto.</p>
+</li>
+<li>
+<p>Embora o jogo não tenha quase nenhum defensor e a maioria dos jogos que acabaram indo no mesmo balaio são basicamente temas sexuais explícitos e tabu isso abriu uma lata de minhocas:</p>
+<ul>
+<li>
+<p>As lojas de jogos tentam ao máximo moderar o seu conteúdo baseado na máxima: "se não é ilegal deixa lá"</p>
+</li>
+<li>
+<p>A principal instituição fazendo a pressão se chama 'Collective Shout'.</p>
+<blockquote>
+<p>...se descreve como "um movimento popular que desafia a objetificação das mulheres e a sexualização das meninas na mídia, na publicidade e na cultura popular". Algumas notícias e organizações de ativismo consideram que sua agenda é antipornografia.</p>
+</blockquote>
+</li>
+<li>
+<p>A pressão nas lojas não surtiu efeito, porém nos meios de pagamento sim</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Algumas semanas depois veio a porrada mesmo: todos jogos marcados como NFSW foram deslistados na plataforma itch.io</p>
+<blockquote>
+<p>Como resultado das ações do Collective Shout, em conjunto com os processadores de pagamento, mais de 20.000 jogos, livros, quadrinhos e outras obras criativas — confirmados pelo Internet Archive — deixaram de existir funcionalmente no site (embora o conteúdo comprado permaneça nas bibliotecas dos usuários, desde que não viole as novas diretrizes do itch.io), colocando em risco os criadores que dependem das vendas do itch.io. Além do conteúdo NSFW, projetos notáveis que não possuíam a tag também foram afetados pela eliminação.</p>
+<p>Há também a preocupação de que esse evento de desindexação tenha um impacto desproporcional sobre os criadores queer, e imediatamente após isso houve confusão sobre a distinção entre conteúdo "NSFW" e "adulto", com muitas histórias e jogos LGBTQ+ se enquadrando no primeiro. "Meu quadrinho de ficção científica SFW, que não é pior do que um filme padrão da Marvel, também foi desindexado... mas tinha a etiqueta LGBT", escreveu Yuki Clarke, uma quadrinista, no Bluesky.</p>
+</blockquote>
+</li>
+<li>
+<p>Visa e Mastercard dizem: nós não impedimos que aconteçam transações legais nas nossas plataformas</p>
+</li>
+</ul>
+<blockquote>
+<p>A Mastercard não avaliou nenhum jogo nem exigiu restrições a qualquer atividade em sites e plataformas de criadores de jogos, ao contrário de reportagens e alegações da mídia. Nossa rede de pagamento segue padrões baseados no Estado de Direito. Em resumo, permitimos todas as compras legais em nossa rede. Ao mesmo tempo, exigimos que os comerciantes tenham controles adequados para garantir que os cartões Mastercard não sejam usados para compras ilegais, incluindo conteúdo adulto ilegal.</p>
+</blockquote>
+<blockquote>
+<p>A Visa não discrimina transações legais. Alguns comerciantes, como sites de conteúdo adulto ou de jogos de azar que operam legalmente, enfrentam um risco elevado de atividades ilegais, e exigimos salvaguardas reforçadas para os adquirentes que prestam suporte a comerciantes nesses setores.</p>
+</blockquote>
+<ul>
+<li>
+<p>Porém Steam e Itch.io deixaram claro que os motivos da remoção (ou deslistagem) dos jogos foi pressão dos processadores de pagamentos</p>
+<ul>
+<li>Importante chamar a atenção que o jogo famoso 'Mouthwashing' não foi deslistado da itch.io por causa desse motivo, embora apresente vários temas adultos. Isso foi motivo de confusão entre a comunidade</li>
+</ul>
+</li>
+<li>
+<p>Itchio voltou com os jogos NSFW a serem listados, porém apenas se forem de graça. O CEO da empresa disse que problemas com o Stripe vão obrigar eles a trabalharem com outra plataforma de pagamentos para recuperar a habilidade de vender os jogos com temas adultos.</p>
+<p><a href="https://www.theverge.com/games/717393/itchio-adult-content-ban-restoring-free-nsfw-pages">https://www.theverge.com/games/717393/itchio-adult-content-ban-restoring-free-nsfw-pages</a></p>
+</li>
+<li>
+<p>Além disso, os termos da itch.io foram atualizados para proibir, "não exaustivamente" os temas:</p>
+<ul>
+<li>Conteúdo não consensual (real ou implícito)</li>
+<li>Temas de menores ou "quase ilegais"</li>
+<li>Conteúdo de incesto ou pseudo-incesto</li>
+<li>Bestialidade ou relacionado a animais</li>
+<li>Estupro, coerção ou uso de força</li>
+<li>Implicações de tráfico sexual</li>
+<li>Pornografia de vingança / voyeur / câmera escondida</li>
+<li>Fetiche envolvendo dejetos corporais ou danos extremos (por exemplo, "fezes", "vômito")</li>
+</ul>
+</li>
+<li>
+<p>O que é interessante é que isso já aconteceu antes:</p>
+<ul>
+<li>
+<p>Bem recentemente com o Civitai:</p>
+<p><a href="https://www.404media.co/civitai-is-banning-ai-generated-incest-and-diapers/">https://www.404media.co/civitai-is-banning-ai-generated-incest-and-diapers/</a></p>
+</li>
+<li>
+<p>Visa, Mastercard e PayPal suspenderam os serviços do WikiLeaks depois que o grupo começou a publicar telegramas diplomáticos dos EUA.</p>
+<p><a href="https://operamundi.uol.com.br/politica-e-economia/visa-e-mastercard-se-unem-ao-boicote-financeiro-contra-wikileaks/">https://operamundi.uol.com.br/politica-e-economia/visa-e-mastercard-se-unem-ao-boicote-financeiro-contra-wikileaks/</a></p>
+</li>
+<li>
+<p>Gab, rede social da 'alt right', durante o ano de 2018 foi boicotada pelas plataformas de pagamento.</p>
+</li>
+<li>
+<p>No geral restrições para pagamentos de "alto risco" tem o resultado de prejudicarem minorias marginalizadas com dificuldade de acesso a crédito.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://www.pcgamer.com/gaming-industry/game-development/visa-and-mastercard-pressuring-itch-io-and-valve-does-nothing-to-protect-women-and-shock-games-will-just-be-side-stepping-the-ban-entirely-say-affected-indie-devs">https://www.pcgamer.com/gaming-industry/game-development/visa-and-mastercard-pressuring-itch-io-and-valve-does-nothing-to-protect-women-and-shock-games-will-just-be-side-stepping-the-ban-entirely-say-affected-indie-devs</a></p>
+<ul>
+<li>Qual a raiz do problema mesmo?
+<ul>
+<li>A indústria cultural existe para vender cultura como mercadoria</li>
+<li>Quando falamos de notícias, livros, filmes e músicas parece que existe algum tipo de 'aura' diferente dos jogos que tendem a ser vistos como 'uma mídia que não é séria'
+<ul>
+<li>Isso vale para ambos os lados</li>
+</ul>
+</li>
+<li>Existe um conflito entre a liberdade artística e a necessidade de vender o nosso jogo</li>
+<li>Existe uma concentração de poder nas plataformas e consequentemente nos meios de pagamento (vamos acordar da dualidade estado X privado)</li>
+</ul>
+</li>
+<li>É preciso ter muito cuidado para não transformar isso numa guerra cultural de "gamers" VS "feministas" VS "lgbt" VS "liberdade de expressão"
+<ul>
+<li>Essa é a prática IDENTITÁRIA que é o manual dos movimentos de extrema direita desde sempre</li>
+</ul>
+</li>
+<li>Esse aqui é um tópico que a gente sempre traz no canal. Temos algumas soluções tecnológicas?
+<ul>
+<li>Criptomoedas</li>
+<li>Sistemas anti censura</li>
+<li>Lojas alternativas</li>
+</ul>
+</li>
+<li>Mas no final o grande problema que nós lidamos é a disparidade de poder entre quem cria jogos (arte) e quem ganha dinheiro com a venda de jogos</li>
+<li>A censura não existe no vácuo: quem está censurando, qual discurso, dito por quem?</li>
+<li>Isso é importante porque os gamers tendem a ver isso como uma questão focada na liberdade individual e liberdade de expressão para TODOS OS ASSUNTOS. Porém quando deparados com a mesma dinâmica afetando minorias isso não se reflete no seu 'ativismo'</li>
+<li>A internet não está quebrada porque você não consegue jogar seu joguinho pornô (facilmente). A internet está quebrada porque o nosso sistema econômico está quebrado e liberdade econômica condiciona liberdade de expressão</li>
+<li>Então, sim gamers nós estamos do mesmo lado, mas é porque eu estou do lado dos trabalhadores.</li>
+</ul>
+<h4 id="referências"><a class="header" href="#referências">Referências</a></h4>
+<p><a href="https://www.404media.co/steam-itchio-collective-shout-nsfw-games-campaign/?ref=daily-stories-newsletter">https://www.404media.co/steam-itchio-collective-shout-nsfw-games-campaign/?ref=daily-stories-newsletter</a></p>
+<p><a href="https://www.pcguide.com/news/valve-responds-to-payment-processor-controversy-hopes-devs-have-another-game-to-put-on-steam/">https://www.pcguide.com/news/valve-responds-to-payment-processor-controversy-hopes-devs-have-another-game-to-put-on-steam/</a></p>
+<p><a href="https://items.gog.com/freedomtobuy/index.html">https://items.gog.com/freedomtobuy/index.html</a></p>
+<p><a href="https://www.theguardian.com/games/2025/jul/29/why-did-adult-titles-disappear-from-steam-itch-pc-gaming-payment-processors">https://www.theguardian.com/games/2025/jul/29/why-did-adult-titles-disappear-from-steam-itch-pc-gaming-payment-processors</a></p>
+<p><a href="https://itch.io/updates/update-on-nsfw-content#addendum-faq">https://itch.io/updates/update-on-nsfw-content#addendum-faq</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="24_07_25.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="24_07_25.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
