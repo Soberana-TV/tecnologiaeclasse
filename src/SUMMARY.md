@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [08/08/25](08_08_25.md)
 - [Steam, itch.io e censura dos meios  de pagamento](steam_itch.md)
 - [24/07/25](24_07_25.md)
 - [18/07/25](18_07_25.md)
