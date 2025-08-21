@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O lançamento do ChatGPT 5](chatgpt5.md)
 - [O que é a revolução dos clippys?](clippys.md)
 - [Google hackeado, bolsonaristas foram longe demais e mais notícias](17_08_25.md)
 - [Felca, adultização e redes sociais](felca.md)
