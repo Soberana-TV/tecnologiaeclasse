@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [A Geopolítica da IA 2025/02](geopolitica_ia2.md)
 - [O que é ser um artista na era da IA?](artista_ia.md)
 - [O lançamento do ChatGPT 5](chatgpt5.md)
 - [O que é a revolução dos clippys?](clippys.md)
