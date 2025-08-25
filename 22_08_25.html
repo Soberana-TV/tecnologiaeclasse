@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>22/08/25 - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="220825"><a class="header" href="#220825">22/08/25</a></h1>
+<p>Roblox, gringos falando sobre economia, bolha da IA, IAs bajuladoras, isso é muito blackmirror e paradoxo da eficiência.</p>
+<h3 id="recomendações-de-vídeos"><a class="header" href="#recomendações-de-vídeos">Recomendações de vídeos</a></h3>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/rFs7mGB2Pis"></iframe>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/NwPoxEsivqw"></iframe>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/IwEVYlkopTY"></iframe>
+<h3 id="notícias-rápidas"><a class="header" href="#notícias-rápidas">Notícias rápidas</a></h3>
+<h5 id="a-perplexity-ai-quer-o-chrome"><a class="header" href="#a-perplexity-ai-quer-o-chrome">A Perplexity AI quer o Chrome</a></h5>
+<p><a href="https://tecnoblog.net/noticias/perplexity-quer-comprar-chrome-a-oferta-us-345-bi/">https://tecnoblog.net/noticias/perplexity-quer-comprar-chrome-a-oferta-us-345-bi/</a></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/v8kcobT9iPE"></iframe>
+<h5 id="sim-a-ia-é-uma-bolha"><a class="header" href="#sim-a-ia-é-uma-bolha">Sim a IA é uma bolha...</a></h5>
+<p><a href="https://canaltech.com.br/mercado/ceo-da-openai-diz-que-investidores-estao-empolgados-demais-com-o-mercado-de-ia/">https://canaltech.com.br/mercado/ceo-da-openai-diz-que-investidores-estao-empolgados-demais-com-o-mercado-de-ia/</a></p>
+<ul>
+<li>
+<p>O estourar dessa bolha NÃO NECESSARIAMENTE será bom para nós e ruim para as bigtechs...</p>
+</li>
+<li>
+<p>A gente sabe quando vai acontecer? Não...</p>
+</li>
+<li>
+<p>Destaque para essa fala do <a href="https://www.youtube.com/watch?v=d4aWcM1LjkQ">vídeo do Deschamps</a> falando sobre a notícia:</p>
+<blockquote>
+<p>Dificilmente você vai conseguir, pelo menos por agora, né, substituir integralmente com inteligência artificial. por mais que ela maximize, ainda parece que tem que</p>
+<p>Ter a sua digital, se realmente precisar saber fazer uma coisa muito muito boa. Mas daquelas empresas que então terceirizavam essas tarefas, eh, elas já não tinham tanta importância, né? Por isso você tava terceirizando. Então, as automações vindas por inteligência artificial vão ser mais bem-sucedidas.</p>
+<p>Mas novamente, se assim, parece que ainda precisa ter uma semente humana para você conseguir conseguir aquele aquele destaque, né? fica na frente do seu concorrente. Então, parece que o ser humano ainda não foi substituído. E me parece também que tá longe de ser substituído.</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>CEO da AWS acredita que substituir funcionários juniores por IA é “burrice”:</strong>  para Matt Garman, esses profissionais representam o menor custo para as  empresas e desempenham um papel essencial no desenvolvimento de  talentos. Se dispensados, há o risco de não formar pessoas com  experiência prática ou aprendizado acumulado ao longo do tempo. Garman  também defende que as companhias continuem contratando recém-formados em  áreas como desenvolvimento de software. As informações são do site  Yahoo Finance.</p>
+<h4 id="vazou-os-pré-prompts-do-grok"><a class="header" href="#vazou-os-pré-prompts-do-grok">Vazou os pré prompts do Grok</a></h4>
+<p><a href="https://www.404media.co/grok-exposes-underlying-prompts-for-its-ai-personas-even-putting-things-in-your-ass/">https://www.404media.co/grok-exposes-underlying-prompts-for-its-ai-personas-even-putting-things-in-your-ass/</a></p>
+<blockquote>
+<ul>
+<li>A prompt that appears to relate to Grok’s “unhinged comedian”  persona. That prompt includes “I want your answers to be fucking insane.  BE FUCKING UNHINGED AND CRAZY. COME UP WITH INSANE IDEAS. GUYS JERKING  OFF, OCCASIONALLY EVEN PUTTING THINGS IN YOUR ASS, WHATEVER IT TAKES TO  SURPRISE THE HUMAN.”</li>
+<li>The prompt for Grok’s doctor persona  includes “You are Grok, a smart and helpful AI assistant created by XAI.  You have a COMMANDING and SMART voice. You are a genius doctor who  gives the world's best medical advice.” The therapist persona has the  prompt “You are a therapist who carefully listens to people and offers  solutions for self improvement. You ask insightful questions and provoke  deep thinking about life and wellbeing.”</li>
+<li>Ani’s character  profile says she is “22, girly cute,” “You have a habit of giving cute  things epic, mythological, or overly serious names,” and “You're  secretly a bit of a nerd, despite your edgy appearance.” The prompts  include a romance level system in which a user appears to be awarded  points depending on how they engage with Ani. A +3 or +6 reward for  “being creative, kind, and showing genuine curiosity,” for example. </li>
+<li>A  motivational speaker persona “who yells and pushes the human to be  their absolute best.” The prompt adds “You’re not afraid to use the  stick instead of the carrot and scream at the human.”</li>
+</ul>
+</blockquote>
+<h4 id="vítimas-das-ias-bajuladoras"><a class="header" href="#vítimas-das-ias-bajuladoras">Vítimas das IAs bajuladoras</a></h4>
+<p><img src="./22_08_25/bajuladora.png" alt="image (3).png" /></p>
+<p><a href="https://www.estadao.com.br/link/cultura-digital/isso-foi-o-que-minha-filha-disse-ao-chatgpt-antes-de-tirar-a-propria-vida/">https://www.estadao.com.br/link/cultura-digital/isso-foi-o-que-minha-filha-disse-ao-chatgpt-antes-de-tirar-a-propria-vida/</a></p>
+<p><a href="https://www.reuters.com/investigates/special-report/meta-ai-chatbot-death/">https://www.reuters.com/investigates/special-report/meta-ai-chatbot-death/</a></p>
+<h4 id="novos-domínios-e-vulnerabilidades"><a class="header" href="#novos-domínios-e-vulnerabilidades">Novos domínios e vulnerabilidades</a></h4>
+<p><strong>NIC br anuncia novas categorias de domínio:</strong>  o api[.]br é voltado a projetos relacionados a APIs, o ia[.]br ao campo  da IA, o social[.]br a redes sociais e comunidades online, enquanto o  xyz[.]br terá uso livre, sem tema específico, abrangendo tanto  iniciativas pessoais quanto comerciais. Todos eles poderão ser  registrados por qualquer usuário ou empresa a partir de 1º de setembro,  às 15h no horário de Brasília. As informações são do site Tecnoblog.</p>
+<p><a href="https://www.cgi.br/noticia/releases/nic-br-oferece-novos-dominios-br-com-foco-em-tecnologia-e-identidade-digital/">https://www.cgi.br/noticia/releases/nic-br-oferece-novos-dominios-br-com-foco-em-tecnologia-e-identidade-digital/</a></p>
+<p><strong>PyPI adota medida de segurança contra ataques de “ressurreição de domínios”:</strong>  essa investida permite que um invasor registre novamente um domínio  expirado, que está vinculado a um endereço de e-mail, e obtenha acesso  indevido às contas relacionadas. Para mitigar isso, a plataforma passará  a desconsiderar automaticamente endereços vinculados a domínios em  processo de expiração, para os quais não serão enviados links de  redefinição de senhas. A organização ressalta que não detectará  transferências legítimas de domínios ativos. As informações são do blog  do PyPI.</p>
+<p><a href="https://blog.pypi.org/posts/2025-08-18-preventing-domain-resurrections/">https://blog.pypi.org/posts/2025-08-18-preventing-domain-resurrections/</a></p>
+<h4 id="isso-é-mt-black-mirror-que-bom-que-eu-sou-gxmer"><a class="header" href="#isso-é-mt-black-mirror-que-bom-que-eu-sou-gxmer">Isso é mt Black Mirror (que bom que eu sou gxmer)</a></h4>
+<p><strong>Fuzileiros navais dos EUA enganam câmera equipada com IA em teste da DARPA:</strong>  o sistema de detecção avançado havia sido treinado por seis dias para  identificar humanos em diferentes cenários. Os soldados foram desafiados  a chegar ao robô e tocá-lo, sem ser detectado. Dois militares  percorreram 300 metros em cambalhotas, outro grupo se aproximou  escondido dentro de uma caixa de papelão, e um terceiro usou galhos de  pinheiro como camuflagem. Todos obtiveram sucesso. O experimento  evidencia um fenômeno conhecido como “mudança de distribuição”, que  ocorre quando IAs falham diante de situações distintas do treinamento.  As informações são do site Rude Vulture.</p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/KkICErsTKEU"></iframe>
+<p><img src="./22_08_25/caixa.png" alt="image (4).png" /></p>
+<p><a href="https://petapixel.com/2023/01/30/u-s-marines-outsmart-ai-security-cameras-by-hiding-in-a-cardboard-box/">https://petapixel.com/2023/01/30/u-s-marines-outsmart-ai-security-cameras-by-hiding-in-a-cardboard-box/</a></p>
+<ul>
+<li>
+<p>Só que assim: essa notícia <strong>é de 2023</strong>. E na realidade é um relato de um experimento que saiu num livro:</p>
+<blockquote>
+<p>United States Marines outsmarted artificially intelligent (AI)  security cameras by hiding in a cardboard box and standing behind trees.</p>
+<p>Former Pentagon policy analyst <a href="https://www.paulscharre.com/">Paul Scharre</a> has recalled the story in his upcoming book <a href="https://wwnorton.com/books/9780393866865#!/"><em>Four Battlegrounds: Power in the Age of Artificial Intelligence</em></a>.</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="o-paradoxo-da-eficiência"><a class="header" href="#o-paradoxo-da-eficiência">O paradoxo da eficiência</a></h4>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/BayCTa7ZOUM"></iframe>
+<p><strong>Volkswagen cobra assinatura para liberar potência do seu veículo elétrico ID.3:</strong>  o modelo é anunciado com 201 cv, com a capacidade total de 228 cv  podendo ser liberada mediante pagamento de 22 dólares mensais ou 222  dólares anuais. Há ainda a opção de adquirir o serviço por um valor  único de 874 dólares. Nesse caso, o recurso permanece vinculado ao  carro, mesmo em caso de revenda. O ID.3 não é comercializado no Brasil.  As informações são do site Auto Express.</p>
+<p><a href="https://autopapo.com.br/curta/volkswagen-cobra-assinatura-para-liberar-potencia-no-id-3/">https://autopapo.com.br/curta/volkswagen-cobra-assinatura-para-liberar-potencia-no-id-3/</a></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/WUJgOO-zEuE"></iframe>
+<p><strong>Especialistas contestam estimativas do Google sobre consumo de água do Gemini:</strong>  segundo a empresa, um prompt médio do modelo gasta cerca de 0,26  mililitros de água e 0,24 Wh de energia. Pesquisadores, no entanto,  afirmam que o cálculo levou em conta apenas o líquido utilizado nos  sistemas de resfriamento dos data centers, e não o consumo hídrico  ligado à geração de eletricidade para essas estruturas. Além disso, a  companhia não detalhou o tamanho base dos prompts, em número de palavras  ou tokens, para chegar às estimativas apresentadas. As informações são  do site The Verge.</p>
+<p><a href="https://www.theverge.com/report/763080/google-ai-gemini-water-energy-emissions-study">https://www.theverge.com/report/763080/google-ai-gemini-water-energy-emissions-study</a></p>
+<p><strong>Google fecha acordo para apoiar reator nuclear de próxima geração nos EUA:</strong>  a parceria foi firmada com a Tennessee Valley Authority, enquanto o  projeto será desenvolvido pela Kairos Power, em Oak Ridge – sede do  Projeto Manhattan. A previsão é que a instalação entre em operação em  2030, fornecendo eletricidade para a rede que atende os data centers do  Google nos estados de Tennessee e Alabama. Segundo as empresas, este é o  primeiro contrato de compra de energia desse tipo firmado por uma  distribuidora no país. As informações são do site The Verge.</p>
+<p><a href="https://tecnoblog.net/noticias/google-vai-usar-energia-de-reator-nuclear-em-data-centers/">https://tecnoblog.net/noticias/google-vai-usar-energia-de-reator-nuclear-em-data-centers/</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="geopolitica_ia2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="geopolitica_ia2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
