@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [INTEL, NVIDIA, AMD e EUA](eua_chips.md)
 - [Folha de SP processa OPENAI e ... Manual do Usuário](folha.md)
 - [22/08/25](22_08_25.md)
 - [A Geopolítica da IA 2025/02](geopolitica_ia2.md)
