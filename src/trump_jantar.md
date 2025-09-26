@@ -1,5 +1,7 @@
 # O jantar amaldiçoado das big techs com Trump
 
+Vamos comentar sobre essa grande peça publicitária (ou de chantagem?) armada por Trump para receber os CEOs das big techs dos EUA.
+
 {{#embed https://www.youtube.com/watch?v=WYyaNm7UqFQ }}
 
 <https://www.axios.com/2025/09/05/trump-tech-dinner-ceo-zuckerberg-musk>
