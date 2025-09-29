@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Gambiarra do IOS é procupante](gambiarra.md)
 - [PEC da Blindagem](pec_blindagem.md)
 - [Spotify falha, falhou e falhará](spotify.md)
 - [O jantar amaldiçoado de Trump e big techs](trump_jantar.md)
