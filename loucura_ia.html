@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A loucura de IA tem que acabar - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3 id="a-loucura-induzida-por-ia-precisa-acabar-mas-não-vai-tão-cedo-"><a class="header" href="#a-loucura-induzida-por-ia-precisa-acabar-mas-não-vai-tão-cedo-">A loucura induzida por IA precisa acabar... mas não vai tão cedo 🙂</a></h3>
+<p>"Olá, sou eu senhor Mark Mc Big Tech! Você pediu mais IA integrada em todas as ferramentas que usa no seu dia a dia? Não? Que pena, pense no valor das nossas ações! "</p>
+<p><a href="https://www.wheresyoured.at/the-haters-gui/">https://www.wheresyoured.at/the-haters-gui/</a></p>
+<p><strong>Microsoft vai forçar instalação do Microsoft 365 Copilot no Windows em outubro:</strong>  o aplicativo integra o assistente aos programas do Office, incluindo  Word, Excel e PowerPoint. O software será adicionado ao Menu Iniciar e  ativado por padrão. Administradores de TI em organizações poderão  bloquear a instalação pelo Centro de Administração do Microsoft 365  Apps. O procedimento será realizado em dispositivos que possuam os apps  de desktop do Microsoft 365. As informações são do site  BleepingComputer.</p>
+<p><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-to-force-install-the-microsoft-365-copilot-app-in-october/">https://www.bleepingcomputer.com/news/microsoft/microsoft-to-force-install-the-microsoft-365-copilot-app-in-october/</a></p>
+<p><strong>Estudo mostra que certos conteúdos gerados por IA podem afetar produtividade no trabalho:</strong>  o termo “workslop” descreve conteúdos profissionais, como slides e  relatórios, produzidos pela tecnologia que aparentam ter qualidade, mas  exigem retrabalho dos colegas. Em entrevista com 1.150 funcionários nos  EUA de diversos setores, 40% relatam ter recebido workslop no último  mês. “Slop” está se tornando o termo para classificar conteúdos  indesejados gerados por IA, semelhante ao “spam” para emails. As  informações são do site Harvard Business.</p>
+<h4 id="os-agentes-estão-por-aí"><a class="header" href="#os-agentes-estão-por-aí">Os agentes estão por aí...</a></h4>
+<p><strong>Comandos ocultos em pixels de imagens podem manipular agentes de IA, segundo estudo:</strong>  essas mensagens, invisíveis ao olho humano, podem instruir o sistema a  expor dados sensíveis. Uma foto publicada no X também poderia induzir o  modelo a retuitar o conteúdo, desencadeando um efeito em cascata. Os  pesquisadores alertam especialmente para IAs de código aberto, as quais  permitem que qualquer pessoa estude como a tecnologia interpreta pixels.  Os papéis de parede são considerados uma ameaça particular por  permanecerem visíveis constantemente no computador. Apesar disso, não há  registros de casos reais de exploração. As informações são do site  LiveScience.</p>
+<p><a href="https://latesthackingnews.com/2025/09/01/adding-prompt-injection-to-image-scaling-attacks-threatens-ai-systems/">https://latesthackingnews.com/2025/09/01/adding-prompt-injection-to-image-scaling-attacks-threatens-ai-systems/</a></p>
+<p><a href="https://www.livescience.com/technology/artificial-intelligence/ai-could-use-online-images-as-a-backdoor-into-your-computer-alarming-new-study-suggests">https://www.livescience.com/technology/artificial-intelligence/ai-could-use-online-images-as-a-backdoor-into-your-computer-alarming-new-study-suggests</a></p>
+<p><strong>OpenAI corrige falha que permitia extrair dados de usuários que integram suas contas Gmail ao ChatGPT e usavam a ferramenta Deep Research:</strong> bastava que o usuário tivesse sua conta conectada ao ChatGPT e recebesse um e-mail malicioso contendo prompts ocultos no HTML, utilizando técnicas como texto branco sobre fundo branco. A solicitação maliciosa era executada a partir da própria infraestrutura da OpenAI, enviando o conteúdo das mensagens para um servidor controlado pelo invasor.Não há informação se a falha – chamada ShadowLeak – chegou a ser explorada ativamente. As informações são do site The Register.</p>
+<p><a href="https://www.tecmundo.com.br/seguranca/407175-openai-corrige-brecha-do-chatgpt-que-permitia-roubar-dados-do-gmail.htm">https://www.tecmundo.com.br/seguranca/407175-openai-corrige-brecha-do-chatgpt-que-permitia-roubar-dados-do-gmail.htm</a></p>
+<p><a href="https://arstechnica.com/information-technology/2025/09/new-attack-on-chatgpt-research-agent-pilfers-secrets-from-gmail-inboxes/">https://arstechnica.com/information-technology/2025/09/new-attack-on-chatgpt-research-agent-pilfers-secrets-from-gmail-inboxes/</a></p>
+<h5 id="echo-leak"><a class="header" href="#echo-leak">Echo leak</a></h5>
+<p><a href="https://www.bleepingcomputer.com/news/security/zero-click-ai-data-leak-flaw-uncovered-in-microsoft-365-copilot/">https://www.bleepingcomputer.com/news/security/zero-click-ai-data-leak-flaw-uncovered-in-microsoft-365-copilot/</a></p>
+<h5 id="deixe-seu-linkedin-flantástico"><a class="header" href="#deixe-seu-linkedin-flantástico">Deixe seu Linkedin flantástico</a></h5>
+<p><a href="https://www.linkedin.com/posts/cameron-mattis_i-didnt-think-this-would-actually-work-activity-7376238154787364864-ni45/">https://www.linkedin.com/posts/cameron-mattis_i-didnt-think-this-would-actually-work-activity-7376238154787364864-ni45/</a></p>
+<p><a href="https://80.lv/articles/linkedin-user-made-ai-recruiters-reveal-themselves-by-giving-him-flan-recipe">https://80.lv/articles/linkedin-user-made-ai-recruiters-reveal-themselves-by-giving-him-flan-recipe</a></p>
+<h4 id="empresas-colhendo-o-que-plantaram"><a class="header" href="#empresas-colhendo-o-que-plantaram">Empresas colhendo o que plantaram</a></h4>
+<p><img src="./loucura_ia/colhendo.png" alt="colhendo.png" /></p>
+<p><a href="https://www.instagram.com/p/DOMvRgsldPu/">https://www.instagram.com/p/DOMvRgsldPu/</a></p>
+<p><strong>Desenvolvedores freelancers e empresas lucram corrigindo softwares criados com vibe coding:</strong>  segundo o programador Hamid Siddiqi, os ajustes vão de interfaces  inconsistentes e códigos mal otimizados a correções visuais, como cores,  animações e layouts. No setor empresarial, a Ulam Labs é um dos  exemplos de companhias que atuam nesse segmento. Já a plataforma  VibeCodeFixers conta com quase 300 programadores cadastrados. Segundo  seu criador, a maior parte dos vibe coders são gerentes de produto,  profissionais de vendas ou pequenos empreendedores. As informações são  do site 404 Media.</p>
+<p><a href="https://www.404media.co/the-software-engineers-paid-to-fix-vibe-coded-messes/">https://www.404media.co/the-software-engineers-paid-to-fix-vibe-coded-messes/</a></p>
+<p><a href="https://gizmodo.com/after-ai-led-to-layoffs-coders-are-being-hired-to-fix-vibe-coded-screwups-2000657915">https://gizmodo.com/after-ai-led-to-layoffs-coders-are-being-hired-to-fix-vibe-coded-screwups-2000657915</a></p>
+<blockquote>
+<p>No entanto, toda essa coisa de codificação de vibe não parece estar funcionando para as empresas, já que gerar código por meio de um prompt de LLM em uma velocidade vertiginosa pode, previsivelmente, levar a um trabalho abaixo do esperado. Agora, ironicamente, parece que, tendo dispensado programadores mais qualificados em troca da eficácia barata de um programador auxiliado por chatbot, as empresas estão tendo que contratar mais profissionais para consertar os erros da IA.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="gambiarra.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="gambiarra.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
