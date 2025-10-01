@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Tocanna: a artista que as big techs gostam](tocanna.md)
 - [A loucura de IA tem que acabar](loucura_ia.md)
 - [Gambiarra do IOS é preocupante](gambiarra.md)
 - [PEC da Blindagem](pec_blindagem.md)
