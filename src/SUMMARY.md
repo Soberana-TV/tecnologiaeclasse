@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Empresas contra a preservação da cultura](preservacao_cultura.md)
 - [Propagandas em todo lugar](propagandas.md)
 - [Tocanna: a artista que as big techs gostam](tocanna.md)
 - [A loucura de IA tem que acabar](loucura_ia.md)

@@ -1,5 +1,7 @@
 # Propagandas em todo lugar aaaah
 
+Toda tela terá uma propaganda, todo assistente de IA irá lhe vender um produto. Assim foi profetizado no livro do capitalismo. Marketing acima de tudo, lucro acima de todos.
+
 **Geladeiras Family Hub da Samsung começarão a exibir anúncios:**  as propagandas serão mostradas na tela da porta quando estiver em modo  ocioso em temas como Clima e Quadro Diário, mas poderão ser dispensadas  individualmente pelos usuários, e não aparecerão quando o display  estiver configurado para projetar álbuns de fotos, por exemplo.  Inicialmente a mudança ocorrerá apenas em dispositivos localizados nos  EUA, como parte de um projeto piloto, e não está claro quais modelos  específicos serão afetados. A linha Family Hub também é comercializada  no Brasil. As informações são do site Android Authority.
 
 <https://fortune.com/2025/09/19/samsung-family-hub-refrigerators-advertisements/>
