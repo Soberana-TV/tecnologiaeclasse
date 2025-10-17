@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Larry Ellison e o Controle da Mídia sob Trump](oracle_tiktok.md)
 - [A Bolha da IA](agora_vai.md)
 - [O que está acontecendo com o Audacity?](audacity.md)
 - [Empresas contra a preservação da cultura](preservacao_cultura.md)
