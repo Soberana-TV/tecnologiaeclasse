@@ -4,7 +4,9 @@ Larry Ellison - CEO da Oracle e aliado de Trump - agora é dono do TikTok nos EU
 
 #### Não antropomorfize Larry Ellison
 
-{{#embed https://www.youtube.com/watch?v=-zRN7XLCRhc&t=2306s }}
+{{#embed https://www.youtube.com/watch?v=-zRN7XLCRhc }}
+
+<https://www.youtube.com/watch?v=-zRN7XLCRhc&t=2306s>
 
 ### O contrato do TikTok
 
