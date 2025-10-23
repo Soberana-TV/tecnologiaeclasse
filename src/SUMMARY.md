@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O fim do Windows 10](windows10.md)
 - [Larry Ellison e o Controle da Mídia sob Trump](oracle_tiktok.md)
 - [A Bolha da IA](agora_vai.md)
 - [O que está acontecendo com o Audacity?](audacity.md)
