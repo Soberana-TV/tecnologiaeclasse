@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Ruby fora dos Trilhos](ruby.md)
 - [Vantagens da Merdificação](merdificacao.md)
 - [A Queda da AWS](queda_aws.md)
 - [O fim do Windows 10](windows10.md)
