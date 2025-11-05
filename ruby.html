@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Ruby fora dos Trilhos - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="ruby-on-rails-fora-dos-trilhos"><a class="header" href="#ruby-on-rails-fora-dos-trilhos">Ruby on Rails fora dos trilhos</a></h1>
+<p>O Rubygems sofreu uma "mudança de direção" forçada por intervenção de empresas influentes no ecossistema Ruby, porém isso ficou em segundo plano quando o criador do Ruby on Rails novamente se envolveu numa "polêmica" por suas opiniões políticas merdas.</p>
+<ul>
+<li>Tudo começou no dia 22/09/25 com:</li>
+</ul>
+<p><a href="https://github.com/Plan-Vert/open-letter">https://github.com/Plan-Vert/open-letter</a></p>
+<ul>
+<li>Em resumo: um abaixo assinado de pessoas da comunidade Ruby e Ruby on Rails que estão pedindo que a equipe do RoR se retire do projeto e crie um fork (fora da alçada de David Heinemeier Hansson)</li>
+<li>Essa não é a primeira controvérsia que o DHH e o Basecamp se envolvem (vamos falar mais pra frente). Qual foi o evento recente que deflagrou mais essa crise?</li>
+</ul>
+<h3 id="qual-a-problematica-com-o-dhh"><a class="header" href="#qual-a-problematica-com-o-dhh">Qual a problema´tica com o DHH?</a></h3>
+<p><a href="https://web.archive.org/web/20250920061923/https://world.hey.com/dhh/as-i-remember-london-e7d38e64">https://web.archive.org/web/20250920061923/https://world.hey.com/dhh/as-i-remember-london-e7d38e64</a></p>
+<ul>
+<li>Essa postagem faz uma boa crítica do texto: <a href="https://paulbjensen.co.uk/2025/09/17/on-dhhs-as-i-remember-london.html">https://paulbjensen.co.uk/2025/09/17/on-dhhs-as-i-remember-london.html</a></li>
+<li>Esse também: <a href="https://tekin.co.uk/2025/09/the-ruby-community-has-a-dhh-problem">https://tekin.co.uk/2025/09/the-ruby-community-has-a-dhh-problem</a></li>
+</ul>
+<h3 id="ou-será-que-foi-mesmo"><a class="header" href="#ou-será-que-foi-mesmo">Ou será que foi mesmo?</a></h3>
+<ul>
+<li>De certa maneira a carta não faz um bom trabalho de explicar para quem está de fora as dinâmicas de poder da comunidade Ruby on Rails</li>
+<li>Quando uma dessas coisas 'explode' e é noticiada pela mídia mais geral de tecnologia geralmente tem algumas história do passado:</li>
+</ul>
+<h4 id="how-ruby-went-off-the-rails"><a class="header" href="#how-ruby-went-off-the-rails">How Ruby went off the Rails</a></h4>
+<p>de 404media.co</p>
+<p><a href="https://archive.is/G1Alk">https://archive.is/G1Alk</a></p>
+<blockquote>
+<p>Em 19 de setembro, a Ruby Central, uma organização sem fins lucrativos que administra o RubyGems.org, uma plataforma para compartilhamento de código e bibliotecas Ruby, assumiu o controle de vários repositórios do GitHub para Ruby Gems, bem como de outros projetos críticos de código aberto Ruby dos quais o restante da comunidade de desenvolvimento Ruby depende. Um grupo de desenvolvedores de código aberto que contribuiu para esses projetos e os manteve por anos teve suas permissões revogadas repentinamente. Quando esses desenvolvedores anunciaram nas redes sociais que seu acesso havia sido retirado, muitos desenvolvedores Ruby viram a decisão como uma traição às suas contribuições de anos para o ecossistema Ruby e para os princípios do código aberto em geral. Outros acusaram a Ruby Central de ceder à pressão corporativa de empresas como a Shopify, que, segundo eles, queriam mais controle sobre o projeto.</p>
+</blockquote>
+<h3 id=""><a class="header" href="#"></a></h3>
+<blockquote>
+<p>O RubyGems.org e outras ferramentas essenciais do Ruby não foram interrompidos durante essa transição até o momento, mas o incidente revela uma verdade fundamental sobre a internet e o desenvolvimento de código aberto: grande parte da tecnologia que usamos diariamente e que consideramos garantida é mantida por um pequeno número de desenvolvedores que não são remunerados por esse trabalho ou recebem salários muito baixos em comparação com os das grandes empresas de tecnologia. O desenvolvimento de código aberto continua a viabilizar grande parte da internet, mas, à medida que algumas dessas ferramentas se tornam mais importantes e valiosas financeiramente, elas ficam sujeitas a maior escrutínio e pressão da comunidade, das organizações e das empresas que dependem delas.</p>
+</blockquote>
+<ul>
+<li>Um lado da questão:</li>
+</ul>
+<blockquote>
+<p>A controvérsia atual surgiu nas redes sociais em 19 de setembro, quando Ellen Dash, uma das colaboradoras dos projetos de código aberto RubyGems e Bundler no GitHub, anunciou que Haught, Diretor de Código Aberto da Ruby Central, revogou a participação na organização do GitHub de todos os administradores das equipes de manutenção do RubyGems, Bundler e RubyGems.org. Naquele momento, suas permissões e acesso à organização do GitHub foram revogados, o que significa que eles não podiam mais fazer alterações ou contribuições ao código, e Haught, representando a Ruby Central, assumiu o controle.</p>
+<p>“Não vou usar meias palavras: isso foi uma tomada de poder hostil”, disse Dash em uma carta pública de “despedida” que compartilhou online. “Considero o comportamento da Ruby Central uma ameaça para a comunidade Ruby como um todo. A remoção forçada daqueles que mantiveram o RubyGems e o Bundler por mais de uma década é inerentemente uma ação hostil. A Ruby Central ultrapassou os limites ao fazer isso.”</p>
+</blockquote>
+<ul>
+<li>E o outro:</li>
+</ul>
+<blockquote>
+<p>A Ruby Central, por sua vez, descreve a mudança como centrada na segurança.
+"Com o recente aumento de ataques à cadeia de suprimentos de software, estamos tomando medidas proativas para proteger o ecossistema de gems Ruby de ponta a ponta", disse a Ruby Central em uma explicação sobre sua decisão. "Para fortalecer a segurança da cadeia de suprimentos, estamos tomando medidas importantes para garantir que o acesso administrativo ao RubyGems.org, RubyGems e Bundler seja gerenciado com segurança. Isso inclui nossos sistemas de produção e repositórios do GitHub. No curto prazo, suspenderemos temporariamente o acesso administrativo a esses projetos enquanto finalizamos novas políticas que limitam os direitos de acesso de commit e organização. Essa decisão foi tomada e aprovada pelo Conselho da Ruby Central como parte de nossa responsabilidade fiduciária. Enquanto isso, temos um forte sistema de plantão para garantir a continuidade e a confiabilidade enquanto avançamos com esse trabalho. Essas mudanças visam proteger a infraestrutura crítica que alimenta o ecossistema Ruby, seja você um desenvolvedor baixando gems para sua máquina local [ou] uma equipe pequena ou grande que depende da segurança e disponibilidade dessas ferramentas."</p>
+</blockquote>
+<ul>
+<li>O DHH está envolvido nisso por causa de um detalhe importante:</li>
+</ul>
+<blockquote>
+<p>Em uma mensagem de vídeo de 22 de setembro em resposta às críticas sobre sua decisão de remover mantenedores, a diretora executiva da Ruby Central, Shan Cureton, descreveu uma dinâmica semelhante. Ela disse que "patrocinadores e empresas que dependem de ferramentas Ruby nos procuraram com preocupações sobre a cadeia de suprimentos" e que "nosso financiamento e patrocínios estão diretamente ligados à nossa capacidade de demonstrar fortes padrões operacionais. Sem esses padrões em vigor, fica mais difícil garantir o apoio necessário para manter os mantenedores pagos, organizar eventos e fornecer recursos para desenvolvedores em todas as etapas de sua jornada."</p>
+<p>Como a Shopify é uma das principais patrocinadoras e financiadoras da Ruby Central, isso levou alguns na comunidade Ruby a acreditarem que a Shopify estava pressionando a Ruby Central a fazer essa mudança.</p>
+</blockquote>
+<blockquote>
+<p>“Literalmente, só existe uma empresa que está fornecendo o dinheiro que mantém a Ruby Central funcionando, e é a Shopify”, Arko me disse. “Então, eu simplesmente não acho que haja outra explicação plausível além de a Shopify ter exigido isso.” Quando perguntei a Arko por que ele achava que a Ruby Central o removeu, se não fosse por motivos de segurança, Arko disse: “uma especulação totalmente impossível de provar é que o CEO da Shopify é o melhor amigo do DHH, que me odeia.” DHH também é membro do conselho da Shopify.</p>
+</blockquote>
+<h4 id="não-vamos-falar-de-política-no-trabalho"><a class="header" href="#não-vamos-falar-de-política-no-trabalho">"Não vamos falar de política no trabalho"</a></h4>
+<h4 id="-1"><a class="header" href="#-1"></a></h4>
+<p><a href="https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy">https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy</a></p>
+<ul>
+<li>
+<p>O Basecamp, empresa do DHH, tinha uma piada interna problemática de guardar 'nomes engraçados' de pessoas que se registravam no seu serviço</p>
+</li>
+<li>
+<p>Pessoas que trabalhavam lá dentro e tentaram levantar essa problemática foram rechaçadas e ficou um grande climão.</p>
+</li>
+<li>
+<p>O que resultou numa proibição de "falar de política" dentro da empresa...</p>
+</li>
+<li>
+<p>Eu não deveria ter que explicar a problemática disso, mas lá vai. A existência de minoriais sociais e os problemas que elas enfrentam dentro e fora do ambiente de trabalho são "políticos"</p>
+</li>
+<li>
+<p>Versão do DHH:</p>
+<p><a href="https://world.hey.com/dhh/let-it-all-out-78485e8e">https://world.hey.com/dhh/let-it-all-out-78485e8e</a></p>
+</li>
+</ul>
+<h4 id="flertes-com-o-público-anti-woke"><a class="header" href="#flertes-com-o-público-anti-woke">Flertes com o público anti woke:</a></h4>
+<p><a href="https://world.hey.com/dhh/the-waning-days-of-dei-s-dominance-9a5b656c">https://world.hey.com/dhh/the-waning-days-of-dei-s-dominance-9a5b656c</a></p>
+<ul>
+<li>Eu já não faço mais parte da comunidade Ruby e RoR faz um tempinho. A imagem que eu tinha do DHH é de um cara "chato", mas "genial". Ele é tecnicamente muito bom, MAS...</li>
+<li>Lembra vocês de alguém? Cada país tem o Elon Musk que merece não é mesmo?</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/qO7BI0UAj8c "></iframe>
+<h4 id="conclusão"><a class="header" href="#conclusão">Conclusão</a></h4>
+<ul>
+<li>O esforço de um fork provavelmente está fadado ao fracasso, uma análise muito parecida com a que eu faço da Godot. Porém os nomes apoiando essa cisão são muito mais pesados e essa crise não é algo menor... pode estourar de novo mais pra frente</li>
+<li>Fica a reflexão novamente sobre a dificuldade de conciliar um projeto de software livre (ou até mesmo aberto) e as pressões do mercado e políticas ditatoriais dos seus "donos"</li>
+<li>Esse caso como o da Godot, Wordpress e muitos outros fica dormente por enquanto, mas ficaremos de olho</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="merdificacao.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="merdificacao.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
