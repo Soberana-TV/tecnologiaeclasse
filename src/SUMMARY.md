@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Crash das caixas de CS2](cs2.md)
 - [Ruby fora dos Trilhos](ruby.md)
 - [Vantagens da Merdificação](merdificacao.md)
 - [A Queda da AWS](queda_aws.md)
