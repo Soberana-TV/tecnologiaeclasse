@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Segurança, incentivo ao lucro e tal - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h4 id="segurança-o-incentivo-ao-lucro-e-afins"><a class="header" href="#segurança-o-incentivo-ao-lucro-e-afins">Segurança, o incentivo ao lucro e afins</a></h4>
+<p>A segurança de um produto e o modelo de negócios das empresas nem sempre estão alinhados e essa relação é sempre muito difícil de aparecer na planilha semestral de lucros e investimentos. Hoje quero trazer um apanhado de notícias onde a segurança falhou, como por exemplo no museu do Louvre, e conectar com o mercado de trabalho e capitalismo em geral.</p>
+<p><strong>Projeto  F-Droid, que distribui software open-source para Android, ameaça  encerramento caso Google implemente registro obrigatório de  desenvolvedores para instalação de aplicativos:</strong> segundo Marc  Prud’hommeaux, membro do conselho do F-Droid, a mudança violaria a  política de não exigir cadastro dos usuários da plataforma e reforçaria o  controle sobre o ecossistema de software livre. Além disso, ele defende  que a plataforma é mais segura que a Play Store, visto que os  aplicativos são de código aberto e podem ser auditados publicamente. O  F-Droid busca apoio de reguladores e incentiva pressão política contra a  medida do Google, que entrará em vigor em setembro de 2026. As  informações são do site The Register.</p>
+<p><a href="https://f-droid.org/2025/09/29/google-developer-registration-decree.html">https://f-droid.org/2025/09/29/google-developer-registration-decree.html</a></p>
+<p><strong>Jogo verificado na Steam continha malware e rouba doações em cripto destinadas a tratamento de câncer de livestreamer:</strong>  a situação aconteceu ao vivo, enquanto o streamer Raivo Plavnieks  realizava uma transmissão para arrecadar fundos para seu tratamento. O  jogo BlockBlasters já foi removido da plataforma, mas as perdas são  estimadas em 150 mil dólares, com centenas de usuários afetados. As  informações são do site BleepingComputer.</p>
+<p><a href="https://www.404media.co/steam-hosted-malware-game-that-stole-32-000-from-a-cancer-patient-live-on-stream/">https://www.404media.co/steam-hosted-malware-game-that-stole-32-000-from-a-cancer-patient-live-on-stream/</a></p>
+<p><strong>Campanha de malvertising iniciada em redes sociais da Meta atinge Google Ads e YouTube:</strong>  o esquema utiliza anúncios falsos de uma versão premium gratuita do  aplicativo TradingView para Android, o qual instala o malware Brokewell,  que rouba credenciais, intercepta cookies, registra interações como  toques, deslizes e textos digitados, além de atuar como trojan de acesso  remoto. No YouTube, os golpistas criaram um canal que se passa pela  legítima TradingView, com vídeos não listados que chegaram a ultrapassar  180 mil visualizações em poucos dias, distribuindo o Trojan Agent GOSL.  Ainda não há estimativa sobre o número de usuários afetados. As  informações são do site TechRadar.</p>
+<p><a href="https://www.techradar.com/pro/security/this-devious-malware-has-jumped-from-meta-over-to-google-ads-and-youtube-to-spread-heres-how-to-stay-safe">https://www.techradar.com/pro/security/this-devious-malware-has-jumped-from-meta-over-to-google-ads-and-youtube-to-spread-heres-how-to-stay-safe</a></p>
+<p><strong>Brasil e Itália são alvos de trojan para Android que simula digitação humana:</strong>  o Herodotus é capaz de assumir controle total do dispositivo, alterar  permissões do sistema, instalar aplicativos e roubar senhas bancárias e  códigos de autenticação. No Brasil, ele é distribuído via campanhas de  phishing e disfarçado como o app “Módulo Segurança Stone”, apresentado  como um pacote do Chrome. Para burlar sistemas de segurança que detectam  comportamentos suspeitos, o malware simula digitação humana com  intervalos entre 0,3 e 3 segundos. As informações são do site Tecnoblog.</p>
+<p><a href="https://tecnoblog.net/noticias/malware-que-finge-digitar-como-humano-e-usado-em-ataques-no-brasil/">https://tecnoblog.net/noticias/malware-que-finge-digitar-como-humano-e-usado-em-ataques-no-brasil/</a></p>
+<h4 id="a-senha-do-louvre"><a class="header" href="#a-senha-do-louvre">A senha do Louvre</a></h4>
+<p><a href="https://www.tomshardware.com/tech-industry/cyber-security/louvre-heist-reveals-glaring-security-weaknesses-previous-reports-say-museum-used-louvre-as-password-for-its-video-surveillance-still-has-workstations-with-windows-2000">https://www.tomshardware.com/tech-industry/cyber-security/louvre-heist-reveals-glaring-security-weaknesses-previous-reports-say-museum-used-louvre-as-password-for-its-video-surveillance-still-has-workstations-with-windows-2000</a></p>
+<p><strong>Microsoft Azure sofreu pane global nesta quarta-feira:</strong>  a interrupção durou mais de 8 horas e provocou instabilidade em  plataformas como GitHub, Microsoft 365, Minecraft e Xbox, além de  serviços essenciais de companhias aéreas. Segundo a empresa, o incidente  foi causado por uma alteração inadvertida que afetou o funcionamento do  Azure Front Door, impactando componentes de rede como DNS e CDN,  resultando em latência elevada, time-outs e falhas de acesso. As  informações são dos sites Reuters e The Verge.</p>
+<p><a href="https://www.wired.com/story/the-microsoft-azure-outage-shows-the-harsh-reality-of-cloud-failures/">https://www.wired.com/story/the-microsoft-azure-outage-shows-the-harsh-reality-of-cloud-failures/</a></p>
+<p><strong>Cloudflare mitiga ataque DDoS recorde de 22,2 Tbps:</strong>  o maior incidente anterior foi na faixa de 11,5 Tbps, registrado há  apenas três semanas atrás. A investida durou 40 segundos, com  intensidade equivalente à transmissão simultânea de um milhão de vídeos  em 4K. A Cloudflare não revelou detalhes sobre a origem do ataque. As  informações são do site BleepingComputer.</p>
+<p><a href="https://www.bleepingcomputer.com/news/security/cloudflare-mitigates-new-record-breaking-222-tbps-ddos-attack/">https://www.bleepingcomputer.com/news/security/cloudflare-mitigates-new-record-breaking-222-tbps-ddos-attack/</a></p>
+<p><strong>Cloudflare derruba seus próprios serviços devido a bug em código React:</strong>  o incidente, ocorrido no último dia 12, durou mais de uma hora e foi  causado por chamadas repetidas à Tenant Service API. O problema decorreu  de um hook useEffect com um objeto no array de dependências que se  recriava a cada alteração, executando a função várias vezes em uma única  renderização e sobrecarregando a API. Como medida preventiva, a  capacidade da Tenant Service foi reforçada e as chamadas de API  ajustadas para diferenciar tentativas repetidas de novas requisições. As  informações são do site The Register.</p>
+<p><a href="https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/">https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/</a></p>
+<p><strong>Ataque à cadeia de suprimentos atinge mais de 180 pacotes do NPM:</strong>  a campanha, denominada Shai-Hulud, contém um código malicioso capaz de  se autorreplicar para outras bibliotecas de um mesmo mantenedor. O  script injetado faz uso da ferramenta legítima TruffleHog para localizar  dados sensíveis expostos por engano, como chaves de API, senhas e  tokens em repositórios de código. Entre os módulos afetados estão  ctrl/tinycolor (nas versões 4.1.1 e 4.1.2, e corrigido na 4.2.0), com  mais de 2 milhões de downloads semanais, e outros publicados pela  CrowdStrike, que afirma já ter removido as dependências comprometidas.  Mais informações estão disponíveis no TabNews.</p>
+<p><a href="https://krebsonsecurity.com/2025/09/self-replicating-worm-hits-180-software-packages/">https://krebsonsecurity.com/2025/09/self-replicating-worm-hits-180-software-packages/</a></p>
+<p><strong>GitHub vai reforçar segurança do NPM para prevenir ataques à cadeia de suprimentos:</strong>  as mudanças incluem autenticação em dois fatores obrigatória para  publicações locais, uso de tokens granulares com validade de sete dias, e  expansão do modelo de publicação confiável, que elimina a necessidade  de gerenciar tokens de API em sistemas de build. A implementação das  novas regras será gradual. Na semana passada, noticiamos um ataque à  cadeia de suprimentos denominado Shai-Hulud, que afetou mais de 180  pacotes da plataforma. As informações são do site BleepingComputer.</p>
+<p><a href="https://github.blog/security/supply-chain-security/our-plan-for-a-more-secure-npm-supply-chain/">https://github.blog/security/supply-chain-security/our-plan-for-a-more-secure-npm-supply-chain/</a></p>
+<h4 id="e-como-a-gente-amarra-tudo-isso"><a class="header" href="#e-como-a-gente-amarra-tudo-isso">E como a gente amarra tudo isso?</a></h4>
+<p><a href="https://economictimes.indiatimes.com/tech/technology/meta-is-earning-a-fortune-on-a-deluge-of-fraudulent-ads-internal-documents-show/articleshow/125136744.cms">https://economictimes.indiatimes.com/tech/technology/meta-is-earning-a-fortune-on-a-deluge-of-fraudulent-ads-internal-documents-show/articleshow/125136744.cms</a></p>
+<ul>
+<li>A Meta tem um sistema de avaliação de risco das propagandas que mostra para seus usuários</li>
+<li>Acima de um limiar de risco elas são canceladas</li>
+<li>Com um potencial grande de risco, mas abaixo do limiar, o preço dessas publicidades sobre para tentar 'desincentivar' os golpistas</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="cs2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="cs2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
