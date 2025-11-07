@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Segurança, incentivo ao lucro e tal](seguranca_lucro.md)
 - [Crash das caixas de CS2](cs2.md)
 - [Ruby fora dos Trilhos](ruby.md)
 - [Vantagens da Merdificação](merdificacao.md)
