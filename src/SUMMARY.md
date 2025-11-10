@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Kimi K2 é o novo Deepseek?](kimi_k2.md)
 - [Segurança, incentivo ao lucro e tal](seguranca_lucro.md)
 - [Crash das caixas de CS2](cs2.md)
 - [Ruby fora dos Trilhos](ruby.md)
