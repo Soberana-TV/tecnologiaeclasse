@@ -1,6 +1,8 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Revista Oeste faz propaganda de comunismo](oeste_cezpem.md)
+- [OpenAI quer mais dinheiro](openai_dinheiro.md)
 - [O fim do remoto no Nubank](remoto_nubank.md)
 - [Kimi K2 é o novo Deepseek?](kimi_k2.md)
 - [Segurança, incentivo ao lucro e tal](seguranca_lucro.md)
