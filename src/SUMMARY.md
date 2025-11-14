@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Meta ganhou dinheiro com golpes](meta_golpes.md)
 - [Revista Oeste faz propaganda de comunismo](oeste_cezpem.md)
 - [OpenAI quer mais dinheiro](openai_dinheiro.md)
 - [O fim do remoto no Nubank](remoto_nubank.md)
