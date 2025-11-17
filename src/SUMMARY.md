@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Rockstar North demite trabalhadores sindicalizados](rockstar_sindicato.md)
 - [Meta ganhou dinheiro com golpes](meta_golpes.md)
 - [Revista Oeste faz propaganda de comunismo](oeste_cezpem.md)
 - [OpenAI quer mais dinheiro](openai_dinheiro.md)
