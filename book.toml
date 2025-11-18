@@ -1,7 +1,6 @@
 [book]
 authors = ["Lucas Zawacki"]
 language = "pt-BR"
-multilingual = false
 src = "src"
 title = "Tecnologia e Classe"
 description = "Roteiros dos vídeos do canal Tecnologia e Classe."
