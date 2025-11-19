@@ -1,6 +1,7 @@
 import os
 import re
 from datetime import datetime
+from statx import statx
 import xml.etree.ElementTree as ET
 import toml
 
@@ -36,6 +37,11 @@ def parse_date_from_filename(filename):
 def get_file_creation_date(filepath):
     """Get the file creation date as a fallback."""
     timestamp = os.path.getctime(filepath)
+    try:
+        timestamp = statx(filepath).btime
+    except AttributeError:
+      print("st_birthtime not supported on this platform")
+
     return datetime.fromtimestamp(timestamp)
 
 def read_book_config(src_dir):
