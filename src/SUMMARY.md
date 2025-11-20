@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Steam Machine, Windows 11 e sideload no Android](steam_machine_windows11_android.md)
 - [A bolha de infraestrutura da IA](ia_infra.md)
 - [PSF, DEI, EUA](psf_dei_eua.md)
 - [Rockstar North demite trabalhadores sindicalizados](rockstar_sindicato.md)
