@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Aulão de IA do Zema - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="o_que.html"><strong aria-hidden="true">1.</strong> O que é Tecnologia e Classe?</a></li><li class="chapter-item expanded "><a href="aulao_ia_zema.html" class="active"><strong aria-hidden="true">2.</strong> Aulão de IA do Zema</a></li><li class="chapter-item expanded "><a href="cloudflare.html"><strong aria-hidden="true">3.</strong> Cloudflare 18/11/25</a></li><li class="chapter-item expanded "><a href="grokipedia.html"><strong aria-hidden="true">4.</strong> Grokipedia</a></li><li class="chapter-item expanded "><a href="gmail_ia.html"><strong aria-hidden="true">5.</strong> Meta e Google querem ler suas mensagens</a></li><li class="chapter-item expanded "><a href="steam_machine_windows11_android.html"><strong aria-hidden="true">6.</strong> Steam Machine, Windows 11 e sideload no Android</a></li><li class="chapter-item expanded "><a href="ia_infra.html"><strong aria-hidden="true">7.</strong> A bolha de infraestrutura da IA</a></li><li class="chapter-item expanded "><a href="psf_dei_eua.html"><strong aria-hidden="true">8.</strong> PSF, DEI, EUA</a></li><li class="chapter-item expanded "><a href="rockstar_sindicato.html"><strong aria-hidden="true">9.</strong> Rockstar North demite trabalhadores sindicalizados</a></li><li class="chapter-item expanded "><a href="meta_golpes.html"><strong aria-hidden="true">10.</strong> Meta ganhou dinheiro com golpes</a></li><li class="chapter-item expanded "><a href="oeste_cezpem.html"><strong aria-hidden="true">11.</strong> Revista Oeste faz propaganda de comunismo</a></li><li class="chapter-item expanded "><a href="openai_dinheiro.html"><strong aria-hidden="true">12.</strong> OpenAI quer mais dinheiro</a></li><li class="chapter-item expanded "><a href="remoto_nubank.html"><strong aria-hidden="true">13.</strong> O fim do remoto no Nubank</a></li><li class="chapter-item expanded "><a href="kimi_k2.html"><strong aria-hidden="true">14.</strong> Kimi K2 é o novo Deepseek?</a></li><li class="chapter-item expanded "><a href="seguranca_lucro.html"><strong aria-hidden="true">15.</strong> Segurança, incentivo ao lucro e tal</a></li><li class="chapter-item expanded "><a href="cs2.html"><strong aria-hidden="true">16.</strong> Crash das caixas de CS2</a></li><li class="chapter-item expanded "><a href="ruby.html"><strong aria-hidden="true">17.</strong> Ruby fora dos Trilhos</a></li><li class="chapter-item expanded "><a href="merdificacao.html"><strong aria-hidden="true">18.</strong> Vantagens da Merdificação</a></li><li class="chapter-item expanded "><a href="queda_aws.html"><strong aria-hidden="true">19.</strong> A Queda da AWS</a></li><li class="chapter-item expanded "><a href="windows10.html"><strong aria-hidden="true">20.</strong> O fim do Windows 10</a></li><li class="chapter-item expanded "><a href="oracle_tiktok.html"><strong aria-hidden="true">21.</strong> Larry Ellison e o Controle da Mídia sob Trump</a></li><li class="chapter-item expanded "><a href="agora_vai.html"><strong aria-hidden="true">22.</strong> A Bolha da IA</a></li><li class="chapter-item expanded "><a href="audacity.html"><strong aria-hidden="true">23.</strong> O que está acontecendo com o Audacity?</a></li><li class="chapter-item expanded "><a href="preservacao_cultura.html"><strong aria-hidden="true">24.</strong> Empresas contra a preservação da cultura</a></li><li class="chapter-item expanded "><a href="propagandas.html"><strong aria-hidden="true">25.</strong> Propagandas em todo lugar</a></li><li class="chapter-item expanded "><a href="tocanna.html"><strong aria-hidden="true">26.</strong> Tocanna: a artista que as big techs gostam</a></li><li class="chapter-item expanded "><a href="loucura_ia.html"><strong aria-hidden="true">27.</strong> A loucura de IA tem que acabar</a></li><li class="chapter-item expanded "><a href="gambiarra.html"><strong aria-hidden="true">28.</strong> Gambiarra do IOS é preocupante</a></li><li class="chapter-item expanded "><a href="pec_blindagem.html"><strong aria-hidden="true">29.</strong> PEC da Blindagem</a></li><li class="chapter-item expanded "><a href="spotify.html"><strong aria-hidden="true">30.</strong> Spotify falha, falhou e falhará</a></li><li class="chapter-item expanded "><a href="trump_jantar.html"><strong aria-hidden="true">31.</strong> O jantar amaldiçoado de Trump e big techs</a></li><li class="chapter-item expanded "><a href="ministra_ia.html"><strong aria-hidden="true">32.</strong> Ministra de IA da Albania</a></li><li class="chapter-item expanded "><a href="11_09_25.html"><strong aria-hidden="true">33.</strong> 11/09/25</a></li><li class="chapter-item expanded "><a href="05_09_25.html"><strong aria-hidden="true">34.</strong> 05/09/25</a></li><li class="chapter-item expanded "><a href="eua_chips.html"><strong aria-hidden="true">35.</strong> INTEL, NVIDIA, AMD e EUA</a></li><li class="chapter-item expanded "><a href="folha.html"><strong aria-hidden="true">36.</strong> Folha de SP processa OPENAI e ... Manual do Usuário</a></li><li class="chapter-item expanded "><a href="22_08_25.html"><strong aria-hidden="true">37.</strong> 22/08/25</a></li><li class="chapter-item expanded "><a href="geopolitica_ia2.html"><strong aria-hidden="true">38.</strong> A Geopolítica da IA 2025/02</a></li><li class="chapter-item expanded "><a href="artista_ia.html"><strong aria-hidden="true">39.</strong> O que é ser um artista na era da IA?</a></li><li class="chapter-item expanded "><a href="chatgpt5.html"><strong aria-hidden="true">40.</strong> O lançamento do ChatGPT 5</a></li><li class="chapter-item expanded "><a href="clippys.html"><strong aria-hidden="true">41.</strong> O que é a revolução dos clippys?</a></li><li class="chapter-item expanded "><a href="17_08_25.html"><strong aria-hidden="true">42.</strong> Google hackeado, bolsonaristas foram longe demais e mais notícias</a></li><li class="chapter-item expanded "><a href="felca.html"><strong aria-hidden="true">43.</strong> Felca, adultização e redes sociais</a></li><li class="chapter-item expanded "><a href="08_08_25.html"><strong aria-hidden="true">44.</strong> 08/08/25</a></li><li class="chapter-item expanded "><a href="steam_itch.html"><strong aria-hidden="true">45.</strong> Steam, itch.io e censura dos meios  de pagamento</a></li><li class="chapter-item expanded "><a href="24_07_25.html"><strong aria-hidden="true">46.</strong> 24/07/25</a></li><li class="chapter-item expanded "><a href="18_07_25.html"><strong aria-hidden="true">47.</strong> 18/07/25</a></li><li class="chapter-item expanded "><a href="ani_grok.html"><strong aria-hidden="true">48.</strong> A assistente e-girl do Grok</a></li><li class="chapter-item expanded "><a href="trump_pix.html"><strong aria-hidden="true">49.</strong> Trump ataca o Pix</a></li><li class="chapter-item expanded "><a href="11_07_25.html"><strong aria-hidden="true">50.</strong> 11/07/25</a></li><li class="chapter-item expanded "><a href="genai.html"><strong aria-hidden="true">51.</strong> A criação dos modelos de genAI</a></li><li class="chapter-item expanded "><a href="stop_killing_games.html"><strong aria-hidden="true">52.</strong> Stop Killing Games</a></li><li class="chapter-item expanded "><a href="artigo19.html"><strong aria-hidden="true">53.</strong> O Artigo 19 do Marco Civil</a></li><li class="chapter-item expanded "><a href="03_07_25.html"><strong aria-hidden="true">54.</strong> 03/07/25</a></li><li class="chapter-item expanded "><a href="soberania_digital2.html"><strong aria-hidden="true">55.</strong> Uma introdução à Soberania Digital</a></li><li class="chapter-item expanded "><a href="20_06_25.html"><strong aria-hidden="true">56.</strong> 20/06/25</a></li><li class="chapter-item expanded "><a href="ai_2027.html"><strong aria-hidden="true">57.</strong> O Apocalíptico AI 2027</a></li><li class="chapter-item expanded "><a href="soberania_digital.html"><strong aria-hidden="true">58.</strong> Soberania Digital: Uma perspectiva brasileira</a></li><li class="chapter-item expanded "><a href="13_06_25.html"><strong aria-hidden="true">59.</strong> 13/06/25</a></li><li class="chapter-item expanded "><a href="jav_meta.html"><strong aria-hidden="true">60.</strong> JAV, Meta e regulamentação das redes</a></li><li class="chapter-item expanded "><a href="builderai.html"><strong aria-hidden="true">61.</strong> Builder.ai e os Indianos Assalariados</a></li><li class="chapter-item expanded "><a href="29_05_25.html"><strong aria-hidden="true">62.</strong> 29/05/25</a></li><li class="chapter-item expanded "><a href="22_05_25.html"><strong aria-hidden="true">63.</strong> 22/05/25</a></li><li class="chapter-item expanded "><a href="palestra_cryptorave_2025.html"><strong aria-hidden="true">64.</strong> Palestra Cryptorave 2025</a></li><li class="chapter-item expanded "><a href="15_05_25.html"><strong aria-hidden="true">65.</strong> 15/05/25</a></li><li class="chapter-item expanded "><a href="08_05_25.html"><strong aria-hidden="true">66.</strong> 08/05/25</a></li><li class="chapter-item expanded "><a href="manipulado_robos.html"><strong aria-hidden="true">67.</strong> Sim você é manipulado por robôs</a></li><li class="chapter-item expanded "><a href="24_04_25.html"><strong aria-hidden="true">68.</strong> 24/04/25</a></li><li class="chapter-item expanded "><a href="17_04_25.html"><strong aria-hidden="true">69.</strong> 17/04/25</a></li><li class="chapter-item expanded "><a href="internet_morta_bots.html"><strong aria-hidden="true">70.</strong> Quantos % da internet está morta</a></li><li class="chapter-item expanded "><a href="03_04_25.html"><strong aria-hidden="true">71.</strong> 03/04/25</a></li><li class="chapter-item expanded "><a href="27_03_25.html"><strong aria-hidden="true">72.</strong> 27/03/25</a></li><li class="chapter-item expanded "><a href="20_03_25.html"><strong aria-hidden="true">73.</strong> 20/03/25</a></li><li class="chapter-item expanded "><a href="rustlings_pt1.html"><strong aria-hidden="true">74.</strong> Vamos aprender Rust pt. 1</a></li><li class="chapter-item expanded "><a href="mozilla_firefox.html"><strong aria-hidden="true">75.</strong> Os Termos de Uso do Firefox</a></li><li class="chapter-item expanded "><a href="rust_linux.html"><strong aria-hidden="true">76.</strong> Rust no Linux</a></li><li class="chapter-item expanded "><a href="13_03_25.html"><strong aria-hidden="true">77.</strong> 13/03/25</a></li><li class="chapter-item expanded "><a href="06_03_25.html"><strong aria-hidden="true">78.</strong> 06/03/25</a></li><li class="chapter-item expanded "><a href="27_02_25.html"><strong aria-hidden="true">79.</strong> 27/02/25</a></li><li class="chapter-item expanded "><a href="ia_nos_deixa_burros.html"><strong aria-hidden="true">80.</strong> A IA nos deixa burros?</a></li><li class="chapter-item expanded "><a href="futuro_do_trabalho.html"><strong aria-hidden="true">81.</strong> O futuro do trabalho?</a></li><li class="chapter-item expanded "><a href="amazon_kindle.html"><strong aria-hidden="true">82.</strong> Baixe seus livros da Amazon</a></li><li class="chapter-item expanded "><a href="worldcoin.html"><strong aria-hidden="true">83.</strong> Sobre a Worldcoin de Sam Altman</a></li><li class="chapter-item expanded "><a href="ollama_deepseek.html"><strong aria-hidden="true">84.</strong> Tutorial Ollama e Deepseek</a></li><li class="chapter-item expanded "><a href="milei_libra.html"><strong aria-hidden="true">85.</strong> O golpe de cripto do Milei</a></li><li class="chapter-item expanded "><a href="doge_hackeado.html"><strong aria-hidden="true">86.</strong> DOGE de Musk é hackeado</a></li><li class="chapter-item expanded "><a href="preservacao_digital.html"><strong aria-hidden="true">87.</strong> Sobre a preservação digital</a></li><li class="chapter-item expanded "><a href="meta_pirateou.html"><strong aria-hidden="true">88.</strong> META pirateou 81TB de livros</a></li><li class="chapter-item expanded "><a href="06_02_25.html"><strong aria-hidden="true">89.</strong> 06/02/25</a></li><li class="chapter-item expanded "><a href="30_01_25.html"><strong aria-hidden="true">90.</strong> 30/01/25</a></li><li class="chapter-item expanded "><a href="deepseek.html"><strong aria-hidden="true">91.</strong> Deepseek abala os EUA</a></li><li class="chapter-item expanded "><a href="descentralizadas.html"><strong aria-hidden="true">92.</strong> Redes sociais descentralizadas</a></li><li class="chapter-item expanded "><a href="23_01_25.html"><strong aria-hidden="true">93.</strong> 23/01/25</a></li><li class="chapter-item expanded "><a href="16_01_25.html"><strong aria-hidden="true">94.</strong> 16/01/25</a></li><li class="chapter-item expanded "><a href="09_01_25.html"><strong aria-hidden="true">95.</strong> 09/01/25</a></li><li class="chapter-item expanded "><a href="honey.html"><strong aria-hidden="true">96.</strong> Como a Honey roubou todo mundo</a></li><li class="chapter-item expanded "><a href="golpes_email.html"><strong aria-hidden="true">97.</strong> Investigando Golpes de e-mail</a></li><li class="chapter-item expanded "><a href="musica2024.html"><strong aria-hidden="true">98.</strong> Especial Música de 2024</a></li><li class="chapter-item expanded "><a href="19_12_24.html"><strong aria-hidden="true">99.</strong> 19/12/24</a></li><li class="chapter-item expanded "><a href="ia_do_inss.html"><strong aria-hidden="true">100.</strong> IA do INSS</a></li><li class="chapter-item expanded "><a href="12_12_24.html"><strong aria-hidden="true">101.</strong> 12/12/24</a></li><li class="chapter-item expanded "><a href="05_12_24.html"><strong aria-hidden="true">102.</strong> 05/12/24</a></li><li class="chapter-item expanded "><a href="28_11_24.html"><strong aria-hidden="true">103.</strong> 28/11/24</a></li><li class="chapter-item expanded "><a href="25_11_24.html"><strong aria-hidden="true">104.</strong> 25/11/24</a></li><li class="chapter-item expanded "><a href="aeria.html"><strong aria-hidden="true">105.</strong> Projeto com Aeria</a></li><li class="chapter-item expanded "><a href="14_11_24.html"><strong aria-hidden="true">106.</strong> 14/11/24</a></li><li class="chapter-item expanded "><a href="07_11_24.html"><strong aria-hidden="true">107.</strong> 07/11/24</a></li><li class="chapter-item expanded "><a href="31_10_24.html"><strong aria-hidden="true">108.</strong> 31/10/24</a></li><li class="chapter-item expanded "><a href="fetiche_tecnologia2.html"><strong aria-hidden="true">109.</strong> Fetiche da Tecnologia 2</a></li><li class="chapter-item expanded "><a href="wordpress.html"><strong aria-hidden="true">110.</strong> Wordpress VS WP Engine</a></li><li class="chapter-item expanded "><a href="24_10_24.html"><strong aria-hidden="true">111.</strong> 24/10/24</a></li><li class="chapter-item expanded "><a href="17_10_24.html"><strong aria-hidden="true">112.</strong> 17/10/24</a></li><li class="chapter-item expanded "><a href="10_10_24.html"><strong aria-hidden="true">113.</strong> 10/10/24</a></li><li class="chapter-item expanded "><a href="godot.html"><strong aria-hidden="true">114.</strong> O Fork da Godot</a></li><li class="chapter-item expanded "><a href="07_10_24.html"><strong aria-hidden="true">115.</strong> 07/10/24</a></li><li class="chapter-item expanded "><a href="28_09_24.html"><strong aria-hidden="true">116.</strong> 28/09/24</a></li><li class="chapter-item expanded "><a href="19_09_24.html"><strong aria-hidden="true">117.</strong> 19/09/24</a></li><li class="chapter-item expanded "><a href="16_09_24.html"><strong aria-hidden="true">118.</strong> 16/09/24</a></li><li class="chapter-item expanded "><a href="05_09_24.html"><strong aria-hidden="true">119.</strong> 05/09/24</a></li><li class="chapter-item expanded "><a href="29_08_24.html"><strong aria-hidden="true">120.</strong> 29/08/24</a></li><li class="chapter-item expanded "><a href="22_08_24.html"><strong aria-hidden="true">121.</strong> 22/08/24</a></li><li class="chapter-item expanded "><a href="15_08_24.html"><strong aria-hidden="true">122.</strong> 15/08/24</a></li><li class="chapter-item expanded "><a href="cookie_clicker.html"><strong aria-hidden="true">123.</strong> Cookie Clicker</a></li><li class="chapter-item expanded "><a href="08_08_24.html"><strong aria-hidden="true">124.</strong> 08/08/24</a></li><li class="chapter-item expanded "><a href="01_08_24.html"><strong aria-hidden="true">125.</strong> 01/08/24</a></li><li class="chapter-item expanded "><a href="25_07_24.html"><strong aria-hidden="true">126.</strong> 25/07/24</a></li><li class="chapter-item expanded "><a href="apagao.html"><strong aria-hidden="true">127.</strong> Crowdstrike / Apagão Cibernético</a></li><li class="chapter-item expanded "><a href="18_07_24.html"><strong aria-hidden="true">128.</strong> 18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html"><strong aria-hidden="true">129.</strong> 11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html"><strong aria-hidden="true">130.</strong> 04/07/24</a></li><li class="chapter-item expanded "><a href="27_06_24.html"><strong aria-hidden="true">131.</strong> 27/06/24</a></li><li class="chapter-item expanded "><a href="20_06_24.html"><strong aria-hidden="true">132.</strong> 20/06/24</a></li><li class="chapter-item expanded "><a href="comunistas_internet.html"><strong aria-hidden="true">133.</strong> Comunistas na Internet</a></li><li class="chapter-item expanded "><a href="13_06_24.html"><strong aria-hidden="true">134.</strong> 13/06/24</a></li><li class="chapter-item expanded "><a href="06_06_24.html"><strong aria-hidden="true">135.</strong> 06/06/24</a></li><li class="chapter-item expanded "><a href="extrema_direita_ti.html"><strong aria-hidden="true">136.</strong> A Ideologia de Extrema Direita na TI</a></li><li class="chapter-item expanded "><a href="30_05_24.html"><strong aria-hidden="true">137.</strong> 30/05/24</a></li><li class="chapter-item expanded "><a href="23_05_24.html"><strong aria-hidden="true">138.</strong> 23/05/24</a></li><li class="chapter-item expanded "><a href="09_05_24.html"><strong aria-hidden="true">139.</strong> 09/05/24</a></li><li class="chapter-item expanded "><a href="02_05_24.html"><strong aria-hidden="true">140.</strong> 02/05/24</a></li><li class="chapter-item expanded "><a href="30_04_24.html"><strong aria-hidden="true">141.</strong> 30/04/24</a></li><li class="chapter-item expanded "><a href="18_04_24.html"><strong aria-hidden="true">142.</strong> 18/04/24</a></li><li class="chapter-item expanded "><a href="11_04_24.html"><strong aria-hidden="true">143.</strong> 11/04/24</a></li><li class="chapter-item expanded "><a href="04_04_24.html"><strong aria-hidden="true">144.</strong> 04/04/24</a></li><li class="chapter-item expanded "><a href="ideologia_californiana.html"><strong aria-hidden="true">145.</strong> A Ideologia Californiana</a></li><li class="chapter-item expanded "><a href="anticheat.html"><strong aria-hidden="true">146.</strong> Vanguard, LoL e Anticheat</a></li><li class="chapter-item expanded "><a href="28_03_24.html"><strong aria-hidden="true">147.</strong> 28/03/24</a></li><li class="chapter-item expanded "><a href="25_03_24.html"><strong aria-hidden="true">148.</strong> 25/03/24</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="o-aulão-de-ia-no-mineirão"><a class="header" href="#o-aulão-de-ia-no-mineirão">O Aulão de IA no mineirão</a></h1>
+<p>O governador Zema tentou fazer a maior aula pública de IA do mundo' colocando vários alunos da rede pública no Mineirão para ouvir uma palestra do Google. Acabou em pancadaria. Isso não é uma piada.</p>
+<ul>
+<li>Primeiramente eu gostaria de dizer que se me levassem para um estádio de futebol para ver uma palestra sobre 'uso de ferramentas de IA para a educação' eu também ficaria extremamente violento
+<ul>
+<li>PS.: o Zema que não é uma pessoa beliscosa deve ter ficado triste com isso</li>
+</ul>
+</li>
+<li>Primeiramente quando eu ouvi... eu não tinha entendido a moral dessa história. "O Zema colocou um monte de estudantes pra ouvirem um representante da Google falar?". Literalmente foi isso que aconteceu</li>
+</ul>
+<p><a href="https://www.otempo.com.br/cidades/2025/11/19/aulao-de-ia-com-zema-e-simoes-tem-pancadaria-entre-alunos-no-mineirao">https://www.otempo.com.br/cidades/2025/11/19/aulao-de-ia-com-zema-e-simoes-tem-pancadaria-entre-alunos-no-mineirao</a></p>
+<p><a href="https://www.cnnbrasil.com.br/tecnologia/minas-gerais-pode-entrar-para-o-livro-dos-recordes-com-maior-aula-de-ia/">https://www.cnnbrasil.com.br/tecnologia/minas-gerais-pode-entrar-para-o-livro-dos-recordes-com-maior-aula-de-ia/</a></p>
+<blockquote>
+<p>Atualmente, o recorde mundial de maior aula presencial de Inteligência Artificial reconhecido pelo Guinness Book pertence a Portugal, com 1.400 participantes. A expectativa é de que o aulão promovido em Minas supere amplamente essa marca.</p>
+</blockquote>
+<h4 id="sobre-o-que-foi-essa-aula"><a class="header" href="#sobre-o-que-foi-essa-aula">Sobre o que foi essa aula?</a></h4>
+<blockquote>
+<p>Além do  governador Romeu Zema, o vice-governador Mateus Simões também esteve  presente e ressaltou os avanços da educação artificial na educação do  estado.</p>
+<p>“A partir do ano que vem educação digital passa para dentro do currículo, mas hoje já temos IA na plataforma do Google  fazendo os cadernos de exercício dos meninos, evoluindo com eles já  temos correção por inteligência artificial das redações por fotografias e  nós vamos continuar avançando nesses investimentos", disse Simões.</p>
+<p>Durante a  manhã, os participantes acompanharam um aulão sobre IA, conduzido de  forma lúdica, visual e acessível. A apresentação combinou conceitos  fundamentais de Inteligência Artificial e Machine Learning com  demonstrações práticas de ferramentas que apoiam a aprendizagem.</p>
+</blockquote>
+<ul>
+<li>REPETINDO: Literalmente botaram o máximo de estudantes que eles conseguiram num ambiente para que o Google pudesse fazer lobby das ferramentas deles.</li>
+<li>Esse é o nível de viralatismo que nós temos hoje no Brasil</li>
+<li>A gente não só vende os dados e o futuro dos nossos estudantes pras big techs como a gente faz isso num evento organizado porcamente e que prejudica o fluxo normal de ensino com os professores.</li>
+</ul>
+<h1 id=""><a class="header" href="#">🤡👍</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="cloudflare.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="cloudflare.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
