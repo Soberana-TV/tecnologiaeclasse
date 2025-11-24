@@ -1,6 +1,8 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Aulão de IA do Zema](aulao_ia_zema.md)
+- [Cloudflare 18/11/25](cloudflare.md)
 - [Grokipedia](grokipedia.md)
 - [Meta e Google querem ler suas mensagens](gmail_ia.md)
 - [Steam Machine, Windows 11 e sideload no Android](steam_machine_windows11_android.md)
