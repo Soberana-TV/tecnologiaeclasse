@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Fantástico promove peça de propaganda pró IA](ia_fantastico.md)
 - [Aulão de IA do Zema](aulao_ia_zema.md)
 - [Cloudflare 18/11/25](cloudflare.md)
 - [Grokipedia](grokipedia.md)
