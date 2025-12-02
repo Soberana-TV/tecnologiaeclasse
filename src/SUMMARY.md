@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Serpro abriu a porta para a Palantir](serpro_palantir.md)
 - [Nugate e outras núticias](nugate.md)
 - [Fantástico promove peça de propaganda pró IA](ia_fantastico.md)
 - [Aulão de IA do Zema](aulao_ia_zema.md)

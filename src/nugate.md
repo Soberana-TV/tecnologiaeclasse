@@ -6,7 +6,7 @@ Hoje vamos falar sobre atualizações da saga do home office no Nubank, um novo 
 
 {{#embed https://youtube.com/watch?v=lBIWVDqW81Y }}
 
-<https://www.youtube.com/watch?v=ZUuxih31lng&pp=0gcJCRUKAYcqIYzv>
+{{#embed https://youtube.com/watch?v=ZUuxih31lng }}
 
 {{#embed https://youtube.com/watch?v=a2oucHJ3g6A }}
 
