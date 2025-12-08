@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Porte de armas para infosec](armas_infosec.md)
 - [O Google disparou?](google_openai.md)
 - [Serpro abriu a porta para a Palantir](serpro_palantir.md)
 - [Nugate e outras núticias](nugate.md)
