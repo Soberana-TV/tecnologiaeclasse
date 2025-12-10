@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Localização dos Trumpistas no X](trump_x.md)
 - [Escalada do Preço da RAM](ram.md)
 - [Porte de armas para infosec](armas_infosec.md)
 - [O Google disparou?](google_openai.md)
