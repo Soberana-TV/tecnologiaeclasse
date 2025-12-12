@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Netflix, Warner e Paramount](netflix_warner_paramount.md)
 - [Dosimetria, Hugo Motta, Glauber Braga e o 'apagão' das redes da Meta](dosimetria_glauber.md)
 - [Localização dos Trumpistas no X](trump_x.md)
 - [Escalada do Preço da RAM](ram.md)
