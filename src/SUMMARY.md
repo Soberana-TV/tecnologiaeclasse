@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Câmera no vaso, eleição de criptólogos e zork](camera_vaso.md)
 - [A Gamblificação de tudo](gamblificacao.md)
 - [Netflix, Warner e Paramount](netflix_warner_paramount.md)
 - [Dosimetria, Hugo Motta, Glauber Braga e o 'apagão' das redes da Meta](dosimetria_glauber.md)
