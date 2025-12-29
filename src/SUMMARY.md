@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Disney e OpenAI](disney_openai.md)
 - [Câmera no vaso, eleição de criptólogos e zork](camera_vaso.md)
 - [A Gamblificação de tudo](gamblificacao.md)
 - [Netflix, Warner e Paramount](netflix_warner_paramount.md)
