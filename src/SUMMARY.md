@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [A decepcionante revelação dos arquivos Epstein](epstein2.md)
 - [A merdificação do Github](github.md)
 - [Disney e OpenAI](disney_openai.md)
 - [Câmera no vaso, eleição de criptólogos e zork](camera_vaso.md)
