@@ -66,6 +66,10 @@ Sob o pretexto de uma operação contra o narcotráfico os EUA invadem a Venezue
 
 - Com a Venezuela isso foi uma construção de 20 anos de propaganda estadunidense, principalmente depois que a 'Guerra ao Terror' perdeu seu apelo. No Brasil eles querem mover isso muito mais rápido.
 
+- A prova do desprezo que os EUA tem com o bem estar do povo Venezuelano são as continuadas deportados dos cidadãos que agoram perdem seu status de protegido temporário
+
+<https://www.axios.com/2026/01/04/noem-venezuela-tps-maduro>
+
 ### Conclusões
 
 - Do artigo da Revista Opera:
