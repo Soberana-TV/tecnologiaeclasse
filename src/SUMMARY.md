@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Grok gera 85x mais imagens de abuso](grok_abuso.md)
 - [O Brasil vai virar a Venezuela?](brasil_venezuela.md)
 - [Waymos travam o trânsito de São Francisco](waymos.md)
 - [A decepcionante revelação dos arquivos Epstein](epstein2.md)
