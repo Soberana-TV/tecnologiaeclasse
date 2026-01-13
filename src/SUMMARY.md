@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Cory Doctorow propõe internet pós EUA](cory_pos_eua.md)
 - [Ranger Rosa Hackeia site de encontros só para brancos](ranger_rosa.md)
 - [Grok gera 85x mais imagens de abuso](grok_abuso.md)
 - [O Brasil vai virar a Venezuela?](brasil_venezuela.md)
