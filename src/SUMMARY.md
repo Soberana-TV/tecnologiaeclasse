@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O Bonde](o_bonde.md)
 - [Valve aposta na interoperabilidade](valve_fex.md)
 - [Flock alimenta vigilância criminosa de Trump](flock.md)
 - [Cory Doctorow propõe internet pós EUA](cory_pos_eua.md)
