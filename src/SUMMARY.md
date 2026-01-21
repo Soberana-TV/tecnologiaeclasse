@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [A vulnerabilidade do Bluetooth Fast Pair](bluetooth.md)
 - [Palestra 39C3](39c3.md)
 - [O Bonde](o_bonde.md)
 - [Valve aposta na interoperabilidade](valve_fex.md)
