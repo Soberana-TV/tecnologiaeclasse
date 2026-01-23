@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Demissão em massa no Mercado Livre](demissao_mercado_livre.md)
 - [Os protestos do Roblox](roblox_felca.md)
 - [A vulnerabilidade do Bluetooth Fast Pair](bluetooth.md)
 - [Palestra 39C3](39c3.md)
