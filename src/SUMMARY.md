@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Anna's Archive fez backup do Spotify](annas_archive_spotify.md)
 - [Demissão em massa no Mercado Livre](demissao_mercado_livre.md)
 - [Os protestos do Roblox](roblox_felca.md)
 - [A vulnerabilidade do Bluetooth Fast Pair](bluetooth.md)
