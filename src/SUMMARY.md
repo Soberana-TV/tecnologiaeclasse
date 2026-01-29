@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Sites proibem conteúdo de IA](backlash_ia.md)
 - [Tá cada vez mais difícil comprar computador](guerra_ao_desktop.md)
 - [ChatGPT terá propagandas](chat_gpt_propagandas.md)
 - [Anna's Archive fez backup do Spotify](annas_archive_spotify.md)
