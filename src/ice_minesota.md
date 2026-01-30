@@ -62,3 +62,13 @@ A repressão na ditadura estadunidense cada vez mais se volta aos seus próprios
 - Mas as últimas notícias indicam que a ICE estará se retirando nos próximos dias
 
 <https://noticias.uol.com.br/internacional/ultimas-noticias/2026/01/27/prefeito-anuncia-saida-do-ice-de-minneapolis-apos-ligacao-com-trump.htm>
+
+### Fotos usadas na thumb
+
+<https://www.nytimes.com/2026/01/18/briefing/can-ice-do-that.html>
+
+<https://theconversation.com/filming-ice-is-legal-but-exposes-you-to-digital-tracking-heres-how-to-minimize-the-risk-273566>
+
+<https://www.americanimmigrationcouncil.org/blog/ice-agent-sues-ice-agents-for-storming-his-house/>
+
+<https://abcnews.go.com/US/judge-hears-arguments-state-minnesota-seeks-temporarily-halt/story?id=129567914>
