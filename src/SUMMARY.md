@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [ICE, Minesota e uso da tecnologia](ice_minesota.md)
 - [Sites proibem conteúdo de IA](backlash_ia.md)
 - [Tá cada vez mais difícil comprar computador](guerra_ao_desktop.md)
 - [ChatGPT terá propagandas](chat_gpt_propagandas.md)
