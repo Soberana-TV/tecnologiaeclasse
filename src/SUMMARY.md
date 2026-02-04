@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Tutorial de Anytype](anytype.md)
 - [Openclaw e a rede dos robôs](openclaw.md)
 - [O Novo TikTok](novo_tiktok.md)
 - [ICE, Minesota e uso da tecnologia](ice_minesota.md)
