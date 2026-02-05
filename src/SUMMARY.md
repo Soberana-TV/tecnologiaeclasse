@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Big tech e cripto nos arquivos do Epstein](epstein_tech.md)
 - [Tutorial de Anytype](anytype.md)
 - [Openclaw e a rede dos robôs](openclaw.md)
 - [O Novo TikTok](novo_tiktok.md)

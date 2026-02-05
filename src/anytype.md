@@ -44,8 +44,6 @@ Hoje eu quero fazer uma introdução a um dos meus softwares favoritos que se ch
   - Você pode mudar para o modo 'somento local' que sincroniza apenas com o seu computador e rede local
   - Ou pode autohospedar um nodo de sincronização e gerenciar o espaço você mesmo
 
-###
-
 **Mais em:** <https://doc.anytype.io/anytype-docs/advanced/data-and-security/how-we-keep-your-data-safe>
 
 ### Tutorial prático
