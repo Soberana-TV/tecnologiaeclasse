@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Revivendo pessoas com IA](reviver_ia.md)
 - [É assim que a bolha de IA estoura](bolha_ia3.md)
 - [Big tech e cripto nos arquivos do Epstein](epstein_tech.md)
 - [Tutorial de Anytype](anytype.md)
