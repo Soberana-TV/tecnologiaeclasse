@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Memórias RAM da China](memoria_china.md)
 - [A tecnologia hostil](tecnologia.md)
 - [Revivendo pessoas com IA](reviver_ia.md)
 - [É assim que a bolha de IA estoura](bolha_ia3.md)
