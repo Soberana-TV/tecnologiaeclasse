@@ -11,6 +11,7 @@ edition = "2021"
 [output.html]
 git-repository-url = "https://github.com/Soberana-TV/tecnologiaeclasse/tree/main"
 cname = "teclas.soberana.tv"
+no-section-label = true
 
 [output.html.search]
 limit-results = 20

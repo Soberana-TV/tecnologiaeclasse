@@ -1,6 +1,6 @@
 # Discord, escaneamento facial e o modo 'teen'
 
-O Discord deu o últimato: todo usuário vai ter que verificar a sua idade escaneando o rosto, mandando documento de identidade ou tendo seus hábitos analisados. Vamos falar sobre.
+O Discord deu o últimato: todo usuário vai ter que verificar a sua idade escaneando o rosto, mandando documento de identidade ou tendo seus hábitos analisados. Hoje vamos falar sobre.
 
 > A implementação, que começa no início de março, tornará as configurações apropriadas para adolescentes o padrão para todos os usuários, com os adultos precisando verificar sua idade para flexibilizar proteções, incluindo filtros de conteúdo e proibições de mensagens diretas, disse a empresa.
 >
@@ -101,9 +101,9 @@ O Discord deu o últimato: todo usuário vai ter que verificar a sua idade escan
 
 ### Soluções concorrentes:
 
-- Teamspeak https://www.teamspeak.com
-- Stoat (antigo Revolt) https://stoat.chat/
-- Spacebar (antigo fosscord) https://github.com/spacebarchat/spacebarchat/
+- Teamspeak <https://www.teamspeak.com>
+- Stoat (antigo Revolt) <https://stoat.chat/>
+- Spacebar (antigo fosscord) <https://github.com/spacebarchat/spacebarchat/>
 - Matrix https://matrix.org/
 - Rocketchat https://www.rocket.chat/
 - XMPP e clientes mais modernos
