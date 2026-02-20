@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>IA, automação e burnout - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="o_que.html">O que é Tecnologia e Classe?</a></li><li class="chapter-item expanded "><a href="ia_burnout.html" class="active">IA, automação e burnout</a></li><li class="chapter-item expanded "><a href="discord.html">Discord e escaneamento facial</a></li><li class="chapter-item expanded "><a href="memoria_china.html">Memórias RAM da China</a></li><li class="chapter-item expanded "><a href="tecnologia.html">A tecnologia hostil</a></li><li class="chapter-item expanded "><a href="reviver_ia.html">Revivendo pessoas com IA</a></li><li class="chapter-item expanded "><a href="bolha_ia3.html">É assim que a bolha de IA estoura</a></li><li class="chapter-item expanded "><a href="epstein_tech.html">Big tech e cripto nos arquivos do Epstein</a></li><li class="chapter-item expanded "><a href="anytype.html">Tutorial de Anytype</a></li><li class="chapter-item expanded "><a href="openclaw.html">Openclaw e a rede dos robôs</a></li><li class="chapter-item expanded "><a href="novo_tiktok.html">O Novo TikTok</a></li><li class="chapter-item expanded "><a href="ice_minesota.html">ICE, Minesota e uso da tecnologia</a></li><li class="chapter-item expanded "><a href="backlash_ia.html">Sites proibem conteúdo de IA</a></li><li class="chapter-item expanded "><a href="guerra_ao_desktop.html">Tá cada vez mais difícil comprar computador</a></li><li class="chapter-item expanded "><a href="chat_gpt_propagandas.html">ChatGPT terá propagandas</a></li><li class="chapter-item expanded "><a href="annas_archive_spotify.html">Anna's Archive fez backup do Spotify</a></li><li class="chapter-item expanded "><a href="demissao_mercado_livre.html">Demissão em massa no Mercado Livre</a></li><li class="chapter-item expanded "><a href="roblox_felca.html">Os protestos do Roblox</a></li><li class="chapter-item expanded "><a href="bluetooth.html">A vulnerabilidade do Bluetooth Fast Pair</a></li><li class="chapter-item expanded "><a href="39c3.html">Palestra 39C3</a></li><li class="chapter-item expanded "><a href="o_bonde.html">O Bonde</a></li><li class="chapter-item expanded "><a href="valve_fex.html">Valve aposta na interoperabilidade</a></li><li class="chapter-item expanded "><a href="flock.html">Flock alimenta vigilância criminosa de Trump</a></li><li class="chapter-item expanded "><a href="cory_pos_eua.html">Cory Doctorow propõe internet pós EUA</a></li><li class="chapter-item expanded "><a href="ranger_rosa.html">Ranger Rosa Hackeia site de encontros só para brancos</a></li><li class="chapter-item expanded "><a href="grok_abuso.html">Grok gera 85x mais imagens de abuso</a></li><li class="chapter-item expanded "><a href="brasil_venezuela.html">O Brasil vai virar a Venezuela?</a></li><li class="chapter-item expanded "><a href="waymos.html">Waymos travam o trânsito de São Francisco</a></li><li class="chapter-item expanded "><a href="epstein2.html">A decepcionante revelação dos arquivos Epstein</a></li><li class="chapter-item expanded "><a href="github.html">A merdificação do Github</a></li><li class="chapter-item expanded "><a href="disney_openai.html">Disney e OpenAI</a></li><li class="chapter-item expanded "><a href="camera_vaso.html">Câmera no vaso, eleição de criptólogos e zork</a></li><li class="chapter-item expanded "><a href="gamblificacao.html">A Gamblificação de tudo</a></li><li class="chapter-item expanded "><a href="netflix_warner_paramount.html">Netflix, Warner e Paramount</a></li><li class="chapter-item expanded "><a href="dosimetria_glauber.html">Dosimetria, Hugo Motta, Glauber Braga e o 'apagão' das redes da Meta</a></li><li class="chapter-item expanded "><a href="trump_x.html">Localização dos Trumpistas no X</a></li><li class="chapter-item expanded "><a href="ram.html">Escalada do Preço da RAM</a></li><li class="chapter-item expanded "><a href="armas_infosec.html">Porte de armas para infosec</a></li><li class="chapter-item expanded "><a href="google_openai.html">O Google disparou?</a></li><li class="chapter-item expanded "><a href="serpro_palantir.html">Serpro abriu a porta para a Palantir</a></li><li class="chapter-item expanded "><a href="nugate.html">Nugate e outras núticias</a></li><li class="chapter-item expanded "><a href="ia_fantastico.html">Fantástico promove peça de propaganda pró IA</a></li><li class="chapter-item expanded "><a href="aulao_ia_zema.html">Aulão de IA do Zema</a></li><li class="chapter-item expanded "><a href="cloudflare.html">Cloudflare 18/11/25</a></li><li class="chapter-item expanded "><a href="grokipedia.html">Grokipedia</a></li><li class="chapter-item expanded "><a href="gmail_ia.html">Meta e Google querem ler suas mensagens</a></li><li class="chapter-item expanded "><a href="steam_machine_windows11_android.html">Steam Machine, Windows 11 e sideload no Android</a></li><li class="chapter-item expanded "><a href="ia_infra.html">A bolha de infraestrutura da IA</a></li><li class="chapter-item expanded "><a href="psf_dei_eua.html">PSF, DEI, EUA</a></li><li class="chapter-item expanded "><a href="rockstar_sindicato.html">Rockstar North demite trabalhadores sindicalizados</a></li><li class="chapter-item expanded "><a href="meta_golpes.html">Meta ganhou dinheiro com golpes</a></li><li class="chapter-item expanded "><a href="oeste_cezpem.html">Revista Oeste faz propaganda de comunismo</a></li><li class="chapter-item expanded "><a href="openai_dinheiro.html">OpenAI quer mais dinheiro</a></li><li class="chapter-item expanded "><a href="remoto_nubank.html">O fim do remoto no Nubank</a></li><li class="chapter-item expanded "><a href="kimi_k2.html">Kimi K2 é o novo Deepseek?</a></li><li class="chapter-item expanded "><a href="seguranca_lucro.html">Segurança, incentivo ao lucro e tal</a></li><li class="chapter-item expanded "><a href="cs2.html">Crash das caixas de CS2</a></li><li class="chapter-item expanded "><a href="ruby.html">Ruby fora dos Trilhos</a></li><li class="chapter-item expanded "><a href="merdificacao.html">Vantagens da Merdificação</a></li><li class="chapter-item expanded "><a href="queda_aws.html">A Queda da AWS</a></li><li class="chapter-item expanded "><a href="windows10.html">O fim do Windows 10</a></li><li class="chapter-item expanded "><a href="oracle_tiktok.html">Larry Ellison e o Controle da Mídia sob Trump</a></li><li class="chapter-item expanded "><a href="agora_vai.html">A Bolha da IA</a></li><li class="chapter-item expanded "><a href="audacity.html">O que está acontecendo com o Audacity?</a></li><li class="chapter-item expanded "><a href="preservacao_cultura.html">Empresas contra a preservação da cultura</a></li><li class="chapter-item expanded "><a href="propagandas.html">Propagandas em todo lugar</a></li><li class="chapter-item expanded "><a href="tocanna.html">Tocanna: a artista que as big techs gostam</a></li><li class="chapter-item expanded "><a href="loucura_ia.html">A loucura de IA tem que acabar</a></li><li class="chapter-item expanded "><a href="gambiarra.html">Gambiarra do IOS é preocupante</a></li><li class="chapter-item expanded "><a href="pec_blindagem.html">PEC da Blindagem</a></li><li class="chapter-item expanded "><a href="spotify.html">Spotify falha, falhou e falhará</a></li><li class="chapter-item expanded "><a href="trump_jantar.html">O jantar amaldiçoado de Trump e big techs</a></li><li class="chapter-item expanded "><a href="ministra_ia.html">Ministra de IA da Albania</a></li><li class="chapter-item expanded "><a href="11_09_25.html">11/09/25</a></li><li class="chapter-item expanded "><a href="05_09_25.html">05/09/25</a></li><li class="chapter-item expanded "><a href="eua_chips.html">INTEL, NVIDIA, AMD e EUA</a></li><li class="chapter-item expanded "><a href="folha.html">Folha de SP processa OPENAI e ... Manual do Usuário</a></li><li class="chapter-item expanded "><a href="22_08_25.html">22/08/25</a></li><li class="chapter-item expanded "><a href="geopolitica_ia2.html">A Geopolítica da IA 2025/02</a></li><li class="chapter-item expanded "><a href="artista_ia.html">O que é ser um artista na era da IA?</a></li><li class="chapter-item expanded "><a href="chatgpt5.html">O lançamento do ChatGPT 5</a></li><li class="chapter-item expanded "><a href="clippys.html">O que é a revolução dos clippys?</a></li><li class="chapter-item expanded "><a href="17_08_25.html">Google hackeado, bolsonaristas foram longe demais e mais notícias</a></li><li class="chapter-item expanded "><a href="felca.html">Felca, adultização e redes sociais</a></li><li class="chapter-item expanded "><a href="08_08_25.html">08/08/25</a></li><li class="chapter-item expanded "><a href="steam_itch.html">Steam, itch.io e censura dos meios  de pagamento</a></li><li class="chapter-item expanded "><a href="24_07_25.html">24/07/25</a></li><li class="chapter-item expanded "><a href="18_07_25.html">18/07/25</a></li><li class="chapter-item expanded "><a href="ani_grok.html">A assistente e-girl do Grok</a></li><li class="chapter-item expanded "><a href="trump_pix.html">Trump ataca o Pix</a></li><li class="chapter-item expanded "><a href="11_07_25.html">11/07/25</a></li><li class="chapter-item expanded "><a href="genai.html">A criação dos modelos de genAI</a></li><li class="chapter-item expanded "><a href="stop_killing_games.html">Stop Killing Games</a></li><li class="chapter-item expanded "><a href="artigo19.html">O Artigo 19 do Marco Civil</a></li><li class="chapter-item expanded "><a href="03_07_25.html">03/07/25</a></li><li class="chapter-item expanded "><a href="soberania_digital2.html">Uma introdução à Soberania Digital</a></li><li class="chapter-item expanded "><a href="20_06_25.html">20/06/25</a></li><li class="chapter-item expanded "><a href="ai_2027.html">O Apocalíptico AI 2027</a></li><li class="chapter-item expanded "><a href="soberania_digital.html">Soberania Digital: Uma perspectiva brasileira</a></li><li class="chapter-item expanded "><a href="13_06_25.html">13/06/25</a></li><li class="chapter-item expanded "><a href="jav_meta.html">JAV, Meta e regulamentação das redes</a></li><li class="chapter-item expanded "><a href="builderai.html">Builder.ai e os Indianos Assalariados</a></li><li class="chapter-item expanded "><a href="29_05_25.html">29/05/25</a></li><li class="chapter-item expanded "><a href="22_05_25.html">22/05/25</a></li><li class="chapter-item expanded "><a href="palestra_cryptorave_2025.html">Palestra Cryptorave 2025</a></li><li class="chapter-item expanded "><a href="15_05_25.html">15/05/25</a></li><li class="chapter-item expanded "><a href="08_05_25.html">08/05/25</a></li><li class="chapter-item expanded "><a href="manipulado_robos.html">Sim você é manipulado por robôs</a></li><li class="chapter-item expanded "><a href="24_04_25.html">24/04/25</a></li><li class="chapter-item expanded "><a href="17_04_25.html">17/04/25</a></li><li class="chapter-item expanded "><a href="internet_morta_bots.html">Quantos % da internet está morta</a></li><li class="chapter-item expanded "><a href="03_04_25.html">03/04/25</a></li><li class="chapter-item expanded "><a href="27_03_25.html">27/03/25</a></li><li class="chapter-item expanded "><a href="20_03_25.html">20/03/25</a></li><li class="chapter-item expanded "><a href="rustlings_pt1.html">Vamos aprender Rust pt. 1</a></li><li class="chapter-item expanded "><a href="mozilla_firefox.html">Os Termos de Uso do Firefox</a></li><li class="chapter-item expanded "><a href="rust_linux.html">Rust no Linux</a></li><li class="chapter-item expanded "><a href="13_03_25.html">13/03/25</a></li><li class="chapter-item expanded "><a href="06_03_25.html">06/03/25</a></li><li class="chapter-item expanded "><a href="27_02_25.html">27/02/25</a></li><li class="chapter-item expanded "><a href="ia_nos_deixa_burros.html">A IA nos deixa burros?</a></li><li class="chapter-item expanded "><a href="futuro_do_trabalho.html">O futuro do trabalho?</a></li><li class="chapter-item expanded "><a href="amazon_kindle.html">Baixe seus livros da Amazon</a></li><li class="chapter-item expanded "><a href="worldcoin.html">Sobre a Worldcoin de Sam Altman</a></li><li class="chapter-item expanded "><a href="ollama_deepseek.html">Tutorial Ollama e Deepseek</a></li><li class="chapter-item expanded "><a href="milei_libra.html">O golpe de cripto do Milei</a></li><li class="chapter-item expanded "><a href="doge_hackeado.html">DOGE de Musk é hackeado</a></li><li class="chapter-item expanded "><a href="preservacao_digital.html">Sobre a preservação digital</a></li><li class="chapter-item expanded "><a href="meta_pirateou.html">META pirateou 81TB de livros</a></li><li class="chapter-item expanded "><a href="06_02_25.html">06/02/25</a></li><li class="chapter-item expanded "><a href="30_01_25.html">30/01/25</a></li><li class="chapter-item expanded "><a href="deepseek.html">Deepseek abala os EUA</a></li><li class="chapter-item expanded "><a href="descentralizadas.html">Redes sociais descentralizadas</a></li><li class="chapter-item expanded "><a href="23_01_25.html">23/01/25</a></li><li class="chapter-item expanded "><a href="16_01_25.html">16/01/25</a></li><li class="chapter-item expanded "><a href="09_01_25.html">09/01/25</a></li><li class="chapter-item expanded "><a href="honey.html">Como a Honey roubou todo mundo</a></li><li class="chapter-item expanded "><a href="golpes_email.html">Investigando Golpes de e-mail</a></li><li class="chapter-item expanded "><a href="musica2024.html">Especial Música de 2024</a></li><li class="chapter-item expanded "><a href="19_12_24.html">19/12/24</a></li><li class="chapter-item expanded "><a href="ia_do_inss.html">IA do INSS</a></li><li class="chapter-item expanded "><a href="12_12_24.html">12/12/24</a></li><li class="chapter-item expanded "><a href="05_12_24.html">05/12/24</a></li><li class="chapter-item expanded "><a href="28_11_24.html">28/11/24</a></li><li class="chapter-item expanded "><a href="25_11_24.html">25/11/24</a></li><li class="chapter-item expanded "><a href="aeria.html">Projeto com Aeria</a></li><li class="chapter-item expanded "><a href="14_11_24.html">14/11/24</a></li><li class="chapter-item expanded "><a href="07_11_24.html">07/11/24</a></li><li class="chapter-item expanded "><a href="31_10_24.html">31/10/24</a></li><li class="chapter-item expanded "><a href="fetiche_tecnologia2.html">Fetiche da Tecnologia 2</a></li><li class="chapter-item expanded "><a href="wordpress.html">Wordpress VS WP Engine</a></li><li class="chapter-item expanded "><a href="24_10_24.html">24/10/24</a></li><li class="chapter-item expanded "><a href="17_10_24.html">17/10/24</a></li><li class="chapter-item expanded "><a href="10_10_24.html">10/10/24</a></li><li class="chapter-item expanded "><a href="godot.html">O Fork da Godot</a></li><li class="chapter-item expanded "><a href="07_10_24.html">07/10/24</a></li><li class="chapter-item expanded "><a href="28_09_24.html">28/09/24</a></li><li class="chapter-item expanded "><a href="19_09_24.html">19/09/24</a></li><li class="chapter-item expanded "><a href="16_09_24.html">16/09/24</a></li><li class="chapter-item expanded "><a href="05_09_24.html">05/09/24</a></li><li class="chapter-item expanded "><a href="29_08_24.html">29/08/24</a></li><li class="chapter-item expanded "><a href="22_08_24.html">22/08/24</a></li><li class="chapter-item expanded "><a href="15_08_24.html">15/08/24</a></li><li class="chapter-item expanded "><a href="cookie_clicker.html">Cookie Clicker</a></li><li class="chapter-item expanded "><a href="08_08_24.html">08/08/24</a></li><li class="chapter-item expanded "><a href="01_08_24.html">01/08/24</a></li><li class="chapter-item expanded "><a href="25_07_24.html">25/07/24</a></li><li class="chapter-item expanded "><a href="apagao.html">Crowdstrike / Apagão Cibernético</a></li><li class="chapter-item expanded "><a href="18_07_24.html">18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html">11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html">04/07/24</a></li><li class="chapter-item expanded "><a href="27_06_24.html">27/06/24</a></li><li class="chapter-item expanded "><a href="20_06_24.html">20/06/24</a></li><li class="chapter-item expanded "><a href="comunistas_internet.html">Comunistas na Internet</a></li><li class="chapter-item expanded "><a href="13_06_24.html">13/06/24</a></li><li class="chapter-item expanded "><a href="06_06_24.html">06/06/24</a></li><li class="chapter-item expanded "><a href="extrema_direita_ti.html">A Ideologia de Extrema Direita na TI</a></li><li class="chapter-item expanded "><a href="30_05_24.html">30/05/24</a></li><li class="chapter-item expanded "><a href="23_05_24.html">23/05/24</a></li><li class="chapter-item expanded "><a href="09_05_24.html">09/05/24</a></li><li class="chapter-item expanded "><a href="02_05_24.html">02/05/24</a></li><li class="chapter-item expanded "><a href="30_04_24.html">30/04/24</a></li><li class="chapter-item expanded "><a href="18_04_24.html">18/04/24</a></li><li class="chapter-item expanded "><a href="11_04_24.html">11/04/24</a></li><li class="chapter-item expanded "><a href="04_04_24.html">04/04/24</a></li><li class="chapter-item expanded "><a href="ideologia_californiana.html">A Ideologia Californiana</a></li><li class="chapter-item expanded "><a href="anticheat.html">Vanguard, LoL e Anticheat</a></li><li class="chapter-item expanded "><a href="28_03_24.html">28/03/24</a></li><li class="chapter-item expanded "><a href="29_02_24.html">29/02/24</a></li><li class="chapter-item expanded "><a href="25_03_24.html">25/03/24</a></li><li class="chapter-item expanded "><a href="22_02_24.html">22/02/24</a></li><li class="chapter-item expanded "><a href="15_02_24.html">15/02/24</a></li><li class="chapter-item expanded "><a href="13_02_24.html">13/02/24</a></li><li class="chapter-item expanded "><a href="08_02_24.html">08/02/24</a></li><li class="chapter-item expanded "><a href="05_02_24.html">05/02/24</a></li><li class="chapter-item expanded "><a href="01_02_24.html">01/02/24</a></li><li class="chapter-item expanded "><a href="25_01_24.html">25/01/24</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="ia-automação-e-burnout"><a class="header" href="#ia-automação-e-burnout">IA, automação e burnout</a></h1>
+<p>Saiu um novo relatório que confirma o que muita gente estava sentindo. O uso de ferramentas de IA generativa como apoio ao trabalho nos deixa sobrecarregado e precipita o burnout. Vamos falar sobre</p>
+<p><a href="https://www.tomshardware.com/tech-industry/using-ai-actually-increases-burnout-despite-productivity-improvements-study-shows-data-illustrates-how-ai-made-workers-take-on-tasks-they-would-have-otherwise-avoided-or-outsourced">https://www.tomshardware.com/tech-industry/using-ai-actually-increases-burnout-despite-productivity-improvements-study-shows-data-illustrates-how-ai-made-workers-take-on-tasks-they-would-have-otherwise-avoided-or-outsourced</a></p>
+<p><a href="https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it">https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it</a></p>
+<ul>
+<li>
+<p>Deixar claro que eu li o resumo disponibilizado pelas autoras e não o PDF inteiro com o relatório que é pago.</p>
+<ul>
+<li>Foi mais um daqueles artigos que colocou um easter egg para modelos de linguagem lendo. O texto do artigo quando lido por uma ferramenta web é esse:</li>
+<li><em>Summary. Right now, many companies are worried about how to get more employees to use AI. After all, the promise of AI reducing the burden of some work—drafting routine documents, summarizing information, and debugging code—and allowing workers more time for high-value tasks is tantalizing.</em></li>
+</ul>
+</li>
+<li>
+<p>O artigo acompanhou 200 funcionários de uma empresa de tecnologia por 8 meses, analisou seus hábitos de trabalho e conduziu entrevistas com eles.</p>
+</li>
+<li>
+<p>Pra catapultar a discussão eu vou começar com essa frase que aparece lá no final, que faz parte da entrevista de um funcionário:</p>
+</li>
+</ul>
+<blockquote>
+<p>“Você pensa que talvez, por ser mais produtivo com IA, você economizaria tempo e trabalharia menos. Mas, na verdade, você não trabalha menos. Você trabalha a mesma quantidade ou até mais.”</p>
+</blockquote>
+<ul>
+<li>
+<p>Esse funcionário está descobrindo a relação entre produtividade, horas trabalhadas e salário no capitalismo. É uma frase que poderia estar no 'Salário, Preço e Lucro' do Marx</p>
+</li>
+<li>
+<p>O artigo sugere que a intensificação do trabalho se dá das seguintes formas:</p>
+<ul>
+<li>Expansão do escopo de tarefas</li>
+<li>Mistura dos limites entre trabalho e não trabalho</li>
+<li>Mais multitasking</li>
+</ul>
+</li>
+<li>
+<p>O artigo também conclui que uma 'política de IA' deve atacar esses pontos para impedir que o aumento desenfreado da produtividade vire burnout, acúmulo de erros e turnover.</p>
+</li>
+<li>
+<p>Esse é um dos assuntos que mais me interessam aqui no canal e eu recomendo muito esses dois vídeos:</p>
+</li>
+</ul>
+<p><a href="https://youtu.be/3BFeJM480js ">https://youtu.be/3BFeJM480js </a></p>
+<p><a href="https://youtu.be/wv95PxVECTk ">https://youtu.be/wv95PxVECTk </a></p>
+<ul>
+<li>Outro vídeo inesperadamente relevante é esse aqui:</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ubWqaVyJhdA "></iframe>
+<ul>
+<li>
+<p>A IA generativa tem sido usada como um 'coringa' para automatizar partes não muito bem especificadas do trabalho, momentos em que geralmente teríamos tempo para parar e refletir porque estamos presos ou defrontados com um pensamento mais 'ativo'</p>
+</li>
+<li>
+<p>Então essa automatização além de tudo gera uma alienação do trabalho e nos separa do significado por trás de cada uma de nossas ações e nos permite ver mais resultados do nosso trabalho do que o processo</p>
+</li>
+<li>
+<p>Pensando novamente nos jogos incrementais e Cookie Clicker por exemplo: cada nova fonte de produção de biscoitos que introduz uma nova mecânica é outra maneira semi automática de crescer a sua produtividade, porém gera um esforço cognitivo e te transforma em babá de mais um pequeno mecanismo</p>
+</li>
+<li>
+<p>Isso tem pode ter como resultado danos à saúde dos trabalhadores, acúmulo de função, entregas com defeito... mas a única métrica que importa é a multiplicação do capital</p>
+<ul>
+<li>E essa multiplicação pode não se dar na esfera da "sua empresa", quem lucra pode ser quem está te vendendo chamada de API para modelos</li>
+</ul>
+</li>
+<li>
+<p>E daí eu queria falar de como a IA está 'disruptando' o mercado de software e serviços</p>
+</li>
+</ul>
+<p><a href="https://economictimes.indiatimes.com/tech/technology/explained-the-anthropic-tool-hammering-indian-it-stocks/articleshow/127903319.cms">https://economictimes.indiatimes.com/tech/technology/explained-the-anthropic-tool-hammering-indian-it-stocks/articleshow/127903319.cms</a></p>
+<blockquote>
+<p>A Anthropic lançou um "Plugin Jurídico" para sua plataforma Claude Cowork. Este plugin de código aberto personaliza a IA do Claude para tarefas jurídicas como revisão de documentos, análise de contratos, triagem de acordos de confidencialidade, acompanhamento de conformidade e geração de respostas padronizadas ou resumos básicos. Ele reúne habilidades específicas da área, conectores para ferramentas como CRMs ou dashboards e subagentes para fluxos de trabalho com várias etapas. A ferramenta já está disponível em versão prévia para usuários pagos do Claude.</p>
+</blockquote>
+<ul>
+<li>
+<p>Isso causou uma queda nos investimentos de empresas de serviços por que parece anunciar a pontecial automação do setor de serviços legais</p>
+</li>
+<li>
+<p>O quebra cabeça que está se tentando resolver na economica agora é pra onde existe esse tipo de trabalho artesanal e que precisa de uma 'lubrificação dos agentes'</p>
+<ul>
+<li>É isso que vai dar bilhão pra algumas empresas enquanto outras vão perder o mercado</li>
+</ul>
+</li>
+<li>
+<p>Esse é o real valor dos "agentes" usados como uma ferramenta de trabalho. Mesmo aos trancos e barrancos, expondo todas as credenciais da empresa e drenando as suas chamadas de API ele te permite uma relação mútua de "supervisão".</p>
+<ul>
+<li>Você diz pro agente: "vai trabalhar" e ele diz pra você "tá aqui, agora trabalha mais"</li>
+<li>Acaba com o 'downtime' e com os momentos de trabalho 'não alienado'</li>
+<li>Inclusive é uma dinâmica de trabalho mais gamificada</li>
+</ul>
+</li>
+<li>
+<p>Isso aqui deveria fazer a gente pensar sobre a nossa relação de produtividade, tempo e salário. Além de pensar na nossa relação de trabalho e decidir engajar ativamente com essas ferramentas</p>
+</li>
+<li>
+<p>O capitalismo pode te prometer muita coisa, menos que você vai trabalhar menos amanhã. O uso de IA generativa deixa isso cada vez mais claro.</p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="discord.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="discord.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
