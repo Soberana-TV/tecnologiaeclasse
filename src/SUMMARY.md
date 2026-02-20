@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [IA, automação e burnout](ia_burnout.md)
 - [Discord e escaneamento facial](discord.md)
 - [Memórias RAM da China](memoria_china.md)
 - [A tecnologia hostil](tecnologia.md)
