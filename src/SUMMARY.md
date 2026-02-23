@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [TECLAS.DOC: Como as BigTechs roubaram a nossa imagem](teclas_doc1.md)
 - [IA, automação e burnout](ia_burnout.md)
 - [Discord e escaneamento facial](discord.md)
 - [Memórias RAM da China](memoria_china.md)
