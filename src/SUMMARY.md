@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Governo dos EUA gostaria de acessar a sua cara](openai_persona.md)
 - [TECLAS.DOC: Como as BigTechs roubaram a nossa imagem](teclas_doc1.md)
 - [IA, automação e burnout](ia_burnout.md)
 - [Discord e escaneamento facial](discord.md)
