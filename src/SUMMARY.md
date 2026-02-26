@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Os agentes são a nova febre](agentes_compras.md)
 - [Reflexões sobre a morte da Internet](internet4.md)
 - [Governo dos EUA gostaria de acessar a sua cara](openai_persona.md)
 - [TECLAS.DOC: Como as BigTechs roubaram a nossa imagem](teclas_doc1.md)
