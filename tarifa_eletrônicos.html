@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Tarifa dos eletrônicos - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="o_que.html">O que é Tecnologia e Classe?</a></li><li class="chapter-item expanded "><a href="tarifa_eletrônicos.html" class="active">Tarifa dos eletrônicos</a></li><li class="chapter-item expanded "><a href="agentes_compras.html">Agentes: a nova febre da IA</a></li><li class="chapter-item expanded "><a href="internet4.html">Reflexões sobre a morte da Internet</a></li><li class="chapter-item expanded "><a href="openai_persona.html">Governo dos EUA gostaria de acessar a sua cara</a></li><li class="chapter-item expanded "><a href="teclas_doc1.html">TECLAS.DOC: Como as BigTechs roubaram a nossa imagem</a></li><li class="chapter-item expanded "><a href="ia_burnout.html">IA, automação e burnout</a></li><li class="chapter-item expanded "><a href="discord.html">Discord e escaneamento facial</a></li><li class="chapter-item expanded "><a href="memoria_china.html">Memórias RAM da China</a></li><li class="chapter-item expanded "><a href="tecnologia.html">A tecnologia hostil</a></li><li class="chapter-item expanded "><a href="reviver_ia.html">Revivendo pessoas com IA</a></li><li class="chapter-item expanded "><a href="bolha_ia3.html">É assim que a bolha de IA estoura</a></li><li class="chapter-item expanded "><a href="epstein_tech.html">Big tech e cripto nos arquivos do Epstein</a></li><li class="chapter-item expanded "><a href="anytype.html">Tutorial de Anytype</a></li><li class="chapter-item expanded "><a href="openclaw.html">Openclaw e a rede dos robôs</a></li><li class="chapter-item expanded "><a href="novo_tiktok.html">O Novo TikTok</a></li><li class="chapter-item expanded "><a href="ice_minesota.html">ICE, Minesota e uso da tecnologia</a></li><li class="chapter-item expanded "><a href="backlash_ia.html">Sites proibem conteúdo de IA</a></li><li class="chapter-item expanded "><a href="guerra_ao_desktop.html">Tá cada vez mais difícil comprar computador</a></li><li class="chapter-item expanded "><a href="chat_gpt_propagandas.html">ChatGPT terá propagandas</a></li><li class="chapter-item expanded "><a href="annas_archive_spotify.html">Anna's Archive fez backup do Spotify</a></li><li class="chapter-item expanded "><a href="demissao_mercado_livre.html">Demissão em massa no Mercado Livre</a></li><li class="chapter-item expanded "><a href="roblox_felca.html">Os protestos do Roblox</a></li><li class="chapter-item expanded "><a href="bluetooth.html">A vulnerabilidade do Bluetooth Fast Pair</a></li><li class="chapter-item expanded "><a href="39c3.html">Palestra 39C3</a></li><li class="chapter-item expanded "><a href="o_bonde.html">O Bonde</a></li><li class="chapter-item expanded "><a href="valve_fex.html">Valve aposta na interoperabilidade</a></li><li class="chapter-item expanded "><a href="flock.html">Flock alimenta vigilância criminosa de Trump</a></li><li class="chapter-item expanded "><a href="cory_pos_eua.html">Cory Doctorow propõe internet pós EUA</a></li><li class="chapter-item expanded "><a href="ranger_rosa.html">Ranger Rosa Hackeia site de encontros só para brancos</a></li><li class="chapter-item expanded "><a href="grok_abuso.html">Grok gera 85x mais imagens de abuso</a></li><li class="chapter-item expanded "><a href="brasil_venezuela.html">O Brasil vai virar a Venezuela?</a></li><li class="chapter-item expanded "><a href="waymos.html">Waymos travam o trânsito de São Francisco</a></li><li class="chapter-item expanded "><a href="epstein2.html">A decepcionante revelação dos arquivos Epstein</a></li><li class="chapter-item expanded "><a href="github.html">A merdificação do Github</a></li><li class="chapter-item expanded "><a href="disney_openai.html">Disney e OpenAI</a></li><li class="chapter-item expanded "><a href="camera_vaso.html">Câmera no vaso, eleição de criptólogos e zork</a></li><li class="chapter-item expanded "><a href="gamblificacao.html">A Gamblificação de tudo</a></li><li class="chapter-item expanded "><a href="netflix_warner_paramount.html">Netflix, Warner e Paramount</a></li><li class="chapter-item expanded "><a href="dosimetria_glauber.html">Dosimetria, Hugo Motta, Glauber Braga e o 'apagão' das redes da Meta</a></li><li class="chapter-item expanded "><a href="trump_x.html">Localização dos Trumpistas no X</a></li><li class="chapter-item expanded "><a href="ram.html">Escalada do Preço da RAM</a></li><li class="chapter-item expanded "><a href="armas_infosec.html">Porte de armas para infosec</a></li><li class="chapter-item expanded "><a href="google_openai.html">O Google disparou?</a></li><li class="chapter-item expanded "><a href="serpro_palantir.html">Serpro abriu a porta para a Palantir</a></li><li class="chapter-item expanded "><a href="nugate.html">Nugate e outras núticias</a></li><li class="chapter-item expanded "><a href="ia_fantastico.html">Fantástico promove peça de propaganda pró IA</a></li><li class="chapter-item expanded "><a href="aulao_ia_zema.html">Aulão de IA do Zema</a></li><li class="chapter-item expanded "><a href="cloudflare.html">Cloudflare 18/11/25</a></li><li class="chapter-item expanded "><a href="grokipedia.html">Grokipedia</a></li><li class="chapter-item expanded "><a href="gmail_ia.html">Meta e Google querem ler suas mensagens</a></li><li class="chapter-item expanded "><a href="steam_machine_windows11_android.html">Steam Machine, Windows 11 e sideload no Android</a></li><li class="chapter-item expanded "><a href="ia_infra.html">A bolha de infraestrutura da IA</a></li><li class="chapter-item expanded "><a href="psf_dei_eua.html">PSF, DEI, EUA</a></li><li class="chapter-item expanded "><a href="rockstar_sindicato.html">Rockstar North demite trabalhadores sindicalizados</a></li><li class="chapter-item expanded "><a href="meta_golpes.html">Meta ganhou dinheiro com golpes</a></li><li class="chapter-item expanded "><a href="oeste_cezpem.html">Revista Oeste faz propaganda de comunismo</a></li><li class="chapter-item expanded "><a href="openai_dinheiro.html">OpenAI quer mais dinheiro</a></li><li class="chapter-item expanded "><a href="remoto_nubank.html">O fim do remoto no Nubank</a></li><li class="chapter-item expanded "><a href="kimi_k2.html">Kimi K2 é o novo Deepseek?</a></li><li class="chapter-item expanded "><a href="seguranca_lucro.html">Segurança, incentivo ao lucro e tal</a></li><li class="chapter-item expanded "><a href="cs2.html">Crash das caixas de CS2</a></li><li class="chapter-item expanded "><a href="ruby.html">Ruby fora dos Trilhos</a></li><li class="chapter-item expanded "><a href="merdificacao.html">Vantagens da Merdificação</a></li><li class="chapter-item expanded "><a href="queda_aws.html">A Queda da AWS</a></li><li class="chapter-item expanded "><a href="windows10.html">O fim do Windows 10</a></li><li class="chapter-item expanded "><a href="oracle_tiktok.html">Larry Ellison e o Controle da Mídia sob Trump</a></li><li class="chapter-item expanded "><a href="agora_vai.html">A Bolha da IA</a></li><li class="chapter-item expanded "><a href="audacity.html">O que está acontecendo com o Audacity?</a></li><li class="chapter-item expanded "><a href="preservacao_cultura.html">Empresas contra a preservação da cultura</a></li><li class="chapter-item expanded "><a href="propagandas.html">Propagandas em todo lugar</a></li><li class="chapter-item expanded "><a href="tocanna.html">Tocanna: a artista que as big techs gostam</a></li><li class="chapter-item expanded "><a href="loucura_ia.html">A loucura de IA tem que acabar</a></li><li class="chapter-item expanded "><a href="gambiarra.html">Gambiarra do IOS é preocupante</a></li><li class="chapter-item expanded "><a href="pec_blindagem.html">PEC da Blindagem</a></li><li class="chapter-item expanded "><a href="spotify.html">Spotify falha, falhou e falhará</a></li><li class="chapter-item expanded "><a href="trump_jantar.html">O jantar amaldiçoado de Trump e big techs</a></li><li class="chapter-item expanded "><a href="ministra_ia.html">Ministra de IA da Albania</a></li><li class="chapter-item expanded "><a href="11_09_25.html">11/09/25</a></li><li class="chapter-item expanded "><a href="05_09_25.html">05/09/25</a></li><li class="chapter-item expanded "><a href="eua_chips.html">INTEL, NVIDIA, AMD e EUA</a></li><li class="chapter-item expanded "><a href="folha.html">Folha de SP processa OPENAI e ... Manual do Usuário</a></li><li class="chapter-item expanded "><a href="22_08_25.html">22/08/25</a></li><li class="chapter-item expanded "><a href="geopolitica_ia2.html">A Geopolítica da IA 2025/02</a></li><li class="chapter-item expanded "><a href="artista_ia.html">O que é ser um artista na era da IA?</a></li><li class="chapter-item expanded "><a href="chatgpt5.html">O lançamento do ChatGPT 5</a></li><li class="chapter-item expanded "><a href="clippys.html">O que é a revolução dos clippys?</a></li><li class="chapter-item expanded "><a href="17_08_25.html">Google hackeado, bolsonaristas foram longe demais e mais notícias</a></li><li class="chapter-item expanded "><a href="felca.html">Felca, adultização e redes sociais</a></li><li class="chapter-item expanded "><a href="08_08_25.html">08/08/25</a></li><li class="chapter-item expanded "><a href="steam_itch.html">Steam, itch.io e censura dos meios  de pagamento</a></li><li class="chapter-item expanded "><a href="24_07_25.html">24/07/25</a></li><li class="chapter-item expanded "><a href="18_07_25.html">18/07/25</a></li><li class="chapter-item expanded "><a href="ani_grok.html">A assistente e-girl do Grok</a></li><li class="chapter-item expanded "><a href="trump_pix.html">Trump ataca o Pix</a></li><li class="chapter-item expanded "><a href="11_07_25.html">11/07/25</a></li><li class="chapter-item expanded "><a href="genai.html">A criação dos modelos de genAI</a></li><li class="chapter-item expanded "><a href="stop_killing_games.html">Stop Killing Games</a></li><li class="chapter-item expanded "><a href="artigo19.html">O Artigo 19 do Marco Civil</a></li><li class="chapter-item expanded "><a href="03_07_25.html">03/07/25</a></li><li class="chapter-item expanded "><a href="soberania_digital2.html">Uma introdução à Soberania Digital</a></li><li class="chapter-item expanded "><a href="20_06_25.html">20/06/25</a></li><li class="chapter-item expanded "><a href="ai_2027.html">O Apocalíptico AI 2027</a></li><li class="chapter-item expanded "><a href="soberania_digital.html">Soberania Digital: Uma perspectiva brasileira</a></li><li class="chapter-item expanded "><a href="13_06_25.html">13/06/25</a></li><li class="chapter-item expanded "><a href="jav_meta.html">JAV, Meta e regulamentação das redes</a></li><li class="chapter-item expanded "><a href="builderai.html">Builder.ai e os Indianos Assalariados</a></li><li class="chapter-item expanded "><a href="29_05_25.html">29/05/25</a></li><li class="chapter-item expanded "><a href="22_05_25.html">22/05/25</a></li><li class="chapter-item expanded "><a href="palestra_cryptorave_2025.html">Palestra Cryptorave 2025</a></li><li class="chapter-item expanded "><a href="15_05_25.html">15/05/25</a></li><li class="chapter-item expanded "><a href="08_05_25.html">08/05/25</a></li><li class="chapter-item expanded "><a href="manipulado_robos.html">Sim você é manipulado por robôs</a></li><li class="chapter-item expanded "><a href="24_04_25.html">24/04/25</a></li><li class="chapter-item expanded "><a href="17_04_25.html">17/04/25</a></li><li class="chapter-item expanded "><a href="internet_morta_bots.html">Quantos % da internet está morta</a></li><li class="chapter-item expanded "><a href="03_04_25.html">03/04/25</a></li><li class="chapter-item expanded "><a href="27_03_25.html">27/03/25</a></li><li class="chapter-item expanded "><a href="20_03_25.html">20/03/25</a></li><li class="chapter-item expanded "><a href="rustlings_pt1.html">Vamos aprender Rust pt. 1</a></li><li class="chapter-item expanded "><a href="mozilla_firefox.html">Os Termos de Uso do Firefox</a></li><li class="chapter-item expanded "><a href="rust_linux.html">Rust no Linux</a></li><li class="chapter-item expanded "><a href="13_03_25.html">13/03/25</a></li><li class="chapter-item expanded "><a href="06_03_25.html">06/03/25</a></li><li class="chapter-item expanded "><a href="27_02_25.html">27/02/25</a></li><li class="chapter-item expanded "><a href="ia_nos_deixa_burros.html">A IA nos deixa burros?</a></li><li class="chapter-item expanded "><a href="futuro_do_trabalho.html">O futuro do trabalho?</a></li><li class="chapter-item expanded "><a href="amazon_kindle.html">Baixe seus livros da Amazon</a></li><li class="chapter-item expanded "><a href="worldcoin.html">Sobre a Worldcoin de Sam Altman</a></li><li class="chapter-item expanded "><a href="ollama_deepseek.html">Tutorial Ollama e Deepseek</a></li><li class="chapter-item expanded "><a href="milei_libra.html">O golpe de cripto do Milei</a></li><li class="chapter-item expanded "><a href="doge_hackeado.html">DOGE de Musk é hackeado</a></li><li class="chapter-item expanded "><a href="preservacao_digital.html">Sobre a preservação digital</a></li><li class="chapter-item expanded "><a href="meta_pirateou.html">META pirateou 81TB de livros</a></li><li class="chapter-item expanded "><a href="06_02_25.html">06/02/25</a></li><li class="chapter-item expanded "><a href="30_01_25.html">30/01/25</a></li><li class="chapter-item expanded "><a href="deepseek.html">Deepseek abala os EUA</a></li><li class="chapter-item expanded "><a href="descentralizadas.html">Redes sociais descentralizadas</a></li><li class="chapter-item expanded "><a href="23_01_25.html">23/01/25</a></li><li class="chapter-item expanded "><a href="16_01_25.html">16/01/25</a></li><li class="chapter-item expanded "><a href="09_01_25.html">09/01/25</a></li><li class="chapter-item expanded "><a href="honey.html">Como a Honey roubou todo mundo</a></li><li class="chapter-item expanded "><a href="golpes_email.html">Investigando Golpes de e-mail</a></li><li class="chapter-item expanded "><a href="musica2024.html">Especial Música de 2024</a></li><li class="chapter-item expanded "><a href="19_12_24.html">19/12/24</a></li><li class="chapter-item expanded "><a href="ia_do_inss.html">IA do INSS</a></li><li class="chapter-item expanded "><a href="12_12_24.html">12/12/24</a></li><li class="chapter-item expanded "><a href="05_12_24.html">05/12/24</a></li><li class="chapter-item expanded "><a href="28_11_24.html">28/11/24</a></li><li class="chapter-item expanded "><a href="25_11_24.html">25/11/24</a></li><li class="chapter-item expanded "><a href="aeria.html">Projeto com Aeria</a></li><li class="chapter-item expanded "><a href="14_11_24.html">14/11/24</a></li><li class="chapter-item expanded "><a href="07_11_24.html">07/11/24</a></li><li class="chapter-item expanded "><a href="31_10_24.html">31/10/24</a></li><li class="chapter-item expanded "><a href="fetiche_tecnologia2.html">Fetiche da Tecnologia 2</a></li><li class="chapter-item expanded "><a href="wordpress.html">Wordpress VS WP Engine</a></li><li class="chapter-item expanded "><a href="24_10_24.html">24/10/24</a></li><li class="chapter-item expanded "><a href="17_10_24.html">17/10/24</a></li><li class="chapter-item expanded "><a href="10_10_24.html">10/10/24</a></li><li class="chapter-item expanded "><a href="godot.html">O Fork da Godot</a></li><li class="chapter-item expanded "><a href="07_10_24.html">07/10/24</a></li><li class="chapter-item expanded "><a href="28_09_24.html">28/09/24</a></li><li class="chapter-item expanded "><a href="19_09_24.html">19/09/24</a></li><li class="chapter-item expanded "><a href="16_09_24.html">16/09/24</a></li><li class="chapter-item expanded "><a href="05_09_24.html">05/09/24</a></li><li class="chapter-item expanded "><a href="29_08_24.html">29/08/24</a></li><li class="chapter-item expanded "><a href="22_08_24.html">22/08/24</a></li><li class="chapter-item expanded "><a href="15_08_24.html">15/08/24</a></li><li class="chapter-item expanded "><a href="cookie_clicker.html">Cookie Clicker</a></li><li class="chapter-item expanded "><a href="08_08_24.html">08/08/24</a></li><li class="chapter-item expanded "><a href="01_08_24.html">01/08/24</a></li><li class="chapter-item expanded "><a href="25_07_24.html">25/07/24</a></li><li class="chapter-item expanded "><a href="apagao.html">Crowdstrike / Apagão Cibernético</a></li><li class="chapter-item expanded "><a href="18_07_24.html">18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html">11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html">04/07/24</a></li><li class="chapter-item expanded "><a href="27_06_24.html">27/06/24</a></li><li class="chapter-item expanded "><a href="20_06_24.html">20/06/24</a></li><li class="chapter-item expanded "><a href="comunistas_internet.html">Comunistas na Internet</a></li><li class="chapter-item expanded "><a href="13_06_24.html">13/06/24</a></li><li class="chapter-item expanded "><a href="06_06_24.html">06/06/24</a></li><li class="chapter-item expanded "><a href="extrema_direita_ti.html">A Ideologia de Extrema Direita na TI</a></li><li class="chapter-item expanded "><a href="30_05_24.html">30/05/24</a></li><li class="chapter-item expanded "><a href="23_05_24.html">23/05/24</a></li><li class="chapter-item expanded "><a href="09_05_24.html">09/05/24</a></li><li class="chapter-item expanded "><a href="02_05_24.html">02/05/24</a></li><li class="chapter-item expanded "><a href="30_04_24.html">30/04/24</a></li><li class="chapter-item expanded "><a href="18_04_24.html">18/04/24</a></li><li class="chapter-item expanded "><a href="11_04_24.html">11/04/24</a></li><li class="chapter-item expanded "><a href="04_04_24.html">04/04/24</a></li><li class="chapter-item expanded "><a href="ideologia_californiana.html">A Ideologia Californiana</a></li><li class="chapter-item expanded "><a href="anticheat.html">Vanguard, LoL e Anticheat</a></li><li class="chapter-item expanded "><a href="28_03_24.html">28/03/24</a></li><li class="chapter-item expanded "><a href="29_02_24.html">29/02/24</a></li><li class="chapter-item expanded "><a href="25_03_24.html">25/03/24</a></li><li class="chapter-item expanded "><a href="22_02_24.html">22/02/24</a></li><li class="chapter-item expanded "><a href="15_02_24.html">15/02/24</a></li><li class="chapter-item expanded "><a href="13_02_24.html">13/02/24</a></li><li class="chapter-item expanded "><a href="08_02_24.html">08/02/24</a></li><li class="chapter-item expanded "><a href="05_02_24.html">05/02/24</a></li><li class="chapter-item expanded "><a href="01_02_24.html">01/02/24</a></li><li class="chapter-item expanded "><a href="25_01_24.html">25/01/24</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="a-tarifação-dos-produtos-eletrônicos-em-fev2026"><a class="header" href="#a-tarifação-dos-produtos-eletrônicos-em-fev2026">A tarifação dos produtos eletrônicos em Fev/2026</a></h1>
+<p>Uma resolução do GECEX em Fevereiro de 2026 aumenta as tarifas de mais de 1000 produtos, muitos deles aparelhos e componentes eletrônicos, e isso causou um caos nas redes sociais. Vamos falar sobre.</p>
+<ul>
+<li>
+<p>Vamos dividir esse vídeo em 3 momentos:</p>
+<ul>
+<li>A real mudança das alíquotas, ou seja, entender o que mudou e como isso irá (iria?) nos afetar</li>
+<li>O motivo porque essa medida foi tomada</li>
+<li>A repercussão, principalmente nas redes, dessa decisão</li>
+</ul>
+</li>
+<li>
+<p>Vamos começar com algumas manchetes e trechos dessas reportagens para tentar entender a situação</p>
+</li>
+</ul>
+<p><a href="https://istoedinheiro.com.br/haddad-aumento-de-imposto-de-importacao-de-mais-de-mil-produtos">https://istoedinheiro.com.br/haddad-aumento-de-imposto-de-importacao-de-mais-de-mil-produtos</a></p>
+<blockquote>
+<p>O ministro da Fazenda, Fernando Haddad, afirmou nesta quarta-feira, 25, que o aumento das alíquotas do imposto de importação de uma lista ampla de eletrônicos tem objetivo puramente regulatório, não gera impacto nos preços desses equipamentos e busca “proteger a produção nacional”.</p>
+<p>No início de fevereiro, o Comitê Executivo de Gestão da Câmara de Comércio Exterior (Gecex/Camex) aumentou as alíquotas do imposto de importação de mil itens. Além de smartphones, freezers e painéis com LED, a alta do imposto alcança máquinas e equipamentos como caldeiras, geradores, turbinas, fornos industriais, robôs industriais, empilhadeiras, tratores, plataformas de perfuração, navios, aparelhos de ressonância magnética, tomógrafos e equipamentos laboratoriais.</p>
+<p>O reajuste pode elevar as tarifas em até 7,2 pontos percentuais, atingindo setores que dependem de compras internacionais. Parte dos novos percentuais já entrou em vigor; o restante passa a valer a partir de março.</p>
+</blockquote>
+<p><a href="https://veja.abril.com.br/economia/governo-eleva-em-ate-25-o-imposto-de-importacao-sobre-mais-de-mil-produtos/">https://veja.abril.com.br/economia/governo-eleva-em-ate-25-o-imposto-de-importacao-sobre-mais-de-mil-produtos/</a></p>
+<p><a href="https://www.adrenaline.com.br/em-alta/brasil-eleva-imposto-de-importacao-de-eletronicos-incluindo-smartphones/">https://www.adrenaline.com.br/em-alta/brasil-eleva-imposto-de-importacao-de-eletronicos-incluindo-smartphones/</a></p>
+<p><a href="https://www.diariodocentrodomundo.com.br/apos-reacao-nas-redes-governo-avalia-revogar-tarifa-sobre-eletronicos-importados/#:~:text=Ap%C3%B3s%20rea%C3%A7%C3%A3o%20nas%20redes%2C%20governo%20avalia%20revogar%20tarifa%20sobre%20eletr%C3%B4nicos%20importados">https://www.diariodocentrodomundo.com.br/apos-reacao-nas-redes-governo-avalia-revogar-tarifa-sobre-eletronicos-importados/</a></p>
+<p><strong>Resolução do GECEX de 04/02/26</strong> <a href="https://static.poder360.com.br/2026/02/RESOLUCAO-GECEX-No-852-DE-4-DE-FEVEREIRO-DE-2026-RESOLUCAO-GECEX-No-852-DE-4-DE-FEVEREIRO-DE-2026-DOU-Imprensa-Nacional.pdf">https://static.poder360.com.br/2026/02/RESOLUCAO-GECEX-No-852-DE-4-DE-FEVEREIRO-DE-2026-RESOLUCAO-GECEX-No-852-DE-4-DE-FEVEREIRO-DE-2026-DOU-Imprensa-Nacional.pdf</a></p>
+<p><a href="https://www.in.gov.br/web/dou/-/resolucao-gecex-n-852-de-4-de-fevereiro-de-2026-685397607">https://www.in.gov.br/web/dou/-/resolucao-gecex-n-852-de-4-de-fevereiro-de-2026-685397607</a></p>
+<ul>
+<li>
+<p>Agora pra tentar entender efeito, por exemplo para o consumidor que quer um desktop novo, o que seria necessário é:</p>
+<ul>
+<li>Consultar o NCM de cada componente a ser comprado</li>
+<li>Comparar as novas alíquotas efetivas com as alíquotas anteriores e entender o aumento (16% -&gt; 20% por ex.)</li>
+<li>Levar em conta outros fatores como exceções tarifárias ou taxação de componentes intermediários ou bens de capital que podem modificar o preço final</li>
+</ul>
+</li>
+<li>
+<p>Não é surpresa que é uma questão extremamente confusa, fácil de usar para atacar o governo e que no geral só "cheira mal"</p>
+</li>
+<li>
+<p>Queria recomendar essa thread no Reddit (quantas vezes ouviram essa frase?) que fez um bom trabalho de resumir a situação e tem uma discussão surpreendentemente boa:</p>
+</li>
+</ul>
+<p><a href="https://www.reddit.com/r/computadores/comments/1rf8lu1/a_modera%C3%A7%C3%A3o_deveria_fixar_post_com_informa%C3%A7%C3%A3o/">https://www.reddit.com/r/computadores/comments/1rf8lu1/a_modera%C3%A7%C3%A3o_deveria_fixar_post_com_informa%C3%A7%C3%A3o/</a></p>
+<ul>
+<li>
+<p>Inclusive muita gente discute o caso dos smartphones que tiveram um aumento de 4 pontos percentuais (16% para 20% o que poderia ser visto como uma "aumento de 25%" mas isso seria confuso né?)</p>
+<ul>
+<li>95% dos comprados no Brasil não seriam afetados pois são montados aqui</li>
+<li>Porém uma das marcas afetadas seria a Xiaomi por vir importada da China (exemplo com um celular que custa 1000 reais)</li>
+</ul>
+</li>
+<li>
+<p>Qual o motivo dessa mudança nas alíquotas?</p>
+<ul>
+<li>A proteção dos interesses de uma burguesia industrial da economia (vs um setor importador ou uma classe média que usa componentes como instrumento de trabalho)</li>
+<li>Manter as metas de superávit e não furar a meta fiscal do governo achando algumas arrecadações</li>
+<li>É uma tentativa de fazer política fiscal e política industrial que, na minha opinião o Haddad achou que ia ser de boa, MAS...</li>
+</ul>
+</li>
+<li>
+<p>..vamos falar sobre repercussão nas redes. Obviamente Nikolas Ferreira decidiu sar do Xwitter, botar a camisetinha preta, entrar na sala preta e tacar lhe pau no governo.</p>
+</li>
+</ul>
+<p><a href="https://revistaforum.com.br/politica/tarifas-nikolas-desinformacao/">https://revistaforum.com.br/politica/tarifas-nikolas-desinformacao/</a></p>
+<ul>
+<li>Uma busca com 'tarifa sobre eletrônicos' mostra:</li>
+</ul>
+<p><img src="./tarifas_eletr%C3%B4nicos/2.png" alt="Screenshot from 2026-02-27 07-47-16.png" /></p>
+<ul>
+<li>
+<p>A bolha de influenciadores de informática repercutiu isso muito pesadamente como um aumento de impostos que vai ajudar a inviabilizar a compra de computadores pela classe média?</p>
+</li>
+<li>
+<p>Eles não estão errados, afinal eu também fiz vídeo sobre preço de RAM e de GPU certo? Sim, eu não posso tirar a razão:</p>
+<ul>
+<li>Porém no caso da RAM nos últimos 2 anos temos um aumento de quase 4x em alguns produtos o que é bem diferente do pior caso com essa taxação que seria 25%</li>
+<li>É a diferença de 100x4 (400) e 100x0.25 (125)</li>
+</ul>
+</li>
+<li>
+<p>O próprio Haddad explicou que a queda do dólar nos últimos tempos vai ajudar a compensar essas tarifas balanceando diversos preços no 'mesmo lugar'...</p>
+</li>
+<li>
+<p>...porém a gente sabe como o próprio pânico em cima dessas medidas provê uma boa justificativa para vendedores aumentarem seus preços (e portanto suas margens) mesmo que não exista nova tarifa</p>
+</li>
+<li>
+<p>Eu preciso dizer que é ano de eleição? Eu entendo que era vista como uma medida técnica, mas de novo o governo entregou uma situação assim pra oposição cortar e fica esse clima de 'ninguém poderia prever' / 'na real não é tão ruim' que é PÉSSIMO</p>
+</li>
+<li>
+<p>A possibilidade de que haja uma revogação cria novamente a situação do monitoramente do Pix. Propõe algo impopular -&gt; volta atrás -&gt; admite que estava errado (mesmo que não esteja tá ok pessoal?)</p>
+</li>
+<li>
+<p>Esse tipo de declaração aqui não ajuda, porque a conclusão é: "se não precisava pra que desgastar o governo então?"</p>
+</li>
+</ul>
+<blockquote>
+<p>Integrantes do governo afirmam que  uma eventual revogação parcial ou total não teria impacto fiscal  expressivo. Parte dos produtos já é fabricada no Brasil e há mecanismos  como o drawback, que reduz custos de importação de insumos destinados à  exportação.</p>
+</blockquote>
+<ul>
+<li>Ou então desiste de propor uma medida tão controversa em ano de eleição ou teria que ser parte de uma blitz de divulgação, com memes de gatinhos e caramelos já prontos de antemão.</li>
+<li>Outra coisa que é frustrante é o argumento de que isso só afeta uma 'classe média' que não é a base do PT que a gente ouve vindo de parte da militância (e sinceramente é parte da atitude do Haddad)
+<ul>
+<li>Primeiro que pessoas ditas 'pobres' também compram desktops e celulares, ou tem aspiração de comprar, e nunca vão achar mais imposto uma boa ideia</li>
+<li>A dita 'classe média' é um vetor importante de influência na sociedade, por bem ou por mal, os nichos de divulgação mais desenvolvidos atacam esse público e isso filtra pros outros depois</li>
+</ul>
+</li>
+</ul>
+<p><img src="./tarifas_eletr%C3%B4nicos/1.png" alt="Screenshot from 2026-02-27 08-11-10.png" /></p>
+<ul>
+<li>Em resumo:
+<ul>
+<li>A medida não é tão caótica quanto parece (e pode vir a ser revogada)</li>
+<li>Faz parte de uma tática de conciliação entre a política fiscal do Lula 3 e a política industrial (não é só comunicação!)
+<ul>
+<li>PT quer o apoio dessa ala da burguesia e acreditou que isso não iria afetar o apoio da sua base na socieade</li>
+</ul>
+</li>
+<li>É uma CAGADA fazer uma coisa assim em ano eleitoral e fingir que isso não é uma característica falha da tática do PT é tapar o sol com a peneira.</li>
+</ul>
+</li>
+<li><strong>Essa aqui é pros webpetistas:</strong> se o PT perder a eleição por 1% de margem é mais fácil que isso seja a causa OU a gente criticando as políticas erradas do PT:
+<ul>
+<li>privatização de hidrovias e dragagem do Tapajós</li>
+<li>subsídio para instalação de data centers no Brasil</li>
+<li>parcerias com big techs na nuvem "soberana" da Serpro</li>
+</ul>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="agentes_compras.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="agentes_compras.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
