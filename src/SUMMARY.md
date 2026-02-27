@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Tarifa dos eletrônicos](tarifa_eletrônicos.md)
 - [Agentes: a nova febre da IA](agentes_compras.md)
 - [Reflexões sobre a morte da Internet](internet4.md)
 - [Governo dos EUA gostaria de acessar a sua cara](openai_persona.md)
