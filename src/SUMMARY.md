@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Anthropic nega contrato com os EUA, OpenAI aproveita](anthropic_eua.md)
 - [Sim, a Google vai fechar o Android](google_android.md)
 - [Tarifa dos eletrônicos](tarifa_eletrônicos.md)
 - [Agentes: a nova febre da IA](agentes_compras.md)
