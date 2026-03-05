@@ -7,7 +7,8 @@ Aqui você encontra todos os roteiros para os vídeos e lives do canal [*Tecnolo
 ## Nos sigam em todas redes sociais:
 
 * [YouTube](https://www.youtube.com/@TecnologiaeClasse)
+* [Canal 2](https://www.youtube.com/@TeClasDois)
 * [Instagram](https://www.instagram.com/tecnologiaeclasse/)
 * [Linkedin](https://www.linkedin.com/company/teclas/)
-* [Bluesky](https://bsky.app/profile/tecnologiaeclasse.bsky.social)
+* [Bluesky](https://bsky.app/profile/tecnologiaeclasse.com.br)
 * [Threads](https://www.threads.net/@tecnologiaeclasse)
