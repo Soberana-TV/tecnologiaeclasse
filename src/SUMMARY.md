@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Big techs fazendo bigtechisses](big_techs.md)
 - [Influenciadores Fantasmas](meta_fantasmas.md)
 - [Tutorial de Homelab](homelab.md)
 - [Mercados de previsão e a guerra](polymarket_kalshi.md)
