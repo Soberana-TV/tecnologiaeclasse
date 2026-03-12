@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Vulnerabilidades do Notepad e Notepad++](notepads.md)
 - [4chan e epstein](4chan_epstein.md)
 - [Big techs fazendo bigtechisses](big_techs.md)
 - [Influenciadores Fantasmas](meta_fantasmas.md)
