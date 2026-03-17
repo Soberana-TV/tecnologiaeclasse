@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O ECA Digital pode bloquear o Linux no Brasil](eca_digital.md)
 - [Halt and Catch Fire](halt_and_catch_fire.md)
 - [Vulnerabilidades do Notepad e Notepad++](notepads.md)
 - [4chan e epstein](4chan_epstein.md)
