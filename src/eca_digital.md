@@ -116,5 +116,4 @@ A nova lei do ECA Digital entra em vigor 17/03/2026 e é impossível não sentir
 ### **Leitura recomendada**
 
 <https://bianaaf.medium.com/o-crime-compensa-para-as-big-techs-cada-crian%C3%A7a-explorada-%C3%A9-lucro-d459bf326fd5>
-
-[__https://www.youtube.com/watch?v=D_JdYdcAAyA__](https://bianaaf.medium.com/o-crime-compensa-para-as-big-techs-cada-crian%C3%A7a-explorada-%C3%A9-lucro-d459bf326fd5)
+<https://www.youtube.com/watch?v=D_JdYdcAAyA>
