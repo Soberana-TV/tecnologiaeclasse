@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [DLSS 5, Subnautica 2 e Estreito de Ormuz](dlss5.md)
 - [O ECA Digital pode bloquear o Linux no Brasil](eca_digital.md)
 - [Halt and Catch Fire](halt_and_catch_fire.md)
 - [Vulnerabilidades do Notepad e Notepad++](notepads.md)
