@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Irã, EUA, Israel e tecnologia](ira.md)
 - [Layoffs no início de 2026](layoffs_2026.md)
 - [Velhos exploits, novas preocupações](exploits.md)
 - [DLSS 5, Subnautica 2 e Estreito de Ormuz](dlss5.md)
