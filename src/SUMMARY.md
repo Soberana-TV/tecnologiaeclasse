@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Trivy e LiteLLM hackeados](trivy_litellm.md)
 - [Irã, EUA, Israel e tecnologia](ira.md)
 - [Layoffs no início de 2026](layoffs_2026.md)
 - [Velhos exploits, novas preocupações](exploits.md)
