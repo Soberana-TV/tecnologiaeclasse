@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Por que odiamos? Microsoft](microsoft.md)
 - [Microsoft está extorquindo a FIOCRUZ](fiocruz.md)
 - [Trivy e LiteLLM hackeados](trivy_litellm.md)
 - [Irã, EUA, Israel e tecnologia](ira.md)
