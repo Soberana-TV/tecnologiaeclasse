@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Meta e Google condenadas](meta_google_condenadas.md)
 - [Valve, Garry's Mod e a s&box](sandbox.md)
 - [Morreu o Sora agorinha](sora_morreu.md)
 - [Nosso Claude](nosso_claude.md)
