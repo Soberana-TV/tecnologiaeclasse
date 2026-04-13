@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O browsergate do Linkedin](linkedin_browsergate.md)
 - [Denuvo foi derrotado](denuvo.md)
 - [Oracle demite 30k](oracle_30k.md)
 - [Meta e Google condenadas](meta_google_condenadas.md)
