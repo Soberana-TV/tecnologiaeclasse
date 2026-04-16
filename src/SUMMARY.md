@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Contra a PLP/152](plp_152.md)
 - [Claude Mythos é perigoso demais?](claude_mythos.md)
 - [O browsergate do Linkedin](linkedin_browsergate.md)
 - [Denuvo foi derrotado](denuvo.md)
