@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Lobby e a regulamentaçã do streaming](pl_do_streaming.md)
 - [O fim do Metaverso](metaverso_morreu.md)
 - [Contra a PLP/152](plp_152.md)
 - [Claude Mythos é perigoso demais?](claude_mythos.md)
