@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Lobby e a regulamentaçã do streaming - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="o_que.html">O que é Tecnologia e Classe?</a></li><li class="chapter-item expanded "><a href="pl_do_streaming.html" class="active">Lobby e a regulamentaçã do streaming</a></li><li class="chapter-item expanded "><a href="metaverso_morreu.html">O fim do Metaverso</a></li><li class="chapter-item expanded "><a href="plp_152.html">Contra a PLP/152</a></li><li class="chapter-item expanded "><a href="claude_mythos.html">Claude Mythos é perigoso demais?</a></li><li class="chapter-item expanded "><a href="linkedin_browsergate.html">O browsergate do Linkedin</a></li><li class="chapter-item expanded "><a href="denuvo.html">Denuvo foi derrotado</a></li><li class="chapter-item expanded "><a href="oracle_30k.html">Oracle demite 30k</a></li><li class="chapter-item expanded "><a href="meta_google_condenadas.html">Meta e Google condenadas</a></li><li class="chapter-item expanded "><a href="sandbox.html">Valve, Garry's Mod e a s&box</a></li><li class="chapter-item expanded "><a href="sora_morreu.html">Morreu o Sora agorinha</a></li><li class="chapter-item expanded "><a href="nosso_claude.html">Nosso Claude</a></li><li class="chapter-item expanded "><a href="microsoft.html">Por que odiamos? Microsoft</a></li><li class="chapter-item expanded "><a href="fiocruz.html">Microsoft está extorquindo a FIOCRUZ</a></li><li class="chapter-item expanded "><a href="trivy_litellm.html">Trivy e LiteLLM hackeados</a></li><li class="chapter-item expanded "><a href="ira.html">Irã, EUA, Israel e tecnologia</a></li><li class="chapter-item expanded "><a href="layoffs_2026.html">Layoffs no início de 2026</a></li><li class="chapter-item expanded "><a href="exploits.html">Velhos exploits, novas preocupações</a></li><li class="chapter-item expanded "><a href="dlss5.html">DLSS 5, Subnautica 2 e Estreito de Ormuz</a></li><li class="chapter-item expanded "><a href="eca_digital.html">O ECA Digital pode bloquear o Linux no Brasil</a></li><li class="chapter-item expanded "><a href="halt_and_catch_fire.html">Halt and Catch Fire</a></li><li class="chapter-item expanded "><a href="notepads.html">Vulnerabilidades do Notepad e Notepad++</a></li><li class="chapter-item expanded "><a href="4chan_epstein.html">4chan e epstein</a></li><li class="chapter-item expanded "><a href="big_techs.html">Big techs fazendo bigtechisses</a></li><li class="chapter-item expanded "><a href="meta_fantasmas.html">Influenciadores Fantasmas</a></li><li class="chapter-item expanded "><a href="homelab.html">Tutorial de Homelab</a></li><li class="chapter-item expanded "><a href="polymarket_kalshi.html">Mercados de previsão e a guerra</a></li><li class="chapter-item expanded "><a href="anthropic_eua.html">Anthropic nega contrato com os EUA, OpenAI aproveita</a></li><li class="chapter-item expanded "><a href="google_android.html">Sim, a Google vai fechar o Android</a></li><li class="chapter-item expanded "><a href="tarifa_eletrônicos.html">Tarifa dos eletrônicos</a></li><li class="chapter-item expanded "><a href="agentes_compras.html">Agentes: a nova febre da IA</a></li><li class="chapter-item expanded "><a href="internet4.html">Reflexões sobre a morte da Internet</a></li><li class="chapter-item expanded "><a href="openai_persona.html">Governo dos EUA gostaria de acessar a sua cara</a></li><li class="chapter-item expanded "><a href="teclas_doc1.html">TECLAS.DOC: Como as BigTechs roubaram a nossa imagem</a></li><li class="chapter-item expanded "><a href="ia_burnout.html">IA, automação e burnout</a></li><li class="chapter-item expanded "><a href="discord.html">Discord e escaneamento facial</a></li><li class="chapter-item expanded "><a href="memoria_china.html">Memórias RAM da China</a></li><li class="chapter-item expanded "><a href="tecnologia.html">A tecnologia hostil</a></li><li class="chapter-item expanded "><a href="reviver_ia.html">Revivendo pessoas com IA</a></li><li class="chapter-item expanded "><a href="bolha_ia3.html">É assim que a bolha de IA estoura</a></li><li class="chapter-item expanded "><a href="epstein_tech.html">Big tech e cripto nos arquivos do Epstein</a></li><li class="chapter-item expanded "><a href="anytype.html">Tutorial de Anytype</a></li><li class="chapter-item expanded "><a href="openclaw.html">Openclaw e a rede dos robôs</a></li><li class="chapter-item expanded "><a href="novo_tiktok.html">O Novo TikTok</a></li><li class="chapter-item expanded "><a href="ice_minesota.html">ICE, Minesota e uso da tecnologia</a></li><li class="chapter-item expanded "><a href="backlash_ia.html">Sites proibem conteúdo de IA</a></li><li class="chapter-item expanded "><a href="guerra_ao_desktop.html">Tá cada vez mais difícil comprar computador</a></li><li class="chapter-item expanded "><a href="chat_gpt_propagandas.html">ChatGPT terá propagandas</a></li><li class="chapter-item expanded "><a href="annas_archive_spotify.html">Anna's Archive fez backup do Spotify</a></li><li class="chapter-item expanded "><a href="demissao_mercado_livre.html">Demissão em massa no Mercado Livre</a></li><li class="chapter-item expanded "><a href="roblox_felca.html">Os protestos do Roblox</a></li><li class="chapter-item expanded "><a href="bluetooth.html">A vulnerabilidade do Bluetooth Fast Pair</a></li><li class="chapter-item expanded "><a href="39c3.html">Palestra 39C3</a></li><li class="chapter-item expanded "><a href="o_bonde.html">O Bonde</a></li><li class="chapter-item expanded "><a href="valve_fex.html">Valve aposta na interoperabilidade</a></li><li class="chapter-item expanded "><a href="flock.html">Flock alimenta vigilância criminosa de Trump</a></li><li class="chapter-item expanded "><a href="cory_pos_eua.html">Cory Doctorow propõe internet pós EUA</a></li><li class="chapter-item expanded "><a href="ranger_rosa.html">Ranger Rosa Hackeia site de encontros só para brancos</a></li><li class="chapter-item expanded "><a href="grok_abuso.html">Grok gera 85x mais imagens de abuso</a></li><li class="chapter-item expanded "><a href="brasil_venezuela.html">O Brasil vai virar a Venezuela?</a></li><li class="chapter-item expanded "><a href="waymos.html">Waymos travam o trânsito de São Francisco</a></li><li class="chapter-item expanded "><a href="epstein2.html">A decepcionante revelação dos arquivos Epstein</a></li><li class="chapter-item expanded "><a href="github.html">A merdificação do Github</a></li><li class="chapter-item expanded "><a href="disney_openai.html">Disney e OpenAI</a></li><li class="chapter-item expanded "><a href="camera_vaso.html">Câmera no vaso, eleição de criptólogos e zork</a></li><li class="chapter-item expanded "><a href="gamblificacao.html">A Gamblificação de tudo</a></li><li class="chapter-item expanded "><a href="netflix_warner_paramount.html">Netflix, Warner e Paramount</a></li><li class="chapter-item expanded "><a href="dosimetria_glauber.html">Dosimetria, Hugo Motta, Glauber Braga e o 'apagão' das redes da Meta</a></li><li class="chapter-item expanded "><a href="trump_x.html">Localização dos Trumpistas no X</a></li><li class="chapter-item expanded "><a href="ram.html">Escalada do Preço da RAM</a></li><li class="chapter-item expanded "><a href="armas_infosec.html">Porte de armas para infosec</a></li><li class="chapter-item expanded "><a href="google_openai.html">O Google disparou?</a></li><li class="chapter-item expanded "><a href="serpro_palantir.html">Serpro abriu a porta para a Palantir</a></li><li class="chapter-item expanded "><a href="nugate.html">Nugate e outras núticias</a></li><li class="chapter-item expanded "><a href="ia_fantastico.html">Fantástico promove peça de propaganda pró IA</a></li><li class="chapter-item expanded "><a href="aulao_ia_zema.html">Aulão de IA do Zema</a></li><li class="chapter-item expanded "><a href="cloudflare.html">Cloudflare 18/11/25</a></li><li class="chapter-item expanded "><a href="grokipedia.html">Grokipedia</a></li><li class="chapter-item expanded "><a href="gmail_ia.html">Meta e Google querem ler suas mensagens</a></li><li class="chapter-item expanded "><a href="steam_machine_windows11_android.html">Steam Machine, Windows 11 e sideload no Android</a></li><li class="chapter-item expanded "><a href="ia_infra.html">A bolha de infraestrutura da IA</a></li><li class="chapter-item expanded "><a href="psf_dei_eua.html">PSF, DEI, EUA</a></li><li class="chapter-item expanded "><a href="rockstar_sindicato.html">Rockstar North demite trabalhadores sindicalizados</a></li><li class="chapter-item expanded "><a href="meta_golpes.html">Meta ganhou dinheiro com golpes</a></li><li class="chapter-item expanded "><a href="oeste_cezpem.html">Revista Oeste faz propaganda de comunismo</a></li><li class="chapter-item expanded "><a href="openai_dinheiro.html">OpenAI quer mais dinheiro</a></li><li class="chapter-item expanded "><a href="remoto_nubank.html">O fim do remoto no Nubank</a></li><li class="chapter-item expanded "><a href="kimi_k2.html">Kimi K2 é o novo Deepseek?</a></li><li class="chapter-item expanded "><a href="seguranca_lucro.html">Segurança, incentivo ao lucro e tal</a></li><li class="chapter-item expanded "><a href="cs2.html">Crash das caixas de CS2</a></li><li class="chapter-item expanded "><a href="ruby.html">Ruby fora dos Trilhos</a></li><li class="chapter-item expanded "><a href="merdificacao.html">Vantagens da Merdificação</a></li><li class="chapter-item expanded "><a href="queda_aws.html">A Queda da AWS</a></li><li class="chapter-item expanded "><a href="windows10.html">O fim do Windows 10</a></li><li class="chapter-item expanded "><a href="oracle_tiktok.html">Larry Ellison e o Controle da Mídia sob Trump</a></li><li class="chapter-item expanded "><a href="agora_vai.html">A Bolha da IA</a></li><li class="chapter-item expanded "><a href="audacity.html">O que está acontecendo com o Audacity?</a></li><li class="chapter-item expanded "><a href="preservacao_cultura.html">Empresas contra a preservação da cultura</a></li><li class="chapter-item expanded "><a href="propagandas.html">Propagandas em todo lugar</a></li><li class="chapter-item expanded "><a href="tocanna.html">Tocanna: a artista que as big techs gostam</a></li><li class="chapter-item expanded "><a href="loucura_ia.html">A loucura de IA tem que acabar</a></li><li class="chapter-item expanded "><a href="gambiarra.html">Gambiarra do IOS é preocupante</a></li><li class="chapter-item expanded "><a href="pec_blindagem.html">PEC da Blindagem</a></li><li class="chapter-item expanded "><a href="spotify.html">Spotify falha, falhou e falhará</a></li><li class="chapter-item expanded "><a href="trump_jantar.html">O jantar amaldiçoado de Trump e big techs</a></li><li class="chapter-item expanded "><a href="ministra_ia.html">Ministra de IA da Albania</a></li><li class="chapter-item expanded "><a href="11_09_25.html">11/09/25</a></li><li class="chapter-item expanded "><a href="05_09_25.html">05/09/25</a></li><li class="chapter-item expanded "><a href="eua_chips.html">INTEL, NVIDIA, AMD e EUA</a></li><li class="chapter-item expanded "><a href="folha.html">Folha de SP processa OPENAI e ... Manual do Usuário</a></li><li class="chapter-item expanded "><a href="22_08_25.html">22/08/25</a></li><li class="chapter-item expanded "><a href="geopolitica_ia2.html">A Geopolítica da IA 2025/02</a></li><li class="chapter-item expanded "><a href="artista_ia.html">O que é ser um artista na era da IA?</a></li><li class="chapter-item expanded "><a href="chatgpt5.html">O lançamento do ChatGPT 5</a></li><li class="chapter-item expanded "><a href="clippys.html">O que é a revolução dos clippys?</a></li><li class="chapter-item expanded "><a href="17_08_25.html">Google hackeado, bolsonaristas foram longe demais e mais notícias</a></li><li class="chapter-item expanded "><a href="felca.html">Felca, adultização e redes sociais</a></li><li class="chapter-item expanded "><a href="08_08_25.html">08/08/25</a></li><li class="chapter-item expanded "><a href="steam_itch.html">Steam, itch.io e censura dos meios  de pagamento</a></li><li class="chapter-item expanded "><a href="24_07_25.html">24/07/25</a></li><li class="chapter-item expanded "><a href="18_07_25.html">18/07/25</a></li><li class="chapter-item expanded "><a href="ani_grok.html">A assistente e-girl do Grok</a></li><li class="chapter-item expanded "><a href="trump_pix.html">Trump ataca o Pix</a></li><li class="chapter-item expanded "><a href="11_07_25.html">11/07/25</a></li><li class="chapter-item expanded "><a href="genai.html">A criação dos modelos de genAI</a></li><li class="chapter-item expanded "><a href="stop_killing_games.html">Stop Killing Games</a></li><li class="chapter-item expanded "><a href="artigo19.html">O Artigo 19 do Marco Civil</a></li><li class="chapter-item expanded "><a href="03_07_25.html">03/07/25</a></li><li class="chapter-item expanded "><a href="soberania_digital2.html">Uma introdução à Soberania Digital</a></li><li class="chapter-item expanded "><a href="20_06_25.html">20/06/25</a></li><li class="chapter-item expanded "><a href="ai_2027.html">O Apocalíptico AI 2027</a></li><li class="chapter-item expanded "><a href="soberania_digital.html">Soberania Digital: Uma perspectiva brasileira</a></li><li class="chapter-item expanded "><a href="13_06_25.html">13/06/25</a></li><li class="chapter-item expanded "><a href="jav_meta.html">JAV, Meta e regulamentação das redes</a></li><li class="chapter-item expanded "><a href="builderai.html">Builder.ai e os Indianos Assalariados</a></li><li class="chapter-item expanded "><a href="29_05_25.html">29/05/25</a></li><li class="chapter-item expanded "><a href="22_05_25.html">22/05/25</a></li><li class="chapter-item expanded "><a href="palestra_cryptorave_2025.html">Palestra Cryptorave 2025</a></li><li class="chapter-item expanded "><a href="15_05_25.html">15/05/25</a></li><li class="chapter-item expanded "><a href="08_05_25.html">08/05/25</a></li><li class="chapter-item expanded "><a href="manipulado_robos.html">Sim você é manipulado por robôs</a></li><li class="chapter-item expanded "><a href="24_04_25.html">24/04/25</a></li><li class="chapter-item expanded "><a href="17_04_25.html">17/04/25</a></li><li class="chapter-item expanded "><a href="internet_morta_bots.html">Quantos % da internet está morta</a></li><li class="chapter-item expanded "><a href="03_04_25.html">03/04/25</a></li><li class="chapter-item expanded "><a href="27_03_25.html">27/03/25</a></li><li class="chapter-item expanded "><a href="20_03_25.html">20/03/25</a></li><li class="chapter-item expanded "><a href="rustlings_pt1.html">Vamos aprender Rust pt. 1</a></li><li class="chapter-item expanded "><a href="mozilla_firefox.html">Os Termos de Uso do Firefox</a></li><li class="chapter-item expanded "><a href="rust_linux.html">Rust no Linux</a></li><li class="chapter-item expanded "><a href="13_03_25.html">13/03/25</a></li><li class="chapter-item expanded "><a href="06_03_25.html">06/03/25</a></li><li class="chapter-item expanded "><a href="27_02_25.html">27/02/25</a></li><li class="chapter-item expanded "><a href="ia_nos_deixa_burros.html">A IA nos deixa burros?</a></li><li class="chapter-item expanded "><a href="futuro_do_trabalho.html">O futuro do trabalho?</a></li><li class="chapter-item expanded "><a href="amazon_kindle.html">Baixe seus livros da Amazon</a></li><li class="chapter-item expanded "><a href="worldcoin.html">Sobre a Worldcoin de Sam Altman</a></li><li class="chapter-item expanded "><a href="ollama_deepseek.html">Tutorial Ollama e Deepseek</a></li><li class="chapter-item expanded "><a href="milei_libra.html">O golpe de cripto do Milei</a></li><li class="chapter-item expanded "><a href="doge_hackeado.html">DOGE de Musk é hackeado</a></li><li class="chapter-item expanded "><a href="preservacao_digital.html">Sobre a preservação digital</a></li><li class="chapter-item expanded "><a href="meta_pirateou.html">META pirateou 81TB de livros</a></li><li class="chapter-item expanded "><a href="06_02_25.html">06/02/25</a></li><li class="chapter-item expanded "><a href="30_01_25.html">30/01/25</a></li><li class="chapter-item expanded "><a href="deepseek.html">Deepseek abala os EUA</a></li><li class="chapter-item expanded "><a href="descentralizadas.html">Redes sociais descentralizadas</a></li><li class="chapter-item expanded "><a href="23_01_25.html">23/01/25</a></li><li class="chapter-item expanded "><a href="16_01_25.html">16/01/25</a></li><li class="chapter-item expanded "><a href="09_01_25.html">09/01/25</a></li><li class="chapter-item expanded "><a href="honey.html">Como a Honey roubou todo mundo</a></li><li class="chapter-item expanded "><a href="golpes_email.html">Investigando Golpes de e-mail</a></li><li class="chapter-item expanded "><a href="musica2024.html">Especial Música de 2024</a></li><li class="chapter-item expanded "><a href="19_12_24.html">19/12/24</a></li><li class="chapter-item expanded "><a href="ia_do_inss.html">IA do INSS</a></li><li class="chapter-item expanded "><a href="12_12_24.html">12/12/24</a></li><li class="chapter-item expanded "><a href="05_12_24.html">05/12/24</a></li><li class="chapter-item expanded "><a href="28_11_24.html">28/11/24</a></li><li class="chapter-item expanded "><a href="25_11_24.html">25/11/24</a></li><li class="chapter-item expanded "><a href="aeria.html">Projeto com Aeria</a></li><li class="chapter-item expanded "><a href="14_11_24.html">14/11/24</a></li><li class="chapter-item expanded "><a href="07_11_24.html">07/11/24</a></li><li class="chapter-item expanded "><a href="31_10_24.html">31/10/24</a></li><li class="chapter-item expanded "><a href="fetiche_tecnologia2.html">Fetiche da Tecnologia 2</a></li><li class="chapter-item expanded "><a href="wordpress.html">Wordpress VS WP Engine</a></li><li class="chapter-item expanded "><a href="24_10_24.html">24/10/24</a></li><li class="chapter-item expanded "><a href="17_10_24.html">17/10/24</a></li><li class="chapter-item expanded "><a href="10_10_24.html">10/10/24</a></li><li class="chapter-item expanded "><a href="godot.html">O Fork da Godot</a></li><li class="chapter-item expanded "><a href="07_10_24.html">07/10/24</a></li><li class="chapter-item expanded "><a href="28_09_24.html">28/09/24</a></li><li class="chapter-item expanded "><a href="19_09_24.html">19/09/24</a></li><li class="chapter-item expanded "><a href="16_09_24.html">16/09/24</a></li><li class="chapter-item expanded "><a href="05_09_24.html">05/09/24</a></li><li class="chapter-item expanded "><a href="29_08_24.html">29/08/24</a></li><li class="chapter-item expanded "><a href="22_08_24.html">22/08/24</a></li><li class="chapter-item expanded "><a href="15_08_24.html">15/08/24</a></li><li class="chapter-item expanded "><a href="cookie_clicker.html">Cookie Clicker</a></li><li class="chapter-item expanded "><a href="08_08_24.html">08/08/24</a></li><li class="chapter-item expanded "><a href="01_08_24.html">01/08/24</a></li><li class="chapter-item expanded "><a href="25_07_24.html">25/07/24</a></li><li class="chapter-item expanded "><a href="apagao.html">Crowdstrike / Apagão Cibernético</a></li><li class="chapter-item expanded "><a href="18_07_24.html">18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html">11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html">04/07/24</a></li><li class="chapter-item expanded "><a href="27_06_24.html">27/06/24</a></li><li class="chapter-item expanded "><a href="20_06_24.html">20/06/24</a></li><li class="chapter-item expanded "><a href="comunistas_internet.html">Comunistas na Internet</a></li><li class="chapter-item expanded "><a href="13_06_24.html">13/06/24</a></li><li class="chapter-item expanded "><a href="06_06_24.html">06/06/24</a></li><li class="chapter-item expanded "><a href="extrema_direita_ti.html">A Ideologia de Extrema Direita na TI</a></li><li class="chapter-item expanded "><a href="30_05_24.html">30/05/24</a></li><li class="chapter-item expanded "><a href="23_05_24.html">23/05/24</a></li><li class="chapter-item expanded "><a href="09_05_24.html">09/05/24</a></li><li class="chapter-item expanded "><a href="02_05_24.html">02/05/24</a></li><li class="chapter-item expanded "><a href="30_04_24.html">30/04/24</a></li><li class="chapter-item expanded "><a href="18_04_24.html">18/04/24</a></li><li class="chapter-item expanded "><a href="11_04_24.html">11/04/24</a></li><li class="chapter-item expanded "><a href="04_04_24.html">04/04/24</a></li><li class="chapter-item expanded "><a href="ideologia_californiana.html">A Ideologia Californiana</a></li><li class="chapter-item expanded "><a href="anticheat.html">Vanguard, LoL e Anticheat</a></li><li class="chapter-item expanded "><a href="28_03_24.html">28/03/24</a></li><li class="chapter-item expanded "><a href="29_02_24.html">29/02/24</a></li><li class="chapter-item expanded "><a href="25_03_24.html">25/03/24</a></li><li class="chapter-item expanded "><a href="22_02_24.html">22/02/24</a></li><li class="chapter-item expanded "><a href="15_02_24.html">15/02/24</a></li><li class="chapter-item expanded "><a href="13_02_24.html">13/02/24</a></li><li class="chapter-item expanded "><a href="08_02_24.html">08/02/24</a></li><li class="chapter-item expanded "><a href="05_02_24.html">05/02/24</a></li><li class="chapter-item expanded "><a href="01_02_24.html">01/02/24</a></li><li class="chapter-item expanded "><a href="25_01_24.html">25/01/24</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="o-que-está-em-jogo-na-regulamentação-do-streaming"><a class="header" href="#o-que-está-em-jogo-na-regulamentação-do-streaming">O que está em jogo na regulamentação do streaming?</a></h1>
+<p>Em 4 de Novembro de 2025 a PL 8889/2017 ou ‘PL do Streaming’ foi aprovada na Câmara e a votação no Senado ficou para algum momento de 2026. Esse é um assunto muito mais  complexo do que “vão taxar o seu streaming” e hoje nós vamos tirar um tempo pra deiscutir ele.</p>
+<ul>
+<li>
+<p>Falar de regulamentação de plataformas de streaming, hoje, é falar de uma batalha por poder, dinheiro e soberania cultural, com implicações muito profundas tanto para o Brasil, quanto para o mundo, pois é um tema que está moldando o futuro do entretenimento e da cultura.</p>
+</li>
+<li>
+<p>Quando falamos em regulamentar o streaming, a conversa vai muito além de simplesmente criar regras para plataformas como Netflix, Prime Video ou Disney+, pois o cerne da questão é uma disputa sobre:</p>
+<ul>
+<li>quem controla a renda gerada por esses serviços bilionários;</li>
+<li>o que definimos como produção nacional e como incentivá-la;</li>
+<li>quanto do valor extraído no Brasil permanece aqui para fomentar nossa economia e cultura, em vez de ser remetido para as matrizes estrangeiras</li>
+</ul>
+</li>
+<li>
+<p>No Brasil, essa discussão se manifesta em pontos muito centrais como:</p>
+<ul>
+<li>a Condecine (Contribuição para o Desenvolvimento da Indústria Cinematográfica Nacional)</li>
+<li>as cotas de conteúdo nacional</li>
+<li>a janela de exibição para o cinema</li>
+<li>deduções fiscais</li>
+</ul>
+</li>
+<li>
+<p>No cenário internacional, vemos essa tensão quando políticas de soberania cultural de diversos países se tornam alvo de pressão comercial e política de grandes corporações e do próprio Estado norte-americano.</p>
+</li>
+<li>
+<p>As plataformas de streaming não são contra qualquer tipo de regulamentação, o que elas buscam é uma regulamentação que legitime sua posição central no mercado, valide seu modelo de negócios e, principalmente, minimize o impacto redistributivo das leis</p>
+</li>
+<li>
+<p>Elas querem regras que as favoreçam</p>
+</li>
+<li>
+<p>Uma matéria da TELETIME de dezembro de 2025 mostrou que o impasse no Senado girava justamente nesses pontos sensíveis. A reportagem revelou a formação de uma aliança entre grandes empresas de tecnologia, plataformas de streaming e radiodifusão, todas defendendo um texto regulatório mais brando.</p>
+</li>
+<li>
+<p>Isso nos leva a uma conclusão importante: o capital até está disposto a ceder algo, mas sempre buscando influenciar como paga, para quem paga e o que recebe em troca</p>
+</li>
+<li>
+<p>Discussão, portanto, não é se haverá regulação, mas a serviço de quem essa regulação será feita</p>
+</li>
+</ul>
+<p><a href="https://teletime.com.br/17/12/2025/impasse-entre-governo-e-empresas-deve-adiar-regulacao-do-streaming-para-2026/" title="preview">https://teletime.com.br/17/12/2025/impasse-entre-governo-e-empresas-deve-adiar-regulacao-do-streaming-para-2026/</a></p>
+<ul>
+<li>E nós não podemos deixar de lembrar que ‘misteriosamente’ toda a direita, desde o centrão da política mais tradicional, até os Kim Kataguiris e os youtubers sob o guarda chuva do MBL são agressivamente contra qualquer regulamentação
+<ul>
+<li>Muitas vezes fazem isso tentando desacreditar artistas e produções brasileiras (são patriotas que odeiam tudo que o Brasil faz)</li>
+<li>Na prática estão sempre defendendo os interesses do grande capital ao invés de defender o trabalhador nesses setores que, por exemplo, nos EUA são bilionários e empregam milhares de pessoas</li>
+</ul>
+</li>
+</ul>
+<h3 id="condecine-catálogo-e-remessa"><a class="header" href="#condecine-catálogo-e-remessa">Condecine, Catálogo e Remessa</a></h3>
+<ul>
+<li>O texto do projeto de lei que retornou ao Senado prevê a cobrança da Condecine sobre os serviços de streaming, com alíquotas que variam de 0,1% a 4% do faturamento. Além disso, estabelece cotas progressivas de conteúdo nacional, que podem chegar a 10% em sete anos, a possibilidade de dedução de até 60% do tributo por investimento direto, e uma regra de janela de nove semanas entre a exibição no cinema e o lançamento no streaming.</li>
+</ul>
+<p><a href="https://www12.senado.leg.br/noticias/materias/2026/01/29/projeto-que-regulamenta-e-tributa-servicos-de-streaming-retorna-ao-senado" title="preview">https://www12.senado.leg.br/noticias/materias/2026/01/29/projeto-que-regulamenta-e-tributa-servicos-de-streaming-retorna-ao-senado</a></p>
+<ul>
+<li>No entanto, o governo federal apresentou uma posição oficial com cinco pontos-chave que divergem do texto do Senado:
+<ul>
+<li>Alíquota unificada de 3% para a Condecine.</li>
+<li>Manutenção da Condecine-Remessa, que incide sobre o dinheiro enviado para fora do país.</li>
+<li>Exclusão da possibilidade de reinvestimento em “conteúdos originais” das próprias plataformas, visando direcionar os recursos para produtoras independentes.</li>
+<li>Cota mínima de 10% de conteúdo nacional sem incluir produções próprias das plataformas.</li>
+<li>Manutenção da janela mínima de nove semanas para o cinema.</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2025/12/posicionamento-do-governo-do-brasil-sobre-o-pl-dos-servicos-de-streaming" title="preview">https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2025/12/posicionamento-do-governo-do-brasil-sobre-o-pl-dos-servicos-de-streaming</a></p>
+<ul>
+<li>
+<p>A linguagem do governo é bastante clara, mencionando interesse público, produção independente e uma agenda “estratégica e soberana”.</p>
+</li>
+<li>
+<p>Por outro lado, o Ministério da Cultura e a Ancine alertaram que as mudanças propostas no relatório poderiam reduzir a arrecadação efetiva e permitir que as plataformas convertessem a contribuição em investimento controlado por elas mesmas.</p>
+</li>
+</ul>
+<p><a href="https://www.gov.br/cultura/pt-br/assuntos/noticias/minc-e-ancine-defendem-aprimoramentos-em-novo-relatorio-do-pl-do-streaming-para-fortalecer-o-audiovisual-brasileiro" title="preview">https://www.gov.br/cultura/pt-br/assuntos/noticias/minc-e-ancine-defendem-aprimoramentos-em-novo-relatorio-do-pl-do-streaming-para-fortalecer-o-audiovisual-brasileiro</a></p>
+<ul>
+<li>
+<p>Em outras palavras, a lei existiria, mas seu efeito de redistribuição de valor seria significativamente diminuído.</p>
+</li>
+<li>
+<p>A questão central da discussão é se o dinheiro irá para um fundo público e para a produção independente, ou retornará como subsídio indireto para as próprias plataformas financiarem “originais” sob sua propriedade?</p>
+</li>
+</ul>
+<h3 id="o-lobby-organizado-do-streaming"><a class="header" href="#o-lobby-organizado-do-streaming">O lobby organizado do streaming</a></h3>
+<ul>
+<li>A atuação das empresas de streaming não se limita a declarações isoladas, porque elas se organizam institucionalmente para defender seus interesses. Um bom exemplo é a criação da STRIMA (Associação Brasileira de Empresas de Streaming), que reúne gigantes como Globoplay, Disney+, Max, Netflix e Prime Video.</li>
+<li>A cobertura da Meio &amp; Mensagem e da CNN Brasil indica que a entidade foi criada para representar institucionalmente o setor junto ao poder público e ser a porta-voz das plataformas nas discussões sobre políticas públicas e regulamentação.</li>
+</ul>
+<p><a href="https://www.meioemensagem.com.br/midia/strima-o-que-pretende-a-associacao-dos-streamings-no-brasil" title="preview">https://www.meioemensagem.com.br/midia/strima-o-que-pretende-a-associacao-dos-streamings-no-brasil</a></p>
+<p><a href="https://www.cnnbrasil.com.br/economia/negocios/strima-associacao-dos-streamings-busca-fortalecer-producoes-nacionais/" title="preview">https://www.cnnbrasil.com.br/economia/negocios/strima-associacao-dos-streamings-busca-fortalecer-producoes-nacionais/</a></p>
+<ul>
+<li>Essa organização mostra que o streaming atua como uma fração organizada do capital, utilizando uma linguagem pública de “diálogo”, “fortalecimento do audiovisual” e “consenso”, mas com interesses muito específicos na redação final da lei</li>
+<li>Quando as plataformas afirmam que querem “fortalecer a produção nacional”, precisamos questionar: em que termos? Estamos falando de produção nacional com propriedade intelectual brasileira, trabalho protegido e autonomia para produtoras independentes? Ou de produção local subordinada aos catálogos, contratos e à lógica de valorização de conglomerados globais?</li>
+</ul>
+<h3 id="trabalho-e-precarização-na-era-do-streaming"><a class="header" href="#trabalho-e-precarização-na-era-do-streaming">Trabalho e precarização na era do streaming</a></h3>
+<ul>
+<li>Em março de 2026, uma carta aberta com mais de 1,1 mil assinaturas de profissionais do audiovisual defendeu a aprovação do marco regulatório do streaming. O documento argumenta que a regulação poderia injetar R$ 1,5 bilhão por ano na indústria nacional e denuncia que a inação regulatória tem gerado perda de investimento no país.</li>
+</ul>
+<p><a href="https://telaviva.com.br/18/03/2026/trabalhadores-do-audiovisual-pedem-aprovacao-de-marco-regulatorio-do-streaming/" title="preview">https://telaviva.com.br/18/03/2026/trabalhadores-do-audiovisual-pedem-aprovacao-de-marco-regulatorio-do-streaming/</a></p>
+<ul>
+<li>Sem um marco regulatório claro, as plataformas continuam a faturar, organizar seus catálogos e o consumo, e a remeter valor para o exterior, enquanto trabalhadores e produtoras locais negociam em uma posição de subordinação.</li>
+<li>O streaming, embora ofereça conveniência ao consumidor, depende de uma vasta cadeia de profissionais (técnicos, roteiristas, editores, produtores, exibidores, etc.), cujo poder de barganha é significativamente menor que o das plataformas.</li>
+</ul>
+<h3 id="a-contradição-do-estado-brasileiro-regulador-e-cliente"><a class="header" href="#a-contradição-do-estado-brasileiro-regulador-e-cliente">A contradição do Estado brasileiro: regulador e cliente</a></h3>
+<ul>
+<li>Existe uma contradição entre o discurso regulatório e a prática estatal brasileira. Uma investigação da Agência Pública revelou que, enquanto o governo tenta regulamentar o streaming, ele também injeta milhões em publicidade nessas mesmas plataformas.</li>
+</ul>
+<p><a href="https://apublica.org/2026/03/pl-do-streaming-governo-investe-r-24-milhoes-em-anuncios-em-apps/" title="preview">https://apublica.org/2026/03/pl-do-streaming-governo-investe-r-24-milhoes-em-anuncios-em-apps/</a></p>
+<ul>
+<li>
+<p>Em 2025, mais de R$ 17,9 milhões foram destinados a campanhas em serviços de streaming, totalizando R$ 24 milhões desde 2024. A reportagem também aponta que o projeto de lei tende a ser votado sem uma centralidade na defesa do consumidor.</p>
+</li>
+<li>
+<p>Essa contradição enfraquece a posição do Estado como regulador, pois ele atua simultaneamente como regulador e um cliente relevante das plataformas, e isso ajuda a explicar por que a disputa muitas vezes resulta em negociação e concessão.</p>
+</li>
+<li>
+<p>Uma leitura anti imperialista aqui sugere que o Estado periférico tenta disciplinar corporações transnacionais, mas ao mesmo tempo já as incorporou como infraestrutura essencial de comunicação, publicidade e circulação, onde a relação é de dependência e acomodação, e não de soberania plena</p>
+</li>
+</ul>
+<h3 id="mas-e-lá-fora-o-cenário-internacional"><a class="header" href="#mas-e-lá-fora-o-cenário-internacional">Mas e lá fora? O cenário internacional</a></h3>
+<ul>
+<li>Para ilustrar a dimensão anti imperialista, o caso Canadá-EUA é um ótimo exemplo. Em março de 2026, a Global News noticiou um projeto republicano nos EUA que visava a Lei de Streaming Online do Canadá, ameaçando retaliação comercial.</li>
+</ul>
+<p><a href="https://globalnews.ca/news/11738344/cusma-online-streaming-act-us-bill-tariffs/" title="preview">https://globalnews.ca/news/11738344/cusma-online-streaming-act-us-bill-tariffs/</a></p>
+<ul>
+<li>
+<p>O ponto aqui é que quando um país tenta obrigar plataformas estrangeiras a contribuir para seu sistema cultural, isso pode ser enquadrado pelo centro imperialista como prática discriminatória ou barreira ao comércio. Essa situação, inclusive, envia uma mensagem bem clara ao Brasil, de que regular o streaming não é apenas uma política cultural, mas é também uma disputa geopolítica.</p>
+</li>
+<li>
+<p>Quando Estados periféricos ou semiperiféricos tentam reter parte da renda das plataformas e proteger suas cadeias culturais locais, eles entram diretamente em choque com os interesses materiais do capital transnacional e, potencialmente, com o aparato estatal das potências centrais.</p>
+</li>
+<li>
+<p>Quem define as regras de circulação, remuneração e visibilidade da cultura em território nacional? o país ou as corporações sediadas fora dele?</p>
+</li>
+<li>
+<p>Já na Europa a Reuters informou, em fevereiro de 2026, que a Alemanha exigirá que plataformas de streaming e radiodifusores reinvistam pelo menos 8% da receita anual obtida no país na indústria cinematográfica local, com incentivos para quem investir ainda mais.</p>
+</li>
+</ul>
+<p><a href="https://www.reuters.com/business/retail-consumer/germany-require-streaming-platforms-invest-local-production-2026-02-05/" title="preview">https://www.reuters.com/business/retail-consumer/germany-require-streaming-platforms-invest-local-production-2026-02-05/</a></p>
+<ul>
+<li>
+<p>Isso prova que mecanismos de obrigação de investimento local não são “exóticos” ou “atrasados” como a nossa mídia e políticos entreguistas tentam nos convencer, mas fazem parte de uma disputa mais ampla para reter valor e sustentar cadeias nacionais de produção.</p>
+</li>
+<li>
+<p>Mas a crítica de classe permanece válida: o investimento local não garante automaticamente a soberania, pois ele também pode ser uma forma de integrar a produção nacional ao circuito global das plataformas, desde que sob seus contratos, sua curadoria e sua propriedade</p>
+</li>
+</ul>
+<h3 id="conclusões"><a class="header" href="#conclusões">Conclusões</a></h3>
+<ul>
+<li>
+<p>Para finalizar, o que está em disputa na regulamentação do streaming não é apenas uma taxa ou uma cota de catálogo, mas a definição de quem detém o poder sobre a cultura digital.</p>
+</li>
+<li>
+<p>O lobby do streaming busca uma regulamentação que os reconheça como parceiros indispensáveis do Estado e do audiovisual, mas sem alterar seu poder fundamental sobre distribuição, dados, contratos, propriedade e remessa de valor.</p>
+</li>
+<li>
+<p>Do outro lado, trabalhadores, produtoras independentes e parte do Estado buscam algum grau de redistribuição, autonomia e soberania cultural, mas dentro de uma correlação de forças muito desigual.</p>
+</li>
+<li>
+<p>A chave classista e anti-imperialista deste debate é a seguinte: a regulamentação do streaming é uma arena onde se decide se o Brasil será apenas um mercado consumidor e uma praça de extração para conglomerados globais, ou se conseguirá impor limites à transferência de valor e ao controle estrangeiro sobre sua vida cultural.</p>
+</li>
+<li>
+<p>Mesmo com o avanço da lei precisamos questionar: a regulação garante avanço para quem? sob controle de quem? e com quais efeitos reais para quem trabalha e para a nossa cultura?</p>
+</li>
+</ul>
+<h3 id="sugestão-para-assistir"><a class="header" href="#sugestão-para-assistir">Sugestão para assistir</a></h3>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/h63tzk-sIEw"></iframe>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/gk5IwZ__4oI"></iframe>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="metaverso_morreu.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="metaverso_morreu.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
