@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Manifesto bizarro da Palantir](manifesto_palantir.md)
 - [Instagram, Signal e FBI](instagram_signal.md)
 - [Amazon mata seu Kindle](kindle_morreu.md)
 - [Lobby e a regulamentaçã do streaming](pl_do_streaming.md)
