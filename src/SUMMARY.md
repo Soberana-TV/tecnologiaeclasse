@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Vagas Fantasmas](vagas_fantasmas.md)
 - [Manifesto bizarro da Palantir](manifesto_palantir.md)
 - [Instagram, Signal e FBI](instagram_signal.md)
 - [Amazon mata seu Kindle](kindle_morreu.md)
