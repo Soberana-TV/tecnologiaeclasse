@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [A voz dos brainrot](voz_brainrot.md)
 - [Vagas Fantasmas](vagas_fantasmas.md)
 - [Manifesto bizarro da Palantir](manifesto_palantir.md)
 - [Instagram, Signal e FBI](instagram_signal.md)
