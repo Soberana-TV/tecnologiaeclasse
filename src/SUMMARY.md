@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Empresas de IA apertam o cinto](bolha_da_ia4.md)
 - [As PocketFabs da USP](pocketfabs_usp.md)
 - [A voz dos brainrot](voz_brainrot.md)
 - [Vagas Fantasmas](vagas_fantasmas.md)
