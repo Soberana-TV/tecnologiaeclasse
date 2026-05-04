@@ -653,6 +653,12 @@
       <pubDate>Tue, 20 Aug 2024 19:54:32 +0000</pubDate>
     </item>
     <item>
+      <title>copy.fail é a maior vulnerabilidade do Linux em muito tempo 🐧 ❌</title>
+      <description>Uma otimização de código de 2017 que economizava uma cópia de memória introduziu um bug sutil que só foi corrigido agora em Abril de 2026. Um script Python de 732 bytes que funciona de primeira em basicamente todas as distros Linux. Vamos falar sobre.</description>
+      <link>https://teclas.soberana.tv/copyfail.html</link>
+      <pubDate>Mon, 04 May 2026 11:23:23 +0000</pubDate>
+    </item>
+    <item>
       <title>Cory Doctorow lançou a braba</title>
       <description>O norte americano mais brabo acabou de fazer um chamado para uma internet 'pós estadunidense' e 'resistente à merdificação' e nós vamos falar sobre.</description>
       <link>https://teclas.soberana.tv/cory_pos_eua.html</link>
