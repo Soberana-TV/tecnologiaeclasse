@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Meta, EUA e China](meta_treino_china.md)
 - [copy.fail no Linux](copyfail.md)
 - [Empresas de IA apertam o cinto](bolha_da_ia4.md)
 - [As PocketFabs da USP](pocketfabs_usp.md)
