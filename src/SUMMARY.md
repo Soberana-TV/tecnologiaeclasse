@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O Espectro dos Cyberdecks de Meninas](girl_cyberdecks.md)
 - [Meta, EUA e China](meta_treino_china.md)
 - [copy.fail no Linux](copyfail.md)
 - [Empresas de IA apertam o cinto](bolha_da_ia4.md)
