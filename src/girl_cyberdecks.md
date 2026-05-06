@@ -2,9 +2,9 @@
 
 Um espectro fofo ronda as redes sociais, o espectro dos 'girly cyberdecks'. Vamos falar sobre essa nova moda, porque é tão legal e sobre as suas implicações políticas.
 
-<www.tiktok.com/@amora.davis/video/7623984642927906061>
+<https://www.tiktok.com/@amora.davis/video/7623984642927906061>
 
-<www.tiktok.com/@ubeboobey/video/7615279833450368278>
+<https://www.tiktok.com/@ubeboobey/video/7615279833450368278>
 
 <https://www.reddit.com/r/cyberDeck/comments/1gheukj/made_a_cyberpunk_edgerunners_themed_cyberdeck/>
 
