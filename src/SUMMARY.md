@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Copyfail 2: Dirty Frag](dirtyfrag.md)
 - [Goblins e a teoria do colapso de modelos LLM](goblins.md)
 - [O Brasil e as Terras Raras](terras_raras.md)
 - [O Espectro dos Cyberdecks de Meninas](girl_cyberdecks.md)
