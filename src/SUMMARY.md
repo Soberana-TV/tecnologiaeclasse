@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Linux agora é bom pra jogos](linux_jogos.md)
 - [Chrome baixa IA de 4gb sem te perguntar](chrome_ia.md)
 - [Copyfail 2: Dirty Frag](dirtyfrag.md)
 - [Goblins e a teoria do colapso de modelos LLM](goblins.md)
