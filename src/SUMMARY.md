@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Protestos na Meta, greve na Samsung, preço dos HDs e mais](greve_samsung.md)
 - [No capitalismo a prioridade é data center](lago_tahoe.md)
 - [Linux agora é bom pra jogos](linux_jogos.md)
 - [Chrome baixa IA de 4gb sem te perguntar](chrome_ia.md)
