@@ -1,7 +1,6 @@
 import os
 import re
 from datetime import datetime
-from statx import statx
 import xml.etree.ElementTree as ET
 import toml
 
@@ -30,25 +29,20 @@ def parse_date_from_filename(filename):
     match = re.match(r'(\d{2})_(\d{2})_(\d{2})\.md$', filename)
     if match:
         day, month, year = map(int, match.groups())
-        year += 2000
+        year += 2000 if year < 20 else 1900  # Adjust for pre-2020 years
         return datetime(year, month, day)
     return None
 
 def get_file_creation_date(filepath):
     """Get the file creation date as a fallback."""
     timestamp = os.path.getctime(filepath)
-    try:
-        timestamp = statx(filepath).btime
-    except AttributeError:
-      print("st_birthtime not supported on this platform")
-
     return datetime.fromtimestamp(timestamp)
 
-def read_book_config(src_dir):
+def read_book_config():
     """Read the book.toml file for RSS configuration."""
     config_path = os.path.join('.', 'book.toml')
     if not os.path.exists(config_path):
-        raise FileNotFoundError("book.toml not found in the src directory.")
+        raise FileNotFoundError("book.toml not found in the root directory.")
 
     with open(config_path, 'r', encoding='utf-8') as f:
         config = toml.load(f)
@@ -61,34 +55,56 @@ def read_book_config(src_dir):
     return base_url, title, description
 
 def generate_rss(src_dir):
-    """Generate an RSS feed from markdown files in the specified src directory."""
-    base_url, feed_title, feed_description = read_book_config(src_dir)
+    """Generate or update an RSS feed from markdown files in the specified src directory."""
+    base_url, feed_title, feed_description = read_book_config()
 
-    rss = ET.Element('rss', version="2.0")
-    channel = ET.SubElement(rss, 'channel')
+    output_path = os.path.join(src_dir, 'rss.xml')
 
-    ET.SubElement(channel, 'title').text = feed_title
-    ET.SubElement(channel, 'link').text = base_url
-    ET.SubElement(channel, 'description').text = feed_description
+    existing_items = {}
+
+    if os.path.exists(output_path):
+        existing_tree = ET.parse(output_path)
+        existing_rss = existing_tree.getroot()
+        existing_channel = existing_rss.find('channel')
+
+        for item in existing_channel.findall('item'):
+            link = item.findtext('link')
+            if link:
+                existing_items[link] = item
+
+        rss = existing_rss
+        channel = existing_channel
+    else:
+        rss = ET.Element('rss', version="2.0")
+        channel = ET.SubElement(rss, 'channel')
+
+        ET.SubElement(channel, 'title').text = feed_title
+        ET.SubElement(channel, 'link').text = base_url
+        ET.SubElement(channel, 'description').text = feed_description
 
     for filename in sorted(os.listdir(src_dir)):
-        if filename.endswith('.md') and filename != "SUMMARY.md" and filename != "o_que.md":
-            filepath = os.path.join(src_dir, filename)
+        if not filename.endswith('.md') or filename == "SUMMARY.md" or filename == "o_que.md":
+            continue
 
-            date = parse_date_from_filename(filename) or get_file_creation_date(filepath)
-            title, description = extract_title_and_description(filepath)
+        filepath = os.path.join(src_dir, filename)
+        html_filename = filename.replace('.md', '.html')
+        item_link = f"{base_url}/{html_filename}"
 
-            if title and description:
-                item = ET.SubElement(channel, 'item')
-                ET.SubElement(item, 'title').text = title
-                ET.SubElement(item, 'description').text = description
-                html_filename = filename.replace('.md', '.html')
-                ET.SubElement(item, 'link').text = f"{base_url}/{html_filename}"
-                ET.SubElement(item, 'pubDate').text = date.strftime('%a, %d %b %Y %H:%M:%S +0000')
+        if item_link in existing_items:
+            continue
+
+        date = parse_date_from_filename(filename) or get_file_creation_date(filepath)
+        title, description = extract_title_and_description(filepath)
+
+        if title and description:
+            item = ET.SubElement(channel, 'item')
+            ET.SubElement(item, 'title').text = title
+            ET.SubElement(item, 'description').text = description
+            ET.SubElement(item, 'link').text = item_link
+            ET.SubElement(item, 'pubDate').text = date.strftime('%a, %d %b %Y %H:%M:%S +0000')
 
     ET.indent(rss, space="  ", level=0)
     tree = ET.ElementTree(rss)
-    output_path = os.path.join(src_dir, 'rss.xml')
     tree.write(output_path, encoding='utf-8', xml_declaration=True)
 
 if __name__ == "__main__":
