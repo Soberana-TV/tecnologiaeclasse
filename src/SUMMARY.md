@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Os prompt injections na Justiça](prompt_injection_justica.md)
 - [Protestos na Meta, greve na Samsung, preço dos HDs e mais](greve_samsung.md)
 - [No capitalismo a prioridade é data center](lago_tahoe.md)
 - [Linux agora é bom pra jogos](linux_jogos.md)
