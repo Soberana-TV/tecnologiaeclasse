@@ -65,6 +65,7 @@ No vídeo de hoje vamos fazer uma apresentação e tutorial do Nextcloud e eu vo
 - O aplicativo de fotos que eu testei (e desisti)
 - As customizações de fontes e de cores
 - A minha biblioteca de ebooks sincronizada com o Calibre
+* O meu script que adapta o design para o stream: [nextcloud-tampermonkey.js](misc/nextcloud-tampermonkey.js)
 
 ### Melhorias para o futuro
 
