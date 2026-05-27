@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Memórias chinesas, cartel dos HDs e Manus](memorias_chinesas_cartel_dos_hds.md)
 - [Tutorial de Nextcloud](tutorial_nextcloud.md)
 - [Os prompt injections na Justiça](prompt_injection_justica.md)
 - [Protestos na Meta, greve na Samsung, preço dos HDs e mais](greve_samsung.md)
