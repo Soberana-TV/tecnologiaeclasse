@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Deepseek v4, sistema quântico da China e dependência de IA](deepseekv4.md)
 - [Nightmare Eclipse VS Microsoft](nightmare_eclipse.md)
 - [Tela Brasil: A "Netflix Brasileira"?](tela_brasil.md)
 - [Memórias chinesas, cartel dos HDs e Manus](memorias_chinesas_cartel_dos_hds.md)
