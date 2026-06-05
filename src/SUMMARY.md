@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Vazamento do Ifood e invasão de contas do Instagram](ifood_instagram.md)
 - [Deepseek v4, sistema quântico da China e dependência de IA](deepseekv4.md)
 - [Nightmare Eclipse VS Microsoft](nightmare_eclipse.md)
 - [Tela Brasil: A "Netflix Brasileira"?](tela_brasil.md)
