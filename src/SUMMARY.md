@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [A IA da prefeitura do Rio de Janeiro](ia_rio.md)
 - [O histórico e a importância da CEITEC](ceitec.md)
 - [IA Marxista, imagens estranhas do ChatGPT](ia_marxista_imagens_estranhas.md)
 - [Daniel Vorcaro, Wi-Fi, Flávio Bolsonaro](wifi_darkhorse.md)
