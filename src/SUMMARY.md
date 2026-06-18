@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Fable proibido](fable.md)
 - [A IA da prefeitura do Rio de Janeiro](ia_rio.md)
 - [O histórico e a importância da CEITEC](ceitec.md)
 - [IA Marxista, imagens estranhas do ChatGPT](ia_marxista_imagens_estranhas.md)
