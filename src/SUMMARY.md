@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Sobre confiança e descentralização](confia.md)
 - [IPO SpaceX](ipo_spacex.md)
 - [Fable proibido](fable.md)
 - [A IA da prefeitura do Rio de Janeiro](ia_rio.md)
