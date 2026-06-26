@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Miremos nos data centers](data_centers.md)
 - [Sobre confiança e descentralização](confia.md)
 - [IPO SpaceX](ipo_spacex.md)
 - [Fable proibido](fable.md)
