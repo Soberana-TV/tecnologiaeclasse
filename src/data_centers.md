@@ -29,9 +29,7 @@ Neste vídeo eu vou tentar argumentar que os projetos de construção de data ce
 
 - Recentemente eu tive uma conversa sobre isso e me convenci em tempo real que precisamos de um movimento da sociedade contra os data centers:
 
-[https://www.youtube.com/watch?v=dI8g0J3jNWI](https://www.youtube.com/watch?v=dI8g0J3jNWI (preview))
-
- 
+{{#embed https://www.youtube.com/watch?v=dI8g0J3jNWI }}
 
 - Citar também esse site que foi trazido à minha atenção sobre o data center de Uberlândia
 
