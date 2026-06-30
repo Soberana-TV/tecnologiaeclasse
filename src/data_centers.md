@@ -14,7 +14,7 @@ Neste vídeo eu vou tentar argumentar que os projetos de construção de data ce
 - Vou dar o exemplo da campanha do Humberto Matos que tem se envolvido em polêmicas por seu uso indiscriminado de IA:
   - Eu concordo? Não e inclusive acho que isso faz a campanha dele ser menos atrativa e aliena grande parte das pessoas que se importam com a pauta.
   - Inclusive eu achei a resposta do Jones muito boa sobre o assunto.
-  - Eu realmente acho que a leitura dele está errada e me parece que ela só faria sentido se o candidato com o maior número de postagens nas redes ganhasse a eleição, mas isso não é o que se considera a melhor campanha e muito menos a melhor campanha COMUNISTAS
+  - Eu realmente acho que a leitura dele está errada e me parece que ela só faria sentido se o candidato com o maior número de postagens nas redes ganhasse a eleição, mas isso não é o que se considera a melhor campanha e muito menos a melhor campanha COMUNISTA
   - Mas isso é o máximo que eu vou falar sobre hoje, faremos mais no futuro
 
 - O que me interessa aqui é entender o que os candidatos a deputado estadual como o Humberto pensam sobre os projetos como o data center ‘Scala AI City’ que está sendo planejada a construção em Eldorado do Sul, na região metropolitana de Porto Alegre/RS
@@ -48,19 +48,21 @@ Neste vídeo eu vou tentar argumentar que os projetos de construção de data ce
 
 ### Lista de novos data centers em construção e planejamento
 
-| Projeto           | Empresa            | Cidade/UF             | Endereço aproximado               |      Lat |      Lon | Potência inicial (MW) | Potência máxima (MW) | Status        |
-|-------------------|--------------------|-----------------------|-----------------------------------|---------:|---------:|----------------------:|---------------------:|---------------|
-| Scala AI City     | Scala              | Eldorado do Sul/RS    | BR-290, área industrial           | \-30.080 | \-51.620 |                  1500 |                5000* | Anunciado     |
-| Rio AI City       | Elea               | Rio de Janeiro/RJ     | Parque Olímpico / Barra da Tijuca | \-22.977 | \-43.391 |                  1500 |                 3200 | Anunciado     |
-| RT-One Uberlândia | RT-One             | Uberlândia/MG         | MGC-497, zona oeste               | \-18.980 | \-48.450 |                   400 |                  400 | Licenciamento |
-| RT-One Maringá    | RT-One             | Maringá/PR            | Contorno Norte / área industrial  | \-23.390 | \-51.930 |                   400 |                  400 | Anunciado     |
-| Tecto SP          | Tecto              | Interior de SP        | Não divulgado                     | \-23.000 | \-47.100 |                   200 |                  200 | Planejado     |
-| TAKODA Sumaré     | TAKODA             | Sumaré/SP             | Eixo Anhanguera                   | \-22.840 | \-47.270 |                    96 |                   96 | Planejado     |
-| TAKODA Rio        | TAKODA             | Rio de Janeiro/RJ     | Barra da Tijuca                   | \-23.000 | \-43.360 |                    64 |                   64 | Planejado     |
-| Scala Fortaleza   | Scala              | Fortaleza/CE          | Região do Praia do Futuro         |  \-3.730 | \-38.540 |                   7.2 |                  7.2 | Expansão      |
-| Ascenty SPO06     | Ascenty            | Osasco/SP             | Campus Osasco                     | \-23.520 | \-46.790 |                    26 |                   26 | Construção    |
-| Microsoft Campus  | Microsoft          | Hortolândia/Sumaré/SP | 3 locais                          | \-22.850 | \-47.250 |                   N/D |                  N/D | Construção    |
-| Scala Caucaia     | Scala Data Centers | Caucaia/CE            | Complexo Industrial e Portuário do Pecém (CIPP), próximo ao Porto do Pecém | -3.548 | -38.807 |                    54 |                   54 | Anunciado / Construção |
+| Projeto           | Empresa            | Cidade/UF             | Endereço aproximado                                                        |      Lat |      Lon | Potência inicial (MW) | Potência máxima (MW) | Status        |
+|-------------------|--------------------|-----------------------|----------------------------------------------------------------------------|---------:|---------:|----------------------:|---------------------:|---------------|
+| Scala AI City     | Scala              | Eldorado do Sul/RS    | BR-290, área industrial                                                    | \-30.080 | \-51.620 |                  1500 |                5000* | Anunciado     |
+| Rio AI City       | Elea               | Rio de Janeiro/RJ     | Parque Olímpico / Barra da Tijuca                                          | \-22.977 | \-43.391 |                  1500 |                 3200 | Anunciado     |
+| RT-One Uberlândia | RT-One             | Uberlândia/MG         | MGC-497, zona oeste                                                        | \-18.980 | \-48.450 |                   400 |                  400 | Licenciamento |
+| RT-One Maringá    | RT-One             | Maringá/PR            | Contorno Norte / área industrial                                           | \-23.390 | \-51.930 |                   400 |                  400 | Anunciado     |
+| Tecto SP          | Tecto              | Interior de SP        | Não divulgado                                                              | \-23.000 | \-47.100 |                   200 |                  200 | Planejado     |
+| TAKODA Sumaré     | TAKODA             | Sumaré/SP             | Eixo Anhanguera                                                            | \-22.840 | \-47.270 |                    96 |                   96 | Planejado     |
+| TAKODA Rio        | TAKODA             | Rio de Janeiro/RJ     | Barra da Tijuca                                                            | \-23.000 | \-43.360 |                    64 |                   64 | Planejado     |
+| Scala Fortaleza   | Scala              | Fortaleza/CE          | Região do Praia do Futuro                                                  |  \-3.730 | \-38.540 |                   7.2 |                  7.2 | Expansão      |
+| Ascenty SPO06     | Ascenty            | Osasco/SP             | Campus Osasco                                                              | \-23.520 | \-46.790 |                    26 |                   26 | Construção    |
+| Microsoft Campus  | Microsoft          | Hortolândia/Sumaré/SP | 3 locais                                                                   | \-22.850 | \-47.250 |                   N/D |                  N/D | Construção    |
+| Scala Caucaia     | Scala Data Centers | Caucaia/CE            | Complexo Industrial e Portuário do Pecém (CIPP), próximo ao Porto do Pecém |  \-3.548 | \-38.807 |                    54 |                   54 | Construção    |
+| BEL1              | Elea Data Centers  | Belém/PA              | Próximo à Subestação Miramar, zona portuária de Belém                      |  \-1.442 | \-48.490 |                   7,5 |                  100 | Anunciado     |
+
 
 * [Mapa dos data centers no Brasil](/datacenters-brasil.html)
 
