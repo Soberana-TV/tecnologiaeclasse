@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Ele confessou pro ChatGPT](confessou_chatgpt.md)
 - [AI Engine Optimization](aeo.md)
 - [Como Trump quer criar um USA paralelo](usa_paralelo.md)
 - [Miremos nos data centers](data_centers.md)
