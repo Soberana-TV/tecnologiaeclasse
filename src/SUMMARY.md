@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Alex Karp honesto e a economia de extração do conhecimento](alex_karp_honesto.md)
 - [Ele confessou pro ChatGPT](confessou_chatgpt.md)
 - [AI Engine Optimization](aeo.md)
 - [Como Trump quer criar um USA paralelo](usa_paralelo.md)
