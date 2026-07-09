@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Introdução a gerenciadores de senha](gerenciadores_de_senha.md)
 - [50% da internet são robôs](50_robos.md)
 - [Alex Karp honesto e a economia de extração do conhecimento](alex_karp_honesto.md)
 - [Ele confessou pro ChatGPT](confessou_chatgpt.md)
