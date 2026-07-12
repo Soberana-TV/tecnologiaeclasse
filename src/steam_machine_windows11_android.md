@@ -2,6 +2,10 @@
 
 Hoje vamos comentar um compilado de notícias interessantes dos últimos dias. Os esforços da Microsoft para evangelizar o Windows 11 e os usuários revoltados, Steam machine é o novo videogame da Valve e Android vai novamente permitir uma maneira de instalar aplicativos em sideload.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=M9KhMLia8OI }}
+
 **Chefe do Windows reconhece que sistema está com problemas:**  Pavan Davaluri tem enfrentado forte reação de usuários que cobram  correções de problemas básicos, ao passo que a empresa continua a  integrar recursos de IA. Ele reconheceu falhas de confiabilidade,  desempenho e usabilidade. Dave Plummer, ex-desenvolvedor da companhia,  defende um Windows mais limpo, sem sugestões de apps, possibilidade de  usar conta local e menos notificações que na verdade são anúncios de  produtos da Microsoft. As informações são do site Neowin.
 
 <https://www.windowscentral.com/microsoft/windows-11/windows-president-confirms-os-will-become-ai-agentic-generates-push-back-online>

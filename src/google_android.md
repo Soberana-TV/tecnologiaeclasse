@@ -2,6 +2,10 @@
 
 2026 é o ano em que o Google irá começar a exigir o cadastro de desenvolvedores e o pagamento de uma taxa para distribuir aplicativos na plataforma. O Brasil será um dos primeiros 'contemplados'. Vamos falar sobre!
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=F0LuS9ByHic }}
+
 - Este vídeo é muito simples: em Agosto de 2025 o Google anunciou mudanças na instalação de aplicativos em 'Android Certified Phones' (95% de todos Androids no mundo)
 - Agora só poderão ser instalados aplicativos de desenvolvedores verificados junto à Google. Não é apenas pra usar a Play Store, é para qualquer tipo de instalação (chamado 'sideload')
   - Identificação do governo

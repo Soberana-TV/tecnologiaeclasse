@@ -1,5 +1,9 @@
 ### Minha banda lançou uma música na era da IA
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=OTlDuydRsj4 }}
+
 - Por favor ouçam
 
 {{#embed https://www.youtube.com/watch?v=aDFcWY88JZE }}

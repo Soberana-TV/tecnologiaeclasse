@@ -1,5 +1,9 @@
 # Soberania Digital: Uma perspectiva brasileira
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=LmT3WlqzCl0 }}
+
 O que é soberania? Faz sentido falar de soberania digital?
 
 {{#embed https://www.youtube.com/watch?v=oreTIGSDLHM }}

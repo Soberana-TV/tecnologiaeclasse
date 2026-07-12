@@ -2,6 +2,10 @@
 
 Larry Ellison - CEO da Oracle e aliado de Trump - agora é dono do TikTok nos EUA, da Paramount, da CBS e muito mais. Isso configura uma situação de consolidação da mídia sob o guarda chuva do governo dos EUA que não tem precedentes. Vamos conversar.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=mo4bSVKAUZg }}
+
 #### Não antropomorfize Larry Ellison
 
 {{#embed https://www.youtube.com/watch?v=-zRN7XLCRhc }}

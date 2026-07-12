@@ -2,6 +2,10 @@
 
 Esse não é um vídeo sobre o Gemini 3 e sim eu me perguntando se esse foi o momento que a OpenAI perdeu a liderança na corrida de IA nos EUA.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=F9F5R8-ON9Y }}
+
 {{#embed https://youtube.com/watch?v=25r_ykOQyZs }}
 
 {{#embed https://youtube.com/watch?v=B_zYJkWf2SI }}

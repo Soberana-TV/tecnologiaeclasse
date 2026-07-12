@@ -2,6 +2,10 @@
 
 Hoje nós vamos trazer uma coletânea de notícias sobre os últimos acontecimentos no mundinho da IA e tentar entender por que tem muito CEO entrando em pânico, né Sam Altman.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=lBaxf2ZRd5c }}
+
 - Copilot, Claude estão cortando tiers gratuitos de acesso. Isso é o que a gente vem falando há muito tempo, a IA é subsidiada!
 
 [https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/ (preview))

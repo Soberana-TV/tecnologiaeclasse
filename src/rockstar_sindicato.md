@@ -2,6 +2,10 @@
 
 O GTA 6 já tinha sido adiado algumas vezes nos últimos anos e a data oficial do lançamento agora é 19/11/2026. Mas agora parece que teremos Rockstar desmobilizando os sindicatos antes de termos GTA 6!
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=QWQdxOOH8Z8 }}
+
 <https://www.ign.com/articles/gta-6-dev-rockstar-accused-of-union-busting-in-sudden-firing-of-dozens-of-staff>
 
 - Relatos de que a Rockstar, empresa responsável pela franquia Grand Theft Auto estaria numa briga encarniçada com os seus trabalhadores para impedí-los de se sindicalizar

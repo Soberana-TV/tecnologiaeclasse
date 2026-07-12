@@ -1,5 +1,9 @@
 ### GPT 5 e segurança de modelos
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=5S4xG3wx7B4 }}
+
 - O ChatGPT-5 foi decepcionante? Depende do que estamos prestando atenção.
   - Modos diferentes de racicínio (nenhum, médio, alto)
   - Supostamente mais segurança e respostas "seguras" para prompts perigosos

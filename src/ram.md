@@ -2,6 +2,10 @@
 
 Raramente temos um esquema tão direto e fácil de explicar para vocês. Fabricantes de componentes de memória estão priorizando data centers e o pra nós só sobre pagar um preço absurdo por esses componentes.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=3jrJ1Ybzm4k }}
+
 **Kits de memória RAM DDR5 estão custando mais que um PlayStation 5:**  algumas lojas nos EUA estão vendendo kits de 64 GB por 599 dólares,  valor que supera em 200 dólares um PS5 digital e um Xbox Series S no  país. Entre julho e agosto, um kit similar custava apenas 139 dólares.  Acredita-se que isso seja resultado da crescente demanda da indústria de  IA por DRAM. Em paralelo, fabricantes de PCs estariam adquirindo  grandes volumes de memória, o que pode agravar a escassez desses  componentes até 2027. As informações são do site TechSpot.
 
 <https://canaltech.com.br/hardware/preco-da-memoria-ram-dispara-e-teamgroup-alerta-que-o-pior-ainda-esta-por-vir/>

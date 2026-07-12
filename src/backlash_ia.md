@@ -2,6 +2,10 @@
 
 Eu estava certo, mas muito cedo. Está ficando cada vez mais na moda rejeitar categoricamente coisas geradas por IA. Será que se forma um movimento de 'backlash' contra a tecnologia?
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=sG4YJcZbEGM }}
+
 - Alguns projetos open source tem tomado medidas para evitar as contribuições 'slop' em seus projetos. Cada um do seu jeitinho:
 
 <https://github.com/tldraw/tldraw/issues/7695>

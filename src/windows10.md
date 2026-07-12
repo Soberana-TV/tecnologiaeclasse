@@ -2,6 +2,10 @@
 
 O Windows 10 chegou ao fim do seu suporte no dia 14/10/25 e isso é problemático por vários motivos. Alguns mais óbvios, outros nem tanto.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=QBbZca6GtlY }}
+
 - O suporte ao Windows 10 acabou... e daí? A gente atualiza só atualiza pro Windows 11? Certo?
 
 - Se o seu hardware não tem suporte ao Windows 11, simplesmente não dá. Aí a sua opção é ficar com a versão antiga ou comprar um PC novo (existe uma terceira e quarta opção que você desbloqueia ao chegar no final desse vídeo)

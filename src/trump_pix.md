@@ -1,5 +1,9 @@
 # Trump ataca o nosso Pix, LGPD, pirataria e mais...
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=uOvS5dtlpn8 }}
+
 - Os pontos principal para entender aqui:
   - O cálculo das tarifas do Trump não tem lógica nenhuma, é simplesmente um movimento de mafioso para pressionar os países que abaixam a cabeça
   - O que eles querem conseguir não tem a ver com o Bolsonaro e sim domínio comercial e informacional

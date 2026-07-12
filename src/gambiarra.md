@@ -2,6 +2,10 @@
 
 Todo mundo que trabalha com desenvolvimento de software tem algumas gambiarrinhas que são pra se guardar do lado esquerdo peito. A gente acha que ninguém nunca vai desobrir, mas as vezes descobrem. Aí fica a dúvida, o que esse dev do IOS tava pensando? 
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=GEoH5gMH7Rk }}
+
 <https://www.instagram.com/p/DOVvazqkp7_/>
 
 <https://www.reddit.com/r/ios/comments/1ikbjlt/why_do_the_ios_timer_dials_suddenly_end_at_16_and/>

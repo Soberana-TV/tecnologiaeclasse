@@ -2,6 +2,10 @@
 
 A nova vulnerabilidade descoberta no protocolo Fast Pair da Google permite o pareamento não consensual e potencial gravação e transmissão nesses dispositivos. Vamos comentar.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=bXiyEVGV6KE }}
+
 <https://arstechnica.com/gadgets/2026/01/researchers-reveal-whisperpair-attack-to-eavesdrop-on-google-fast-pair-headphones/>
 
 > Emparelhar dispositivos Bluetooth pode ser complicado, mas o Google Fast Pair torna o processo quase perfeito. Infelizmente, isso também pode deixar seus fones de ouvido vulneráveis ​​a ataques remotos. Uma equipe de pesquisadores de segurança da Universidade KU Leuven, na Bélgica, revelou uma vulnerabilidade chamada WhisperPair que permite que um invasor sequestre dispositivos com Fast Pair ativado para espionar o proprietário.

@@ -2,6 +2,10 @@
 
 Os novos arquivos do Jeffrey Epstein droparam e são um caos. Eu pensei em comentar diversos fatos interessantes no que tange o pessoal da TI.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=xhzusE2aHJ8 }}
+
 - Dessa vez foram liberados mais de 3 milhões de documentos, tem coisa demais pra investigar em só um vídeo, então vamos focar em algumas coisas de interesse relacionado ao canal.
 
 {{#embed https://www.youtube.com/watch?v=D5xGUw55uzI }}

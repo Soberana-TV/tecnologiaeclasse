@@ -2,6 +2,10 @@
 
 No dia 8 de Janeiro de 2026 o Mercado Livre demitiu aproximadamente 120 trabalhadores do setor de UX na América Latina inteira.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=cJLnCk8Who8 }}
+
 <https://linktr.ee/trabalhadoresmeli?utm_source=teclas&utm_medium=social&utm_content=link_in_comment>
 
 <https://economia.uol.com.br/noticias/estadao-conteudo/2026/01/13/correcao-mercado-livre-demite-119-pessoas-na-al-sendo-38-no-brasil-apos-avanco-da-ia.htm>

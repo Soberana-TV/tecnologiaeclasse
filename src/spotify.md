@@ -4,6 +4,10 @@
   - O consumidor de conteúdo
   - O produtor de conteúdo
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=yVPtKElQ2qQ }}
+
 ### Sobre a merdificação dos serviços de streaming
 
 {{#embed https://www.youtube.com/watch?v=sa7LG-n5Oww}}

@@ -1,5 +1,9 @@
 # Processo da Folha de São Paulo contra a OpenAI e ... Manual do Usuário
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=aY1SU22s_po }}
+
 Folha vai processar a OpenAI e sites de remover paywall. Algo errado não está certo.
 
 <https://www1.folha.uol.com.br/mercado/2025/08/folha-entra-com-acao-contra-openai-por-concorrencia-desleal-e-violacao-de-direitos-autorais.shtml>

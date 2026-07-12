@@ -2,6 +2,10 @@
 
 O Discord deu o últimato: todo usuário vai ter que verificar a sua idade escaneando o rosto, mandando documento de identidade ou tendo seus hábitos analisados. Hoje vamos falar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=fY6_292o8O0 }}
+
 > A implementação, que começa no início de março, tornará as configurações apropriadas para adolescentes o padrão para todos os usuários, com os adultos precisando verificar sua idade para flexibilizar proteções, incluindo filtros de conteúdo e proibições de mensagens diretas, disse a empresa.
 >
 > A plataforma sediada em São Francisco, popular entre jogadores, utilizará tecnologia de estimativa de idade facial e verificação de identidade por meio de parceiros fornecedores para determinar a idade dos usuários. Um software de rastreamento executado em segundo plano também ajudará a determinar a idade dos usuários sem a necessidade de verificação direta em todos os casos.

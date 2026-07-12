@@ -2,6 +2,10 @@
 
 Uma transmissão ao vivo onde o CEO da Nubank anunciou o retorno ao escritório em 2026 acabou com funcionários demitidos e muita indignação. Vamos falar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=lBIWVDqW81Y }}
+
 ### Atenção: os trabalhadores do Nubank vão realizar uma plenária sobre no dia 12/11/2025
 
 <https://spbancarios.com.br/11/2025/sindicato-convoca-trabalhadores-do-nubank-para-plenaria-virtual-nesta-quarta-12>

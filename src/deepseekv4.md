@@ -2,6 +2,10 @@
 
 Este é um apanhado de notícias “de tecnologia” das últimas semanas no estilo TeClas de ser. Vamos falar sobre o Deepseek mais novo, o sitema operacional quântico da China, dependência das empresas dos EUA em IA (chinesa) e como um autor de um livro criticando o uso irrefletido de IA fez uso irrefletido de IA.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=B_bLyvjLepI }}
+
 ### Deepseek v4 e modelos da China saíram da jaula
 
 - Eu geralmente não gosto de ficar acompanhando novas versões e benchmarks de modelos de IA e o intuito aqui não é isso. É a gente falar sobre como isso está afetando a ‘corrida pela IA’ em geral.

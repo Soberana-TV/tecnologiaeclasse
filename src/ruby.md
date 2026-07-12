@@ -2,6 +2,10 @@
 
 O Rubygems sofreu uma "mudança de direção" forçada por intervenção de empresas influentes no ecossistema Ruby, porém isso ficou em segundo plano quando o criador do Ruby on Rails novamente se envolveu numa "polêmica" por suas opiniões políticas merdas.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=E9GlYU1mDcI }}
+
 - Tudo começou no dia 22/09/25 com:
 
 <https://github.com/Plan-Vert/open-letter>

@@ -2,6 +2,10 @@
 
 Um  trabalhador chinês ganhava 25 mil yuan por mês revisando conteúdo de  IA. A empresa disse: "vamos te rebaixar com 40% de corte". Ele recusou e foi demitido. A justiça chinesa decidiu que a IA sozinha não justifica demissão. Já nos EUA ...
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=o7p37lGrP4Q }}
+
 [https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-court-rules-companies-cant-fire-workers-just-because-ai-is-cheaper-ruling-says-automation-alone-doesnt-justify-layoffs](https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-court-rules-companies-cant-fire-workers-just-because-ai-is-cheaper-ruling-says-automation-alone-doesnt-justify-layoffs (preview))
 
 - Isso aconteceu em Hangzhou, o funcionário tinha como tarefa avaliar a qualidade de interações de uma IA com os usuários (ironicamente)

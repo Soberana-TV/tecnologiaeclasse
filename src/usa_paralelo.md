@@ -2,6 +2,10 @@
 
 A YouTuber ‘Drey Dossier’ fez um trabalho investigativo em cima dos novos sites do governo dos EUA, feitos pelo “National Design Studio” e descobriu uma tentativa de criar uma estrutura tecnológica paralela que “viola as leis dos EUA”
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=EKL8lRWAGP8 }}
+
 - Hoje os EUA hoje são a ditadura mais didática em suas táticas de repressão e propaganda (pau a pau com Israel)
 
 - Neste vídeo eu quero chamar atenção pra essa situação exposta pela Drey e como a tecnologia muitas vezes é usada para na prática ignorar e reescrever as leis

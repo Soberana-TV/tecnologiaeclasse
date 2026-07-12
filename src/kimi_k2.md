@@ -2,6 +2,10 @@
 
 Um novo modelo chinês, aberto e focado em 'chamadas de ferramentas' está se destacando em alguns benchmarks para IA. Será que temos um novo Deepseek em nossas mãos?
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=tYQuXLITZIU }}
+
 <https://www.scmp.com/tech/tech-trends/article/3331971/chinas-moonshot-ai-launches-new-model-lauded-no-1-among-open-source-systems>
 
 > Moonshot  AI’s new model showed that “the gap between closed and open \[AI models\]  continues to narrow”, wrote Mohammad Emad Mostaque, founder of British  developer Stability AI, in a post on X.

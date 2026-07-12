@@ -2,6 +2,10 @@
 
 Uma pesquisadora de segurança analisando o sistema de verificação facial da OpenAI descobriu muito mais do que esperava sobre a vigilância do governo dos EUA.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=botq8Xk3PbA }}
+
 - Antes de começar o roteiro: a gente meio que já sabia esse tipo de coisa, mas isso aqui são provas e está desenhando a situação mais claramente
 
 <https://www.malwarebytes.com/pt-br/blog/news/2026/02/age-verification-vendor-persona-left-frontend-exposed>

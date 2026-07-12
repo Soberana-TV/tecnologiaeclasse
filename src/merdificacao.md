@@ -2,6 +2,10 @@
 
 Vocês devem estar ouvindo muito por aí coisas do tipo: "Como a pirataria voltou em 2025" ou "tem IA em todos os produtos" ou "tem propaganda em todos os lugares" ... este vídeo é sobre isso
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=bvRVM-Stoqc }}
+
 Ou: Como podemos usar a merdificação a nosso favor?
 
 - Obviamente estes são assuntos que se vocês voltarem alguns dias no canal vocês vão ver vídeos sobre. Este é uma pequena reflexão, resumo e convite para debate sobre

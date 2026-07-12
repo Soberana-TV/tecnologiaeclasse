@@ -2,6 +2,10 @@
 
 Uma mudança de contrato da nuvem da Microsoft é responsável pela FIOCRUZ perder 98% do espaço que tinha contratado. Soberania digital?
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=1seBf1qxy5A }}
+
 - Vocês devem lembrar da Fiocruz, a Fundação Oswaldo Cruz. Especialmente da época da pandemia. É uma instituição brasileira da área da saúde. 
 
 <https://fiocruz.br/>

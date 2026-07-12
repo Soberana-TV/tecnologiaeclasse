@@ -2,6 +2,10 @@
 
 É a história mais velha do mundo. Para "customizar" a sua experiência as queridas 'Big Tech' criam features com 'opt in' automático e mal te avisam. Vamos falar sobre o Google lendo seus emails.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=zuQgs3w8DrA }}
+
 <https://www.malwarebytes.com/blog/news/2025/11/gmail-is-reading-your-emails-and-attachments-to-train-its-ai-unless-you-turn-it-off>
 
 - Vamos deixar algo muito claro. O Google já lê todos os seus emails.

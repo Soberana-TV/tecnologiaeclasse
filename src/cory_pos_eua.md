@@ -2,6 +2,10 @@
 
 O norte americano mais brabo acabou de fazer um chamado para uma internet 'pós estadunidense' e 'resistente à merdificação' e nós vamos falar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=Ffim848MDtY }}
+
 {{#embed https://youtube.com/watch?v=39jsstmmUUs }}
 
 <https://pluralistic.net/2026/01/01/39c3/#the-new-coalition>

@@ -2,6 +2,10 @@
 
 Um dos ASSUNTOS de 2025 foi o caso Jeffrey Epstein e como políticos e bilionários (incluindo Trump) estão envolvidos. Os documentos já deveriam ter sido liberados, mas parece que sempre tinha algo dando 'errado' e quero comentar sobre a implicação maior disso.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=D5xGUw55uzI }}
+
 ### Resumo do caso até agora:
 
 <https://teclas.soberana.tv/18_07_25.html#vazamento-de-dados-sendo-usado-para-osi-no-caso-epstein>

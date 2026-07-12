@@ -2,6 +2,10 @@
 
 Layoffs, demissões em massa e porque acontecem são um tema de grande interesse para profissionais na área de tecnologia. Hoje eu quero trazer algumas notícias sobre o tema e comentar um pouco com vocês
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=naADx5gu0t4 }}
+
 - Esse é um tema central para a luta de classes em 2026 e estamos trabalhando em um vídeo 'documentário' roteirizado falando mais profundamente sobre o tema.
 
 - Este site faz uma tabela resumindo os layoffs por data, empresa e número do efetivo <https://layoffs.fyi/>

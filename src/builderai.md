@@ -1,5 +1,9 @@
 # Builder.ai e os Indianos Assalariados
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=WK23tEdgICE }}
+
 #### Achei que era IA, mas era só trabalho humano
 
 <https://www.msn.com/pt-br/noticias/ciencia-e-tecnologia/o-colapso-da-builderai-quando-a-ia-era-apenas-trabalho-humano/ar-AA1Gd72P>

@@ -2,6 +2,10 @@
 
 - Essa série é um novelão que se passa no início dos anos 80 em Dallas/Texas (e com o decorrer das temporadas avança até a década de 90 e se move para a California)
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=BN1bIJ5Cz1I }}
+
 ![image.png](./halt_and_catch_fire/image.png)
 
 - É um 'workplace drama', onde nós seguimos o dia a dia de trabalho de um núcleo de 4-5 personagens e os seus romances, conflitos, sofrimentos e etc...

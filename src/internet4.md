@@ -2,6 +2,10 @@
 
 A 'internet' está indo pelo ralo? Sim, pelo menos no formato que nós a conhecemos. Algo diferente vem por aí e eu estou ousando ter um pouco de otimismo.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=Ug1kkIstpIQ }}
+
 - De tempos em tempos eu tenho vontade de fazer um vídeo sobre algo que eu estou sentindo e ainda não consegui desenvolver direito nas ideias e daí eu trago pra vocês pensarem junto
 - Essa reflexão aqui é sobre onde eu acho que a 'internet' está indo. E vamos falar um pouco de onde ela veio.
 

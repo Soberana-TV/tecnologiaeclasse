@@ -2,6 +2,10 @@
 
 Já podemos dizer que o balde de água fria foi jogado no hype da IA generativa? Pelo menos o Sora foi de base e o "porquê" é importante pra gente discutir.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=-0yEm7aquo8 }}
+
 - Até poucos meses atrás, tinha um monte de gente afirmando com certeza absoluta que “no futuro filmes inteiros seriam gerados por um comando de texto” e coisas neste sentido e, talvez alguma coisa assim ainda aconteça, mas podemos dizer que ele acabou de ser adiado por tempo indeterminado
 - Em 24 de março de 2026, a OpenAI anunciou o fechamento da plataforma Sora, seu gerador de vídeos que chamou muito atenção há um ano atrás e ao mesmo tempo a Disney, que tinha um acordo bilionário para levar seus personagens para o serviço, cancelou a parceria e retirou seus investimentos.
 

@@ -3,6 +3,11 @@
 
 Existe soberania tecnológica sem acesso a hardware e aos microchips que estão dentro deles? A dependência externa no setor de chips semicondutores é um calcanhar de aquiles para muitas nações. Hoje nós vamos falar sobre um plano para o Brasil alcançar os outros países nessa corrida: os PocketFabs.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=tvZEwwmrPRA }}
+
+
 {{#embed https://www.youtube.com/watch?v=h6GWikWlAQA }}
 
 - Durante a pandemia de COVID-19, vimos de perto como a falta de chips paralisou indústrias inteiras, inclusive 14 das 59 montadoras de veículos brasileiras em 2022. O Brasil, um dos maiores consumidores de eletrônicos, importa mais de 85% dos semicondutores que utiliza, gerando um déficit comercial de US$ 41 bilhões em 2025.

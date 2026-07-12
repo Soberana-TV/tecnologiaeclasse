@@ -3,6 +3,10 @@
 
 Em 4 de Novembro de 2025 a PL 8889/2017 ou ‘PL do Streaming’ foi aprovada na Câmara e a votação no Senado ficou para algum momento de 2026. Esse é um assunto muito mais  complexo do que “vão taxar o seu streaming” e hoje nós vamos tirar um tempo pra deiscutir ele.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=6vZ0curc6WA }}
+
 - Falar de regulamentação de plataformas de streaming, hoje, é falar de uma batalha por poder, dinheiro e soberania cultural, com implicações muito profundas tanto para o Brasil, quanto para o mundo, pois é um tema que está moldando o futuro do entretenimento e da cultura.
 - Quando falamos em regulamentar o streaming, a conversa vai muito além de simplesmente criar regras para plataformas como Netflix, Prime Video ou Disney+, pois o cerne da questão é uma disputa sobre:
   - quem controla a renda gerada por esses serviços bilionários;

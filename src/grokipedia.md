@@ -2,6 +2,10 @@
 
 Elon Musk foi num podcast e disseram pra ele: "fraga que a Wikipedia é muito enviesada, porque você não pede pro Grok fazer uma enciclopédia toda por conta?" e daí ele foi lá e fez... é sério. Hoje nós vamos falar sobre a Grokipedia.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=RYG8gWWyV_Y }}
+
 **xAI lança Grokipedia, sua própria versão da Wikipédia:**  a plataforma reúne mais de 885 mil artigos, apresentando interface  simples e artigos estruturados, mas sem suporte a imagens ou edição por  usuários. Cada página é marcada como “verificada” pelo Grok, o que  levantou dúvidas sobre a precisão. Embora Elon Musk defenda o projeto  como uma “melhoria massiva” da Wikipédia, há indícios de que parte do  conteúdo foi copiada diretamente da enciclopédia original, sob a licença  Creative Commons. Em resposta, a Wikimedia Foundation afirma que “até a  Grokipedia precisa da Wikipédia para existir”. As informações são do  site The Verge.
 
 ![image.png](./grokipedia/image.png)

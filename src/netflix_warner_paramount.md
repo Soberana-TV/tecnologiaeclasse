@@ -1,5 +1,9 @@
 # Netflix, Warner e Paramount
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=b4uPXh5FEEM }}
+
 # Netflix anuncia compra da Warner... mas a Paramount tá de olho
 
 É uma notícia tão extrema que eu achei que tinha ouvido errado. A Netflix vai comprar a Warner Bros Discovery por 80 bilhões MAS será que eles perguntaram para a Paramount e o governo dos EUA?

@@ -1,5 +1,9 @@
 # Censura no mundo dos games?
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=t1cxYtrz26M }}
+
 ### Steam e Itch.io pressionadas a remover jogos por meios de pagamento
 
 - Mas falando um pouco mais seriamente. Resumo da situação: processadores de pagamento como Visa, Mastercard, Paypal e Stripe estão pressionando plataformas de distribuição de jogos a removerem ou moderarem jogos com conteúdo adulto ou ofensivo

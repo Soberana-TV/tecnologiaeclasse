@@ -2,6 +2,10 @@
 
 A nova feature do X que expõe a localização de criação das contas criou uma crise na comunidade de fãs do Trump. Diversos deles estão localizados bem longe dos EUA.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=x_QvDDMbje4 }}
+
 > Algumas semanas atrás, o X (antigo Twitter) alterou o código do seu site para revelar a localização geográfica dos autores das postagens.
 >
 > Usuários do X descobriram rapidamente que diversas contas populares pró-Trump estão localizadas fora dos Estados Unidos, em países como Nigéria, Índia e Tailândia.

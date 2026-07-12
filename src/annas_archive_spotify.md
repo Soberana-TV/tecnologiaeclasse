@@ -2,6 +2,10 @@
 
 A 'biblioteca cinza' Anna's Archive anunciou no final de 2025, como quem não quer nada, que baixou 300tb de músicas e metadados do Spotify e pretende liberá-los. Vamos falar sobre. 
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=le1eWJtbaS0 }}
+
 <https://annas-archive.li/blog/backing-up-spotify.html>
 
 > Fizemos backup do Spotify (metadados e arquivos de música). Ele está distribuído em torrents em massa (~300 TB), agrupados por popularidade.

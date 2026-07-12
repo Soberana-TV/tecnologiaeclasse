@@ -2,6 +2,10 @@
 
 **Só pra deixar claro, nós vamos gravar essa palestra. Se você for aparecer, falar ou qualquer coisa, por favor esteja ciente que precisa dar a sua permissão de uso de imagem e/ou nos peça pra te cortar da gravação.**
 
+*Palestra completa:*
+
+{{#embed https://www.youtube.com/watch?v=d9miMEBbsPg }}
+
 ### Introdução
 
 - Fala camaradinhas, o meu nome é Lucas Zawacki e eu sou um cientista da computação, programador, músico e militante

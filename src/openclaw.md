@@ -2,6 +2,10 @@
 
 O Openclaw talvez seja o primeiro agente de IA que tem um apelo mais geral e ao mesmo tempo está abrindo a porta para coisas muito perigosas. Não estou falando da 'era das máquinas'
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=V1YLrtKB-Y0 }}
+
 - O Openclaw é uma ferramenta que roda localmente e coordena o acesso a seus dados, a chamada de ferramentas locais o uso de LLMs para criar um assistente agente de IA que pode se comunicar por você por WhatsApp ou Telegram por exemplo.
   - A ferramenta coordena chamadas de 'skills' com LLMs para criar um comportamento de agente assistente
 

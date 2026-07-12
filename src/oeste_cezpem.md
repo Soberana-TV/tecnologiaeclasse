@@ -2,6 +2,10 @@
 
 A Revista Oeste, um veículo de mídia assumidamente "defensor do capitalismo", fez propaganda de uma iniciativa do coletivo comunista que eu faço parte? E é claro...  foi culpa de uma IA. Valeu IA!
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=9kGdHBjhna0 }}
+
 ### Vocês conhecem o CeZPEM?
 
 O Centro  **Zoia Prestes**  de Educação Multidisciplinar cezpem (CeZPEM)  é uma frente de massas do Coletivo  Soberana.

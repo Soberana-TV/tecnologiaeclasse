@@ -2,6 +2,10 @@
 
 Dos chatbots de IA facilmente acessíveis ao público o Grok foi usado para usar 85x mais imagens que violam a lei. Sim imagens sexualizadas de adultos e crianças. Elon Musk tem que pagar.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=DpmndiXsn7Y }}
+
 <https://www1.folha.uol.com.br/tec/2026/01/grok-gerou-6700-imagens-ilegais-sexuais-por-hora-e-rivais-somadas-79-aponta-estudo.shtml>
 
 - O Grok está sendo usado para gerar deepfakes sexualizados e inclusive de pessoas menores de idade

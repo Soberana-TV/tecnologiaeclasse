@@ -2,6 +2,10 @@
 
 Isso não é uma piada de primeiro de Abril. A Anthropic, responsável pelo Claude Code vazou acidentalmente todo o código da ferramenta... de novo. Vamos falar sobre o que isso significa.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=D_IsBA0ycCw }}
+
 - O Claude Code é um assistente de programação que roda direto no terminal. Ela edita arquivos, executa comandos, gerencia git, faz tudo que um dev faria, só que com um modelo de IA. É o que a Anthropic chama do seu 'molho secreto', embora existam ferramentas dos concorrentes como o Codex da OpenAI e diversas alternativas abertas
 - Importante entender que o 'Claude Code' não é o LLM desenvolvido pela Anthropic, ele é o que geralmente nós chamamos de 'harness' (arreios / sela).
   - Uma ferramenta que deixa o modelo 'nos trilhos' de um comportamento específico

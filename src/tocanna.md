@@ -2,6 +2,10 @@
 
 Eu talvez seja criticado por tomar essa posição, MAS: não vamos normalizar lixo gerado por IA. Não vamos normalizar lixo gerado por IA. NÃO VAMOS NORMALIZAR LIXO GERADO POR IA.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=3VazOf5sFTM }}
+
 ### Tocanna, memes e "artistas" de IA
 
 #### Eu vou me incomodar...

@@ -2,6 +2,10 @@
 
 Uma série de acontecimentos recentes está colocando em evidência a decadência da qualidade do 'rei da hospedagem open source' o Github. Vamos falar sobre
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=uKVQz5SMLF4 }}
+
 ### Tudo começo com o zig migrando
 
 <https://ziglang.org/news/migrating-from-github-to-codeberg/>

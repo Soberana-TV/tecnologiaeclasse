@@ -2,6 +2,10 @@
 
 Faz mais ou menos um mês que ficou claro que a Valve vem financiando o projeto Fex e fez um fork do projeto Waydroid. Isso mostra uma aposta pesada na compatibilidade de software e vamos falar hoje sobre isso.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=TRn8rE6SGUo }}
+
 - Recentemente a Valve anunciou o seu novo "PC/videogame" chamado de "Steam Machine" e um óculos de realidade virtual chamado "Steam Frame"
   - Steam Machine tem o hardware baseado em x86 e provavelmente custará em torno de **U$ 1000**
   - Steam Frame poderá custar de **U$ 500** a **U$ 1000**

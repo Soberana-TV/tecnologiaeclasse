@@ -2,6 +2,10 @@
 
 Fala xét. Bill Gates, Steve Balmer, Satyia Nadela. Muitos rostos de canalhas para uma mesma empresa canalha que nos atormenta há 50 anos. Isso é culpa do capitalismo.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=RcMClWI_GnA }}
+
 #### "An Open Letter to Hobbyists"
 
 - Em 1976 Bill Gates publica uma carta aberta na *Homebrew Computer Club* acusando entusiastas de "roubarem" software ao copiar o Altair BASIC sem pagar. Isso gera a 'revolta' dos entusiastas de software e indica um sinal da filosofia proprietária agressiva da empresa.

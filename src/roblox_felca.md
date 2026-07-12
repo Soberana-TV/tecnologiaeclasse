@@ -2,6 +2,10 @@
 
 Na última semana viralizaram protestos "engraçados" dentro da plataforma Roblox. A reivindicação? A segmentação por idade do chat no jogo. Vamos conversar.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=WeUPVaNR2vw }}
+
 <https://br.ign.com/roblox/150121/news/o-maior-protesto-digital-do-brasil-jogadores-de-roblox-se-mobilizam-nos-servidores-apos-plataforma-b>
 
 <https://xcancel.com/Felcca/status/2011627819089145977>

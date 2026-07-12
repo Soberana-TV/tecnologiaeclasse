@@ -2,6 +2,10 @@
 
 Uma pessoa misteriosa está se tornando o pesadelo da Microsoft nos últimos meses. Toda semana uma revelação de falha de segurança nova e a promessa de que 14 de Julho vai sair algo grande. Isso é o que sabemos até agora sobre ‘Nightmare Eclipse’.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=r9TZ61JwS9o }}
+
 - Eu vou contar pra vocês tipo uma fofoquinha por que eu não sou um pesquisador da área de segurança e não vou entrar nos detalhes mais técnicos, mas vou deixar uns links aqui no roteiro
 
 [https://blog.barracuda.com/2026/05/19/nightmare-eclipse-zero-days-grudge](https://blog.barracuda.com/2026/05/19/nightmare-eclipse-zero-days-grudge (preview))

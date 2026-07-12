@@ -2,6 +2,10 @@
 
 Vamos falar do que talvez seja o maior "flop" da história do Vale do Silício: o fim do Metaverso do Mark Zuckerberg, ou, vamos dizer, de uma tentativa de privatizar a própria realidade e a socialização humana sob uma lógica mega corporativa totalmente descolada das necessidades concretas das pessoas.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=flrzgkuqMlo }}
+
 - O “metaverso”, especialmente na versão promovida pela Meta Platforms, era apresentado como uma “evolução da internet”, que significava na prática um ambiente virtual imersivo, acessado principalmente por realidade virtual (VR), onde as pessoas trabalhariam, socializariam, consumiriam e até construiriam identidade através de avatares em espaços digitais persistentes
 - Uma espécie de “internet 3D” integrada, contínua e controlada por plataformas.
 - A proposta não abarcava só interação social, mas também economia digital, trabalho remoto, eventos e serviços, tudo dentro de um ecossistema relativamente centralizado e pensado para substituir (ou, pelo menos, reorganizar) a forma como usamos a internet hoje.

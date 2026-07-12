@@ -2,6 +2,10 @@
 
 Um ecossitema de sites de encontro "só para brancos" foram hackeados e apagados por uma ativista hacker vestida de Power Ranger rosa. Esse é o vídeo.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=AuN22TgHmQ0 }}
+
 <https://media.ccc.de/v/39c3-the-heartbreak-machine-nazis-in-the-echo-chamber#l=eng&t=0>
 
 {{#embed https://youtube.com/watch?v=Szdz_R-LKNY }}

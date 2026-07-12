@@ -2,6 +2,10 @@
 
 Vamos falar hoje sobre a conclusão das tretas do Subnautica 2, a destruição da arte pelo DLSS 5 e como a guerra no Irã está afetando os videogames.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=KsbvWcd_6-o }}
+
 ### A invasão do Irã e bloqueio do canal de Hormuz
 
 - Em resumo, menos hardware pra nós 🙂

@@ -2,6 +2,10 @@
 
 Hoje vamos apresentar o conceito de gerenciador de senhas, por que uma dessas ferramentas dessas pode ser útil pra você e introduzir as funcionalidades básicas da minha favorita que é o KeepassXC.
 
+*Veja no canal:*
+
+{{#embed https://www.youtube.com/watch?v=grjNrcol0j4 }}
+
 - Senhas e códigos secretos já são basicamente sinônimo com o nosso mundinho digital conectado e o bom gerenciamento delas é vital para que consigamos manter os nossos dados seguros.
 
 - Uma boa gestão de suas senhas e alguns cuidados simples podem elevar o seu nível de segurança do 0 para um nível aceitável sem muito esforço.

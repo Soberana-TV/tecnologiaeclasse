@@ -2,6 +2,10 @@
 
 O primeiro ministro da Albânia promete criar uma 'ministra de IA' que irá ajudar a julgar processões de licitação e eliminar a corrupção do estado.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=_WlhnEyd9F8 }}
+
 <https://tecnoblog.net/noticias/albania-nomeia-robo-de-ia-como-ministra/>
 
 <https://www.bbc.com/news/articles/cm2znzgwj3xo>

@@ -2,6 +2,10 @@
 
 Em 25 de março de 2026, um júri na Califórnia proferiu uma decisão favorável à condenação da Meta e do Google por projetarem deliberadamente suas plataformas para viciar usuários. Vamos falar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=4HPeBb6lRME }}
+
 - A condenação veio após o caso de uma jovem que desenvolveu ansiedade e depressão severas devido ao uso compulsivo dessas redes desde os 9 anos de idade, onde a Meta foi condenada a pagar US$ 4,2 milhões e o Google US$ 1,8 milhão em indenizações.
 
 <https://g1.globo.com/tecnologia/noticia/2026/03/25/meta-julgamento.ghtml>

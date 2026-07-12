@@ -2,6 +2,10 @@
 
 Hoje vamos falar sobre atualizações da saga do home office no Nubank, um novo dossiê sobre a empresa e relações com o ex-BC Roberto Campos Neto.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=mt1jOAX4_KM }}
+
 ### Nos últimos episódios...
 
 {{#embed https://youtube.com/watch?v=lBIWVDqW81Y }}

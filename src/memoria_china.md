@@ -2,6 +2,10 @@
 
 A proliferação dos data centers de IA gerou uma crise no preço dos chips de memória. Na prática vemos DDR5 um aumento de 400% nos preços em 6 meses. Aí vem a China e diz: "**交给爸爸吧。**"
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=8biYuEK5RXs }}
+
 - Já que o assunto é memória, vocês se lembram desse vídeo?
 
 {{#embed https://www.youtube.com/watch?v=3jrJ1Ybzm4k }}

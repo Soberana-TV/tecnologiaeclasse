@@ -2,6 +2,10 @@
 
 Os moradores do entorno do Lago Tahoe, na fronteira entre a Califórnia e Nevada nos EUA, se deparam com a realidade de que as suas vidas valem menos do que os data centers sendo construídos no seu enterno. A companhia elétrica NV Energy viu que é mais lucrativo vender energia pra IA do que pra alimentar as cidades.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=dovS98NVEus }}
+
 - Assunto tá ficando sério quando chega no cabeludo com barba ruim oficial dos EUA:
 
 {{#embed https://www.youtube.com/watch?v=NcOwTceSbH4 }}

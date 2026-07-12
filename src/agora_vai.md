@@ -2,6 +2,10 @@
 
 Eu acho que todo mundo, até mesmo o SEU TIO (e você sabe o que o seu tio tem mais que fazer...) já disse que a IA é uma bolha. A pergunta de 1 trilhão de dólares (em dinheiro evaporado do mercado) é QUANDO ela vai estourar. Vamos conversar.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=6NP1s85LOXg }}
+
 - Então esse vídeo é muito importante porque eu estou tentando explicar COMO essa bolha está se formando e poderia estourar, não quando.
 - E se a gente adivinhar o "tempo do mercado" certinho o vídeo viraliza e:
 

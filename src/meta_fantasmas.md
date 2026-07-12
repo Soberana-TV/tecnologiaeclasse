@@ -2,6 +2,10 @@
 
 Um espectro ronda a internet: o espectro dos influenciadores que já morreram, mas o Mark Zuckerberg vai botar pra trabalhar nas redes sociais dele.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=-paLU7-wiII }}
+
 - Primeiramente queria dizer que eu me inspirei nesse vídeo do canal 'Programação Dinâmica' pra fazer esse vídeo. Vou fazer de novo essa tabelinha aqui com o Hallison.
 
 {{#embed https://www.youtube.com/watch?v=vnJXEtDRuLk }}

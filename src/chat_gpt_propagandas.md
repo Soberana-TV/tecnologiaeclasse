@@ -2,6 +2,10 @@
 
 A OpenAI vai começar a incorporar propagandas nos seus produtos, algo que Sam Altman tinha dito que seria apenas 'um último recurso'. Será que agora vai dar ruim?
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=jdM3Kx_bHew }}
+
 <https://canaltech.com.br/apps/chatgpt-vai-mostrar-anuncios-e-voce-so-escapara-pagando-planos-mais-caros/>
 
 > Fim de uma era: a OpenAI confirmou nesta sexta-feira (16) que vai mostrar anúncios no ChatGPT. A novidade entra em fase de testes nos Estados Unidos a partir das próximas semanas e afeta contas da versão gratuita e do plano Go.

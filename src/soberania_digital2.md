@@ -2,6 +2,10 @@
 
 Vocês sabem o que é um país digitalmente soberano? Não? Então esse vídeo é pra ser uma introdução bem compreensiva de várias discussões importantes para começar a desenvolver a nossa própria soberania digital.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=D3B-XDuPk9c }}
+
 ### O que é soberania? Faz sentido falar de soberania digital?
 
 {{#embed https://www.youtube.com/watch?v=oreTIGSDLHM}}

@@ -2,6 +2,10 @@
 
 Anthropic rejeitou a assinatura de um contrato para o uso de seus modelos pelo exército dos EUA, porém a OpenAI aproveitou e pegou pra ela. Segundo Sam Altman, a IA não fará nada ilegal! Sim, nada é ilegal pro governo desse país desgraçado.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=0_MlodbTfRA }}
+
 ![image.png](./anthropic_eua/image.png)
 
 - A foto acima é uma thumbnail da propaganda que a Anthropic fez no Superbowl. Nela um personal trainer age como o ChatGPT, sendo muito amigável e solícito, mas no final não sendo de grande ajuda para o menino 'frango'. Pra concluir ele ainda fala 'agora vou passar um propaganda'

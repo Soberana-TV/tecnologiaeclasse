@@ -4,6 +4,10 @@ Nesta palestra para a Liga Acadêmica da Faculdade de Direito de Alagoas, eu dis
 como se deu a criação dos populares modelos de IA generativa e as problemáticas por
 trás deles.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=iz9TbUdf8MQ }}
+
 ### Quem sou eu?
 
 - Lucas Fialho Zawacki

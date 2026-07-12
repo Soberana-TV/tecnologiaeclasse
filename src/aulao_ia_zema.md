@@ -2,6 +2,10 @@
 
 O governador Zema tentou fazer a maior aula pública de IA do mundo' colocando vários alunos da rede pública no Mineirão para ouvir uma palestra do Google. Acabou em pancadaria. Isso não é uma piada.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=mebHPeMAF4k }}
+
 - Primeiramente eu gostaria de dizer que se me levassem para um estádio de futebol para ver uma palestra sobre 'uso de ferramentas de IA para a educação' eu também ficaria extremamente violento
   - PS.: o Zema que não é uma pessoa beliscosa deve ter ficado triste com isso
 - Primeiramente quando eu ouvi... eu não tinha entendido a moral dessa história. "O Zema colocou um monte de estudantes pra ouvirem um representante da Google falar?". Literalmente foi isso que aconteceu

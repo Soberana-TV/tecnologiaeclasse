@@ -2,6 +2,10 @@
 
 Neste vídeo eu vou tentar argumentar que os projetos de construção de data centers deveriam ser uma pauta central para a organização da classe trabalhadora contra o avanço da IA puxado pela burguesia.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=ZMNbl_bdajo }}
+
 - A gente pode dividir o campo da IA generativa que visa o lucro, a “indústria” de IA generativa, em três partes e geralmente a gente não foca igualmente nelas:
   - Pesquisa em modelos e técnicas
   - Produtos construídos em cima desses modelos

@@ -2,6 +2,10 @@
 
 Este vídeo tem o propósito de explicar de maneira simples o processo de fabricação de microchips, a sua importância e a da CEITEC enquanto única fábrica da América Latina com infraestrutura adequada para desenvolvimento e produção industrial de circuitos integrados. Vamos passar pelo histórico da CEITEC a tentativa de liquidação dela e o seu futuro.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=0XTvOhCIigY }}
+
 - Roteiro escrito pelo Giordano Rossa e o Iuri Tinti que fazem parte do programa CI Inovador e que inclusive está com novo edital aberto agora com inscrições até o dia 15/06/26. Nós vamos falar de novo mais pro final!
 
 Inscrições: <https://ciinovador.softex.br/chamada-e-edital/>

@@ -1,5 +1,9 @@
 # Câmera no vaso, eleição de criptólogos e zork
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=CjF1o0nHHcc }}
+
 ## Um pouco droga, um pouco salada
 
 ### UI/UX de segurança do novo

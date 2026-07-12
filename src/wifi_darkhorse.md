@@ -2,6 +2,10 @@
 
 Vocês já devem saber do esquema do Banco Master e do Flávio Bolsonaro ligando para Daniel Vorcaro pedindo um pix para financiar o já clássico filme Dark Horse. Mas o Intercept revelou um esquema envolvendo pontos de wifi gratuitos em São Paulo. Vamos nessa.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=oChPhtpWXcg }}
+
 [https://iclnoticias.com.br/conhecimento/banco-master-o-que-aconteceu/](https://iclnoticias.com.br/conhecimento/banco-master-o-que-aconteceu/ (preview))
 
 - Um breve resumo do esquema do banco Master:

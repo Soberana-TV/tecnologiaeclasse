@@ -2,6 +2,10 @@
 
 Jornal 'A Verdade', Meta, Palestina e 2 opções para a regulamentação das redes
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=yaQGlcn4m9M }}
+
 <https://averdade.org.br/2025/06/censura-da-meta-suspende-pagina-do-jornal-a-verdade-no-instagram/>
 
 > Em mais um ataque à imprensa dos trabalhadores, o monopólio  capitalista Meta, controlador do Instagram, tirou do ar a conta do  Jornal A Verdade. O ataque à liberdade de imprensa ocorreu na tarde  desta quinta-feira (05), com a suspensão da página, e foi consumado na  manhã deste dia 06 com o anúncio do banimento.

@@ -2,6 +2,10 @@
 
 Este vídeo é pra o deleite dos usuários de Linux ou Mac que não entendem como os programadores de Windows sobrevivem com os seus 'primitivos' notepads. Os últimos meses foram brabos
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=Q5syhLCwXu4 }}
+
 {{#embed https://www.youtube.com/watch?v=OgfdyH4iaps }}
 
 - O que eu vou começar dizendo é que geralmente a dica que sempre damos é 'atualizem seus softwares', mas essa primeira história é foda...

@@ -2,6 +2,10 @@
 
 Protestos em todo o Brasil contra a PEC da Blindagem/Bandidagem conseguiram fazer ela ser barrada na CCJ do Senado. Será que finalmente a esquerda bem ampla está pautando o debate? Acho que sim.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=0v93HxrJAE8 }}
+
 <https://www.poder360.com.br/poder-congresso/camara-aprova-pec-da-blindagem-em-1o-turno/>
 
 > A proposta determina que, para que um congressista seja preso ou processado, as respectivas Casas precisarão autorizar por maioria absoluta. Para isso, terão 90 dias depois da determinação da Justiça.

@@ -2,6 +2,10 @@
 
 O TikTok efetivamente passou de mãos para a Oracle nessa última semana e isso coincidiu com uma queda e bugs da plataforma. Usuários estão preocupados e eu também.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=sc3tBLlcE0Q }}
+
 - Talvez você tenha notado instabilidade na plataforma na última semana e isso coincidiu com a mudança de mãos para a coalisão Oracle, Silverlake e o fundo MGX dos Emirados Árabes Unidos
 
 > Os problemas significativos com o aplicativo TikTok no último fim de semana foram, segundo a empresa, causados ​​por uma falha técnica decorrente de uma queda de energia em um "parceiro de data center nos EUA". Os usuários não conseguiam enviar novos vídeos e a contagem de visualizações estava completamente desregulada, sem muitas respostas ou explicações.

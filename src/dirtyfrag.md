@@ -2,6 +2,10 @@
 
 Deja vu, eu já estive nesse lugar antes. Sejam bem vindos a segunda feira da escalação de privilégios. Sim, hoje vamos falar de novo sobre uma vulnerabilidade que permite um usuário comum adquirir permissões de administrador no Linux. Estou cansado chefe
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=ZYJ4Q58oEyk }}
+
 - Pra quem não viu, nós fizemos um vídeo semana passada falando sobre o Copyfail. Esse exploit misturava a escrita do kernel em algumas páginas de memória e uma API de criptografia. Um erro de lógica permitia a corrupção de páginas de cache na memória e a criação de uma versão do su que elevava o usuário a administrador sem pedir a senha.
 
 {{#embed https://www.youtube.com/watch?v=JHXWF-AoDRA }}
