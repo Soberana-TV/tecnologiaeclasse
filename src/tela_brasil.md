@@ -2,6 +2,10 @@
 
 A criação de uma plataforma de streaming brasileira gratuita é uma promessa do terceiro mandato do Lula e nesse dia 30/05/26 nós finalmente temos esse lançamento. Será que é bom?
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=VodKB4rkNxc }}
+
   
 [https://telabrasil.cultura.gov.br/](https://telabrasil.cultura.gov.br/ (preview))
 

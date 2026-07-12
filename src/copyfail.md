@@ -2,6 +2,10 @@
 
 Uma otimização de código de 2017 que economizava uma cópia de memória introduziu um bug sutil que só foi corrigido agora em Abril de 2026. Um script Python de 732 bytes que funciona de primeira em basicamente todas as distros Linux. Vamos falar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=JHXWF-AoDRA }}
+
 Mas a dúvida que fica é… será que o Rust teria previnido esse bug?
 
 - Esse é um bug que permite qualquer usuário normal numa máquina com o kernel do Linux rodando escalar os seus privilégios para administrador e foi descoberto por pesquisadores de uma empresa chamada Theori

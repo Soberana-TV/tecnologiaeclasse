@@ -2,6 +2,10 @@
 
 A Valve acaba de mais uma vez apostar no software aberto e na construção de uma comunidade fora do modelo predatório das outras empresas de jogos. Por que eles fariam isso? Vamos comentar!
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=NLmaplHH5DU }}
+
 {{#embed https://www.youtube.com/watch?v=LNqnZVL6LBU }}
 
 > s&box is a spiritual successor to Garry’s Mod and a love letter to Source 2 ❤

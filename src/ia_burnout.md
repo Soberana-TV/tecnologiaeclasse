@@ -2,6 +2,10 @@
 
 Saiu um novo relatório que confirma o que muita gente estava sentindo. O uso de ferramentas de IA generativa como apoio ao trabalho nos deixa sobrecarregado e precipita o burnout. Vamos falar sobre
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=aFZx7luAuMY }}
+
 <https://www.tomshardware.com/tech-industry/using-ai-actually-increases-burnout-despite-productivity-improvements-study-shows-data-illustrates-how-ai-made-workers-take-on-tasks-they-would-have-otherwise-avoided-or-outsourced>
 
 <https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it>

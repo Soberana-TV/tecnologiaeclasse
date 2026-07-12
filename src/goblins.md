@@ -2,6 +2,9 @@
 
 O novo ChatGPT gosta muito de falar de goblins, agentes de IA gostam de deletar bancos de dados e biólogos de 85 anos se apaixonam por robôs. Vamos falar sobre as idiossincrasias do nossos chat com caixinhas de estatísticas disfarçada de assistente.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=ZWK3NdjAMO8 }}
 
 Goblins: <https://openai.com/index/where-the-goblins-came-from/>
 

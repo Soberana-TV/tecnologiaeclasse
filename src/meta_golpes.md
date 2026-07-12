@@ -2,6 +2,10 @@
 
 Você já se perguntou por que tem tantas propagandas de golpe ou produtos fake no Facebook/Instagram? A Meta também e eles decidiram continuar mostrando elas pra vocês por que dá muita grana.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=8S9wH37Tg8g }}
+
 <https://canaltech.com.br/seguranca/10-do-lucro-da-meta-vem-de-fraudes-e-produtos-ilegais-revelam-documentos/>
 
 <https://www.reuters.com/investigations/meta-is-earning-fortune-deluge-fraudulent-ads-documents-show-2025-11-06/>

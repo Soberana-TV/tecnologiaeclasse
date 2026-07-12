@@ -2,6 +2,10 @@
 
 Semana passada o Felca lançou um absoluto clássico moderno do YouTube. O vídeo que deu o que falar, furou todas as bolhas e pautou o nosso congresso: "Adultização"
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=gO1mp1eUmOQ }}
+
 {{#embed https://www.youtube.com/watch?v=FpsCzFGL1LE }}
 
 * O vídeo expôs uma situação não de todo desconhecida: o impulsionamento no algoritmo das redes sociais de influenciadores menores de idade que tem suas imagens exploradas por pais e guardiões. O vídeo começa com 'coaches mirins' e logo depois denuncia a exploração sexual de menores

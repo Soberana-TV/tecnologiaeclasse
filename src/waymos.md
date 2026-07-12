@@ -2,6 +2,10 @@
 
 Um apagão em São Francisco nos lembrou que veículos autônomos podem não ser tão autônomos em casos de emergência. Vamos falar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=i1IdQiqtzD8 }}
+
 > Um apagão atingiu São Francisco no sábado (20/12/25), deixando cerca de 130 mil clientes sem energia no pico da crise, segundo a Pacific Gas and Electric Company, mas também causou outro problema: veículos da Waymo parados nas ruas. Publicações em todas as redes sociais mostraram os SUVs autônomos da empresa imóveis no trânsito, causando congestionamentos.
 
 <https://www1.folha.uol.com.br/mercado/2025/12/robotaxis-travam-sao-francisco-durante-apagao-e-acendem-alerta-para-carros-autonomos-durante-crises.shtml>

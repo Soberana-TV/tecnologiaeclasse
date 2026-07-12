@@ -2,6 +2,10 @@
 
 Sob o pretexto de uma operação contra o narcotráfico os EUA invadem a Venezuela e sequestram o presidente do país. Mas hoje eu quero falar sobre como isso transforma o Brasil na Venezuela.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=SyydLcfkHXc }}
+
 > O presidente dos Estados Unidos, Donald Trump, afirmou neste sábado (3) que forças americanas realizaram um ataque de grande escala contra a Venezuela e capturaram o presidente Nicolás Maduro. A declaração foi feita em uma rede social.
 
 <https://g1.globo.com/mundo/noticia/2026/01/03/trump-diz-que-maduro-foi-capturado.ghtml>

@@ -1,6 +1,12 @@
 # Entrarão na minha casa, brickarão meu Kindle
 
-A Amazon está anunciando mais uma leva de Kindles que ficarão sem suporte oficial e se tornam, para eles, na prática pesos de papel em 05/20/26. Mais vítimas da obsolecência programada. Vamos falar sobre:
+A Amazon está anunciando mais uma leva de Kindles que ficarão sem suporte oficial e se tornam, para eles, na prática pesos de papel em 05/20/26. Mais vítimas da obsolecência programada.
+
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=y3hl5EnJ6IM }}
+
+Vamos falar sobre:
 
 - Primeiro vamos começar com alguns fatos rápidos com tudo que você precisam saber:
   - A Amazon encerrará o suporte para leitores de livros digitais Kindle e tablets Fire fabricados antes de 2013

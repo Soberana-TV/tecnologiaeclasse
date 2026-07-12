@@ -2,6 +2,10 @@
 
 Hoje a gente precisa falar de outra maneira bizarra como o capital está usando IAs generativas pra ferrar com a classe trabalhadora. Vamos falar do Bruno Azevedo que teve sua voz roubada pela IA e o que isso significa para os dubladores.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=KrN0nIZu4EE }}
+
 - Vocês já devem ter visto um monte de golpe usando voz de criadores ou atores famosos. Tem de todo tipo, vendendo produto ou até fazendo ligação pedindo dinheiro
 
   [https://www.youtube.com/shorts/LyHbBcc8mDc](https://www.youtube.com/shorts/LyHbBcc8mDc (preview))

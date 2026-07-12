@@ -3,6 +3,10 @@
 
 As dinâmicas da crise no mercado de IA e na econômia dos EUA estão ficando mais claras. Hoje nós vamos falar sobre os diferentes componentes dessa bolha e onde a coisa tá mais feia
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=v9I3TLnkwcI }}
+
 - Tudo começou com o estremecimento da bela amizade entre Jensen Huang e Sam Altman
 
 <https://www.tecmundo.com.br/mercado/410445-openai-teria-reclamado-de-chips-da-nvidia-e-poe-acordos-em-risco.htm>

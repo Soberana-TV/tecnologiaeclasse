@@ -2,6 +2,10 @@
 
 Startups prometem reviver seus parentes, e quem sabe você quando chegar a hora, como holoavatares de IA. "Não teremos mais nossa imagem e seremos felizes".
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=q5xrUOhLBo4 }}
+
 - Foi uma polêmica aquele comercial da Kombi que reviveu a Elis Regina com IA pra cantar com a filha dela, né? Vocês devem lembrar...
 
 {{#embed https://www.youtube.com/watch?v=aMl54-kqphE }}

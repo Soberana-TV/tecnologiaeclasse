@@ -2,6 +2,10 @@
 
 Como Intel, NVIDIA, AMD e seus chips se relacionam com a política externa dos EUA
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=bfI9xIyHG_E }}
+
 ### GPUs ilegais e contrabando
 
 {{#embed https://www.youtube.com/watch?v=4RxZj_NYRfg}}

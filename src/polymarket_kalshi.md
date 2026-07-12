@@ -2,6 +2,10 @@
 
 O sites que dão acesso aos ditos 'mercados de previsão' estão chamando atenção por permitirem apostas em eventos como a invasçao da Venezuela, Cuba e Irã e até mesmo a possibilidade de uma guerra nuclear. Vamos falar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=MHIFuhuIrEQ }}
+
 <https://www.404media.co/with-iran-war-kalshi-and-polymarket-bet-that-the-depravity-economy-has-no-bottom/>
 
 > A Polymarket e Kalshi pegaram o modelo da DraftKings e da FanDuel e permitiram que as pessoas apostassem em praticamente qualquer coisa. Agora, você pode apostar em quais países o Irã atacará com mísseis no mesmo aplicativo em que aposta no jogo Nuggets/Jazz ou no vencedor do Oscar de Melhor Filme. O novo modelo é tão eficaz em fazer as pessoas gastarem dinheiro que a própria DraftKings e a FanDuel estão ansiosas para entrar no mercado de previsões.

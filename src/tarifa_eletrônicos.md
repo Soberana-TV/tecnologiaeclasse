@@ -2,6 +2,10 @@
 
 Uma resolução do GECEX em Fevereiro de 2026 aumenta as tarifas de mais de 1000 produtos, muitos deles aparelhos e componentes eletrônicos, e isso causou um caos nas redes sociais. Vamos falar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=t0ys80Ms0v8 }}
+
 - Vamos dividir esse vídeo em 3 momentos:
   - A real mudança das alíquotas, ou seja, entender o que mudou e como isso irá (iria?) nos afetar
   - O motivo porque essa medida foi tomada

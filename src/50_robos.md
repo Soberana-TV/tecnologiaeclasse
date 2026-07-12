@@ -2,6 +2,10 @@
 
 Agora tem mais bots do que humanos usando a internet (no protocolo HTTP) e hoje nós vamos falar do porquê. Obviamente é culpa do capitalismo, mas tem proxy, fazendo de bots e iptv aí no meio do esquema.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=btPAvPuadXw }}
+
 - Recentemente a Cloudflare lançou um relatório que avisava: agora mais do que 50% do tráfego do protocolo HTTP é feito por robôs
 
 https://radar.cloudflare.com/traffic#bot-vs-human

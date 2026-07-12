@@ -2,6 +2,10 @@
 
 Em 2 dias vimos o Congresso empurrar a pauta da Dosimetria, e a cassação do deputado mais combativo que a esquerda tem. E depois de tudo isso a Meta nos apresenta uma surpresinha...
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=t4V_ReDEpOo }}
+
 ### O que é a "PL da Dosimetria"?
 
 <https://agenciabrasil.ebc.com.br/politica/noticia/2025-12/alcolumbre-envia-pl-da-dosimetria-para-ccj-relator-e-espiridiao-amim>

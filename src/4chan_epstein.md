@@ -2,6 +2,10 @@
 
 Por que absolutamente todo mundo no campo da tecnologia tem 1 ou 2 graus de distância do Jeffrey Epstein????
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=js1iOmzGf7k }}
+
 - Queria dizer que eu gosto muito de como tem se convencionado chamar a burguesia de "classe do Epstein" e os EUA e Israel de "regimes do Epstein"
 - E essa história aqui tá me tirando o sono:
 

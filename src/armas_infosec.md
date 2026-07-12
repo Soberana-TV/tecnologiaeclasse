@@ -2,6 +2,10 @@
 
 Que mudança poderia ser feita na rotina do profissional de segurança da informação para melhorar a sua qualidade de vida e longevidade da carreira? Se você sugeriu 'porte de armas', você está errado!
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=tgh6ge__npU }}
+
 <https://www.tecmundo.com.br/internet/409044-deputado-cria-pl-para-liberar-armas-de-fogo-a-profissionais-de-ti-e-seguranca.htm>
 
 > O deputado do Partido Liberal do Mato Grosso, Marcos Pollon, apresentou recentemente o **projeto de lei (PL) n. 6049/2025 para conceder armas de fogo aos profissionais de TI e áreas relacionadas**. No texto enviado para a Câmara dos Deputados, Pollon justifica que esses profissionais podem sofrer represálias de grupos cibercriminosos.

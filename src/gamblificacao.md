@@ -2,6 +2,10 @@
 
 Há uns 15 anos atrás a tendência era dizer: 'tudo está virando um jogo com a gamificação!' nesse ano de 2025 a nova tendência é dizer: 'tudo é um jogo de azar'... e eu não estou me sentindo com sorte.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=tjHd2ZmjnxI }}
+
 - Eu tive a ideia de falar sobre isso por causa desse romhack de pokemon emerald
 
 {{#embed https://www.youtube.com/watch?v=Ym7GcnWxnAU }}

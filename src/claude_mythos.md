@@ -2,6 +2,10 @@
 
 Segundo a Anthropic eles acabaram de criar um dos mais poderosos LLM de todos os tempos e logo o público não irá acessá-lo, por enquanto. Por que? Ele é tão bom em código e pensamento criativo que a exploração de vulnerabilidades em software
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=w7TQsWj2QrU }}
+
 <https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf>
 
 - Em resumo o Claude Mythos é a evolução do Opus, um modelo de uso geral só que é muito bom em código

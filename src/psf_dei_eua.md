@@ -2,6 +2,10 @@
 
 A Python Software Foundation teve seu projeto selecionado para um subsídio do governo dos EUA, porém os termos previam que a fundação deveria abandonar esforços de DEI e eles disseram 'não obrigado'
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=o6qGiLtTN-g }}
+
 <https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html>
 
 > Em janeiro de 2025, a PSF submeteu uma proposta à Fundação Nacional de Ciência (NSF) do governo dos EUA, no âmbito do programa Segurança, Proteção e Privacidade de Ecossistemas de Código Aberto, para abordar vulnerabilidades estruturais no Python e no PyPI.

@@ -2,6 +2,10 @@
 
 A repressão na ditadura estadunidense cada vez mais se volta aos seus próprios cidadãos e nas últimas semanas os assassinatos de Renée Good e Alex Pretti chamaram muita atenção na mídia. Vamos comentar sobre o papel da tecnologia nisso.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=Furq2hgJT3w }}
+
 - Nós já falamos algumas vezes no canal sobre a ICE
 
 {{#embed https://www.youtube.com/watch?v=DrFZ4ckWg0k }}

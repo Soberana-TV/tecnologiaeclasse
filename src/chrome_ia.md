@@ -2,6 +2,10 @@
 
 Hoje é dia de falar de algumas coisas que o Google tem preparado pra gente e vocês podem ter certeza que vamos falar mal do nosso chefinho. 4GB de IA local sem te perguntar, novo recaptcha que precisa do Google Services e a solução pro “sideload” no Android.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=sohtOLZ9xiY }}
+
 - Vamos começar falando sobre a maior canalhice de todas que é baixar um modelo de IA pra dentro do seu computador sem tem perguntar:
 
 [https://diolinux.com.br/noticias/chrome-ia-de-4-gb-no-computador.html](https://diolinux.com.br/noticias/chrome-ia-de-4-gb-no-computador.html (preview))

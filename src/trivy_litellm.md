@@ -2,6 +2,10 @@
 
 Um dos pacotes mais usados para rodar LLMs foi comprometido. Não dá gurizada, agora é um hack de grande repercussão a cada semana e dessa vez eu quase rodei.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=BLCY2P_LH5E }}
+
 - No dia 24/03/26 o projeto litellm, que é um adaptador para facilitar o uso de diferentes provedores de LLM a projetos python foi comprometida e lançou duas versões batizadas a **1\.82.7** (instala o malware quando a lib é importada) e a **1\.82.8** (instala o malware quando qualquer processo python roda!)
 
 - Coincidentemente nesse mesmo dia eu estava lançando um vídeo em que eu falava do projeto por nome e por muita sorte essa linha de código aqui no `pyproject.toml` nos salvou

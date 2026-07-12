@@ -2,6 +2,10 @@
 
 A Palantir lançou na sua conta oficial do X (é claro) um manifesto ideológico, e cheio de contradições, que mais parece a carta de um atirador em massa minutos antes do ato. Vamos conversar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=pxJUBKD1uBU }}
+
 - A Palantir é uma empresa de análise de dados para aplicações logísticas e militares. Eles usam estatística e “IA” para, por exemplo, definir alvos militares em um conflito
 
 - Por exemplo eles seriam responsáveis pelo sistemas Maven que, propositalmente ou por acidente, foi responsável pelo bombardeio da escola de menina no Irã e a morte de 170 inocentes

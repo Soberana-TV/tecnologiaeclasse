@@ -2,6 +2,10 @@
 
 Bem vindos ao canal TeClas onde estamos sempre de olho nas novas tendências do mercado de IA! Vamos juntos entender onde os bilionários estão jogando todo dinheiro deles.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=h1nuSNUd6j4 }}
+
 - Num mercado tão competitivo como o de IA o "jogo da inovação" é medido no número de funcionários contradados, patentes adquiridas e companhias compradas.
 
 <https://economictimes.indiatimes.com/tech/technology/big-techs-ai-shopping-spree-in-2025-who-bought-what/articleshow/126274578.cms>

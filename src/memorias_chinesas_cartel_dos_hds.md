@@ -2,6 +2,10 @@
 
 https://arstechnica.com/tech-policy/2026/05/marketer-that-claimed-it-could-tap-devices-for-ad-targeting-will-pay-880k-settlement
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=aZcDP2lgMrM }}
+
 - Lembram desse vídeo aqui? 
 
 {{#embed https://www.youtube.com/watch?v=7yiohSMwfZQ }}

@@ -2,6 +2,10 @@
 
 A segurança de um produto e o modelo de negócios das empresas nem sempre estão alinhados e essa relação é sempre muito difícil de aparecer na planilha semestral de lucros e investimentos. Hoje quero trazer um apanhado de notícias onde a segurança falhou, como por exemplo no museu do Louvre, e conectar com o mercado de trabalho e capitalismo em geral.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=RHzxsImFwj0 }}
+
 **Projeto  F-Droid, que distribui software open-source para Android, ameaça  encerramento caso Google implemente registro obrigatório de  desenvolvedores para instalação de aplicativos:** segundo Marc  Prud’hommeaux, membro do conselho do F-Droid, a mudança violaria a  política de não exigir cadastro dos usuários da plataforma e reforçaria o  controle sobre o ecossistema de software livre. Além disso, ele defende  que a plataforma é mais segura que a Play Store, visto que os  aplicativos são de código aberto e podem ser auditados publicamente. O  F-Droid busca apoio de reguladores e incentiva pressão política contra a  medida do Google, que entrará em vigor em setembro de 2026. As  informações são do site The Register.
 
 <https://f-droid.org/2025/09/29/google-developer-registration-decree.html>

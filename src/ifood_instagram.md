@@ -2,6 +2,10 @@
 
 Hoje vamos trazer algumas notícias de falhas de segurança e vazamentos. Houve um vazamento de 1.2 milhão de contas do ifood com o potencial de ser muito maior e também o bot de suporte do Instagram ajudando a invadir contas. BONUS: injeção de prompt da busca do Google
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=cHsDjAo3g9s }}
+
 ### Vazamento do ifood
 
 - O ifood confirmou o vazamento dos dados de 1.2 milhões de usuários da plataforma. Já os atores maliciosos indicam que o número está entre 4 e 43 milhões.

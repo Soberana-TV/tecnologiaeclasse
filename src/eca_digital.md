@@ -2,6 +2,10 @@
 
 A nova lei do ECA Digital entra em vigor 17/03/2026 e é impossível não sentir que ela vai no caminho errado em diversos pontos como por exemplo a inclusão de 'sistemas operacionais' no texto da lei. Vamos conversar
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=-g06texaASk }}
+
 - Eu queria abrir o vídeo falando sobre o grande problema de regulamentar isso na questão da identidade e idade das pessoas.
   - Em resumo é uma limitação da nossa privacidade como cidadão ao invés de uma restrição da atuação das "plataformas digitais"
 

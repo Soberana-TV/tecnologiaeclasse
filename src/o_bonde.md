@@ -2,6 +2,10 @@
 
 Dia 15/01/25 foi anunciado oficialmente o projeto 'O Bonde' com vários nomes pesados da 'bolha dev' chamando para construir o projeto. O que será que eu achei?
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=kCve7vA2qbI }}
+
 <https://obonde.linuxtips.io/>
 
 - O projeto está propondo a construção coletiva e como software livre de uma rede social brasileira. Com o foco em soberania digital e alguns princípios norteadores. Ele também será feito num modelo a permitir que pessoas acompanhem o projeto para aprender o trabalho de desenvolvimento de software.

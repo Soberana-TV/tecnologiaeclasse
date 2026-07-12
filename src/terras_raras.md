@@ -2,6 +2,10 @@
 
 Nos últimos meses a tema ‘Terras Raras’ tem estado na boca do povo, principalmente com o conflito EUA e China como pano de fundo. Só que o Brasil é o segundo território em quantidade desses elementos e os EUA já está botando a mão na gente. Vamos falar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=s6lJFbo1wVM }}
+
 - ‘Terras Raras’ são 17 elementos químicos (são metais, não são terras) que geralmente a gente não chega quando estuda a tabela periódica. É o grupo dos Lantanídeos mais o Escândio e o Ítrio.
 - Eles tem propriedades interessantíssimas e únicas e são necessários para tudo que é tecnologia de ponta. Por exemplo o Neodímio serve para fazer imãs “super potentes” que por sua vez são usados para fazer motores de precisão como por exemplo os de HDs ou para fazer fones e microfones.
 

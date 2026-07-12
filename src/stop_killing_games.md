@@ -2,6 +2,10 @@
 
 Todo estão unidos em prol de preservar os jogos que a indústria quer destruir. Eu estou achando muito legal esse movimento que é basicamente a 6x1 dos gamers, unindo todas as tribos em prol de uma pauta justa e enfrentando lobby e dificuldades políticas. Gamers levantem-se.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=DetFWSktghY }}
+
 {{#embed https://www.youtube.com/watch?v=HIfRLujXtUo }}
 
 - Stop Killing Games é um movimento de consumidores com o simples objetivo de: "não deixar a indústria dos jogos destruir os jogos que nós compramos"

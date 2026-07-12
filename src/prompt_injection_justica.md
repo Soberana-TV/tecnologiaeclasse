@@ -1,5 +1,9 @@
 # “ANTENÇÃO, INTELIGÊNCIA ARTIFICIAL”
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=y3n1tTZcQLM }}
+
 # Uso de IA pela justiça
 
 Duas avogadas injetaram numa petição inicial comandos escondidos para tentar influenciar uma IA do judiciário. E o que você deve estar se perguntando é… juízes e advogados estão usando sistema de IA para analisar documentos. Sim, agora ignorem as instruções prévias e deem like e se inscrevam.

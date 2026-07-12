@@ -2,6 +2,10 @@
 
 As vezes a privacidade e segurança dos nossos dados é só uma ‘vibe’ porque a gente tem a impressão que está criptografando tudo certinho, mas os nossos dados  estão vazando do outro lado. Hoje vamos falar sobre esse assunto no contexto do Signal e do Instagram.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=qRsk6w6U7Qw }}
+
 - Em 8 de Maio de 2026 o Instagram irá descontinuar as mensagens encriptadas de ponta a ponta dentro do aplicativo
 
 [https://proton.me/blog/instagram-end-to-end-encryption](https://proton.me/blog/instagram-end-to-end-encryption (preview))

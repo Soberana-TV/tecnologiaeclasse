@@ -2,6 +2,10 @@
 
 Estamos andando rapidamente em direção a um futuro sem acesso a computadores 'pessoais' e onde todo nosso processamento será alugado de data centers?
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=Q_LHcTMup-0 }}
+
 - Um tema recorrente no canal tem sido a bolha da IA e como a economia dos EUA basicamente se converteu numa máquina de produzir datacenters e placas da NVIDIA
 - É como se a economia inteira fosse um jogo de Cookie Clicker só que a gente clica numa GPU gigante pra gerar mais inferência e treinar mais modelos.
   * Alguém devia fazer um vídeo sobre isso...

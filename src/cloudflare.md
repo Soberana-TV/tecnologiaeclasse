@@ -2,6 +2,10 @@
 
 A Cloudflare caiu de novo, manter a internet de pé é complicado. Nós já falamos disso algumas vezes no canal. Porém hoje eu trouxe alguns memes pra gente reagir.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=GZKrloFzP7M }}
+
 > O incidente começou por volta das 11h48 UTC do dia 18 de novembro, com o site oficial da Cloudflare reconhecendo uma “degradação interna do serviço”. À medida que o problema se espalhava, usuários em diversas regiões relataram falhas de acesso não apenas a sites da Cloudflare, mas também aos seus serviços Access e WARP. Posteriormente, a empresa identificou uma dependência específica em suas ferramentas de defesa contra bots como a origem do problema.
 >
 > “Falhamos com nossos clientes e com a internet em geral”, escreveu Knecht. “Um bug latente em um serviço que sustenta nossa capacidade de mitigação de bots começou a apresentar falhas após uma alteração de configuração de rotina. Isso causou uma ampla degradação em nossa rede e em outros serviços. Não se tratava de um ataque.”

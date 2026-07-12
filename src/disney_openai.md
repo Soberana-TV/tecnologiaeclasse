@@ -2,6 +2,10 @@
 
 A Disney é uma das empresas mais belicosas quando o assunto é proteger a sua propriedade intelectual, mas isso pode estar mudando e é por causa da IA generativa uhuuuul...
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=8Qpeu6KFN-s }}
+
 <https://openai.com/index/disney-sora-agreement/>
 
 > A Walt Disney Company e a OpenAI chegaram a um acordo para que a Disney se torne a primeira grande parceira de licenciamento de conteúdo da Sora, a plataforma de vídeos generativos de IA de formato curto da OpenAI, unindo essas duas líderes em criatividade e inovação para desbloquear novas possibilidades na narrativa imaginativa.

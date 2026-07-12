@@ -2,6 +2,10 @@
 
 Hoje eu vou trazer algumas notícias de Big Techs fazendo big tequisses. Desde o Google dedurando seus SMS, Microsoft e EUA sancionando o Tribunal Criminal Internacional até a Apple taxando nosso Pix.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=105L2RwVRn4 }}
+
 ### Google lendo seus SMS
 
 - Atualização do Google que permite o compartilhamento de suas mensagens SMS em celulares da empresa

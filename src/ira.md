@@ -2,6 +2,10 @@
 
 Hoje, vamos falar sobre a invasão do Irã, um conflito que, acreditem, vai muito além das manchetes de guerra, e que nos interessa especialmente no tema da tecnologia
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=dDOgaZow2HE }}
+
 - O que estamos testemunhando é o nascimento de um momento inédito, onde a infraestrutura digital e as cadeias de suprimentos globais se tornaram as principais armas e, paradoxalmente, as primeiras vítimas.
 
 - Neste vídeo a ideia é explorar como a disputa por recursos como hélio, gás e chips está desenhando um cenário de destruição sistêmica que atinge desde as linhas de montagem de gigantes como a TSMC até o poder de compra da classe trabalhadora global. Já comentei brevemente sobre isso em outro vídeo do canal que saiu na semana passada, mas aqui eu queria destrinchar um pouquinho mais.

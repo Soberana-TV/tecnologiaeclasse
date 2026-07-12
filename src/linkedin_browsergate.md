@@ -2,6 +2,10 @@
 
 O Linkedin está sendo alvo de uma ação coletiva na União Europeia com relação ao monitoramento de extensões nos navegadores de seus usuários. O grupo Fairlinked lançou a campanha ‘browsergate’
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=xyMjQ4wHJGk }}
+
 [https://browsergate.eu/](https://browsergate.eu/ (preview))
 
 [https://www.tudocelular.com/seguranca/noticias/n251726/linkedin-processos-escaneamento-extensoes-chrome.html](https://www.tudocelular.com/seguranca/noticias/n251726/linkedin-processos-escaneamento-extensoes-chrome.html (preview))

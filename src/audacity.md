@@ -2,6 +2,10 @@
 
 Audacity é um dos software livres mais famosos, amado por profissionais e amadores. É provável que você já tenha usado para editar algum áudio, remover ruído e etc... Hoje eu quero falar sobre o futuro do Audacity, "tretas" e como a comunidade do software livre lida com elas.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=d3DlDG1ZTLg }}
+
 {{#embed https://www.youtube.com/watch?v=QYM3TWf_G38 }}
 
 #### Um histórico das controvérsias

@@ -2,6 +2,10 @@
 
 Já aconteceu com vocês de aplicarem pra uma vaga e nunca ouvir de volta? Ou até fazer a entrevista e o negócio dar continuidade, mas depois te avisarem que o “o vaga não está mais disponível”? Vamos falar sobre o esquema das “vagas fantasmas”
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=KJoQohL5v9w }}
+
 - “Vagas Fantasmas” (ou ghost jobs) é um fenômeno que nos interessa especialmente porque revela as bizarrices do mercado de trabalho na era digital.
 
 - O que estamos vendo é o nascimento de um momento bastante frustrante, onde os anúncios de emprego se tornaram ferramentas de marketing e de coleta de dados, onde empresas autênticas publicam oportunidades de trabalho sem qualquer intenção imediata de contratar.

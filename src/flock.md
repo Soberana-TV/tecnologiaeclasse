@@ -2,6 +2,10 @@
 
 Hoje vamos falar sobre como câmeras de 'vigilância integrada' estão inaugurando nos EUA a era da vigilância e terror de estado 'distribuído'
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=lXKTjptvb9g }}
+
 - Este é um vídeo sobre a startup 'Flock' que nos EUA vende um sistema de câmeras de vigilância 'integrada' conectadas em nuvem
 - Mas, queria dizer que nós já fizemos um vídeo aqui no canal sobre uma empresa chamada Gabriel e a maioria das coisas que se aplicam a esse caso podem ser transpostas aqui pro Brasil, com exceção das vulnerabilidades de segurança\*
 

@@ -2,6 +2,10 @@
 
 Um aparente erro simples de resolução de DNS causou (novamente) uma indisponibilidade global dos serrviços da AWS e potencialmente bilhões de dólares em prejuízo.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=TPPICIhW0gQ }}
+
 <https://edition.cnn.com/business/live-news/amazon-tech-outage-10-20-25-intl>
 
 > "O incidente destaca a complexidade e a fragilidade da internet, bem como o quanto cada aspecto do nosso trabalho depende dela para funcionar", disse Daoudi em um comunicado à CNN. "O impacto financeiro dessa interrupção chegará facilmente a centenas de bilhões de dólares, devido à perda de produtividade de milhões de trabalhadores que não conseguem realizar suas tarefas, além de operações comerciais interrompidas ou atrasadas — de companhias aéreas a fábricas."

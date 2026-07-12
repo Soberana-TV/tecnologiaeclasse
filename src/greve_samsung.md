@@ -2,6 +2,10 @@
 
 Um apanhado de notícias de tecnologia das últimas semanas. O esquema aqui é fazer conexões com o nosso sistema econômico e entender tudo com uma visão da classe trabalhadora. 
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=V27IZben22k }}
+
 Funcionários da Meta nos EUA iniciam protesto contra software que rastreia atividade nos seus computadores corporativos: panfletos distribuídos em vários escritórios incentivaram a equipe a assinar uma petição online contra a instalação da tecnologia. O material apareceu em salas de reunião, máquinas de venda automática e até mesmo no banheiro. A Meta defende o software dizendo que seus modelos precisam ser treinados em exemplos reais de uso, incluindo movimentos do mouse. As informações são da Reuters.
 
 [https://www.reuters.com/sustainability/society-equity/meta-us-employees-organize-protest-against-mouse-tracking-tech-2026-05-12/](https://www.reuters.com/sustainability/society-equity/meta-us-employees-organize-protest-against-mouse-tracking-tech-2026-05-12/ (preview))

@@ -2,6 +2,10 @@
 
 Em algum momento do ano passado eu comecei a levar mais a sério a jornada de hospedar "um monte de bagulho" aqui na minha casa. Esse vídeo é pra dividir essa experiência com vocês e mandar algumas ideias.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=wxl4K_L9qLQ }}
+
 - Primeiro eu já queria deixar bem claro que esse vídeo é um tutorial mais motivacional, não exaustivo de como fazer "o homelab perfeito"
   - Eu vou jogar um monte de papo fora, se isso te irrita, por favor saia do vídeo
 - Seria muito bom entender um pouco (um monte na realidade) de GNU/Linux, protocolos de rede, hardware, segurança e yadda yadda

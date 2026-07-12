@@ -2,6 +2,10 @@
 
 Muitas vezes ficamos tentados a antropomorfizar modelos de IA generativa e ver neles comportamentos e padrões humanos onde não existem. Hoje vamos falar de 2 casos onde esse tipo de coisa acontece.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=nQ_MTFpYDTQ }}
+
 ![image.png](./ia_marxista_imagens_estranhas/image.png)
 
 ### IA vira marxista

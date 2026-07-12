@@ -2,6 +2,10 @@
 
 Este vídeo é secretamente sobre a bolha da IA novamente. OpenAI muda modelo de empresa, investidor que previu crise de 2008 está investindo contra IA, navegadores de IA e Sam Altman pedindo arrego pro governo.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=juoiRHWeU6g }}
+
 **OpenAI conclui transição para empresa com fins lucrativos:** a mudança facilita a captação de recursos e a geração de lucro  com as tecnologias da companhia, embora o controle técnico continue sob  a entidade original sem fins lucrativos. Esta, por sua vez, passará a  se chamar OpenAI Foundation e destinará 25  bilhões de dólares a projetos de saúde, cura de doenças e mitigação de  riscos de segurança cibernética relacionados à IA. A OpenAI  também firmou um novo acordo com a Microsoft, que passa a deter cerca  de 27% de participação da nova corporação. As informações são do site  The Guardian.
 
 <https://www.cnbc.com/2025/10/28/open-ai-for-profit-microsoft.html>

@@ -2,6 +2,10 @@
 
 Usuários de redes sociais estão mudando suas fotos de perfil para o Clippy e foi o canal TeClas que lançou a tendência (mentira).
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=fF4HeVkXBM8 }}
+
 ##### Vocês sabiam que o canal TeClas lançou tendencia?
 
 ![assitentedecomunismo.png](./clippys/clippy.png)

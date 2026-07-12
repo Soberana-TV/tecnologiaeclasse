@@ -2,6 +2,10 @@
 
 Hoje nós vamos revelar um esquema pesado. Como o discurso de soberania digital do governo do PT pode ser instrumentalizado contra nós e abrir a porta para as Big Techs fazerem a festa.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=I199AmrsfQY }}
+
 ### Quem é a Palantir?
 
 {{#embed https://youtube.com/watch?v=AYH8Ia_H6kg }}

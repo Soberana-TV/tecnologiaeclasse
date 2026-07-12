@@ -2,6 +2,10 @@
 
 É 2026 e parece que o Linux como uma plataforma de jogos já está completamente estabelecido, eu queria tirar esse vídeo pra tentar conversar um pouco sobre como isso acontece e ensinar pra vocês sobre as diferenças dos sistemas operacionais
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=72Wce1LkzFs }}
+
 - Isso aqui me quebrou um pouco hehehe:
 
 {{#embed https://www.youtube.com/watch?v=etBhMqt4Y1g }}

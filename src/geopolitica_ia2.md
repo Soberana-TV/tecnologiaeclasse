@@ -2,6 +2,10 @@
 
 Nesta palestra para os alunos do IFRS Canoas nós damos uma atualização sobre como anda a corrida pela IA entre EUA e China no segundo semestre de 2025.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=N0dCfhOMxcI }}
+
 ### O que é um computador?
 
 - Eu gosto de pensar numa calculadora glorificada e muito rápida

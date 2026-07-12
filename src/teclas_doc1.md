@@ -2,6 +2,10 @@
 
 Neste primeiro episódio de TECLAS.DOC nós vamos explorar a história da coleção dos nossos dados e erosão do consentimento pelas big techs. Vamos entender como a etapa da web 2.0, armazenamento barato e "coleta de dados para melhorar os serviços" originou a era das IAs generativas.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=5WlyZjo2lKw }}
+
 por **bianaaf**
 
 Leia também o artigo complementar em: <https://bianaaf.medium.com/voc%C3%AA-est%C3%A1-atrapalhando-o-desenvolvimento-tecnol%C3%B3gico-e-talvez-j%C3%A1-n%C3%A3o-possa-permanecer-como-%C3%A9-0688a02dc674>

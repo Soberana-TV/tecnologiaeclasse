@@ -3,6 +3,10 @@
 
 Hoje eu quero trazer uma mescla de notícias sobre recaptcha e certificados digitais e como precisamos deles para nossa privacidade e segurança. A partir daí quero ter uma discussão sobre como esses assuntos tem a ver com confiança e centralização de poder
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=xO8JATewIQs }}
+
 ### Google e os captchas
 
 <https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users>

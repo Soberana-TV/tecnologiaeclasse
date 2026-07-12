@@ -2,6 +2,10 @@
 
 Grupos hacker desenvolveram um método para derrotar o infame sistema antipirataria Denuvo "definitivamente". Tecnicamente é lindo, mas tem que ter coragem pra rodar... Vamos falar sobre!
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=6hu-l0pKmZw }}
+
 - Denuvo é um sistema antipirataria ("antitamper" ou DRM) infame entre os gamers, não apenas por dificultar o acesso a versões alternativas dos jogos, mas também por fazê-lo de uma maneira extremamente invasiva e que muitas vezes introduz problemas de performance
 
 <https://en.wikipedia.org/wiki/Denuvo>

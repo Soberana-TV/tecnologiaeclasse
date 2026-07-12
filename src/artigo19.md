@@ -1,5 +1,9 @@
 # O voto pela inconstitucionalidade do Artigo 19 do Marco Civil
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=xi3MLUMr9sA }}
+
 #### Qual é a questão?
 
 De: <https://lupa.uol.com.br/jornalismo/2024/12/05/mudar-o-marco-civil-da-internet-resolve-a-desinformacao-no-brasil-o-que-dizem-especialistas>

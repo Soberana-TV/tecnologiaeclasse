@@ -2,6 +2,10 @@
 
 A Oracle demitiu mundialmente 30 mil trabalhadores na expectativa de economizar 8-10 bilhões anuais para investir em data centers. Esses empregos foram automatizados por IA? É um pouco mais complicado
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=Hxom7FC2uDE }}
+
 - No dia 31/03/26, 30 mil pessoas são aproximadamente 18% de toda força de trabalho da Oracle (aprox. 160k pessoas) e 12 mil foram na Índia (o que representou 40% da Oracle no país)
 
 - No estilo já popular das demissões em massa foi um email de madrugada, direto e reto e o acesso cortado às plataformas da empresa.

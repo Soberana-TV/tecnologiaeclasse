@@ -2,6 +2,10 @@
 
 A pior pessoa que eu conheço fez uma explicação excelente. Hoje vamos falar sobre a crítica de Alex Karp da Palantir aos laboratórios de IA e o que devemos tirar dela.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=II-fbf056xg }}
+
 - Esse vídeo é uma reflexão baseada nessos outros 2 vídeos:
 
 {{#embed https://www.youtube.com/watch?v=OQMPhkmeru0}}

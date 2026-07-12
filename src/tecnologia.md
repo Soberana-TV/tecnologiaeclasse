@@ -2,6 +2,10 @@
 
 A propaganda das câmeras Ring no Superbowl ofereceu uma baita troca: "encontramos seu cachorro em troca da captação de imagens de todo mundo o tempo todo" e eu quero falar sobre essa tecnologia explicitamente hostil que nos rodeia.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=ltkhRQ_BVOQ }}
+
 {{#embed https://www.youtube.com/watch?v=ZdTeIeyN5Bk }}
 
 - Quem não quer encontrar um cachorro?

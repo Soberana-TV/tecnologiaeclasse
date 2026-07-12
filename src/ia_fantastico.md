@@ -2,6 +2,10 @@
 
 O Fantátisco, o almanaque de notícias dominicais da globo
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=Uaun5t640SI }}
+
 <https://g1.globo.com/fantastico/video/mentes-digitais-cantora-e-surpreendida-por-lancamento-de-disco-que-nunca-gravou-14103276.ghtml>
 
 - "... e como resolver as TRETAS JURÍDICAS que estão aparecendo."

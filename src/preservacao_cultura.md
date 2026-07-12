@@ -2,6 +2,10 @@
 
 O grande inimigo da preservação digital é o capitalismo. Se nós tivermos acesso livre à cultura do presente e do passado fica mais difícil de aceitar o trabalho medíocre e mercadológico do futuro.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=mbmE3dDIEBU }}
+
 ## O Arquivo da Internet ainda está sob ataque
 
 **Batalha judicial entre Internet Archive e gravadoras termina em acordo:**  a disputa envolvia o Great 78 Project, que busca preservar 3 milhões de  gravações musicais antigas registradas em frágeis discos de goma-laca, a  fim de auxiliar historiadores na documentação da história fonográfica.  Gravadoras como UMG Recordings, Capitol Records e Sony Music  Entertainment alegaram perdas de até 700 milhões de dólares com o  projeto. Os termos do acordo ainda não foram divulgados. Também é  improvável que o valor final seja tornado público. As informações são do  site Ars Technica.

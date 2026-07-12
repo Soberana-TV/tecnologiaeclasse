@@ -2,6 +2,10 @@
 
 Um espectro fofo ronda as redes sociais, o espectro dos 'girly cyberdecks'. Vamos falar sobre essa nova moda, porque é tão legal e sobre as suas implicações políticas.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=YSJjL3iizDE }}
+
 <https://www.tiktok.com/@amora.davis/video/7623984642927906061>
 
 <https://www.tiktok.com/@ubeboobey/video/7615279833450368278>

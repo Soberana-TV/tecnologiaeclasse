@@ -2,6 +2,10 @@
 
 No vídeo de hoje vamos fazer uma apresentação e tutorial do Nextcloud e eu vou demonstrar como eu estou rodando um dentro do meu homelab para gerenciar os meus dados pessoais.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=3jPbUhi-5io }}
+
 ### O que é o Nextcloud?
 
 [https://nextcloud.com/](https://nextcloud.com/ (preview))

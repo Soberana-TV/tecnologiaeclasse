@@ -2,6 +2,10 @@
 
 "Olá, sou eu senhor Mark Mc Big Tech! Você pediu mais IA integrada em todas as ferramentas que usa no seu dia a dia? Não? Que pena, pense no valor das nossas ações! "
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=izf22LevsvY }}
+
 <https://www.wheresyoured.at/the-haters-gui/>
 
 **Microsoft vai forçar instalação do Microsoft 365 Copilot no Windows em outubro:**  o aplicativo integra o assistente aos programas do Office, incluindo  Word, Excel e PowerPoint. O software será adicionado ao Menu Iniciar e  ativado por padrão. Administradores de TI em organizações poderão  bloquear a instalação pelo Centro de Administração do Microsoft 365  Apps. O procedimento será realizado em dispositivos que possuam os apps  de desktop do Microsoft 365. As informações são do site  BleepingComputer.

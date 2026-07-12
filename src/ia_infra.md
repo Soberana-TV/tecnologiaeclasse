@@ -2,6 +2,10 @@
 
 Você é um contador escrevendo relatórios financeiros de empresa de IA? Você pode usar este um simples truque - que eles não querem que você saiba - para maquiar os seus custos com data centers. Bem vindo à bolha de infra da IA.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=6gp8jEncUF4 }}
+
 Sasha Yanshim obrigatório para começar o vídeo
 
 {{#embed https://www.youtube.com/watch?v=pY8EpkR3PmM }}

@@ -2,6 +2,10 @@
 
 No dia 19/06/26 a polícia civil prendeu um agricultor na cidade de São Gabriel da Palha/ES com base numa denúncia feita pela OpenAI. Ele estava planejando o assassinato do seu filho de 8 anos em conjunto com o chatbot. Vamos falar sobre.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=4cIRQ5O0ZJE }}
+
 - Um agricultor de 36 anos de idade (nome não revelado) na cidade de São Gabriel da Palha no Espírito Santo foi preso preventivamente baseado em mensagens que trocou com o ChatGPT indicando o planejamento do assassinato do seu filho de 8 anos
 - Um sistema interno da OpenAI detectou as mensagens que foram compartilhadas com o FBI, depois para o Laboratório de Operações Cibernéticas do Ministério da Justiça e Segurança Pública e depois para a polícia civil do ES
 - A denúncia chegou a polícia civil em 16/06 e a prisão preventiva foi realizada no dia 19/06. A polícia relata que o crime ocorreria no dia 20/06

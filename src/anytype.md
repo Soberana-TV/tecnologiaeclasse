@@ -2,6 +2,10 @@
 
 Hoje eu quero fazer uma introdução a um dos meus softwares favoritos que se chama Anytype. Ele é um app de notas que engloba características de organização, descentralização, com low code e privacidade.
 
+*Veja no canal:*
+
+{{#embed  https://www.youtube.com/watch?v=wLAfoC8f3bE }}
+
 ### O que é o Anytype
 
 > Anytype is an **encrypted, local-first alternative** to the cloud-based Internet.
