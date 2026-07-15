@@ -31,6 +31,8 @@ Hoje vamos apresentar o conceito de gerenciador de senhas, por que uma dessas fe
 
 [https://keepassxc.org/](https://keepassxc.org/ (preview))
 
+- O Keepass de Android tem algumas versões. Eu recomendo o KeepassDX <https://f-droid.org/en/packages/com.kunzisoft.keepass.libre/>
+
 - Funcionalidades simples:
   - Criar novo banco de senhas
   - Criar e gerar uma nova senha
@@ -55,6 +57,11 @@ Hoje vamos apresentar o conceito de gerenciador de senhas, por que uma dessas fe
   - Um código que você guarda e que gera uma senha única a cada 30 segundos, e por isso é usado juntamente com um software ‘autenticador’ que gera essas senhas
   - O KeepassXC, o Bitwarden e outros podem adicionar o código diretamente no registro de cada serviço
   - É muito útil, porém eu prefiro ter o smartphone como o gerador dessas senhas pra realmente ter 2 fatores diferentes de autenticação
+
+- Dicas de 2FA abertos:
+  - Ente Auth
+  - Aegis Auth
+  - Tokn Auth (é um que estou testando)
 
 - Para reiterar novamente:
   - Se você não estava familiarizado com esse conceito, vá devagar e pense em migrar aos poucos
