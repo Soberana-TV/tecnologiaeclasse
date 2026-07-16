@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Ataque ao AUR, o retorno de Nightmare Eclipse e mais](aur_nightmare_eclipse.md)
 - [Modelos de IA abertos na cola dos proprietários](corrida_ia.md)
 - [Introdução a gerenciadores de senha](gerenciadores_de_senha.md)
 - [50% da internet são robôs](50_robos.md)
