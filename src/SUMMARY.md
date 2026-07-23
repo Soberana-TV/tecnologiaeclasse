@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Kimi K3 torando tudo](kimi_k3.md)
 - [Programador como MEI, Kim e Lula](programador_mei.md)
 - [Ataque ao AUR, o retorno de Nightmare Eclipse e mais](aur_nightmare_eclipse.md)
 - [Modelos de IA abertos na cola dos proprietários](corrida_ia.md)
