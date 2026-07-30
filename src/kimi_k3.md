@@ -2,6 +2,9 @@
 
 No dia 17/07/26 a Moonshot AI lançou a nova versão dos seus modelos de pesos abertos ‘Kimi’. O Kimi K3 já chegou abalando nos benchmarks encostadinho nos últimos modelos da OpenAI e Anthropic e é claro que isso estremece a bolha.
 
+**Assista no canal:**
+{{#embed https://www.youtube.com/watch?v=5990BZ_UKR4 }}
+
 [https://www.poder360.com.br/poder-china/moonshot-ai-lanca-kimi-k3-maior-modelo-de-ia-da-china/](https://www.poder360.com.br/poder-china/moonshot-ai-lanca-kimi-k3-maior-modelo-de-ia-da-china/ (preview))
 
 - O modelo foi bem em diversos benchmarks, principalmente nos que mais importam para o momento que a gente está agora que são programação e tarefas de agente:

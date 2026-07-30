@@ -2,6 +2,9 @@
 
 Muita gente me pediu para falar sobre o ‘projeto do Kim Kataguiri que permite programador ser MEI’ e o que eu acho sobre isso. Eu não tinha achado nada demais, mas na realidade tem uma discussão interessante aí, então vamos lá.
 
+**Assista no canal:**
+{{#embed https://youtube.com/watch?v=4YDSTpB3Ifw}}
+
 [https://www.camara.leg.br/noticias/1286691-comissao-aprova-inclusao-de-programadores-e-desenvolvedores-de-software-no-mei/](https://www.camara.leg.br/noticias/1286691-comissao-aprova-inclusao-de-programadores-e-desenvolvedores-de-software-no-mei (preview))
 
 > A Comissão de Indústria, Comércio e Serviços da Câmara dos Deputados aprovou o Projeto de Lei Complementar (PLP) 25/26, que permite o enquadramento das atividades de programação e desenvolvimento de software no regime do Microempreendedor Individual (MEI).

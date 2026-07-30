@@ -2,6 +2,10 @@
 
 Houve uma invasão e vazamento de dados da plataforma de criação de músicas com IA generativa Suno e o que descobrimos é … o que já sabíamos, eles treinaram seu modelo com as músicas e letras de todo mundo
 
+**Assista no canal:**
+
+{{#embed https://www.youtube.com/watch?v=CpgDCTGaSW0 }}
+
 - Vamos começar hoje falando de ‘El Estepario Siberiano’:
 
 {{#embed https://www.youtube.com/watch?v=nsekqm6eaD8 }}
