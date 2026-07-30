@@ -8,7 +8,7 @@ Houve uma invasão e vazamento de dados da plataforma de criação de músicas c
 
 - Pra quem não conhece ele, recomendo muito essa entrevista que ele fez com o Eloy Casagrande:
 
-{{#embed https://www.youtube.com/watch?v=dBqi68PSx-I]
+{{#embed https://www.youtube.com/watch?v=dBqi68PSx-I }}
 
 - Mas no vídeo original de El Estepario ele descreve todos os vídeos do seu canal que foram usados para treinar modelos de vídeo (inclusive mostra vídeos que claramente evocam os dele) e quanto isso custou pra ele produzir
 
