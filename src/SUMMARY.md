@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Como devs usam IA "de graça"](vingaca_devs.md)
 - [SUNO hackeada](suno_hack.md)
 - [Kimi K3 torando tudo](kimi_k3.md)
 - [Programador como MEI, Kim e Lula](programador_mei.md)
