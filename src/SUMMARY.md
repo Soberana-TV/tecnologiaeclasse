@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O hack das carteiras BTC “Coldcard”](coldcard.md)
 - [O que Peter Thiel quer na Argentina?](peter_thiel_argentina.md)
 - [Por que Anthropic está destruindo livros](anthropic_livros.md)
 - [Como devs usam IA "de graça"](vingaca_devs.md)
