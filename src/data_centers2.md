@@ -2,6 +2,10 @@
 
 Não podemos deixar os apelos pelo “progresso” justificarem todo tipo de mal negócio para o nosso país. Sim, vamos falar de novo de data centers.
 
+**Assista no canal:**
+
+{{#embed https://youtube.com/watch?v=pa9996Gw4Wg}}
+
 - Construção de data centers. Esse é um tópico importante aqui no canal que eu sempre me incomodo quando eu trago à tona:
 
 {{#embed https://www.youtube.com/watch?v=ZMNbl_bdajo }}

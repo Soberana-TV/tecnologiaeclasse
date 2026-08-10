@@ -2,6 +2,10 @@
 
 O bilionário Peter Thiel, como muitos outros, tem a prática de “colecionar países” com legislações favoráveis a seus negócios. Agora ele resolveu adotar a Argentina como o sua nova pátria e vamos falar sobre.
 
+**Assista no canal:**
+{{#embed https://www.youtube.com/watch?v=nKuADFXtVp8}}
+
+
 ![image (2).png](./peter_thiel_argentina/thiel_musk.png)
 
 - Mas quem é Peter Thiel?

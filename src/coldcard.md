@@ -2,6 +2,9 @@
 
 Semana passada nós vimos uma ‘invasão’ das carteiras bitcoin Coldcard e isso aconteceu de uma maneira extremamente ‘divertida’ … por que eu não perdi nenhum dinheiro. Vamos explicar
 
+**Assista no canal:**
+{{#embed https://www.youtube.com/watch?v=ODr94h4ihZg}}
+
 - “Eu vou esperar o vídeo do Fireship”
 
 {{#embed https://www.youtube.com/watch?v=2X2V3xv_jik }}
