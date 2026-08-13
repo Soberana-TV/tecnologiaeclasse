@@ -2,6 +2,9 @@
 
 Este é um tutorial introdutório sobre como usar Netbird para criar uma rede interna dos seus serviços, seja para homelab ou seja para o seu projeto pessoal ou a sua empresa. Como sempre a ideia é introduzir muitas ideias e mostrar um caminho para vocês se aprofundarem.
 
+**Veja no canal:**
+{{#embed https://youtube.com/watch?v=ZapFOyutsis}}
+
 ### O problema
 
 - Nós gostaríamos de prover acesso a serviços de uma intranet a alguns dispositivos pré aprovados que estão fora dela
