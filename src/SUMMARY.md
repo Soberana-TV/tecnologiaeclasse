@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Tutorial Netbird](netbird.md)
 - [Apple VS OpenAI](apple_openai.md)
 - [Vamos exigir mais dos data centers](data_centers2.md)
 - [O hack das carteiras BTC “Coldcard”](coldcard.md)
