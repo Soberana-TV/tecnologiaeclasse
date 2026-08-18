@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Vamos falar sobre o banimento do Discord](banimento_discord.md)
 - [Tutorial Netbird](netbird.md)
 - [Apple VS OpenAI](apple_openai.md)
 - [Vamos exigir mais dos data centers](data_centers2.md)
