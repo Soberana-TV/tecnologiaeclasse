@@ -2,6 +2,9 @@
 
 O caso da morte da adolescente Lívia, episódio de violência absurdo, ganhou repercussão nacional e coloca no centro das discussões o papel das plataformas digitais na manutenção do comportamento antisocial na internet. Vamos falar sobre.
 
+**Veja o vídeo no canal:**
+{{#embed https://www.youtube.com/watch?v=UOxWJxiEmcM}}
+
 [https://www.poder360.com.br/poder-brasil/anpd-abre-processo-contra-discord-por-caso-de-adolescente-de-13-anos/?utm_source=chatgpt.com](https://www.poder360.com.br/poder-brasil/anpd-abre-processo-contra-discord-por-caso-de-adolescente-de-13-anos/?utm_source=chatgpt.com (preview))
 
 - A Operação Lívia conduzida pela Polícia Civil de Mato Grosso do Sul desbaratou um grupo criminoso que chantageava jovens e crianças pela internet com o intuito de cometerem atos violentos e de automutilação
