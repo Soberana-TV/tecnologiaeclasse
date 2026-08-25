@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Flávio Bolsonaro filiado ao Missão](flaviob_missao.md)
 - [Vazamentos do GTA 6](gta6.md)
 - [Vamos falar sobre o banimento do Discord](banimento_discord.md)
 - [Tutorial Netbird](netbird.md)
