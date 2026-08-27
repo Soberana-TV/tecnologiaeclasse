@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Anthropic e a marca d'água nos modelos](anthropic_watermark.md)
 - [O crash do mercado de ações Sul Coreano em 2026](crash_coreia.md)
 - [Flávio Bolsonaro filiado ao Missão](flaviob_missao.md)
 - [Vazamentos do GTA 6](gta6.md)
