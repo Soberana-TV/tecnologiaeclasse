@@ -2,6 +2,9 @@
 
 Tem uma nova plataforma de compartilhamento de vídeos no pedaço e o que todo mundo quer saber é: vai bater de frente com o YouTube?
 
+**Veja também no canal:**
+{{#embed https://www.youtube.com/watch?v=ZX6GmUOzahY}}
+
 - Sim, o TeClas já está no Bilibili, mas vamos falar mais sobre isso ao final
 
 <https://www.bilibili.tv/en/video/4800743481940992>
