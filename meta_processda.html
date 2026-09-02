@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Meta foi processada por 29 estados e tá de boa - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="o_que.html">O que é Tecnologia e Classe?</a></li><li class="chapter-item expanded "><a href="meta_processda.html" class="active">Meta foi processada por 29 estados e tá de boa</a></li><li class="chapter-item expanded "><a href="bilibili.html">Bilibili: o "YouTube chinês"</a></li><li class="chapter-item expanded "><a href="cortes_mbl.html">O esquema de cortes do MBL</a></li><li class="chapter-item expanded "><a href="anthropic_watermark.html">Anthropic e a marca d'água nos modelos</a></li><li class="chapter-item expanded "><a href="crash_coreia.html">O crash do mercado de ações Sul Coreano em 2026</a></li><li class="chapter-item expanded "><a href="flaviob_missao.html">Flávio Bolsonaro filiado ao Missão</a></li><li class="chapter-item expanded "><a href="gta6.html">Vazamentos do GTA 6</a></li><li class="chapter-item expanded "><a href="banimento_discord.html">Vamos falar sobre o banimento do Discord</a></li><li class="chapter-item expanded "><a href="netbird.html">Tutorial Netbird</a></li><li class="chapter-item expanded "><a href="apple_openai.html">Apple VS OpenAI</a></li><li class="chapter-item expanded "><a href="data_centers2.html">Vamos exigir mais dos data centers</a></li><li class="chapter-item expanded "><a href="coldcard.html">O hack das carteiras BTC “Coldcard”</a></li><li class="chapter-item expanded "><a href="peter_thiel_argentina.html">O que Peter Thiel quer na Argentina?</a></li><li class="chapter-item expanded "><a href="anthropic_livros.html">Por que Anthropic está destruindo livros</a></li><li class="chapter-item expanded "><a href="vingaca_devs.html">Como devs usam IA "de graça"</a></li><li class="chapter-item expanded "><a href="suno_hack.html">SUNO hackeada</a></li><li class="chapter-item expanded "><a href="kimi_k3.html">Kimi K3 torando tudo</a></li><li class="chapter-item expanded "><a href="programador_mei.html">Programador como MEI, Kim e Lula</a></li><li class="chapter-item expanded "><a href="aur_nightmare_eclipse.html">Ataque ao AUR, o retorno de Nightmare Eclipse e mais</a></li><li class="chapter-item expanded "><a href="corrida_ia.html">Modelos de IA abertos na cola dos proprietários</a></li><li class="chapter-item expanded "><a href="gerenciadores_de_senha.html">Introdução a gerenciadores de senha</a></li><li class="chapter-item expanded "><a href="50_robos.html">50% da internet são robôs</a></li><li class="chapter-item expanded "><a href="alex_karp_honesto.html">Alex Karp honesto e a economia de extração do conhecimento</a></li><li class="chapter-item expanded "><a href="confessou_chatgpt.html">Ele confessou pro ChatGPT</a></li><li class="chapter-item expanded "><a href="aeo.html">AI Engine Optimization</a></li><li class="chapter-item expanded "><a href="usa_paralelo.html">Como Trump quer criar um USA paralelo</a></li><li class="chapter-item expanded "><a href="data_centers.html">Miremos nos data centers</a></li><li class="chapter-item expanded "><a href="confia.html">Sobre confiança e descentralização</a></li><li class="chapter-item expanded "><a href="ipo_spacex.html">IPO SpaceX</a></li><li class="chapter-item expanded "><a href="fable.html">Fable proibido</a></li><li class="chapter-item expanded "><a href="ia_rio.html">A IA da prefeitura do Rio de Janeiro</a></li><li class="chapter-item expanded "><a href="ceitec.html">O histórico e a importância da CEITEC</a></li><li class="chapter-item expanded "><a href="ia_marxista_imagens_estranhas.html">IA Marxista, imagens estranhas do ChatGPT</a></li><li class="chapter-item expanded "><a href="wifi_darkhorse.html">Daniel Vorcaro, Wi-Fi, Flávio Bolsonaro</a></li><li class="chapter-item expanded "><a href="ifood_instagram.html">Vazamento do Ifood e invasão de contas do Instagram</a></li><li class="chapter-item expanded "><a href="deepseekv4.html">Deepseek v4, sistema quântico da China e dependência de IA</a></li><li class="chapter-item expanded "><a href="nightmare_eclipse.html">Nightmare Eclipse VS Microsoft</a></li><li class="chapter-item expanded "><a href="tela_brasil.html">Tela Brasil: A "Netflix Brasileira"?</a></li><li class="chapter-item expanded "><a href="memorias_chinesas_cartel_dos_hds.html">Memórias chinesas, cartel dos HDs e Manus</a></li><li class="chapter-item expanded "><a href="tutorial_nextcloud.html">Tutorial de Nextcloud</a></li><li class="chapter-item expanded "><a href="prompt_injection_justica.html">Os prompt injections na Justiça</a></li><li class="chapter-item expanded "><a href="greve_samsung.html">Protestos na Meta, greve na Samsung, preço dos HDs e mais</a></li><li class="chapter-item expanded "><a href="lago_tahoe.html">No capitalismo a prioridade é data center</a></li><li class="chapter-item expanded "><a href="linux_jogos.html">Linux agora é bom pra jogos</a></li><li class="chapter-item expanded "><a href="chrome_ia.html">Chrome baixa IA de 4gb sem te perguntar</a></li><li class="chapter-item expanded "><a href="dirtyfrag.html">Copyfail 2: Dirty Frag</a></li><li class="chapter-item expanded "><a href="goblins.html">Goblins e a teoria do colapso de modelos LLM</a></li><li class="chapter-item expanded "><a href="terras_raras.html">O Brasil e as Terras Raras</a></li><li class="chapter-item expanded "><a href="girl_cyberdecks.html">O Espectro dos Cyberdecks de Meninas</a></li><li class="chapter-item expanded "><a href="meta_treino_china.html">Meta, EUA e China</a></li><li class="chapter-item expanded "><a href="copyfail.html">copy.fail no Linux</a></li><li class="chapter-item expanded "><a href="bolha_da_ia4.html">Empresas de IA apertam o cinto</a></li><li class="chapter-item expanded "><a href="pocketfabs_usp.html">As PocketFabs da USP</a></li><li class="chapter-item expanded "><a href="voz_brainrot.html">A voz dos brainrot</a></li><li class="chapter-item expanded "><a href="vagas_fantasmas.html">Vagas Fantasmas</a></li><li class="chapter-item expanded "><a href="manifesto_palantir.html">Manifesto bizarro da Palantir</a></li><li class="chapter-item expanded "><a href="instagram_signal.html">Instagram, Signal e FBI</a></li><li class="chapter-item expanded "><a href="kindle_morreu.html">Amazon mata seu Kindle</a></li><li class="chapter-item expanded "><a href="pl_do_streaming.html">Lobby e a regulamentaçã do streaming</a></li><li class="chapter-item expanded "><a href="metaverso_morreu.html">O fim do Metaverso</a></li><li class="chapter-item expanded "><a href="plp_152.html">Contra a PLP/152</a></li><li class="chapter-item expanded "><a href="claude_mythos.html">Claude Mythos é perigoso demais?</a></li><li class="chapter-item expanded "><a href="linkedin_browsergate.html">O browsergate do Linkedin</a></li><li class="chapter-item expanded "><a href="denuvo.html">Denuvo foi derrotado</a></li><li class="chapter-item expanded "><a href="oracle_30k.html">Oracle demite 30k</a></li><li class="chapter-item expanded "><a href="meta_google_condenadas.html">Meta e Google condenadas</a></li><li class="chapter-item expanded "><a href="sandbox.html">Valve, Garry's Mod e a s&box</a></li><li class="chapter-item expanded "><a href="sora_morreu.html">Morreu o Sora agorinha</a></li><li class="chapter-item expanded "><a href="nosso_claude.html">Nosso Claude</a></li><li class="chapter-item expanded "><a href="microsoft.html">Por que odiamos? Microsoft</a></li><li class="chapter-item expanded "><a href="fiocruz.html">Microsoft está extorquindo a FIOCRUZ</a></li><li class="chapter-item expanded "><a href="trivy_litellm.html">Trivy e LiteLLM hackeados</a></li><li class="chapter-item expanded "><a href="ira.html">Irã, EUA, Israel e tecnologia</a></li><li class="chapter-item expanded "><a href="layoffs_2026.html">Layoffs no início de 2026</a></li><li class="chapter-item expanded "><a href="exploits.html">Velhos exploits, novas preocupações</a></li><li class="chapter-item expanded "><a href="dlss5.html">DLSS 5, Subnautica 2 e Estreito de Ormuz</a></li><li class="chapter-item expanded "><a href="eca_digital.html">O ECA Digital pode bloquear o Linux no Brasil</a></li><li class="chapter-item expanded "><a href="halt_and_catch_fire.html">Halt and Catch Fire</a></li><li class="chapter-item expanded "><a href="notepads.html">Vulnerabilidades do Notepad e Notepad++</a></li><li class="chapter-item expanded "><a href="4chan_epstein.html">4chan e epstein</a></li><li class="chapter-item expanded "><a href="big_techs.html">Big techs fazendo bigtechisses</a></li><li class="chapter-item expanded "><a href="meta_fantasmas.html">Influenciadores Fantasmas</a></li><li class="chapter-item expanded "><a href="homelab.html">Tutorial de Homelab</a></li><li class="chapter-item expanded "><a href="polymarket_kalshi.html">Mercados de previsão e a guerra</a></li><li class="chapter-item expanded "><a href="anthropic_eua.html">Anthropic nega contrato com os EUA, OpenAI aproveita</a></li><li class="chapter-item expanded "><a href="google_android.html">Sim, a Google vai fechar o Android</a></li><li class="chapter-item expanded "><a href="tarifa_eletrônicos.html">Tarifa dos eletrônicos</a></li><li class="chapter-item expanded "><a href="agentes_compras.html">Agentes: a nova febre da IA</a></li><li class="chapter-item expanded "><a href="internet4.html">Reflexões sobre a morte da Internet</a></li><li class="chapter-item expanded "><a href="openai_persona.html">Governo dos EUA gostaria de acessar a sua cara</a></li><li class="chapter-item expanded "><a href="teclas_doc1.html">TECLAS.DOC: Como as BigTechs roubaram a nossa imagem</a></li><li class="chapter-item expanded "><a href="ia_burnout.html">IA, automação e burnout</a></li><li class="chapter-item expanded "><a href="discord.html">Discord e escaneamento facial</a></li><li class="chapter-item expanded "><a href="memoria_china.html">Memórias RAM da China</a></li><li class="chapter-item expanded "><a href="tecnologia.html">A tecnologia hostil</a></li><li class="chapter-item expanded "><a href="reviver_ia.html">Revivendo pessoas com IA</a></li><li class="chapter-item expanded "><a href="bolha_ia3.html">É assim que a bolha de IA estoura</a></li><li class="chapter-item expanded "><a href="epstein_tech.html">Big tech e cripto nos arquivos do Epstein</a></li><li class="chapter-item expanded "><a href="anytype.html">Tutorial de Anytype</a></li><li class="chapter-item expanded "><a href="openclaw.html">Openclaw e a rede dos robôs</a></li><li class="chapter-item expanded "><a href="novo_tiktok.html">O Novo TikTok</a></li><li class="chapter-item expanded "><a href="ice_minesota.html">ICE, Minesota e uso da tecnologia</a></li><li class="chapter-item expanded "><a href="backlash_ia.html">Sites proibem conteúdo de IA</a></li><li class="chapter-item expanded "><a href="guerra_ao_desktop.html">Tá cada vez mais difícil comprar computador</a></li><li class="chapter-item expanded "><a href="chat_gpt_propagandas.html">ChatGPT terá propagandas</a></li><li class="chapter-item expanded "><a href="annas_archive_spotify.html">Anna's Archive fez backup do Spotify</a></li><li class="chapter-item expanded "><a href="demissao_mercado_livre.html">Demissão em massa no Mercado Livre</a></li><li class="chapter-item expanded "><a href="roblox_felca.html">Os protestos do Roblox</a></li><li class="chapter-item expanded "><a href="bluetooth.html">A vulnerabilidade do Bluetooth Fast Pair</a></li><li class="chapter-item expanded "><a href="39c3.html">Palestra 39C3</a></li><li class="chapter-item expanded "><a href="o_bonde.html">O Bonde</a></li><li class="chapter-item expanded "><a href="valve_fex.html">Valve aposta na interoperabilidade</a></li><li class="chapter-item expanded "><a href="flock.html">Flock alimenta vigilância criminosa de Trump</a></li><li class="chapter-item expanded "><a href="cory_pos_eua.html">Cory Doctorow propõe internet pós EUA</a></li><li class="chapter-item expanded "><a href="ranger_rosa.html">Ranger Rosa Hackeia site de encontros só para brancos</a></li><li class="chapter-item expanded "><a href="grok_abuso.html">Grok gera 85x mais imagens de abuso</a></li><li class="chapter-item expanded "><a href="brasil_venezuela.html">O Brasil vai virar a Venezuela?</a></li><li class="chapter-item expanded "><a href="waymos.html">Waymos travam o trânsito de São Francisco</a></li><li class="chapter-item expanded "><a href="epstein2.html">A decepcionante revelação dos arquivos Epstein</a></li><li class="chapter-item expanded "><a href="github.html">A merdificação do Github</a></li><li class="chapter-item expanded "><a href="disney_openai.html">Disney e OpenAI</a></li><li class="chapter-item expanded "><a href="camera_vaso.html">Câmera no vaso, eleição de criptólogos e zork</a></li><li class="chapter-item expanded "><a href="gamblificacao.html">A Gamblificação de tudo</a></li><li class="chapter-item expanded "><a href="netflix_warner_paramount.html">Netflix, Warner e Paramount</a></li><li class="chapter-item expanded "><a href="dosimetria_glauber.html">Dosimetria, Hugo Motta, Glauber Braga e o 'apagão' das redes da Meta</a></li><li class="chapter-item expanded "><a href="trump_x.html">Localização dos Trumpistas no X</a></li><li class="chapter-item expanded "><a href="ram.html">Escalada do Preço da RAM</a></li><li class="chapter-item expanded "><a href="armas_infosec.html">Porte de armas para infosec</a></li><li class="chapter-item expanded "><a href="google_openai.html">O Google disparou?</a></li><li class="chapter-item expanded "><a href="serpro_palantir.html">Serpro abriu a porta para a Palantir</a></li><li class="chapter-item expanded "><a href="nugate.html">Nugate e outras núticias</a></li><li class="chapter-item expanded "><a href="ia_fantastico.html">Fantástico promove peça de propaganda pró IA</a></li><li class="chapter-item expanded "><a href="aulao_ia_zema.html">Aulão de IA do Zema</a></li><li class="chapter-item expanded "><a href="cloudflare.html">Cloudflare 18/11/25</a></li><li class="chapter-item expanded "><a href="grokipedia.html">Grokipedia</a></li><li class="chapter-item expanded "><a href="gmail_ia.html">Meta e Google querem ler suas mensagens</a></li><li class="chapter-item expanded "><a href="steam_machine_windows11_android.html">Steam Machine, Windows 11 e sideload no Android</a></li><li class="chapter-item expanded "><a href="ia_infra.html">A bolha de infraestrutura da IA</a></li><li class="chapter-item expanded "><a href="psf_dei_eua.html">PSF, DEI, EUA</a></li><li class="chapter-item expanded "><a href="rockstar_sindicato.html">Rockstar North demite trabalhadores sindicalizados</a></li><li class="chapter-item expanded "><a href="meta_golpes.html">Meta ganhou dinheiro com golpes</a></li><li class="chapter-item expanded "><a href="oeste_cezpem.html">Revista Oeste faz propaganda de comunismo</a></li><li class="chapter-item expanded "><a href="openai_dinheiro.html">OpenAI quer mais dinheiro</a></li><li class="chapter-item expanded "><a href="remoto_nubank.html">O fim do remoto no Nubank</a></li><li class="chapter-item expanded "><a href="kimi_k2.html">Kimi K2 é o novo Deepseek?</a></li><li class="chapter-item expanded "><a href="seguranca_lucro.html">Segurança, incentivo ao lucro e tal</a></li><li class="chapter-item expanded "><a href="cs2.html">Crash das caixas de CS2</a></li><li class="chapter-item expanded "><a href="ruby.html">Ruby fora dos Trilhos</a></li><li class="chapter-item expanded "><a href="merdificacao.html">Vantagens da Merdificação</a></li><li class="chapter-item expanded "><a href="queda_aws.html">A Queda da AWS</a></li><li class="chapter-item expanded "><a href="windows10.html">O fim do Windows 10</a></li><li class="chapter-item expanded "><a href="oracle_tiktok.html">Larry Ellison e o Controle da Mídia sob Trump</a></li><li class="chapter-item expanded "><a href="agora_vai.html">A Bolha da IA</a></li><li class="chapter-item expanded "><a href="audacity.html">O que está acontecendo com o Audacity?</a></li><li class="chapter-item expanded "><a href="preservacao_cultura.html">Empresas contra a preservação da cultura</a></li><li class="chapter-item expanded "><a href="propagandas.html">Propagandas em todo lugar</a></li><li class="chapter-item expanded "><a href="tocanna.html">Tocanna: a artista que as big techs gostam</a></li><li class="chapter-item expanded "><a href="loucura_ia.html">A loucura de IA tem que acabar</a></li><li class="chapter-item expanded "><a href="gambiarra.html">Gambiarra do IOS é preocupante</a></li><li class="chapter-item expanded "><a href="pec_blindagem.html">PEC da Blindagem</a></li><li class="chapter-item expanded "><a href="spotify.html">Spotify falha, falhou e falhará</a></li><li class="chapter-item expanded "><a href="trump_jantar.html">O jantar amaldiçoado de Trump e big techs</a></li><li class="chapter-item expanded "><a href="ministra_ia.html">Ministra de IA da Albania</a></li><li class="chapter-item expanded "><a href="11_09_25.html">11/09/25</a></li><li class="chapter-item expanded "><a href="05_09_25.html">05/09/25</a></li><li class="chapter-item expanded "><a href="eua_chips.html">INTEL, NVIDIA, AMD e EUA</a></li><li class="chapter-item expanded "><a href="folha.html">Folha de SP processa OPENAI e ... Manual do Usuário</a></li><li class="chapter-item expanded "><a href="22_08_25.html">22/08/25</a></li><li class="chapter-item expanded "><a href="geopolitica_ia2.html">A Geopolítica da IA 2025/02</a></li><li class="chapter-item expanded "><a href="artista_ia.html">O que é ser um artista na era da IA?</a></li><li class="chapter-item expanded "><a href="chatgpt5.html">O lançamento do ChatGPT 5</a></li><li class="chapter-item expanded "><a href="clippys.html">O que é a revolução dos clippys?</a></li><li class="chapter-item expanded "><a href="17_08_25.html">Google hackeado, bolsonaristas foram longe demais e mais notícias</a></li><li class="chapter-item expanded "><a href="felca.html">Felca, adultização e redes sociais</a></li><li class="chapter-item expanded "><a href="08_08_25.html">08/08/25</a></li><li class="chapter-item expanded "><a href="steam_itch.html">Steam, itch.io e censura dos meios  de pagamento</a></li><li class="chapter-item expanded "><a href="24_07_25.html">24/07/25</a></li><li class="chapter-item expanded "><a href="18_07_25.html">18/07/25</a></li><li class="chapter-item expanded "><a href="ani_grok.html">A assistente e-girl do Grok</a></li><li class="chapter-item expanded "><a href="trump_pix.html">Trump ataca o Pix</a></li><li class="chapter-item expanded "><a href="11_07_25.html">11/07/25</a></li><li class="chapter-item expanded "><a href="genai.html">A criação dos modelos de genAI</a></li><li class="chapter-item expanded "><a href="stop_killing_games.html">Stop Killing Games</a></li><li class="chapter-item expanded "><a href="artigo19.html">O Artigo 19 do Marco Civil</a></li><li class="chapter-item expanded "><a href="03_07_25.html">03/07/25</a></li><li class="chapter-item expanded "><a href="soberania_digital2.html">Uma introdução à Soberania Digital</a></li><li class="chapter-item expanded "><a href="20_06_25.html">20/06/25</a></li><li class="chapter-item expanded "><a href="ai_2027.html">O Apocalíptico AI 2027</a></li><li class="chapter-item expanded "><a href="soberania_digital.html">Soberania Digital: Uma perspectiva brasileira</a></li><li class="chapter-item expanded "><a href="13_06_25.html">13/06/25</a></li><li class="chapter-item expanded "><a href="jav_meta.html">JAV, Meta e regulamentação das redes</a></li><li class="chapter-item expanded "><a href="builderai.html">Builder.ai e os Indianos Assalariados</a></li><li class="chapter-item expanded "><a href="29_05_25.html">29/05/25</a></li><li class="chapter-item expanded "><a href="22_05_25.html">22/05/25</a></li><li class="chapter-item expanded "><a href="palestra_cryptorave_2025.html">Palestra Cryptorave 2025</a></li><li class="chapter-item expanded "><a href="15_05_25.html">15/05/25</a></li><li class="chapter-item expanded "><a href="08_05_25.html">08/05/25</a></li><li class="chapter-item expanded "><a href="manipulado_robos.html">Sim você é manipulado por robôs</a></li><li class="chapter-item expanded "><a href="24_04_25.html">24/04/25</a></li><li class="chapter-item expanded "><a href="17_04_25.html">17/04/25</a></li><li class="chapter-item expanded "><a href="internet_morta_bots.html">Quantos % da internet está morta</a></li><li class="chapter-item expanded "><a href="03_04_25.html">03/04/25</a></li><li class="chapter-item expanded "><a href="27_03_25.html">27/03/25</a></li><li class="chapter-item expanded "><a href="20_03_25.html">20/03/25</a></li><li class="chapter-item expanded "><a href="rustlings_pt1.html">Vamos aprender Rust pt. 1</a></li><li class="chapter-item expanded "><a href="mozilla_firefox.html">Os Termos de Uso do Firefox</a></li><li class="chapter-item expanded "><a href="rust_linux.html">Rust no Linux</a></li><li class="chapter-item expanded "><a href="13_03_25.html">13/03/25</a></li><li class="chapter-item expanded "><a href="06_03_25.html">06/03/25</a></li><li class="chapter-item expanded "><a href="27_02_25.html">27/02/25</a></li><li class="chapter-item expanded "><a href="ia_nos_deixa_burros.html">A IA nos deixa burros?</a></li><li class="chapter-item expanded "><a href="futuro_do_trabalho.html">O futuro do trabalho?</a></li><li class="chapter-item expanded "><a href="amazon_kindle.html">Baixe seus livros da Amazon</a></li><li class="chapter-item expanded "><a href="worldcoin.html">Sobre a Worldcoin de Sam Altman</a></li><li class="chapter-item expanded "><a href="ollama_deepseek.html">Tutorial Ollama e Deepseek</a></li><li class="chapter-item expanded "><a href="milei_libra.html">O golpe de cripto do Milei</a></li><li class="chapter-item expanded "><a href="doge_hackeado.html">DOGE de Musk é hackeado</a></li><li class="chapter-item expanded "><a href="preservacao_digital.html">Sobre a preservação digital</a></li><li class="chapter-item expanded "><a href="meta_pirateou.html">META pirateou 81TB de livros</a></li><li class="chapter-item expanded "><a href="06_02_25.html">06/02/25</a></li><li class="chapter-item expanded "><a href="30_01_25.html">30/01/25</a></li><li class="chapter-item expanded "><a href="deepseek.html">Deepseek abala os EUA</a></li><li class="chapter-item expanded "><a href="descentralizadas.html">Redes sociais descentralizadas</a></li><li class="chapter-item expanded "><a href="23_01_25.html">23/01/25</a></li><li class="chapter-item expanded "><a href="16_01_25.html">16/01/25</a></li><li class="chapter-item expanded "><a href="09_01_25.html">09/01/25</a></li><li class="chapter-item expanded "><a href="honey.html">Como a Honey roubou todo mundo</a></li><li class="chapter-item expanded "><a href="golpes_email.html">Investigando Golpes de e-mail</a></li><li class="chapter-item expanded "><a href="musica2024.html">Especial Música de 2024</a></li><li class="chapter-item expanded "><a href="19_12_24.html">19/12/24</a></li><li class="chapter-item expanded "><a href="ia_do_inss.html">IA do INSS</a></li><li class="chapter-item expanded "><a href="12_12_24.html">12/12/24</a></li><li class="chapter-item expanded "><a href="05_12_24.html">05/12/24</a></li><li class="chapter-item expanded "><a href="28_11_24.html">28/11/24</a></li><li class="chapter-item expanded "><a href="25_11_24.html">25/11/24</a></li><li class="chapter-item expanded "><a href="aeria.html">Projeto com Aeria</a></li><li class="chapter-item expanded "><a href="14_11_24.html">14/11/24</a></li><li class="chapter-item expanded "><a href="07_11_24.html">07/11/24</a></li><li class="chapter-item expanded "><a href="31_10_24.html">31/10/24</a></li><li class="chapter-item expanded "><a href="fetiche_tecnologia2.html">Fetiche da Tecnologia 2</a></li><li class="chapter-item expanded "><a href="wordpress.html">Wordpress VS WP Engine</a></li><li class="chapter-item expanded "><a href="24_10_24.html">24/10/24</a></li><li class="chapter-item expanded "><a href="17_10_24.html">17/10/24</a></li><li class="chapter-item expanded "><a href="10_10_24.html">10/10/24</a></li><li class="chapter-item expanded "><a href="godot.html">O Fork da Godot</a></li><li class="chapter-item expanded "><a href="07_10_24.html">07/10/24</a></li><li class="chapter-item expanded "><a href="28_09_24.html">28/09/24</a></li><li class="chapter-item expanded "><a href="19_09_24.html">19/09/24</a></li><li class="chapter-item expanded "><a href="16_09_24.html">16/09/24</a></li><li class="chapter-item expanded "><a href="05_09_24.html">05/09/24</a></li><li class="chapter-item expanded "><a href="29_08_24.html">29/08/24</a></li><li class="chapter-item expanded "><a href="22_08_24.html">22/08/24</a></li><li class="chapter-item expanded "><a href="15_08_24.html">15/08/24</a></li><li class="chapter-item expanded "><a href="cookie_clicker.html">Cookie Clicker</a></li><li class="chapter-item expanded "><a href="08_08_24.html">08/08/24</a></li><li class="chapter-item expanded "><a href="01_08_24.html">01/08/24</a></li><li class="chapter-item expanded "><a href="25_07_24.html">25/07/24</a></li><li class="chapter-item expanded "><a href="apagao.html">Crowdstrike / Apagão Cibernético</a></li><li class="chapter-item expanded "><a href="18_07_24.html">18/07/24</a></li><li class="chapter-item expanded "><a href="11_07_24.html">11/07/24</a></li><li class="chapter-item expanded "><a href="04_07_24.html">04/07/24</a></li><li class="chapter-item expanded "><a href="27_06_24.html">27/06/24</a></li><li class="chapter-item expanded "><a href="20_06_24.html">20/06/24</a></li><li class="chapter-item expanded "><a href="comunistas_internet.html">Comunistas na Internet</a></li><li class="chapter-item expanded "><a href="13_06_24.html">13/06/24</a></li><li class="chapter-item expanded "><a href="06_06_24.html">06/06/24</a></li><li class="chapter-item expanded "><a href="extrema_direita_ti.html">A Ideologia de Extrema Direita na TI</a></li><li class="chapter-item expanded "><a href="30_05_24.html">30/05/24</a></li><li class="chapter-item expanded "><a href="23_05_24.html">23/05/24</a></li><li class="chapter-item expanded "><a href="09_05_24.html">09/05/24</a></li><li class="chapter-item expanded "><a href="02_05_24.html">02/05/24</a></li><li class="chapter-item expanded "><a href="30_04_24.html">30/04/24</a></li><li class="chapter-item expanded "><a href="18_04_24.html">18/04/24</a></li><li class="chapter-item expanded "><a href="11_04_24.html">11/04/24</a></li><li class="chapter-item expanded "><a href="04_04_24.html">04/04/24</a></li><li class="chapter-item expanded "><a href="ideologia_californiana.html">A Ideologia Californiana</a></li><li class="chapter-item expanded "><a href="anticheat.html">Vanguard, LoL e Anticheat</a></li><li class="chapter-item expanded "><a href="28_03_24.html">28/03/24</a></li><li class="chapter-item expanded "><a href="29_02_24.html">29/02/24</a></li><li class="chapter-item expanded "><a href="25_03_24.html">25/03/24</a></li><li class="chapter-item expanded "><a href="22_02_24.html">22/02/24</a></li><li class="chapter-item expanded "><a href="15_02_24.html">15/02/24</a></li><li class="chapter-item expanded "><a href="13_02_24.html">13/02/24</a></li><li class="chapter-item expanded "><a href="08_02_24.html">08/02/24</a></li><li class="chapter-item expanded "><a href="05_02_24.html">05/02/24</a></li><li class="chapter-item expanded "><a href="01_02_24.html">01/02/24</a></li><li class="chapter-item expanded "><a href="25_01_24.html">25/01/24</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="a-meta-foi-processada-por-29-estados-nos-eua"><a class="header" href="#a-meta-foi-processada-por-29-estados-nos-eua">A Meta foi processada por 29 estados nos EUA</a></h1>
+<p>A Meta foi processada por 29 estados nos EUA e é possível que eles saiam muito melhor dessa. Como isso pode ser possível?</p>
+<p><strong>Veja no canal:</strong></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/e3n1m4MT1x0 "></iframe>
+<p><a href="https://economictimes.indiatimes.com/tech/technology/meta-29-states-head-to-court-in-biggest-test-yet-of-youth-social-media-litigation/articleshow/133182186.cms" title="preview">https://economictimes.indiatimes.com/tech/technology/meta-29-states-head-to-court-in-biggest-test-yet-of-youth-social-media-litigation/articleshow/133182186.cms</a></p>
+<blockquote>
+<p>A Meta Platforms enfrentará uma coalizão de procuradores-gerais estaduais em um julgamento no tribunal federal da Califórnia, que começa na quarta-feira, por alegações de que projetou o Facebook e o Instagram para serem viciantes para crianças, um caso que poderia expor a empresa a danos massivos e forçá-la a fazer mudanças radicais em suas plataformas.</p>
+<p>O julgamento em Oakland, que deve durar sete semanas, testará as alegações de Colorado, Kentucky, Califórnia e Nova Jersey de que a Meta projetou suas plataformas para manter os usuários jovens fisgados e enganar os consumidores sobre sua segurança. Também abordará reivindicações de 29 estados de que a empresa coletou e usou ilegalmente dados de crianças, violando a lei federal.</p>
+</blockquote>
+<ul>
+<li>Os danos buscados chegavam à mais de 1tri de dólares… mas já acabou com um pagamento bem mais modesto e a Meta se comprometendo com algumas coisas:</li>
+</ul>
+<p><a href="https://techcrunch.com/2026/08/26/meta-settles-for-18-billion-in-lawsuit-brought-by-29-states-over-social-media-harms-to-children/" title="preview">https://techcrunch.com/2026/08/26/meta-settles-for-18-billion-in-lawsuit-brought-by-29-states-over-social-media-harms-to-children/</a></p>
+<blockquote>
+<p>Ao fazer um acordo, a Meta não admite que é culpada dessas alegações, mas mostra a relutância da empresa em avançar com um julgamento com júri.</p>
+<p>A Meta está enquadrando seu acordo como um apelo à ação para que o YouTube e o TikTok adotem um conjunto de proteções para adolescentes e controles para os pais, que desenvolveu em colaboração com 52 procuradores-gerais estaduais. Aguardando aprovação judicial, essas proteções incluirão os seguintes prazos, que permanecerão por 10 anos:</p>
+<ul>
+<li>
+<p>Um limite de tempo diário padrão de duas horas, cumulativo no Facebook e no Instagram; aos 60 e 90 minutos, os adolescentes serão alertados sobre seu uso diário e também verão avisos em intervalos de 15 minutos para “incentivar o uso intencional”, de acordo com a descrição do Meta</p>
+</li>
+<li>
+<p>Um bloqueio padrão dos aplicativos Meta entre meia-noite e 6h (conhecido como “Modo Noturno”), além de notificações silenciadas das 8h às 15h, quando os adolescentes deveriam estar na escola (“Modo Escola”)</p>
+</li>
+<li>
+<p>Um bloqueio padrão para adolescentes verem o número de curtidas e reações em suas próprias postagens e nas postagens de outras pessoas</p>
+</li>
+<li>
+<p>Um bloqueio para adolescentes sobre o uso do que Meta descreve como “filtros de maquiagem extremos”, com base em seu bloco existente de filtros de cirurgia estética</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>Mas como isso pode ser bom para eles? Vamos começar com o fato de que até o “Homen da Florida” achou pouco</li>
+</ul>
+<p><a href="https://arstechnica.com/tech-policy/2026/08/meta-settles-states-child-safety-claims-for-18b-florida-rejects-deal-as-peanuts/" title="preview">https://arstechnica.com/tech-policy/2026/08/meta-settles-states-child-safety-claims-for-18b-florida-rejects-deal-as-peanuts/</a></p>
+<ul>
+<li>“A Meta perde o caso, mas a sua máquina de fazer dinheiro continua intacta”</li>
+</ul>
+<p><a href="https://economictimes.indiatimes.com/tech/technology/metas-social-media-settlement-leaves-its-money-machine-unscathed/articleshow/133566900.cms" title="preview">https://economictimes.indiatimes.com/tech/technology/metas-social-media-settlement-leaves-its-money-machine-unscathed/articleshow/133566900.cms</a></p>
+<ul>
+<li>A capitalização da Meta é U$ 1.4tri e a decisão favorável fez as ações fecharem 1% acima no dia o que é aproximadamente 14 bilhões</li>
+</ul>
+<p><a href="https://finance.yahoo.com/markets/stocks/articles/meta-stock-rises-reported-12-173718961.html" title="preview">https://finance.yahoo.com/markets/stocks/articles/meta-stock-rises-reported-12-173718961.html</a></p>
+<ul>
+<li>E aqui a jogada de mestre, o pulo do gato, o que muda tudo. Ações dos concorrentes… caíram</li>
+</ul>
+<blockquote>
+<p>A medida coloca “Meta e os procuradores-gerais do estado do mesmo lado contra os concorrentes da Meta”, disse Eric Goldman, professor da Faculdade de Direito da Universidade de Santa Clara. “Não consigo imaginar que os concorrentes da Meta estejam entusiasmados com suas ações.”</p>
+<p>As ações da Alphabet fecharam em queda de 1,4%, e as da Snap, plataforma de mídia social especialmente popular entre adolescentes, encerraram 8,4% mais baixas.</p>
+</blockquote>
+<ul>
+<li>Por fim vamos falar do que mais me deixa perplexo, por que só é possível regular essas empresas usando as crianças como subterfúgio?</li>
+</ul>
+<p><a href="https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/" title="preview">https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/</a></p>
+<ul>
+<li>A tecnologia de aferição de idade tem sérios problemas práticos e de privacidade e está sendo empurrada como uma solução para um problema muito mais geral.</li>
+</ul>
+<h2 id="redes-sociais-sÃo-danosas-para-todas-pessoas-independente-da-sua-idade"><a class="header" href="#redes-sociais-sÃo-danosas-para-todas-pessoas-independente-da-sua-idade">REDES SOCIAIS SÃO DANOSAS PARA TODAS PESSOAS, INDEPENDENTE DA SUA IDADE</a></h2>
+<ul>
+<li>
+<p>A nossa sociedade é tão paternalista que consegue enxergar o problema quando são crianças morrendo nas minas, mas não quando são adultos???</p>
+</li>
+<li>
+<p>Muita gente considera esse movimento análogo à regulamentação das empresas de tabaco na década de 90… com a diferença que o tabaco foi mais pesadamente regulamentado!</p>
+<ul>
+<li>Por quê? Plataformas digitais são um dos pilares do domínio dos EUA</li>
+</ul>
+</li>
+<li>
+<p>Façam um exercício comigo aqui pra entender a loucura dessa solução:</p>
+<ul>
+<li>Nós fazemos uma segumentação de crianças e adultos (18 anos) nas plataformas</li>
+<li>Para fazer essa segmentação é necessário a coleta e perfilamento desses usuários, na rede são milhões de perfis “de criança”</li>
+<li>As crianças usam uma versão “mais saudável” da rede social separada da versão “perigoso”</li>
+<li>Conteúdo adulto não pode ser mostrado para crianças: é responsabilidade dos pais, criadores e dos mecanismos de aferição de idade (geralmente terceiros)</li>
+<li>A criança faz 18 anos e daí o seu perfil pode adentrar as redes da Meta, pronta pra gerar bastante lucro pra empresa</li>
+</ul>
+</li>
+<li>
+<p>Da mesma maneira como não dá pra trabalhar 1 bilhão de vezes mais que uma pessoa normal, não dá pra ter uma rede social tão grande e poderosa sem muito lobbying e práticas sujas e antiéticas</p>
+</li>
+<li>
+<p>Não existe maneira de regular essas empresas dentro da sua normalidade de operação e cada subsequente caso isso fica mais claro</p>
+<ul>
+<li>Isso não é falado pra desmerecer o trabalho e sacrifício das pessoas envolvidas nesses casos contra as plataformas, essas mães e pais são heróis</li>
+</ul>
+</li>
+<li>
+<p>O que fazer então?</p>
+<ul>
+<li>A regulamentação precisa focar no modelo de negócios das plataformas</li>
+<li>Construção de alternativas e transformação dessas plataformas em obsoletas</li>
+<li>Isso não é possível sem um novo horizonte de sociedade onde as necessidades humanas são o centro</li>
+<li>Hoje o lucro e a transformação de tudo em mercadoria é o que nos move</li>
+</ul>
+</li>
+</ul>
+<p>Capitalismo</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="bilibili.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="bilibili.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
