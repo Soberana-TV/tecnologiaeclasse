@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Meta foi processada por 29 estados e tá de boa](meta_processda.md)
 - [Bilibili: o "YouTube chinês"](bilibili.md)
 - [O esquema de cortes do MBL](cortes_mbl.md)
 - [Anthropic e a marca d'água nos modelos](anthropic_watermark.md)
