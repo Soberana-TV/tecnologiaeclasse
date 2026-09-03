@@ -2,6 +2,9 @@
 
 Faz alguns dias nós fizemos um vídeo sobre o ‘ai search optimization’, como influenciar as buscas de IA DOS OUTROS. Hoje eu quero trazer 3 exemplos dessa prática acontecendo na política.
 
+**Veja no canal:**
+{{#embed https://www.youtube.com/watch?v=3l9yBpWYtLM}}
+
 - ChatGPT estava recomendando vote em candidatos, contratiando as regras do TSE 
 
 [https://www.instagram.com/p/DcUAu17Dopy/](https://www.instagram.com/p/DcUAu17Dopy/ (preview))
