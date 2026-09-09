@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [ChatGPT Astra e o que realmente aconteceu na Huggingface](huggingface_verdade.md)
 - [ChatGPT, Google e Israel: ai engine optimization na prática](caiado_venezuela_israel.md)
 - [Meta foi processada por 29 estados e tá de boa](meta_processda.md)
 - [Bilibili: o "YouTube chinês"](bilibili.md)
