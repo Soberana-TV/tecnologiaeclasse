@@ -58,6 +58,8 @@ Infelizmente vivemos num presente futurista fubango onde nossas televisões nos 
 
 <https://www.webosbrew.org/rooting/>
 
+- E LEMBREM-SE QUE FAZER ISSO PDOE ACABAR COM A SUA GARANTIA!
+
 - Ao rodar o script eu só precisei confirmar a conexão na TV e eu estava com um shell com root dentro dela
   - Eu mudei a senha padrão do root e adicionei uma chave SSH
   - Ele instalou um “Homebrew Channel” para aplicativos instalados de fora das lojas
