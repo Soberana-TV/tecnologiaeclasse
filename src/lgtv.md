@@ -54,6 +54,10 @@ Infelizmente vivemos num presente futurista fubango onde nossas televisões nos 
 
 [https://github.com/throwaway96/slopbro](https://github.com/throwaway96/slopbro (preview))
 
+- Para fazer o root da sua TV e configurar direitinho tem que seguir aqui:
+
+<https://www.webosbrew.org/rooting/>
+
 - Ao rodar o script eu só precisei confirmar a conexão na TV e eu estava com um shell com root dentro dela
   - Eu mudei a senha padrão do root e adicionei uma chave SSH
   - Ele instalou um “Homebrew Channel” para aplicativos instalados de fora das lojas
