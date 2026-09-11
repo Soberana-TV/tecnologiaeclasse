@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [TVs espiãs da LG](lgtv.md)
 - [A OpenAI roubou o trabalho desses pesquisadores?](navier-stokes.md)
 - [ChatGPT Astra e o que realmente aconteceu na Huggingface](huggingface_verdade.md)
 - [ChatGPT, Google e Israel: ai engine optimization na prática](caiado_venezuela_israel.md)
