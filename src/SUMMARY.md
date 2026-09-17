@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [MSG Gov](msg_gov.md)
 - [IA vai destruir o mundo](ia_destruir_mundo.md)
 - [TVs espiãs da LG](lgtv.md)
 - [A OpenAI roubou o trabalho desses pesquisadores?](navier-stokes.md)
