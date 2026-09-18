@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Android quer ser livre](android_livre.md)
 - [MSG Gov](msg_gov.md)
 - [IA vai destruir o mundo](ia_destruir_mundo.md)
 - [TVs espiãs da LG](lgtv.md)
