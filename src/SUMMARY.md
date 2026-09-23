@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [A preparação do golpes dos EUA no Brasil](golpe_eua.md)
 - [Android quer ser livre](android_livre.md)
 - [MSG Gov](msg_gov.md)
 - [IA vai destruir o mundo](ia_destruir_mundo.md)
