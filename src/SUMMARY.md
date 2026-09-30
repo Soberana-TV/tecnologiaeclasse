@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Proibição das BETs](bet_proibida.md)
 - [Vorcaro, Nikolas, Flávio, Meta, etc...](vorcaro_nikolas.md)
 - [A preparação do golpes dos EUA no Brasil](golpe_eua.md)
 - [Android quer ser livre](android_livre.md)
