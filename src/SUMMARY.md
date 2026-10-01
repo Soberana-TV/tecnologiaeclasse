@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Meta, Zema Kart e Tinder de Voto do Luciano Huck](meta_zema_huck.md)
 - [Proibição das BETs](bet_proibida.md)
 - [Vorcaro, Nikolas, Flávio, Meta, etc...](vorcaro_nikolas.md)
 - [A preparação do golpes dos EUA no Brasil](golpe_eua.md)
