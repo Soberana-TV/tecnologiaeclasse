@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "mode": "random",
+  "dismissible": true,
+  "notifications": [
+    {
+      "id": "portal",
+      "label": "Atenção!",
+      "message": "A Soberana lançou seu portal de artigos! É lá que você vai encontrar textos mais completos com análises e as nossas opiniões.",
+      "link": { "text": "Acesse agora", "url": "https://soberana.tv/portal" }
+    },
+    {
+      "id": "apoiase",
+      "label": "Gostou?",
+      "message": "Se você curte e valoriza o nosso trabalho considere contribuir mensalmente no Apoia.se!",
+      "link": { "text": "Apoie agora!", "url": "https://apoia.se/tecnologiaeclasse/" }
+    },
+    {
+      "id": "pix",
+      "label": "Adorou?",
+      "message": "Se você curte e valoriza o nosso trabalho considere mandar um Pix!",
+      "link": { "text": "Manda o Pix", "url": "https://pixie.gg/teclas" }
+    }
+  ]
+}

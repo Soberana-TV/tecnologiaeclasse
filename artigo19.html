@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/notification.css">
 
     </head>
     <body class="sidebar-visible no-js">
@@ -120,7 +121,15 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <aside id="site-notification" class="site-notification" role="status" aria-live="polite" aria-atomic="true" hidden>
+                    <div class="site-notification__inner">
+                        <span class="site-notification__label" data-notification-label></span>
+                        <p class="site-notification__message" data-notification-message></p>
+                        <a class="site-notification__link" data-notification-link hidden></a>
+                        <button class="site-notification__dismiss" data-notification-dismiss type="button" aria-label="Fechar aviso" hidden>x</button>
+                    </div>
+                </aside>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -364,6 +373,7 @@ não remoção de conteúdo</li>
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="theme/notification.js"></script>
 
 
     </div>
