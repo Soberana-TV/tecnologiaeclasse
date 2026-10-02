@@ -2,6 +2,9 @@
 
 O governo Lula finalmente fez uma proibição das BETs por meio de uma medida provisória e hoje eu estou fazendo o L. Vamos falar sobre como isso funciona, comentar as repercussões e o que vem agora.
 
+**Veja também no canal:**
+{{#embed https://youtube.com/watch?v=Lfc0hMWlGN8}}
+
 [https://www.correiobraziliense.com.br/politica/2026/09/7509010-as-vesperas-da-eleicao-governo-anuncia-fim-das-bets-no-brasil.html](https://www.correiobraziliense.com.br/politica/2026/09/7509010-as-vesperas-da-eleicao-governo-anuncia-fim-das-bets-no-brasil.html (preview))
 
 ### “Mas deveria ser uma questão individual, jogue com responsabilidade!” NÃO, VOCÊS ESTÃO ERRADOS

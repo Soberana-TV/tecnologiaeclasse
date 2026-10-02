@@ -2,6 +2,9 @@
 
 Até chegar o primeiro turno das eleições eu vou aproveitar pra falar de algumas situações que vem acontecendo e que não fazem sentido comentar mais tarde. Meta nas eleições, Zema Kart e a plataforma de sugestão de votos do Luciono Huck (RIP)
 
+**Veja também no canal**:
+{{#embed https://www.youtube.com/watch?v=s1i-RBoAFwc}}
+
 ### Meta nas eleições
 
 [https://www1.folha.uol.com.br/poder/2026/09/meta-aprova-anuncios-politicos-falsos-com-ia-pagos-dos-eua-para-publico-brasileiro-mostra-estudo.shtml](https://www1.folha.uol.com.br/poder/2026/09/meta-aprova-anuncios-politicos-falsos-com-ia-pagos-dos-eua-para-publico-brasileiro-mostra-estudo.shtml (preview))
