@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Os amigos do Flávio e os amigos do Lula](bolsonaro_vs_lula.md)
 - [Photocraft e os recomps de jogos](photocraft.md)
 - [TSE vai usar Starlink nas eleições??](tse_starlink.md)
 - [Meta, Zema Kart e Tinder de Voto do Luciano Huck](meta_zema_huck.md)
