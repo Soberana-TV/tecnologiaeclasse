@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O 'bem estar' dos modelos é o novo golpe dos tecnobros](ia_bem_estar.md)
 - [Os amigos do Flávio e os amigos do Lula](bolsonaro_vs_lula.md)
 - [Photocraft e os recomps de jogos](photocraft.md)
 - [TSE vai usar Starlink nas eleições??](tse_starlink.md)
