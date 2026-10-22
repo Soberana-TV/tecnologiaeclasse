@@ -73,14 +73,14 @@ Hoje é um papo bem comunista, vamos falar sobre como o capital forma a estrutur
   - Recontextualizem as suas frentes amplas de influenciadores e jornalistas e os podcasts e os debates nesse sentido
 
 - Só que assim, esquece a ela, quem mais tá implicado nesse esquema? Basicamente todo mundo.
-  - Geraldo Samor (fundador do Brazil Journal; mensagens sobre matérias enviadas a Vorcaro) UOL
-  - Antônio Carlos Freixo Júnior (proprietário da IstoÉ, citado em negociações comerciais) UOL
-  - Reinaldo Azevedo (confirmou patrocínio relacionado ao Banco Master; negou favorecimento editorial) Apuração Política
-  - Frederic Kachar (executivo do Grupo Globo; mensagens sobre relações comerciais e cobertura) Intercept Brasil
-  - Lilian Tahan (executiva do Metrópoles; mensagens sobre publicidade e cobertura) Intercept Brasil
-  - Leo Dias (participação pessoal no Projeto DV não comprovada) Folha de S.Paulo
-  - Pablo Marçal (publicou conteúdo favorável à venda do Banco Master ao BRB após articulação do banqueiro) Brasil de Fato / ICL Notícias
-  - Luciano Huck (citado em reportagens sobre contatos ou negócios; participação no Projeto DV não comprovada) CNN Brasil
+  - Geraldo Samor (fundador do Brazil Journal; mensagens sobre matérias enviadas a Vorcaro) [UOL](https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/15/brazil-journal-istoe-como-vorcaro-montou-rede-de-influencia-em-sites.htm)
+  - Antônio Carlos Freixo Júnior (proprietário da IstoÉ, citado em negociações comerciais) [UOL](https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/15/brazil-journal-istoe-como-vorcaro-montou-rede-de-influencia-em-sites.htm)
+  - Reinaldo Azevedo (confirmou patrocínio relacionado ao Banco Master; negou favorecimento editorial) [Apuração Política](https://www.apuracaopolitica.com.br/component/content/article/mensagens-vorcaro-jornalistas-influenciadores-veiculos-reinaldo-azevedo-prioli-globo-metropoles-quem-aparece.html)
+  - Frederic Kachar (executivo do Grupo Globo; mensagens sobre relações comerciais e cobertura) [Intercept Brasil](https://www.intercept.com.br/2026/10/17/ceos-globo-metropoles-favores-vorcaro)
+  - Lilian Tahan (executiva do Metrópoles; mensagens sobre publicidade e cobertura) [Intercept Brasil](https://www.intercept.com.br/2026/10/17/ceos-globo-metropoles-favores-vorcaro)
+  - Leo Dias (participação pessoal no Projeto DV não comprovada) [Folha de S.Paulo](https://www1.folha.uol.com.br/mercado/2026/01/acao-com-influenciadores-contra-bc-no-caso-master-envolveu-contrato-de-r-800-mil.shtml)
+  - Pablo Marçal (publicou conteúdo favorável à venda do Banco Master ao BRB após articulação do banqueiro) [Brasil de Fato / ICL Notícias](https://www.brasildefato.com.br/2026/10/21/em-audio-diretora-do-master-pediu-que-marcal-alinhasse-postagens-em-defesa-do-banco)
+  - Luciano Huck (citado em reportagens sobre contatos ou negócios; participação no Projeto DV não comprovada) [CNN Brasil](https://www.cnnbrasil.com.br/politica/caso-master-fontes-citam-propostas-milionarias-a-influenciadores)
 
 - Se vocês quiserem entender a extensão dessa estratégia e do ‘Projeto DV’ que era o gerenciamento de RP do Vorcaro eu recomendo lerem as mensagens com a Ana Matos e Flávio Carneiro.
   - Eles descrevem veículos como sendo de um espectro político, mas também alguns como “jornalista malvado” no caso do Leo Dias
