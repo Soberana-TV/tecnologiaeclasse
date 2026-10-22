@@ -2,9 +2,13 @@
 
 Hoje é um papo bem comunista, vamos falar sobre como o capital forma a estrutura ideológica da nossa mídia. E não tem professor melhor do que Daniel Vorcaro pra gente aprender sobre.
 
+**Veja também no canal:**
+
+{{#embed https://www.youtube.com/watch?v=1YpS_T6pF3Q}}
+
 ## Primeiramente, verifiquem o seu local de votação
 
-https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/atendimento-eleitor/onde-votar
+<https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/atendimento-eleitor/onde-votar>
 
 [https://www.bbc.com/portuguese/articles/cmkgkyezx4yko](https://www.bbc.com/portuguese/articles/cmkgkyezx4yko (preview))
 
@@ -21,7 +25,7 @@ https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/atendiment
 
 - Ou sobre o fato de que o Vorcaro não apenas era um “bon vivant” que constantemente aproveitava de festas e secso. Mas que era um sócio num negócio de prostituição que, como previmos, tinha um componente de tráfico humano:
 
-https://noticias.uol.com.br/colunas/natalia-portinari/2026/10/13/vorcaro-era-socio-oculto-de-agencia-de-prostituicao-e-recrutou-refugiadas.htm
+<https://noticias.uol.com.br/colunas/natalia-portinari/2026/10/13/vorcaro-era-socio-oculto-de-agencia-de-prostituicao-e-recrutou-refugiadas.htm>
 
 {{#embed https://www.youtube.com/watch?v=aPEp5kVjVVk }}
 
@@ -39,7 +43,7 @@ https://noticias.uol.com.br/colunas/natalia-portinari/2026/10/13/vorcaro-era-soc
 
 - Porém eu quero focar hoje num aspecto mais didático sobre o papel da burguesia na sociedade capitalista: a influência na mídia e nas informações que temos acesso.
 
-https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/15/brazil-journal-istoe-como-vorcaro-montou-rede-de-influencia-em-sites.htm
+<https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/15/brazil-journal-istoe-como-vorcaro-montou-rede-de-influencia-em-sites.htm>
 
 - As informações que estamos tendo acesso agora mostram que Vorcaro tinha acesso em vários níveis a veículos de mídia, jornalistas e influenciadores. Muitas vezes tendo influência direta até sobre as palavras que saíam nas matérias.
 
@@ -98,7 +102,7 @@ https://noticias.uol.com.br/politica/ultimas-noticias/2026/10/15/brazil-journal-
 
 [https://masterwhats.recomendeme.com.br](https://masterwhats.recomendeme.com.br (preview))
 
-- Tem uma versão que está atualizando mais dados que é essa aqui, mas ainda falta muita coisa: https://github.com/1uc4sm4theus/masterzap
+- Tem uma versão que está atualizando mais dados que é essa aqui, mas ainda falta muita coisa: <https://github.com/1uc4sm4theus/masterzap>
   - Seria importante que esse tipo de site estivesse nos trinques já que claramente foi feito pro período eleitoral. ô Rafael, bota esses tokens pra funcionar aí
 
 - É isso aí meu povo. DIto isso votem 13 nesse dia 25 e depois disso a luta continua porque vão ser anos difíceis a partir daqui.
