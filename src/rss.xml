@@ -1822,5 +1822,11 @@
       <link>https://teclas.soberana.tv/projeto_dv_midia.html</link>
       <pubDate>Thu, 22 Oct 2026 10:19:18 +0000</pubDate>
     </item>
+    <item>
+      <title>CVEs do PHP, Node, certificados e confusão na lista do Linux</title>
+      <description>Mais uma daquelas semanas onde anos de vulnerabilidades acumuladas são jogados na nossa cabeça de uma vez e a gente precisa correr pra atualizar nossos sistemas. Vamos falar de PHP, Node, certificados e Linux.</description>
+      <link>https://teclas.soberana.tv/php_2026.html</link>
+      <pubDate>Fri, 23 Oct 2026 11:45:14 +0000</pubDate>
+    </item>
   </channel>
 </rss>
