@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Desbloqueio do Switch 2 e PS5](switch2_ps5.md)
 - [Discovery-Tech, Candiru e propagandas com malware](candiru.md)
 - [Falha PHP](php_2026.md)
 - [A influência de Vorcaro na Mídia](projeto_dv_midia.md)
