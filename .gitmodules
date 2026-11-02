@@ -1,0 +1,3 @@
+[submodule "mdbook-og-cards"]
+	path = mdbook-og-cards
+	url = git@github.com:lfzawacki/mdbook-og-cards.git

@@ -23,6 +23,27 @@ jobs:
       - name: Install Custom Preprocessor
         run: cargo install mdbook-embed
 
+      - name: Cache Cargo registry (og-cards build)
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            mdbook-og-cards/target
+          key: cargo-og-cards-${{ runner.os }}-${{ hashFiles('mdbook-og-cards/Cargo.lock') }}
+          restore-keys: |
+            cargo-og-cards-${{ runner.os }}-
+
+      - name: Install OG Cards Preprocessor
+        run: cargo install --path mdbook-og-cards --locked
+
+      - name: Cache OG Cards metadata
+        uses: actions/cache@v4
+        with:
+          path: .cache/mdbook-og-cards
+          key: og-cards-metadata-${{ hashFiles('src/**/*.md') }}
+          restore-keys: |
+            og-cards-metadata-
+
       - name: Build mdBook
         run: mdbook build
 

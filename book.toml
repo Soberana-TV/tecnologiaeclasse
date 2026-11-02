@@ -12,7 +12,7 @@ edition = "2021"
 git-repository-url = "https://github.com/Soberana-TV/tecnologiaeclasse/tree/main"
 cname = "teclas.soberana.tv"
 no-section-label = true
-additional-css = ["theme/notification.css"]
+additional-css = ["theme/notification.css", "mdbook-og-cards/styles/og-cards.css"]
 additional-js = ["theme/notification.js"]
 
 [output.html.search]
@@ -25,6 +25,10 @@ expand = true
 heading-split-level = 2
 
 [preprocessor.embed]
+
+[preprocessor.og-cards]
+command = "mdbook-og-cards"
+renderers = ["html"]
 
 [rss]
 title = "Roteiros Tecnologia e Classe"

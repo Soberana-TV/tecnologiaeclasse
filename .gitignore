@@ -3,3 +3,6 @@ book
 .env
 __pycache__/
 *.pyc
+.cache/
+mdbook-og-cards/target/
+
