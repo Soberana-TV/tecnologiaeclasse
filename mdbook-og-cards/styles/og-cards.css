@@ -1,0 +1,107 @@
+/* mdbook-og-cards: Open Graph preview card styles.
+   Designed to work with mdBook's built-in themes (light, rust, coal,
+   navy, ayu) using their CSS custom properties, so cards automatically
+   match whichever theme the reader has selected (including dark mode).
+
+   Note: the card markup (src/renderer.rs) intentionally uses only
+   inline/phrasing HTML tags (a, span, strong, small, img) because it is
+   frequently spliced into the middle of a Markdown paragraph, which gets
+   wrapped in a <p> by mdBook. A block-level tag (div, p, ul, ...) in that
+   position would cause the HTML5 parser to auto-close the surrounding
+   <p> and mangle the DOM. All layout below is done with `display`
+   overrides on those inline tags rather than relying on block-level
+   elements. */
+
+a.og-card,
+.content a.og-card:link,
+.content a.og-card:visited {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin: 1em 0;
+  border: 1px solid var(--table-border-color);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--fg);
+  background: var(--sidebar-bg);
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.og-card:hover,
+a.og-card:focus,
+.content a.og-card:hover,
+.content a.og-card:focus {
+  border-color: var(--links);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+/* Image: fixed-width column on the left, full height of the card. */
+.og-card-image {
+  flex: 0 0 auto;
+  align-self: stretch;
+  width: 140px;
+  max-width: 35%;
+  height: auto;
+  object-fit: cover;
+  background: var(--quote-bg);
+  display: block;
+}
+
+/* Text column, to the right of the image. */
+.og-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3em;
+  min-width: 0;
+  flex: 1 1 auto;
+  padding: 0.75em 1em;
+}
+
+.og-card-title {
+  display: -webkit-box;
+  color: var(--fg);
+  font-size: 1.05em;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.og-card-description {
+  display: -webkit-box;
+  color: var(--fg);
+  opacity: 0.75;
+  font-size: 0.9em;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.og-card-source {
+  display: block;
+  margin-top: 0.15em;
+  color: var(--fg);
+  opacity: 0.55;
+  font-size: 0.8em;
+}
+
+/* Below this width, stack the image above the text instead of beside it. */
+@media (max-width: 480px) {
+  a.og-card,
+  .content a.og-card:link,
+  .content a.og-card:visited {
+    flex-direction: column;
+  }
+
+  .og-card-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: 160px;
+  }
+}
