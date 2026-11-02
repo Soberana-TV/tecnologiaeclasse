@@ -13,7 +13,7 @@ A comunidade de jailbreaks e ‘hackeamento’ de consoles está correndo numa v
   - Carregamento de código limitado ao assinado pela empresa
   - Medidas de segurança, DRM, anti cópia e etc…
 
-- No geral fazer o desbloqueio ou ‘jailbreak’ é superar de alguma maneira essas medidas de segurança para chegar no objetivo final de rodar código arbitrário e não assinado pela empresa que desenvolveu o hardware
+- No geral fazer o desbloqueio ou ‘jailbreak’ é superar de alguma maneira essas medidas de segurança para chegar no objetivo final de rodar código **arbitrário e não assinado** pela empresa que desenvolveu o hardware
   - Isso significa pirataria dos jogos…
   - …mas também significa homebrew, como por exemplo: rodar Linux
 
@@ -24,7 +24,7 @@ A comunidade de jailbreaks e ‘hackeamento’ de consoles está correndo numa v
   - Por exemplo o Wii tinha o ‘Twilight Hack’ que funcionava com um save de Zelda TLP e o ‘Smash Stack’ com um mapa modificado de SSMB e depois o ‘Banner Bomb’ que funcionava com um save corrompido
   - Mas antes disso o Wii tinha a modificação de hardware para que o console aceitasse CDs não oficiais contendo cópias dos jogos
 
-- Quanto mais modernos os consoles, mais medidas de segurança são introduzidas. Atualizações do firmware dos consoles tendem a bloquear exploits antigos e até foram criados métodos impedir que consoles sejam revertidos para firmwares mais antigos (fusíveis na placa mãe)
+- Quanto mais modernos os consoles, mais medidas de segurança são introduzidas. Atualizações do **firmware** dos consoles tendem a bloquear exploits antigos e até foram criados métodos impedir que consoles sejam revertidos para firmwares mais antigos (fusíveis na placa mãe)
   - A dica é que se você quer fazer o desbloqueio dos seus consoles é melhor deixar eles desatualizados e desconectados da internet 
 
 - Fazia anos que eu não pensava nesse site, mas quando eu mexia muito com isso eu sempre acessava o Newsinside e ele ainda existe. Então fica a recomendação, principalmente porque eles tem um acervo de material muito grande ainda disponível
@@ -33,9 +33,9 @@ A comunidade de jailbreaks e ‘hackeamento’ de consoles está correndo numa v
 
 ### Finalmente temos o primeiro ‘jailbreak’ do Nintendo Switch 2
 
-https://www.extremetech.com/gaming/switch-2-jailbreak-lets-users-mod-one-of-nintendos-hottest-games
+<https://www.extremetech.com/gaming/switch-2-jailbreak-lets-users-mod-one-of-nintendos-hottest-games>
 
-{{#embed https://www.youtube.com/watch?v=8Z4RkfBjvGg }}
+{{#embed https://youtube.com/watch?v=8Z4RkfBjvGg}}
 
 - Um hacker chamado ‘pepsipu’ mostrou um vídeo do Mario Kart World rodando com um mod de personagens alternativos. Isso foi feito por meio do desbloqueio do Switch 2. Como?
 
@@ -64,7 +64,7 @@ https://www.extremetech.com/gaming/switch-2-jailbreak-lets-users-mod-one-of-nint
 
 - Já existem exploits para o PS5 desde 2022, mas recentemente nós tivemos o Lapse, Relapse e Prolapse que permitem o desbloqueio do console usando vulnerabilidades no navegador:
 
-{{#embed https://www.youtube.com/watch?v=6f5vc2YeU5E }}
+{{#embed https://youtube.com/watch?v=6f5vc2YeU5E}}
 
 - O bagulho é elegante demais… só mudar o DNS do seu PS5 para um que serve o exploit e abrir o menu de ajuda do PS5 kkkkk
 
@@ -80,7 +80,7 @@ https://www.extremetech.com/gaming/switch-2-jailbreak-lets-users-mod-one-of-nint
 
 [https://www.tomshardware.com/video-games/playstation/hacker-awarded-usd50k-bounty-for-reporting-bug-to-sony-that-allowed-ps5-linux-exploit-move-sparks-backlash-from-jailbreaking-community](https://www.tomshardware.com/video-games/playstation/hacker-awarded-usd50k-bounty-for-reporting-bug-to-sony-that-allowed-ps5-linux-exploit-move-sparks-backlash-from-jailbreaking-community (preview))
 
-![image.png](.attachments.23057/image.png)
+![image.png](./switch2_ps5/1.png)
 
 - No geral existe um otimismo de vermos o modelo de negócios dessas empresas sendo atacado pela disponibilidade das LLMs e os esforços da comunidade… mas temos que ter cuidado para manter isso tudo como uma comunidade ainda
 
@@ -90,4 +90,3 @@ https://www.extremetech.com/gaming/switch-2-jailbreak-lets-users-mod-one-of-nint
   - … inclusive isso pode significar um fim dos programas bug bounty (mas isso é tópico para o futuro) 
 
 - Eae? Gostaram? Sim, eu agora quero o máximo de videogames antigos desbloqueados para fazer o cluster do meu homelab. Mandem pra mim :)
-

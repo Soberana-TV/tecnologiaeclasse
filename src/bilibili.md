@@ -13,7 +13,7 @@ Tem uma nova plataforma de compartilhamento de vídeos no pedaço e o que todo m
 
 [https://revistaforum.com.br/global/china-em-foco/bilibili/](https://revistaforum.com.br/global/china-em-foco/bilibili/ (preview))
 
-> A Bilibili, uma das maiores plataformas de vídeos da  China, está acelerando sua expansão internacional e colocando o Brasil  entre os mercados estratégicos para o crescimento fora de seu país de  origem. A empresa, frequentemente chamada de “YouTube chinês”, combina  vídeos produzidos por usuários, transmissões ao vivo, games, anime,  música, documentários e uma comunidade altamente participativa.
+> A **Bilibili**, uma das maiores plataformas de vídeos da  China, está acelerando sua expansão internacional e colocando o Brasil  entre os mercados estratégicos para o crescimento fora de seu país de  origem. A empresa, frequentemente chamada de “YouTube chinês”, combina  vídeos produzidos por usuários, transmissões ao vivo, games, anime,  música, documentários e uma comunidade altamente participativa.
 >
 > O movimento ganhou força em 2026. A Bilibili relançou seu aplicativo  internacional, prepara uma versão de seu site em inglês e começou a  contratar profissionais em mercados como Brasil, Estados Unidos, Reino  Unido, México, Turquia e Japão. No Brasil, já existem vagas voltadas à  construção de comunidades, relacionamento com criadores e  desenvolvimento de parcerias locais.
 
@@ -28,9 +28,11 @@ Tem uma nova plataforma de compartilhamento de vídeos no pedaço e o que todo m
 - Surgiu em 2010 como um spinoff da comunidade de ACG (Animation, Comics and Games) e a partir de uma comunidade de fãs da Hatsune Miku
   - Isso é uma coisa que vocês vão notar, o pessoal aqui é otaku mesmo
 
+![image.png](./bilibili/1.png)
+
 - O foco do site sempre foi na construção de comunidades de nicho e a interação entre usuários, por exemplo tendo uma modalidade de membro (que pode comentar) que exige uma prova de 100 perguntas por exemplo…
 
-> O processo envolve passar em um teste de 100 perguntas de múltipla escolha, acertando pelo menos 60 delas em um período de uma hora. Os tópicos abordados incluem direitos autorais, etiqueta de comentários, neologismos da plataforma e questões específicas sobre temas de sua escolha (um exemplo de pergunta de quando fiz o teste recentemente: em Game of Thrones, qual das opções a seguir não faz parte da Fé dos Sete?).
+> O processo envolve passar em um teste de 100 perguntas de múltipla escolha, acertando pelo menos 60 delas em um período de uma hora. Os tópicos abordados incluem direitos autorais, etiqueta de comentários, neologismos da plataforma e questões específicas sobre temas de sua escolha (um exemplo de pergunta de quando fiz o teste recentemente: em *Game of Thrones*, qual das opções a seguir não faz parte da Fé dos Sete?).
 
 - Com o tempo a plataforma capitalizou em cima dessas sub comunidades e cresceu o seu apelo para além de weebs e geração Z chinesa. Começando a ganhar dinheiro em 2017
 
@@ -68,7 +70,7 @@ Tem uma nova plataforma de compartilhamento de vídeos no pedaço e o que todo m
 
 - Aqui deixar um exemplo do que o pessoal que cospe anticomunismo normalmente tá falando nos seus canais “puramente técnicos”:
 
-{{#mbed https://www.youtube.com/watch?v=dRISleuZ9uU}}
+{{#embed https://youtube.com/watch?v=dRISleuZ9uU}}
 
 - Faz umas 2 semanas que eu to lendo as notícias sobre e a realidade é que a gente não sabe exatamente como vai ser.
   - Não é um substituto 1:1 do youtube
