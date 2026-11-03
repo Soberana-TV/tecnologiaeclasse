@@ -44,7 +44,7 @@ Pra ser bem sincero, ainda não podemos ter certeza, mas nesse vídeo vamos expl
 
 - Vamos para o diagrama:
 
-[https://excalidraw.com/#json=lI76Wv3RupswHNS4apJIR,_In464Tcx1Y5zOtWzZ1EEg](https://excalidraw.com/#json=lI76Wv3RupswHNS4apJIR,_In464Tcx1Y5zOtWzZ1EEg (preview))
+<https://excalidraw.com/#json=lI76Wv3RupswHNS4apJIR,_In464Tcx1Y5zOtWzZ1EEg>
 
 - Em resumo:
   - Um setor de SaaS com dificuldade de lucrar extraordinariamente, com margens pressionadas e muita competição
