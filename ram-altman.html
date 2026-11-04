@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Sam Altman quer sua RAM - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/notification.css">
+        <link rel="stylesheet" href="mdbook-og-cards/styles/og-cards.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <aside id="site-notification" class="site-notification" role="status" aria-live="polite" aria-atomic="true" hidden>
+                    <div class="site-notification__inner">
+                        <span class="site-notification__label" data-notification-label></span>
+                        <p class="site-notification__message" data-notification-message></p>
+                        <a class="site-notification__link" data-notification-link hidden></a>
+                        <button class="site-notification__dismiss" data-notification-dismiss type="button" aria-label="Fechar aviso" hidden>x</button>
+                    </div>
+                </aside>
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="sam-e-dario-contra-xs-gamers"><a class="header" href="#sam-e-dario-contra-xs-gamers">Sam e Dario contra xs gamers</a></h1>
+<p>O uso moderado e racional dos nossos recursos é um perigo para o sucesso da indústria de IA dos EUA, então vocês podem ter certeza que Sam Altman e Dario Amodei vão te explicar qual hardware e qual software vocês podem ter. É pro seu bem.</p>
+<p><strong>Veja também no canal:</strong></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/DNoyuWyCwAg"></iframe>
+<h3 id="sam-altman-quer-sua-ram"><a class="header" href="#sam-altman-quer-sua-ram">Sam Altman quer sua RAM</a></h3>
+<ul>
+<li>Em uma entrevista de podcast Sam Altman fez uma declaração polêmica entre os gamers… a RAM que você tem no seu computador é muito pouco utilizada e “isso é terrível’</li>
+</ul>
+<p><a class="og-card" href="https://www.terra.com.br/byte/ciencia/sam-altman-ceo-do-chatgpt-e-bastante-terrivel-que-as-pessoas-tenham-memoria-ram-no-pc-sendo-utilizada-apenas-5-do-tempo,15dd306e7c1a44edf1bfe4e4a7215d48f81rzyaq.html" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://p2.trrsf.com/image/fget/cf/1200/630/middle/images.terra.com/2026/11/03/1283025806-13662000.jpeg" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Sam Altman, CEO do ChatGPT: "É bastante terrível que as pessoas tenham memória RAM no PC sendo utilizada apenas 5% do tempo"</strong><span class="og-card-description">Sam Altman considera que executar modelos de IA em computadores pessoais desperdiça memória DRAM, que é utilizada apenas 5% do tempo; Sua proposta consiste em concentrar os recursos disponíveis em grandes centros de dados</span><small class="og-card-source">Terra</small></span></a></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/MDX49BGNp2I"></iframe>
+<ul>
+<li>
+<p>Ele alega que foi tirado de contexto e que um dos seus maiores objetivos é que se aumente a produção de RAM no mundo para que todos tenham acesso. Ele estava falando da eficiência da cadeia de suprimentos 😜</p>
+</li>
+<li>
+<p>Só que o problema disso é que essa febre das tulipas no setor de IA é um dos maiores exemplos de ineficiência no capitalismo</p>
+</li>
+<li>
+<p>Os processos de produção de componentes, de pesquisa, de software, as “inovações financeiras” (fraudes)… isso tudo está 100% de eficiência, mas a distribuição de recursos não</p>
+<ul>
+<li>Toda produção de hardware focada para o setor mais lucrativo de data centers de IA</li>
+<li>Infraestrutura está atrás do hardware e software, por isso muitos componentes ficam parados sendo acumulados para impedir os competidores de acessarem</li>
+<li>Escalada dos preços e escassez de componentes para todos outros setores</li>
+<li>Contratos de compra exclusivos por vários anos garantem que os preços vão continuar altos</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>“E se as companhias só pudessem ganhar bilhões de dólares e ficarem felizes, ao invés de buscar uma valorização cada vez maior das ações?”</p>
+</blockquote>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/PgBBVOL4oBI"></iframe>
+<ul>
+<li>E agora vamos falar de comunismo e alocação de recursos:</li>
+</ul>
+<blockquote>
+<p>“Sob uma ótica global, é muito ruim ter bilhões acumulados em bolsos particulares, sem serem reinjetados na economia.” - comentário do youtube</p>
+</blockquote>
+<ul>
+<li>Se o Ram Altman (haha so funny) quer mesmo falar de eficiência de alocação dos recursos a gente poderia de muitas coisas:
+<ul>
+<li>Data centers locais</li>
+<li>Hardware mais eficiente</li>
+<li>Software livre</li>
+<li>Redistribuição de renda</li>
+<li>Desenvolvimento tecnológico no sul global</li>
+<li>Um sistema econômico focado na produção do que precisamos e não na criação de mercadorias</li>
+<li>No capitalismo o caminho mais natural das coisas é que tudo vire uma mercadoria. TUDO VIRA <del>BISCOITO</del> GPU</li>
+</ul>
+</li>
+</ul>
+<h3 id="anthropic-limitando-o-rea"><a class="header" href="#anthropic-limitando-o-rea">Anthropic limitando o REA</a></h3>
+<ul>
+<li>Recentemente nós comentamos da comunidade de jogos, principalmente, usando ferramentas de IA para fazer engenharia reversa.</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/4GSd9CZkWMc"></iframe>
+<ul>
+<li>Foi só achar um caso de uso de inteligência artificial que comprometeu o modelo de negócios das big techs que resolveram proibir:</li>
+</ul>
+<p><a class="og-card" href="https://canaltech.com.br/inteligencia-artificial/claude-trava-tarefas-de-engenharia-reversa-e-revolta-quem-modifica-jogos-e-tvs/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://tl.ctcdn.com.br/7hsADN3QG0FIBwnr3-J9B_yMLUw=/1200x675/smart/filters:format(webp):quality(85)/4c03a197-4217-4ac2-aba7-761c16cb8d12.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Claude trava tarefas de engenharia reversa e revolta quem modifica jogos e TVs</strong><span class="og-card-description">O Claude come&amp;ccedil;ou a interromper tarefas de engenharia reversa de softwares, jogos e firmwares de smart TVs. Os usu&amp;aacute;rios relatam, em publica&amp;ccedil;&amp;atilde;o no Reddit, que o a</span><small class="og-card-source">Canaltech</small></span></a></p>
+<p><a class="og-card" href="https://x.com/AGTPinsights/status/2113992592761524672" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://pbs.twimg.com/media/HVZpC0UbAAAUGSE?format=webp&amp;name=large" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">AGTP (@AGTPinsights) on X</strong><span class="og-card-description">Anthropic just appears to have quietly restricted Claude's reverse engineering abilities. Here's what you need to know.</p>
+<p>The claim comes from security account @0x0SojalSec, whose post hit 322.4K views on Oct 24, 2026. It says Claude can no longer "Reverse Engineer Anything," known as REA. Users say…</span><small class="og-card-source">X (formerly Twitter)</small></span></a></p>
+<ul>
+<li>
+<p>Por enquanto essa implementação é uma regra de segurança o ClaudeCode, não é algo mais embricado no modelo.</p>
+<ul>
+<li>Pode usar o Codex, Opencode, modelos chineses e etc…</li>
+</ul>
+</li>
+<li>
+<p>Mas isso mostra novamente que o acesso a essas tecnologias por si só não é um “poder” ou “dádiva” que é concedida a nós:</p>
+<ul>
+<li>Saca só o que eu disse aqui:</li>
+</ul>
+</li>
+<li>
+<p>Precisamos trabalhar para tomar o poder político para a mão da classe trabalhadora (isso quer dizer todos nós) e garantir as condições básicas de sobrevivência a todos</p>
+<ul>
+<li>Nas cidades do Brasil, mas também nos rincões e interiores onde os povos indígenas estão sendo massacrados, em todos os países e onde houver injustiça</li>
+<li>Não podemos nos contentar uma máquina de plágio automatizado, queremos todo o mundo. vlw</li>
+</ul>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="bolha-da-ia-agora-vai.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="bolha-da-ia-agora-vai.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="theme/notification.js"></script>
+
+
+
+    </div>
+    </body>
+</html>
