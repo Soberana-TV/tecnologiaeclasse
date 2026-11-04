@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Sam Altman quer sua RAM](ram-altman.md)
 - [A bolha da IA estourou](bolha-da-ia-agora-vai.md)
 - [O maior roubo de cripto da história](binance_roubo.md)
 - [O Discurso do Lula](discurso_lula.md)
