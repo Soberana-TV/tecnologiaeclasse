@@ -1864,5 +1864,11 @@
       <link>https://teclas.soberana.tv/ram-altman.html</link>
       <pubDate>Wed, 04 Nov 2026 10:26:11 +0000</pubDate>
     </item>
+    <item>
+      <title>Pi Hole: um tutorial</title>
+      <description>Todo mundo odeia propagandas. No vídeo de hoje vamos aprender como funciona, como instalar e configurar o projeto Pi Hole que nos ajuda a bloquear essas pestes a nível de DNS.</description>
+      <link>https://teclas.soberana.tv/pi-hole.html</link>
+      <pubDate>Thu, 05 Nov 2026 10:54:28 +0000</pubDate>
+    </item>
   </channel>
 </rss>
