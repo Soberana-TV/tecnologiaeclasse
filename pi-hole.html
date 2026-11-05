@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Tutorial Pi-Hole - Tecnologia e Classe</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Roteiros dos vídeos do canal Tecnologia e Classe.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/notification.css">
+        <link rel="stylesheet" href="mdbook-og-cards/styles/og-cards.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <aside id="site-notification" class="site-notification" role="status" aria-live="polite" aria-atomic="true" hidden>
+                    <div class="site-notification__inner">
+                        <span class="site-notification__label" data-notification-label></span>
+                        <p class="site-notification__message" data-notification-message></p>
+                        <a class="site-notification__link" data-notification-link hidden></a>
+                        <button class="site-notification__dismiss" data-notification-dismiss type="button" aria-label="Fechar aviso" hidden>x</button>
+                    </div>
+                </aside>
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tecnologia e Classe</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Soberana-TV/tecnologiaeclasse/tree/main" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="pi-hole-um-tutorial"><a class="header" href="#pi-hole-um-tutorial">Pi Hole: um tutorial</a></h1>
+<p>Todo mundo odeia propagandas. No vídeo de hoje vamos aprender como funciona, como instalar e configurar o projeto Pi Hole que nos ajuda a bloquear essas pestes a nível de DNS.</p>
+<p><strong>Veja também no canal:</strong></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/67D5DyGF0yQ"></iframe>
+<ul>
+<li>
+<p>Todo mundo odeia propagandas na internet, mas além de chatas elas podem ajudar empresas a coletar seus dados e as vezes até entregar malware diretamente no seu computador.</p>
+</li>
+<li>
+<p>Uma solução mais popular é usar extensões de bloqueio de propagandas no seu navegador, mas nisso nem sempre é o ideal:</p>
+<ul>
+<li>As próprias extensões podem não ser confiáveis</li>
+<li>Como usar fora do navegador? Como usar em smartphones?</li>
+</ul>
+</li>
+<li>
+<p>Uma outra solução mais avançada é configurar algo como o Ad Guard DNS, que bloqueia as propagandas a um nível de rede antes de chegarem ao seu dispositivo:</p>
+<p><a class="og-card" href="https://adguard-dns.io/en/welcome.html" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://cdn.adguardcdn.com/website/adguard-dns.io/og-welcome.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">AdGuard DNS — ad-blocking DNS server</strong><span class="og-card-description">Create your ad-blocking DNS server that will protect your personal data, prevent tracking and allow you to control access to specific content on the Internet.</span><small class="og-card-source">AdGuard DNS — ad-blocking DNS server</small></span></a></p>
+</li>
+<li>
+<p>No tutorial de hoje nós vamos aprender a fazer exatamente isso só que hospedado por nós mesmos e com muito mais controle e possibilidades, usando o Pi Hole.</p>
+</li>
+</ul>
+<p><a class="og-card" href="https://pi-hole.net/" target="_blank" rel="noopener noreferrer"><span class="og-card-body"><strong class="og-card-title">Pi-hole – Network-wide Ad Blocking</strong><small class="og-card-source">pi-hole.net</small></span></a></p>
+<ul>
+<li>O que é o <a href="https://pi-hole.net/">Pi hole</a>?</li>
+</ul>
+<blockquote>
+<p>O Pi Hole é um projeto de software livre que implementa um <em>DNS Sinkhole</em> (cratera ou buraco negro) e impede que seus dispositivos carreguem propagandas, trackers e sites indesejados.</p>
+</blockquote>
+<ul>
+<li>
+<p>E primeiro temos que entender para que serve o DNS: Domain Name Resolution</p>
+</li>
+<li>
+<p>Quando um dispositivo precisa abrir uma conexão o endereço que ele usa é o IP (exemplo <em>192.168.0.135</em>). Só que a gente usa endereços como <em>meuservidor.com.br</em> por conveniência. Quem faz esse mapeamento é o protocolo DNS</p>
+</li>
+</ul>
+<p><a class="og-card" href="https://dnsimple.com/comics/how-dns-works/pt-br/ep1/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://dnsimple.com/comics/how-dns-works/assets/images/cover-og.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Como o DNS funciona. O que conecta sites a endereços IP?</strong><span class="og-card-description">Aprenda como o DNS conecta sites a endereços IP por navegadores e resolvedores.</span><small class="og-card-source">dnsimple.com</small></span></a></p>
+<ul>
+<li>E esse processo funciona em etapas, sempre delegando para outro servidor DNS se a informação não pode ser encontrada localmente:</li>
+</ul>
+<blockquote>
+<p>Quem é tecnologiaeclasse.com.br?</p>
+<p>Consulta tabela do dispositivo <strong>[NÃO SEI]</strong></p>
+<p>Consulta o roteador <strong>[NÃO SEI]</strong></p>
+<p>Consulta um servidor DNS externo <strong>[EU SEI]</strong></p>
+<p>Resposta: <strong>3.231.35.217</strong></p>
+</blockquote>
+<ul>
+<li>
+<p>Comandos úteis para fazer esses testes: <em>dig</em>, <em>nslookup</em>, e <em>resolvectl</em></p>
+</li>
+<li>
+<p>Mas então como o Pi Hole pode nos ajudar contra as propagandas?</p>
+<ul>
+<li>Propagandas carregam de domínios externos</li>
+<li>Se nós colocarmos um passo intermediário que é o Pi Hole ele pode ‘sugar’ as conexões e impedir nossos dispositivos de acessarem esses domínios</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Quem é doubleclick.net?</p>
+<p>Consulta tabela do dispositivo <strong>[NÃO SEI]</strong></p>
+<p>Consulta o roteador <strong>[NÃO SEI]</strong></p>
+<p>Consulta DNS interno (Pi Hole) <strong>[EU SEI]</strong></p>
+<p>Resposta: <strong>0.0.0.0</strong></p>
+</blockquote>
+<ul>
+<li>
+<p>O mais interessante disso é que com uma configuração adequada do Pi Hole nós podemos bloquear propagandas (e muito mais) de todos nossos dispositivos de uma maneira bem elegante.</p>
+</li>
+<li>
+<p>Agora nós vamos pra instalação, que é bem fácil, então na realidade a parte mais difícil é encontrar o lugar pra instalar, configurar do jeitinho certo, configurar o roteador, servidor, cabo de rede….</p>
+</li>
+<li>
+<p>Exemplo de instalação:</p>
+</li>
+</ul>
+<blockquote>
+<p>curl -sSL <a href="https://install.pi-hole.net">https://install.pi-hole.net</a> | bash</p>
+</blockquote>
+<ul>
+<li>
+<p>Aqui tem outros métodos de instalação, principalmente usando docker <a href="https://github.com/pi-hole/pi-hole/#one-step-automated-install">https://github.com/pi-hole/pi-hole/#one-step-automated-install</a></p>
+</li>
+<li>
+<p>A interface de configuração estará em <code>http://IPPIHOLE/admin</code></p>
+</li>
+<li>
+<p>E daí nós podemos colocar o IP do pi hole na nossa rede como o servidor DNS de cada dispositivo:</p>
+</li>
+</ul>
+<blockquote>
+<p>dig doubleclick.net<br />
+doubleclick.net.	2	IN	A	0.0.0.0</p>
+<p>(ou com o servidor DNS explícito)</p>
+<p>dig doubleclick.net @192.168.0.130<br />
+doubleclick.net.	2	IN	A	0.0.0.0</p>
+<p>dig doubleclick.net @1.1.1.1<br />
+→ doubleclick.net.	254	IN	A	142.251.129.174</p>
+</blockquote>
+<ul>
+<li>No Linux vocês podem usar o comando <code>resolvectl</code> para ver qual servidor DNS estão usando:</li>
+</ul>
+<blockquote>
+<p>Link 3 (wlp5s0)
+Current Scopes: DNS
+Protocols: +DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+Current DNS Server: 192.168.0.130
+DNS Servers: 192.168.0.130</p>
+</blockquote>
+<ul>
+<li>
+<p>Vamos dar uma olhada nas opções do pihole:</p>
+<ul>
+<li>query log</li>
+<li>listas de bloqueio</li>
+<li>bloqueio/desbloqueio de domínios específicos</li>
+<li>tabela de DNS próprio</li>
+<li>ligar / desligar a filtragem</li>
+</ul>
+</li>
+<li>
+<p>A maneira mais esperta de configurar é fazendo com que seu próprio servidor DHCP (quem decide o endereço IP dos dispoitivos na rede) mande o servidor DNS do pi hole junto.</p>
+<ul>
+<li>Em termos humanos: configurar seu roteador para usar o pi hole como DNS.</li>
+<li>Aquele negócio de ir em <code>192.168.0.1</code> e mexer nas configurações do seu roteador. Eu não posso te ajudar especificamente aqui, mas você vai encontrar, eu tenho fé</li>
+<li>O meu estava em <em>Configurações Avançadas → Menu → Rede → DNSv4</em></li>
+</ul>
+</li>
+<li>
+<p>Uma maneira um pouco mais avançada de fazer a coisa é desativando o DHCP no roteador e deixando pro pi hole fazer o próprio DHCP</p>
+<ul>
+<li>O pi hole decide o IP de cada dispositivo na sua rede</li>
+<li>O pi hole já manda o seu DNS junto para cada dispositivo conectado</li>
+<li>Eu não consegui achar a opção no meu roteador</li>
+</ul>
+</li>
+<li>
+<p>Onde instalar o pi hole? Vantagens e desvantagens.</p>
+<ul>
+<li>No seu computador local? Provavelmente não.</li>
+<li>Num servidor na sua rede? Sim</li>
+<li>Num servidor na nuvem? Sim</li>
+</ul>
+</li>
+<li>
+<p>Pontos bônus: bloqueando domínios de dispositivos smart</p>
+</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/WyidL9mCG5I"></iframe>
+<ol>
+<li>Ligue seu dispositivo e navegue pelas funcionalidades que mostram propaganda ou serviços invasivos.</li>
+<li>Vá até o <code>query log</code> e comece a bloquear a resolução dos domínios</li>
+<li>Reinicie o dispositivo</li>
+<li>Verifique se as propagandas ou “serviços” online pararam de se comunicar</li>
+</ol>
+<ul>
+<li>
+<p>Esse método não é uma solução pra todos problemas, mas ele pode sim retirar as propagandas dos seus dispositivos e impedir que eles vazem seus dados.</p>
+<ul>
+<li>O roteiro do vídeo original e o material suplementar tem mais sobre isso</li>
+</ul>
+</li>
+<li>
+<p>Pontos bônus: juntar o servidor DHCP, DNS e os IPs do tutorial de Netbird para fazer uma intranet que funciona dentro e fora da sua rede</p>
+</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ZapFOyutsis"></iframe>
+<ul>
+<li>Espero que vocês tenham gostado, vlw</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="o_que.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="ram-altman.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="o_que.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="ram-altman.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="theme/notification.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

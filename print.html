@@ -201,6 +201,179 @@
 <li><a href="https://bsky.app/profile/tecnologiaeclasse.com.br">Bluesky</a></li>
 <li><a href="https://www.threads.net/@tecnologiaeclasse">Threads</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pi-hole-um-tutorial"><a class="header" href="#pi-hole-um-tutorial">Pi Hole: um tutorial</a></h1>
+<p>Todo mundo odeia propagandas. No vídeo de hoje vamos aprender como funciona, como instalar e configurar o projeto Pi Hole que nos ajuda a bloquear essas pestes a nível de DNS.</p>
+<p><strong>Veja também no canal:</strong></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/67D5DyGF0yQ"></iframe>
+<ul>
+<li>
+<p>Todo mundo odeia propagandas na internet, mas além de chatas elas podem ajudar empresas a coletar seus dados e as vezes até entregar malware diretamente no seu computador.</p>
+</li>
+<li>
+<p>Uma solução mais popular é usar extensões de bloqueio de propagandas no seu navegador, mas nisso nem sempre é o ideal:</p>
+<ul>
+<li>As próprias extensões podem não ser confiáveis</li>
+<li>Como usar fora do navegador? Como usar em smartphones?</li>
+</ul>
+</li>
+<li>
+<p>Uma outra solução mais avançada é configurar algo como o Ad Guard DNS, que bloqueia as propagandas a um nível de rede antes de chegarem ao seu dispositivo:</p>
+<p><a class="og-card" href="https://adguard-dns.io/en/welcome.html" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://cdn.adguardcdn.com/website/adguard-dns.io/og-welcome.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">AdGuard DNS — ad-blocking DNS server</strong><span class="og-card-description">Create your ad-blocking DNS server that will protect your personal data, prevent tracking and allow you to control access to specific content on the Internet.</span><small class="og-card-source">AdGuard DNS — ad-blocking DNS server</small></span></a></p>
+</li>
+<li>
+<p>No tutorial de hoje nós vamos aprender a fazer exatamente isso só que hospedado por nós mesmos e com muito mais controle e possibilidades, usando o Pi Hole.</p>
+</li>
+</ul>
+<p><a class="og-card" href="https://pi-hole.net/" target="_blank" rel="noopener noreferrer"><span class="og-card-body"><strong class="og-card-title">Pi-hole – Network-wide Ad Blocking</strong><small class="og-card-source">pi-hole.net</small></span></a></p>
+<ul>
+<li>O que é o <a href="https://pi-hole.net/">Pi hole</a>?</li>
+</ul>
+<blockquote>
+<p>O Pi Hole é um projeto de software livre que implementa um <em>DNS Sinkhole</em> (cratera ou buraco negro) e impede que seus dispositivos carreguem propagandas, trackers e sites indesejados.</p>
+</blockquote>
+<ul>
+<li>
+<p>E primeiro temos que entender para que serve o DNS: Domain Name Resolution</p>
+</li>
+<li>
+<p>Quando um dispositivo precisa abrir uma conexão o endereço que ele usa é o IP (exemplo <em>192.168.0.135</em>). Só que a gente usa endereços como <em>meuservidor.com.br</em> por conveniência. Quem faz esse mapeamento é o protocolo DNS</p>
+</li>
+</ul>
+<p><a class="og-card" href="https://dnsimple.com/comics/how-dns-works/pt-br/ep1/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://dnsimple.com/comics/how-dns-works/assets/images/cover-og.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Como o DNS funciona. O que conecta sites a endereços IP?</strong><span class="og-card-description">Aprenda como o DNS conecta sites a endereços IP por navegadores e resolvedores.</span><small class="og-card-source">dnsimple.com</small></span></a></p>
+<ul>
+<li>E esse processo funciona em etapas, sempre delegando para outro servidor DNS se a informação não pode ser encontrada localmente:</li>
+</ul>
+<blockquote>
+<p>Quem é tecnologiaeclasse.com.br?</p>
+<p>Consulta tabela do dispositivo <strong>[NÃO SEI]</strong></p>
+<p>Consulta o roteador <strong>[NÃO SEI]</strong></p>
+<p>Consulta um servidor DNS externo <strong>[EU SEI]</strong></p>
+<p>Resposta: <strong>3.231.35.217</strong></p>
+</blockquote>
+<ul>
+<li>
+<p>Comandos úteis para fazer esses testes: <em>dig</em>, <em>nslookup</em>, e <em>resolvectl</em></p>
+</li>
+<li>
+<p>Mas então como o Pi Hole pode nos ajudar contra as propagandas?</p>
+<ul>
+<li>Propagandas carregam de domínios externos</li>
+<li>Se nós colocarmos um passo intermediário que é o Pi Hole ele pode ‘sugar’ as conexões e impedir nossos dispositivos de acessarem esses domínios</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Quem é doubleclick.net?</p>
+<p>Consulta tabela do dispositivo <strong>[NÃO SEI]</strong></p>
+<p>Consulta o roteador <strong>[NÃO SEI]</strong></p>
+<p>Consulta DNS interno (Pi Hole) <strong>[EU SEI]</strong></p>
+<p>Resposta: <strong>0.0.0.0</strong></p>
+</blockquote>
+<ul>
+<li>
+<p>O mais interessante disso é que com uma configuração adequada do Pi Hole nós podemos bloquear propagandas (e muito mais) de todos nossos dispositivos de uma maneira bem elegante.</p>
+</li>
+<li>
+<p>Agora nós vamos pra instalação, que é bem fácil, então na realidade a parte mais difícil é encontrar o lugar pra instalar, configurar do jeitinho certo, configurar o roteador, servidor, cabo de rede….</p>
+</li>
+<li>
+<p>Exemplo de instalação:</p>
+</li>
+</ul>
+<blockquote>
+<p>curl -sSL <a href="https://install.pi-hole.net">https://install.pi-hole.net</a> | bash</p>
+</blockquote>
+<ul>
+<li>
+<p>Aqui tem outros métodos de instalação, principalmente usando docker <a href="https://github.com/pi-hole/pi-hole/#one-step-automated-install">https://github.com/pi-hole/pi-hole/#one-step-automated-install</a></p>
+</li>
+<li>
+<p>A interface de configuração estará em <code>http://IPPIHOLE/admin</code></p>
+</li>
+<li>
+<p>E daí nós podemos colocar o IP do pi hole na nossa rede como o servidor DNS de cada dispositivo:</p>
+</li>
+</ul>
+<blockquote>
+<p>dig doubleclick.net<br />
+doubleclick.net.	2	IN	A	0.0.0.0</p>
+<p>(ou com o servidor DNS explícito)</p>
+<p>dig doubleclick.net @192.168.0.130<br />
+doubleclick.net.	2	IN	A	0.0.0.0</p>
+<p>dig doubleclick.net @1.1.1.1<br />
+→ doubleclick.net.	254	IN	A	142.251.129.174</p>
+</blockquote>
+<ul>
+<li>No Linux vocês podem usar o comando <code>resolvectl</code> para ver qual servidor DNS estão usando:</li>
+</ul>
+<blockquote>
+<p>Link 3 (wlp5s0)
+Current Scopes: DNS
+Protocols: +DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+Current DNS Server: 192.168.0.130
+DNS Servers: 192.168.0.130</p>
+</blockquote>
+<ul>
+<li>
+<p>Vamos dar uma olhada nas opções do pihole:</p>
+<ul>
+<li>query log</li>
+<li>listas de bloqueio</li>
+<li>bloqueio/desbloqueio de domínios específicos</li>
+<li>tabela de DNS próprio</li>
+<li>ligar / desligar a filtragem</li>
+</ul>
+</li>
+<li>
+<p>A maneira mais esperta de configurar é fazendo com que seu próprio servidor DHCP (quem decide o endereço IP dos dispoitivos na rede) mande o servidor DNS do pi hole junto.</p>
+<ul>
+<li>Em termos humanos: configurar seu roteador para usar o pi hole como DNS.</li>
+<li>Aquele negócio de ir em <code>192.168.0.1</code> e mexer nas configurações do seu roteador. Eu não posso te ajudar especificamente aqui, mas você vai encontrar, eu tenho fé</li>
+<li>O meu estava em <em>Configurações Avançadas → Menu → Rede → DNSv4</em></li>
+</ul>
+</li>
+<li>
+<p>Uma maneira um pouco mais avançada de fazer a coisa é desativando o DHCP no roteador e deixando pro pi hole fazer o próprio DHCP</p>
+<ul>
+<li>O pi hole decide o IP de cada dispositivo na sua rede</li>
+<li>O pi hole já manda o seu DNS junto para cada dispositivo conectado</li>
+<li>Eu não consegui achar a opção no meu roteador</li>
+</ul>
+</li>
+<li>
+<p>Onde instalar o pi hole? Vantagens e desvantagens.</p>
+<ul>
+<li>No seu computador local? Provavelmente não.</li>
+<li>Num servidor na sua rede? Sim</li>
+<li>Num servidor na nuvem? Sim</li>
+</ul>
+</li>
+<li>
+<p>Pontos bônus: bloqueando domínios de dispositivos smart</p>
+</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/WyidL9mCG5I"></iframe>
+<ol>
+<li>Ligue seu dispositivo e navegue pelas funcionalidades que mostram propaganda ou serviços invasivos.</li>
+<li>Vá até o <code>query log</code> e comece a bloquear a resolução dos domínios</li>
+<li>Reinicie o dispositivo</li>
+<li>Verifique se as propagandas ou “serviços” online pararam de se comunicar</li>
+</ol>
+<ul>
+<li>
+<p>Esse método não é uma solução pra todos problemas, mas ele pode sim retirar as propagandas dos seus dispositivos e impedir que eles vazem seus dados.</p>
+<ul>
+<li>O roteiro do vídeo original e o material suplementar tem mais sobre isso</li>
+</ul>
+</li>
+<li>
+<p>Pontos bônus: juntar o servidor DHCP, DNS e os IPs do tutorial de Netbird para fazer uma intranet que funciona dentro e fora da sua rede</p>
+</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ZapFOyutsis"></iframe>
+<ul>
+<li>Espero que vocês tenham gostado, vlw</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="sam-e-dario-contra-xs-gamers"><a class="header" href="#sam-e-dario-contra-xs-gamers">Sam e Dario contra xs gamers</a></h1>
 <p>O uso moderado e racional dos nossos recursos é um perigo para o sucesso da indústria de IA dos EUA, então vocês podem ter certeza que Sam Altman e Dario Amodei vão te explicar qual hardware e qual software vocês podem ter. É pro seu bem.</p>
 <p><strong>Veja também no canal:</strong></p>
