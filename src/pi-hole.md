@@ -23,7 +23,7 @@ Todo mundo odeia propagandas. No vídeo de hoje vamos aprender como funciona, co
 
 > O Pi Hole é um projeto de software livre que implementa um *DNS Sinkhole* (cratera ou buraco negro) e impede que seus dispositivos carreguem propagandas, trackers e sites indesejados.
 
-- E primeiro temos que entender para que serve o DNS: Domain Name Resolution
+- E primeiro temos que entender para que serve o DNS: Domain Name System
 
 - Quando um dispositivo precisa abrir uma conexão o endereço que ele usa é o IP (exemplo *192.168.0.135*). Só que a gente usa endereços como *meuservidor.com.br* por conveniência. Quem faz esse mapeamento é o protocolo DNS
 
@@ -101,6 +101,7 @@ Todo mundo odeia propagandas. No vídeo de hoje vamos aprender como funciona, co
   - Em termos humanos: configurar seu roteador para usar o pi hole como DNS.
   - Aquele negócio de ir em `192.168.0.1` e mexer nas configurações do seu roteador. Eu não posso te ajudar especificamente aqui, mas você vai encontrar, eu tenho fé
   - O meu estava em *Configurações Avançadas → Menu → Rede → DNSv4*
+  - Geralmente tem espaço para botar um segundo DNS, você pode por exemplo colocar o 8.8.8.8 para que rede não pare se o pihole estiver fora. Mas eu geralmente deixo sem pra eu notar que tem algo errado e consertar logo caso o servidor saia do ar.
 
 - Uma maneira um pouco mais avançada de fazer a coisa é desativando o DHCP no roteador e deixando pro pi hole fazer o próprio DHCP
   - O pi hole decide o IP de cada dispositivo na sua rede
