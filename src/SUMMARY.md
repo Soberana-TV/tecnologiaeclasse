@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [NVIDIA e o caso de Jensen Huang](nvidia-caso.md)
 - [Tutorial Pi-Hole](pi-hole.md)
 - [Sam Altman quer sua RAM](ram-altman.md)
 - [A bolha da IA estourou](bolha-da-ia-agora-vai.md)
