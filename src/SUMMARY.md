@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Tutorial de Jellyfin](jellyfin.md)
 - [Os republicanos foram derrotados nos EUA… os datacenters também](data-centers-perderam.md)
 - [NVIDIA e o caso de Jensen Huang](nvidia-caso.md)
 - [Tutorial Pi-Hole](pi-hole.md)
