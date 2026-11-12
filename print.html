@@ -201,6 +201,151 @@
 <li><a href="https://bsky.app/profile/tecnologiaeclasse.com.br">Bluesky</a></li>
 <li><a href="https://www.threads.net/@tecnologiaeclasse">Threads</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tutorial-de-jellyfin"><a class="header" href="#tutorial-de-jellyfin">Tutorial de Jellyfin</a></h1>
+<p>Hoje vamos finalmente fazer aquele tutorial inicial de Jellyfin. Tenha seu próprio servidor de mídia para organizar suas músicas e filmes, rodando como um “Netflix” privado na sua rede local.</p>
+<p><a class="og-card" href="https://jellyfin.org/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://jellyfin.org/images/social.png?v2" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">The Free Software Media System | Jellyfin</strong><span class="og-card-description">The volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached.</span><small class="og-card-source">jellyfin.org</small></span></a></p>
+<h3 id="o-que-é"><a class="header" href="#o-que-é">O que é?</a></h3>
+<blockquote>
+<p>O Jellyfin é um servidor de mídia e um conjunto de aplicativos multimídia, gratuitos e de código aberto, projetados para organizar, gerenciar e compartilhar arquivos de mídia digital com dispositivos conectados a uma rede. O Jellyfin consiste em um aplicativo servidor, instalado em uma máquina que utiliza Linux, Microsoft Windows ou macOS, e um aplicativo cliente, executado em dispositivos como smartphones, tablets, smart TVs, reprodutores de mídia para streaming, consoles de videogame ou por meio de um navegador da web. O Jellyfin também pode transmitir conteúdo para dispositivos compatíveis com DLNA e Chromecast.</p>
+</blockquote>
+<h3 id="por-que-jellyfin-e-não-emby-plex-navidrome-ou"><a class="header" href="#por-que-jellyfin-e-não-emby-plex-navidrome-ou">Por que Jellyfin e não Emby, Plex, Navidrome ou <X></a></h3>
+<ul>
+<li>No geral, porque <strong>eu</strong> gosto mais. O Emby e o Plex tem modelos de monetização baseado no uso do servidor e assinaturas por isso descartei eles.
+<ul>
+<li>Nada contra a necessidade de monetização, mas me parece que esse tipo de modelo pode comprometer a privacidade dos usuários</li>
+</ul>
+</li>
+<li>O projeto tem uma comunidade ativa e vibrante focada em soluções abertas</li>
+<li>O resto eu não tenho experiência nenhuma, então façam sua própria pesquisa e usem o que acharem melhor.</li>
+</ul>
+<h3 id="como-eu-uso"><a class="header" href="#como-eu-uso">Como eu uso?</a></h3>
+<ul>
+<li>Para tocar, arquivar e atualizar metadados da minha coleção de música de 20+ anos
+<ul>
+<li>Acesso pelo navegador, programas ou apps de celular para tocar</li>
+</ul>
+</li>
+<li>Para organizar a coleção de filmes e series em formato digital
+<ul>
+<li>Principalmente acesso pelo navegador ou apps de smart tv para tocar</li>
+</ul>
+</li>
+</ul>
+<h3 id="como-instalar-quais-são-os-requisitos"><a class="header" href="#como-instalar-quais-são-os-requisitos">Como instalar? Quais são os requisitos?</a></h3>
+<ul>
+<li>Geralmente os requisitos de hardware são modestos:
+<ul>
+<li>Uns 100gb de espaço em disco para cache, logs e arquivos de transcodificação</li>
+<li>De preferência alguma placa gráfica (pode ser onboard) para transcodificação</li>
+<li>Um HD ou volume na rede para os arquivos de mídia</li>
+<li>“Um computador não muito antigo”</li>
+</ul>
+</li>
+</ul>
+<p><a class="og-card" href="https://jellyfin.org/docs/general/administration/hardware-selection" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://jellyfin.org/images/social.png?v2" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Hardware Selection | Jellyfin</strong><span class="og-card-description">The following is intended to help you choose appropriate hardware for a Jellyfin server and take full advantage of its features (e.g. hardware acceleration).</span><small class="og-card-source">jellyfin.org</small></span></a></p>
+<ul>
+<li>No meu primeiro vídeo sobre homelabs eu recomendo o uso de um laptop pelo perfil menor de consumo e a praticidade. Mas se vocês quiserem podem usar um raspberry PI ou fazerem um setup num computador em nuvem:</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/wxl4K_L9qLQ"></iframe>
+<ul>
+<li>Para instalar (pela primeira vez tem um tutorial “de Windows” aqui):</li>
+</ul>
+<p><a class="og-card" href="https://jellyfin.org/docs/general/installation/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://jellyfin.org/images/social.png?v2" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Installation | Jellyfin</strong><span class="og-card-description">The Jellyfin project and its contributors offer a number of pre-built binary packages to assist in getting Jellyfin up and running quickly on multiple systems.</span><small class="og-card-source">jellyfin.org</small></span></a></p>
+<ul>
+<li>Instalação para Linux com o script (eu no meu homelab agora estou movendo tudo pra docker compose, mas fica pro futuro mostrar isso):</li>
+</ul>
+<blockquote>
+<p>curl -s <a href="https://repo.jellyfin.org/install-debuntu.sh">https://repo.jellyfin.org/install-debuntu.sh</a> -O &amp;&amp; <br />
+curl -s <a href="https://repo.jellyfin.org/install-debuntu.sh.sha256sum">https://repo.jellyfin.org/install-debuntu.sh.sha256sum</a> -O &amp;&amp; sha256sum -c install-debuntu.sh.sha256sum</p>
+<p>sudo bash install-debuntu.sh</p>
+</blockquote>
+<ul>
+<li>Acesse <code>http://SEU_IP:8096</code> e finalize o processo</li>
+</ul>
+<h3 id="corrigir-permissões-no-linux"><a class="header" href="#corrigir-permissões-no-linux">Corrigir permissões no Linux:</a></h3>
+<blockquote>
+<p>sudo usermod -a -G $USER jellyfin<br />
+sudo setfacl -m u:jellyfin:rx /pasta/pai<br />
+sudo setfacl -m g:jellyfin:rx /pasta/pai</p>
+</blockquote>
+<h3 id="usando-o-jellyfin"><a class="header" href="#usando-o-jellyfin">Usando o Jellyfin:</a></h3>
+<ul>
+<li>Conta de admin</li>
+<li>Menu de administração</li>
+<li>Adicionando pastas com mídia</li>
+<li>Escaneando a biblioteca de mídia</li>
+<li>Gerenciando usuários</li>
+<li>Sistema de plugins</li>
+</ul>
+<h3 id="clientes-de-música"><a class="header" href="#clientes-de-música">Clientes de música</a></h3>
+<ul>
+<li>
+<p>Feishin: um clone da interface modernosa estilo Spotify + recomendações e letras integradas <a href="https://github.com/jeffvli/feishin">https://github.com/jeffvli/feishin</a></p>
+</li>
+<li>
+<p>Supersonic: um player honesto e levinho com tudo que é você precisa <a href="https://github.com/dweymouth/supersonic/">https://github.com/dweymouth/supersonic/</a></p>
+</li>
+<li>
+<p>Finamp: Um player pra Android/iOS e Desktop com uma interface bonita, recomendações, letras, filas e etc… <a href="https://github.com/finamp-app/finamp">https://github.com/finamp-app/finamp</a></p>
+</li>
+</ul>
+<h3 id="aplicações-jellyfin-para-tvs-e-celular"><a class="header" href="#aplicações-jellyfin-para-tvs-e-celular">Aplicações Jellyfin para TVs e celular</a></h3>
+<ul>
+<li>
+<p>Para consumir mídia nas suas smart tvs é possível usar o navegador integrado e logar no seu servidor Jellyfin</p>
+</li>
+<li>
+<p>Muitas smart tvs também possuem aplicativos Jellyfin em suas respectivas lojas</p>
+<ul>
+<li>TVs desbloqueadas também permitem a instalação de aplicativos Jellyfin com mais funcionalidades ainda (mas eu não vi necessidade)</li>
+</ul>
+</li>
+<li>
+<p>Para celular é possível também usar o navegador e apps nativos. O F-DROID tá lotado de aplicativos, mas o que me serviu foi o Findroid</p>
+</li>
+</ul>
+<h3 id="outras-dicas"><a class="header" href="#outras-dicas">Outras dicas:</a></h3>
+<ul>
+<li>Para acessar de fora da sua rede local eu recomendo muito um Netbird ou Tailscale. A mídia funciona sem precisar configurar nenhuma porta do roteador então pra mim é 10/10</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ZapFOyutsis"></iframe>
+<ul>
+<li>
+<p>História: na casa de uns amigos eu até consegui usar <code>socat</code> pra direcionar a porta 8096 do meu servidor pra 8096 do meu laptop e acessar meu servidor na TV dos outros 👍</p>
+</li>
+<li>
+<p>Quick Connect: para logar rapidamente em TVs e outros dispositivos sem digitar a senha. Clique na opção ‘Quick Connect’ no dispositivo e vá no seu dispositivo já logado</p>
+</li>
+<li>
+<p>É possível usar o menu de administração e alguns aplicativos pra controlar TV/Desktop remotamente e ou instalar aplicativos de controle remoto</p>
+</li>
+<li>
+<p>Organizar tags, fotos e letras de álbuns: no geral o Jellyfin é bem conservador em buscar e modificar dados das suas músicas, aqui vão algumas dicas:</p>
+<ul>
+<li>Plugin do lyric db</li>
+<li>Diretórios como <code>[Artista]/[Ano] - [Álbum]/[Faixa] - [Título]</code> ajuda</li>
+<li>Imagens “logo”, “folder” e “backdrop” são usadas pra página do artista</li>
+<li>Imagem “cover” no diretório do álbum é usada como capa</li>
+<li>Use o <a href="https://musicbrainz.org">https://musicbrainz.org</a> para álbuns não identificados
+<ul>
+<li>Menu ‘…’ → Identify e coloque o id do álbum</li>
+<li>As vezes você vai ter que editar as tags na mão e tatu do bem</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Plugins recomendados pelo Hiago (mais aqui <a href="https://github.com/awesome-jellyfin/awesome-jellyfin#-plugins">https://github.com/awesome-jellyfin/awesome-jellyfin#-plugins</a>)</p>
+</li>
+</ul>
+<blockquote>
+<p>* Intro Skipper: Detecta e coloca uma opção de pular abertura das séries que vc adiciona no seu catálogo <a href="https://github.com/intro-skipper/intro-skipper">https://github.com/intro-skipper/intro-skipper</a></p>
+<p>* DLNA: Serve só pra adicionar o Jellyfin como uma opção de DLNA na sua rede, fazendo com que funcione com vários dispositivos que tem função de navegar por mídias na rede, como o PS4 que não tem app de Jellyfin, mas tem essa opção de DLNA pelo aplicativo oficial Media Player</p>
+<p>* Open Subtitles: Esse é pra procurar automaticamente legendas dos filmes e séries que vc adicionou ao catálogo</p>
+<p>* Projectionist/CinemaMode: Dá a opção de colocar prerolls/trailers pra tocar antes do conteúdo selecionado no catálogo (não consegui usar o CinemaMode, achei o projectonist mais fácil)</p>
+<p>* InPlayer Episode Preview: Adiciona um botão no player que mostra todos os episódios da série que você tá assistindo.</p>
+<p>* Jellyfin Enhanced: Adiciona algumas customizações no Jellyfin <a href="https://github.com/n00bcodr/Jellyfin-Enhanced">https://github.com/n00bcodr/Jellyfin-Enhanced</a></p>
+</blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="os-republicanos-foram-derrotados-nos-eua-os-datacenters-também"><a class="header" href="#os-republicanos-foram-derrotados-nos-eua-os-datacenters-também">Os republicanos foram derrotados nos EUA… os datacenters também</a></h1>
 <p>Todo mundo odeia data centers nos EUA. E aqui no Brasil também! O resultado eleitoral da “onda azul” por lá nos mostra como isso pode ser uma oportunidade para aglutinar pautas importantes para a classe trabalhadora.</p>
 <p><strong>Veja também no canal:</strong></p>
@@ -5059,7 +5204,7 @@ horizonte temporal e com quais efeitos estruturantes.</p>
 <li>Foi lançado mais um exploit, mas não era o que a gente imaginava…</li>
 <li>Na real se eu seguisse o blog dela eu saberia que já foi cancelado</li>
 </ul>
-<p><a href="https://deadeclipse666.blogspot.com/2026/06/regarding-july-14th.html?m=1">https://deadeclipse666.blogspot.com/2026/06/regarding-july-14th.html?m=1</a></p>
+<p><a class="og-card" href="https://deadeclipse666.blogspot.com/2026/06/regarding-july-14th.html" target="_blank" rel="noopener noreferrer"><span class="og-card-body"><strong class="og-card-title">Regarding July 14th</strong><span class="og-card-description">-----BEGIN PGP SIGNED MESSAGE----- Hash: SHA512 (Un)fortunately I will be unable to mass disclose zerodays in July 14th, RoguePlanet took ...</span><small class="og-card-source">deadeclipse666.blogspot.com</small></span></a></p>
 <ul>
 <li>E no meio tempo já foi lançado mais uma vulnerabilidade chamada Rogue Planet:</li>
 </ul>
@@ -8902,7 +9047,7 @@ Your Kindle&amp;#39;s firmware version may not always have a jailbreak. These ar
 <ul>
 <li>Mas o capital que se "queima" não surge e desaparece magicamente, ele é extraído do trabalho. Enquanto Zuckerberg tentava fazer a todo custo sua palhaçada acontecer, a Meta realizou rodadas sucessivas de demissões em massa. Em março de 2026, mais centenas de funcionários foram cortados da Reality Labs e de outras divisões para financiar o novo pivô para a IA.</li>
 </ul>
-<p><a href="https://www.nytimes.com/2026/03/25/technology/meta-layoffs-ai-executives.html">https://www.nytimes.com/2026/03/25/technology/meta-layoffs-ai-executives.html</a></p>
+<p><a class="og-card" href="https://www.nytimes.com/2026/03/25/technology/meta-layoffs-ai-executives.html" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://static01.nyt.com/images/2026/03/25/multimedia/25BIZ-META-promo-vplf/25BIZ-META-promo-vplf-facebookJumbo.jpg" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Meta Lays Off 700 Employees, While Rewarding Top Executives</strong><span class="og-card-description">The jobs cuts and a new stock program for executives come as Meta continues to shift its focus to artificial intelligence.</span><small class="og-card-source">www.nytimes.com</small></span></a></p>
 <ul>
 <li>Aqui dá para ver quem paga a conta pelos delírios dos tech bros no final do dia, né (os trabalhadores, que pagam com seus empregos pela incompetência estratégica de um bilionário que tentou ditar o futuro sem ouvir os usuários e nem ninguém).</li>
 </ul>
@@ -22793,7 +22938,7 @@ They can come back in the future if sufficient documentation is provided.
 <p><img src="./cookie_clicker/Cookie_Clicker_logo.png" alt="Cookie_Clicker_logo.png" /></p>
 <h3 id="por-quê-fiz-esse-vídeo"><a class="header" href="#por-quê-fiz-esse-vídeo">Por quê fiz esse vídeo?</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/aFl99Wieknw "></iframe>
-<h3 id="o-que-é"><a class="header" href="#o-que-é">O que é?</a></h3>
+<h3 id="o-que-é-1"><a class="header" href="#o-que-é-1">O que é?</a></h3>
 <ul>
 <li>Cookie Clicker é um 'idle game' de 2013 e que foi extremamente influente no gênero</li>
 <li>A versão original do jogo, conhecida como <a href="-%20%3Chttps://orteil.dashnet.org/experiments/cookie/%3E">Cookie Clicker Classic</a>, foi feita em 24 horas como parte de um gamejam</li>
