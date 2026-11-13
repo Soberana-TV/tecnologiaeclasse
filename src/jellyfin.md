@@ -2,6 +2,9 @@
 
 Hoje vamos finalmente fazer aquele tutorial inicial de Jellyfin. Tenha seu próprio servidor de mídia para organizar suas músicas e filmes, rodando como um “Netflix” privado na sua rede local.
 
+**Veja também no canal:**
+{{#embed https://www.youtube.com/watch?v=vWUWZpDP63E}}
+
 [https://jellyfin.org/](https://jellyfin.org/ (preview))
 
 ### O que é?
