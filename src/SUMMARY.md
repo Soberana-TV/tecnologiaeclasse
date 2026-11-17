@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [O caos na aviação dos EUA](voos-eua.md)
 - [O ataque à APS e a queda da Microsoft](aps-e-microsoft.md)
 - [Jensen Huang renuncia do cargo na NVIDIA… e agora?](jensen-saiu.md)
 - [Tutorial de Jellyfin](jellyfin.md)
