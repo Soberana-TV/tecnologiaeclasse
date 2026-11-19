@@ -201,6 +201,94 @@
 <li><a href="https://bsky.app/profile/tecnologiaeclasse.com.br">Bluesky</a></li>
 <li><a href="https://www.threads.net/@tecnologiaeclasse">Threads</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="optimizely-nginx2root-java4shell-e-mais"><a class="header" href="#optimizely-nginx2root-java4shell-e-mais">Optimizely, nginx2root, java4shell e mais</a></h1>
+<p>Ficou fácil demais invadir sistemas. Sim é por causa das ferramentas de IA, mas é extremamente entediante e mundano. Temos muitas vulnerabilidades, muito rápido e ainda trabalhamos 90% do tempo fazendo novas features e 10% do tempo correndo para patchear as coisas.</p>
+<p><strong>Veja também no canal:</strong></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/6vO-DrXvaPY"></iframe>
+<h3 id="avisos-de-segurança"><a class="header" href="#avisos-de-segurança">Avisos de segurança</a></h3>
+<ul>
+<li>nginx2root: <a href="https://nginx2root.com/">https://nginx2root.com/</a>
+<ul>
+<li>atualizar ou mitigação: desabilitar http2</li>
+</ul>
+</li>
+<li>java4shell: <a href="https://calif.io/java4shell">https://calif.io/java4shell</a>
+<ul>
+<li>atualizar ou mitigar (tem umas features do base64 que podem ser desabilitadas)</li>
+</ul>
+</li>
+<li>*sshole: <a href="https://sshhole.com/">https://sshhole.com/</a>
+<ul>
+<li>presente em ssh rodando em ambientes com a musl ao invés de libc (geralmente containers alpine)</li>
+<li>atualizar ou mitigar</li>
+</ul>
+</li>
+<li>GTA6: Aproveitando pra falar para vocês, não existe AINDA versão pra PC do GTA 6. Por favor não baixem e instalem um .EXE do MediaFire de 72MB. É mentira.</li>
+</ul>
+<h3 id="mais-um-ataque-na-cadeia-de-suprimentos"><a class="header" href="#mais-um-ataque-na-cadeia-de-suprimentos">Mais um ataque na cadeia de suprimentos:</a></h3>
+<ul>
+<li>Quero começar MESMO falando sobre mais um ataque da cadeira de suprimentos, dessa vez tendo como alvo a plataforma Optimizely usada para testes A/B</li>
+</ul>
+<p><a class="og-card" href="https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/malicious-website-1152x648.jpg" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Hundreds of websites deliver potent malware cocktail to unsuspecting visitors</strong><span class="og-card-description">Malware cocktail delivers cryptocurrency theft payloads and iOS exploits, among other things.</span><small class="og-card-source">Ars Technica</small></span></a></p>
+<ul>
+<li>188 sites de 178 organizações foram afetados. Incluindo <strong>Zoom, BBC, CNN, Salesforce, GitLab, IKEA, HSBC, Equifax, Air France-KLM, Ledger e Peacock</strong></li>
+</ul>
+<blockquote>
+<p>A Optimizely disponibiliza “trechos” (snippets) de código JavaScript que contêm tanto o código da própria empresa quanto o código fornecido por cada cliente. Esse JavaScript — que pode ser disponibilizado diretamente pela Optimizely ou a partir de um endpoint do cliente — é executado em todas as páginas que o cliente disponibiliza. De alguma forma, os invasores inseriram seu próprio código em uma parte do JavaScript de cada cliente afetado e, em seguida, fizeram com que ele fosse entregue a partir de cdn.optimizely.com. O JavaScript estava assinado com um certificado válido para esse domínio.</p>
+</blockquote>
+<ul>
+<li>O mais irônico é que, como um bom script malicioso, o código era servido em várias etapas especificas para cada tipo de dispositivo:</li>
+</ul>
+<blockquote>
+<p>1. Crypto wallet address swapping</p>
+<p>2. Card skimming</p>
+<p>3. Cookie and screenshot theft</p>
+<p>4. The DarkSword and Coruna exploit kits for iOS</p>
+</blockquote>
+<ul>
+<li>O sistema da Optimizely teria sido comprometido por causa de uma falha no processo de registro de novas contas deles. Foi essa CVE aqui:</li>
+</ul>
+<p><a class="og-card" href="https://nvd.nist.gov/vuln/detail/cve-2026-132224" target="_blank" rel="noopener noreferrer"><span class="og-card-body"><strong class="og-card-title">NVD - Home</strong><small class="og-card-source">nvd.nist.gov</small></span></a></p>
+<ul>
+<li>
+<p>Lista completa dos projetos: <a href="https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/">https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</a></p>
+</li>
+<li>
+<p>Teve um exemplo bem mais próximo de casa de um ataque assim esses dias, passou batido porque não sou canal de infosec,</p>
+</li>
+<li>
+<p>A loja virtual Convertr estava servindo um malware em um de seus scripts de carrinho de compras: <a href="https://x.com/namcios/status/2115056992792252484">https://x.com/namcios/status/2115056992792252484</a></p>
+</li>
+</ul>
+<p><a class="og-card" href="https://canaltech.com.br/seguranca/hackers-escondem-codigo-que-rouba-cartao-e-cpf-de-quem-compra-em-lojas-de-moda-no-brasil/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://tl.ctcdn.com.br/LV3S9AJJCqiWiNWfUs44IGyeQz4=/1200x675/smart/filters:format(webp):quality(85)/54b581b7-a3f2-4abc-957e-4742a83f8df6.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Hackers escondem código que rouba cartão e CPF de quem compra em lojas de moda no Brasil</strong><span class="og-card-description">Criminosos inseriram um c&amp;oacute;digo que captura dados de cart&amp;atilde;o e CPF em um servi&amp;ccedil;o da Convertr, plataforma usada por dezenas de marcas de moda brasileiras. Segundo</span><small class="og-card-source">Canaltech</small></span></a></p>
+<ul>
+<li>
+<p>O ataque teria ficado ativo pelo menos de 24/10/26 até 27/10/26 e era, como no caso acima, um card skimmer</p>
+</li>
+<li>
+<p>Esse último trimestre de 2026 talvez seja lembrado como o momento que a balança de segurança finalmente quebrou. Eu basicamente não tenho mais banda aqui no canal pra fazer vídeo falando sobre 10% das coisas:</p>
+<ul>
+<li>Fica a recomendação do Mano Deyvin que tá de parabéns porque está fazendo um trabalho melhor que eu aqui</li>
+</ul>
+</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/1hCS9oOcy54"></iframe>
+<ul>
+<li>
+<p>Dava pra gente parar de adicionar novas features agora e ficar corrigindo só as falhas de segurança + endurecer as medidas de segurança e mesmo assim a gente ia estar fodido</p>
+<ul>
+<li>Eu sei que parece pros desenvolvedores que estamos vivendo o caos no último ano, mas ainda não me parece que afetou DE VERDADE o resto da sociedade</li>
+<li>Eu não tiro de questão que possamos viver uma nova “pandemia global” por causa de um conjunto de falhas tão grande a gente seja OBRIGADO a parar</li>
+</ul>
+</li>
+<li>
+<p>Eu fico pensando no que precisaria acontecer pra todas as empresas terem que parar e inverter a lógica de adicionar mais código e features e corrigir o que já existe:</p>
+<ul>
+<li>Mesmo isso ia ser muito complicado porque mexer no que já tá funcionando sempre vai ser tênue. Quando faz uma obra sempre vai sair os ratos e baratas.</li>
+<li>Pensem nos EUA que resolveu atualizar o sistema de controle de vôos</li>
+</ul>
+</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="desbloqueio-de-switch-2-recompilações-e-ninjas-da-nintendo"><a class="header" href="#desbloqueio-de-switch-2-recompilações-e-ninjas-da-nintendo">Desbloqueio de Switch 2, recompilações e ninjas da Nintendo</a></h1>
 <p><strong>Veja também no canal:</strong></p>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/M8j5ROIuJiQ"></iframe>
@@ -7555,7 +7643,7 @@ portuguese sobre seu pre prompt
 <ul>
 <li>IA foi usada para ler os nomes dos estudantes numa formatura e pulou 100 nomes…</li>
 </ul>
-<p><a href="https://www.instagram.com/p/DYiHyqChw_g/">https://www.instagram.com/p/DYiHyqChw_g/</a></p>
+<p><a class="og-card" href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Instagram</strong><span class="og-card-description">Create an account or log in to Instagram - Share what you're into with the people who get you.</span><small class="og-card-source">Instagram</small></span></a></p>
 <h4 id="site-do-celular-para-trumpistas-é-hackeado"><a class="header" href="#site-do-celular-para-trumpistas-é-hackeado">Site do celular para Trumpistas é hackeado</a></h4>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/voxXDDq58Bk"></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/c8TwGH1B5wA "></iframe>
@@ -8752,7 +8840,7 @@ tem relação com o movimento de buscar coisas analógicas e fugir da tecnologia
 <p>Porque pode parecer só meme bobo, mas a repercussão foi tão grande que teve até teatro musical desses lixos de brainrot italiano, por exemplo. E como vocês viram isso movimenta milhões de visualizações no ecossistema YouTube, TikTok, Instagram, Kwai e etc…</p>
 </li>
 </ul>
-<p><a href="https://www.instagram.com/amigosbrainrots/">https://www.instagram.com/amigosbrainrots/</a></p>
+<p><a class="og-card" href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Instagram</strong><span class="og-card-description">Create an account or log in to Instagram - Share what you're into with the people who get you.</span><small class="og-card-source">Instagram</small></span></a></p>
 <ul>
 <li>E isso significa que tem gente ganhando dinheiro com um produto da voz do Bruno, mas sem pagar nem referenciar ele de nenhuma maneira. E ao mesmo tempo essas ferramentas são usadas para criar uma alternativa ao trabalho dele
 <ul>
