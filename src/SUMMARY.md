@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Optimizely, nginx2root, java4shell e mais](optimizely.md)
 - [Desbloqueio de Switch 2, recompilações e ninjas da Nintendo](zelda-switch2.md)
 - [O caos na aviação dos EUA](voos-eua.md)
 - [O ataque à APS e a queda da Microsoft](aps-e-microsoft.md)
