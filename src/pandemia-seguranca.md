@@ -10,8 +10,6 @@ Um compilado de notícias de invasões e quedas de serviços dessa última seman
 
 [](https://office365itpros.com/2026/11/16/exchange-online-outage-nov26/ (preview))
 
-<https://office365itpros.com/2026/11/16/exchange-online-outage-nov26/>
-
 - Um bug de concorrência que já estava presente desde o meio do ano
 - Um aumento no tráfego no dia 12 de Novembro que causava o bug mais consistentemente
 - 14% dos computadores estavam indisponíveis
@@ -28,8 +26,6 @@ Um compilado de notícias de invasões e quedas de serviços dessa última seman
 
 [](https://edition.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down (preview))
 
-<https://edition.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down>
-
 - Quando um vírus de pendrive infectou o exército dos EUA:
 
 {{#embed https://youtube.com/watch?v=uVPoq1Svz7g}}
@@ -38,15 +34,11 @@ Um compilado de notícias de invasões e quedas de serviços dessa última seman
 
 [](https://www.yahoo.com/news/us/articles/major-bank-customers-report-outages-191952112.html?guccounter=1 (preview))
 
-[https://www.yahoo.com/news/us/articles/major-bank-customers-report-outages-191952112.html](https://www.yahoo.com/news/us/articles/major-bank-customers-report-outages-191952112.html?guccounter=1)
-
 > Clientes de alguns dos maiores bancos do país relataram problemas para acessar contas e realizar transações nesta segunda-feira, em meio a um aumento acentuado nos relatos de possíveis instabilidades. Chase, Bank of America, Wells Fargo e U.S. Bank estão entre as instituições que registraram reclamações, segundo informações sobre falhas detalhadas pelo GV Wire.
 >
 > Os problemas mostraram-se particularmente intensos no Chase. Cerca de 20 mil relatos foram registrados pelo Downdetector por volta das 10h50 (horário do Pacífico), aponta o relatório. O Bank of America contabilizou quase 2 mil relatos, enquanto o U.S. Bank registrou cerca de mil e o Wells Fargo, quase 500.
 
 [](https://www.yahoo.com/finance/technology/ai/articles/chase-bank-says-cyberattack-may-171250044.html?guccounter=1 (preview))
-
-<https://www.yahoo.com/finance/technology/ai/articles/chase-bank-says-cyberattack-may-171250044.html?guccounter=1>
 
 > A Visa, a Mastercard e o JP Morgan Chase informaram que um ataque cibernético, que teve como alvo fornecedores terceirizados que prestam serviços a essas empresas, pode ter permitido que hackers acessassem nomes e endereços de e-mail de clientes.
 
@@ -75,38 +67,9 @@ Um compilado de notícias de invasões e quedas de serviços dessa última seman
 
 [](https://industrialcyber.co/industrial-cyber-attacks/fbi-warns-hackers-weaponizing-artex-ai-framework-to-automate-attacks-on-energy-manufacturing-telecom/ (preview))
 
-<https://industrialcyber.co/industrial-cyber-attacks/fbi-warns-hackers-weaponizing-artex-ai-framework-to-automate-attacks-on-energy-manufacturing-telecom/>
-
 - Esse foi meu momento Átila Iamarino:
-
-[](https://www.youtube.com/watch?v=r9r_VwoZvho (preview))
 
 {{#embed https://youtube.com/watch?v=r9r_VwoZvho}}
 
-[](https://www.youtube.com/shorts/TYQTEZ7dh4s (preview))
-
 {{#embed https://youtube.com/watch?v=TYQTEZ7dh4s}}
 
-### Gurizada da engenharia reversa mandando ver
-
-- TV Samsung
-
-[](https://www.reddit.com/r/singularity/comments/1xduimx/hacker_reverse_engineers_his_samsung_tv_and_finds/ (preview))
-
-<https://www.reddit.com/r/singularity/comments/1xduimx/hacker_reverse_engineers_his_samsung_tv_and_finds/>
-
-- Apps de celular
-
-[](https://ayoships.com/ (preview))
-
-<https://ayoships.com/>
-
-[](https://www.instagram.com/ayoships/ (preview))
-
-<https://www.instagram.com/ayoships/>
-
-### Guerreiros IP
-
-[](https://www.youtube.com/watch?v=BmOMG7rdf8A (preview))
-
-{{#embed https://youtube.com/watch?v=BmOMG7rdf8A}}
