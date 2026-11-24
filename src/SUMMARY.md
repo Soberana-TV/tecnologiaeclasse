@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Engenharia reversa expõe aplicativos de celular](eng-reversa-mobile.md)
 - [Uma pandemia de Infosec](pandemia-seguranca.md)
 - [Lendo seus comentários parte 1](comentarios1.md)
 - [Optimizely, nginx2root, java4shell e mais](optimizely.md)
