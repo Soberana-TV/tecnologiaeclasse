@@ -1,6 +1,7 @@
 # Tecnologia e Classe
 
 - [O que é Tecnologia e Classe?](./o_que.md)
+- [Princípios Básicos do Linux (pt. 1)](linux-pt1.md)
 - [Anthropic O maior IPO de todos os tempos UUUUUI](ipo-anthropic.md)
 - [Jensen Huang voltou](jensen-pt3.md)
 - [Engenharia reversa expõe aplicativos de celular](eng-reversa-mobile.md)
