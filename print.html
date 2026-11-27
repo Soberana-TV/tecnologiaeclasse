@@ -201,6 +201,267 @@
 <li><a href="https://bsky.app/profile/tecnologiaeclasse.com.br">Bluesky</a></li>
 <li><a href="https://www.threads.net/@tecnologiaeclasse">Threads</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="princípios-básicos-do-linux-pt-1"><a class="header" href="#princípios-básicos-do-linux-pt-1">Princípios Básicos do Linux (pt. 1)</a></h1>
+<p>Olá, meu nome é Sr. TeClas e eu já uso GNU/Linux faz mais de 15 anos. Todos os vídeos do canal são feitos no Linux e eu uso ele no trabalho todos os dias. E agora chegou a hora de vocês.</p>
+<p><strong>Veja também no canal:</strong></p>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/HZs_G5VyQzE"></iframe>
+<ul>
+<li>Já faz um tempinho que a gente vem fazendo uns tutoriais mais técnicos aqui no canal e eu meio que presumo que todo mundo usa GNU/Linux, mas eu sei que não é verdade… <strong>e nós vamos corrigir isso</strong></li>
+</ul>
+<p><img src="./linux-pt1/1.png" alt="image.png" /></p>
+<ul>
+<li>
+<p>Essa série de vídeos é o elo perdido pra vocês aprenderem várias coisas que comentamos aqui no canal e eu resolvi dividir ela em quantas partes for necessário pra sair logo.</p>
+<ul>
+<li>Hoje nós vamos focar na história do GNU/Linux</li>
+<li>O que é um sistema operacional e o que destaca o GNU/Linux</li>
+<li>Diferenças com o Windows</li>
+<li>O que são “distribuições” Linux</li>
+</ul>
+</li>
+<li>
+<p>O GNU/Linux, por que na realidade ele surge da junção de dois projetos (o GNU e o Linux), é um sistema operacional diferente do Windows. Se você está pensando em fazer essa migração, tenha esse fato em mente.</p>
+<ul>
+<li>2026 eu sinto que o Windows decaiu, o Linux popularizou, smart phones viraram comuns, tudo foi pra nuvem. Então isso não é mais um ponto de contenção</li>
+<li>Mas na década de 2000 era impossível evitar a comparação</li>
+</ul>
+</li>
+<li>
+<p>Entendam que é <em>essencial</em> aprender como ele funcionam para mexer no máximo de dispositivos de vocês (na realidade os sistemas <strong>UNIX</strong>, vamos falar da relação logo mais)</p>
+<ul>
+<li>O meu laptop e desktop rodam Linux</li>
+<li>O meu celular roda Linux</li>
+<li>A minha televisão LG roda Linux</li>
+<li>O meu R36s roda Linux</li>
+<li>Os meus servidores na nuvem também</li>
+</ul>
+</li>
+<li>
+<p>Então vamos voltar para o início e falar sobre <em>o que é computador</em>:</p>
+<ul>
+<li>Uma máquina que faz cálculos muito rápido</li>
+<li>Os cálculos podem ser programados</li>
+<li>Transforme entradas em números, transforme números em saídas e badabim badabam, você tem um “computador moderno”</li>
+</ul>
+</li>
+<li>
+<p>O que é um sistema operacional e por que precisamos dele?</p>
+</li>
+</ul>
+<p><a class="og-card" href="https://pt.wikipedia.org/wiki/Sistema_operativo" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Operating_system_placement-pt.svg/960px-Operating_system_placement-pt.svg.png?utm_source=pt.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Sistema operativo – Wikipédia, a enciclopédia livre</strong><small class="og-card-source">pt.wikipedia.org</small></span></a></p>
+<blockquote>
+<p><strong>Sistema operacional</strong> é um software que gerencia os recursos de um dispositivo, como a memória e o processamento, permite a execução de programas e aplicativos, define qual programa recebe atenção do processador, cria um sistema de arquivos, e fornece uma interface entre o computador e o usuário</p>
+</blockquote>
+<blockquote>
+<p>Segundo Tanenbaum, pela perspectiva do usuário ou programador, existem dois modos distintos de conceituar um sistema operacional:</p>
+<ul>
+<li>
+<p><strong>numa visão de cima para baixo (<em>top-down</em>)</strong>: é uma abstração do hardware, fazendo o papel de intermediário entre os programas (software) e os componentes físicos do computador;</p>
+<p>ou</p>
+</li>
+<li>
+<p><strong>numa visão de baixo para cima (<em>bottom-up</em>)</strong>: é um gerenciador de recursos, i.e., que controla as aplicações (processos) a executar, como, quando e com quais recursos (memória, disco, periféricos).</p>
+</li>
+</ul>
+<p>Um sistema operacional é projetado para ocultar as particularidades de hardware (ditas "de baixo nível") e, com sua atuação, criar uma máquina abstrata que fornece às aplicações serviços compreensíveis ao usuário (ditas "de alto nível").</p>
+</blockquote>
+<ul>
+<li>Então de novo, um sistema operacional:
+<ul>
+<li>Provê uma interface de abstração do hardware do computador: um programa escreve o valor “Tecnologia e Classe” na memória RAM, grava uma imagem no disco. Como exatamente? isso é problema do sistema operacional</li>
+<li>Gerencia o acesso concorrente aos recursos: um programa pede para ler uma imagem no disco, recebe um código de sucesso ou de erro e ela é carregada na memória. Como exatamente? Isso é problema do sistema operacional</li>
+</ul>
+</li>
+</ul>
+<h3 id="um-breve-história-do-gnulinux"><a class="header" href="#um-breve-história-do-gnulinux">Um breve história do GNU/Linux</a></h3>
+<ul>
+<li>Em 1969 a AT&amp;T Bell Labs criou o sistema operacional UNIX que posteriormente foi escrito na nova linguagem de alto nível “C”
+<ul>
+<li>Isso permitiu que ele fosse portado para diversos tipos de computadores mais facilmente</li>
+</ul>
+</li>
+<li>Na época a lei antitruste dos EUA não permitiu que a AT&amp;T Bell Labs, empresa de telecomunicação, vendendo o UNIX e ele era licenciado para universidades dos EUA
+<ul>
+<li>A simplicidade do sistema, licenciamento facilitado e a ‘filosofia do UNIX’ ajudou ele a se espalhar pelo meio acadêmico</li>
+<li>É necessário entender também que o software não era visto como a mercadoria principal dessas empresas, isso viria mais tarde</li>
+</ul>
+</li>
+<li>Em 1984 as empresas se desmembraram e começaram a vender o UNIX como um produto ao mesmo tempo que várias empresas começavam a comercializar estações de trabalho e servidores baseados com seus sistemas baseados em UNIX.</li>
+<li>Nessa mesma época  Richard Stallman cria o projeto GNU na tentativa de implementar um sistema aberto que fosse compatível com UNIX.</li>
+<li>O projeto chega a implementar diversas ferramentas essenciais, mas ainda fica devendo o GNU Hurd, o cerne do sistema operacional.</li>
+<li>Em 1987 o professor universitário Andrew Tanenbaum cria o Minix para ser um sistema operacional didático baseado em UNIX.</li>
+<li>Em 1990 Linus Torvalds, um estudante da Universidade de Helsinki, exposto ao Minix resolve “só por diversão” criar uma alternativa que tenha uma licença comercial e rode na arquitetura de computador 386 (o computador pessoal)</li>
+<li>Com o sistema ficando um pouco mais maduro ele resolve incorporar as ferramentas do projeto GNU para conseguir um sistema operacional inteiro.
+<ul>
+<li>GNU / (Linus + Unix) = GNU/Linux</li>
+</ul>
+</li>
+<li>A decisão mais importante que foi feita por Linus na época foi licenciar o código do kernel como GPL. Isso criou uma comunidade de software livre e aberto em torno do projeto (e eles nunca brigaram sobre anda e continuaram felizes para sempre (ironia :) )</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/Auoe3XsWthM"></iframe>
+<h3 id=""><a class="header" href="#"></a></h3>
+<p>A filosofia UNIX</p>
+<ul>
+<li>
+<p>O UNIX e diversos dos seus padrões (POSIX) tem uma “filosofia” de design minimalista e que com o tempo se provou muito eficiente:</p>
+<ul>
+<li>Programas que fazem apenas uma tarefa de forma especializada (modularidade)</li>
+<li>Interfaces de texto, transparentes e interoperáveis</li>
+<li>Tudo são arquivos e fluxos de dados
+<ul>
+<li>Processos são arquivos, dispositivos de hardware são arquivos</li>
+<li>Isso quer dizer que o código que lê um frame de um vídeo no HD, potencialmente é o mesmo código que lê um frame de uma webcam ou de um stream vindo pela rede</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Por exemplo: procurando todos arquivos do OBS na pasta atual:</p>
+</li>
+</ul>
+<pre><code>ls OBS*
+'OBS-2025-07-01 22H-48-02.mkv'  'OBS-2026-04-20 10H-34-17.mkv'  'OBS-2026-11-04 20H-45-56.mkv'  'OBS-2026-11-10 09H-25-47.mkv'  'OBS-2026-11-12 09H-39-35.mkv'  'OBS-2026-11-19 09H-33-58.mkv'  'OBS-2026-11-27 08H-15-23.mkv'
+'OBS-2025-07-01 23H-17-10.mkv'  'OBS-2026-05-16 12H-12-51.mkv'  'OBS-2026-11-05 09H-33-22.mkv'  'OBS-2026-11-11 09H-51-39.mkv'  'OBS-2026-11-12 09H-39-59.mkv'  'OBS-2026-11-19 09H-37-00.mkv'  'OBS-2026-11-27 08H-16-18.mkv'
+'OBS-2025-07-09 09H-38-26.mkv'  'OBS-2026-07-23 10H-10-53.mkv'  'OBS-2026-11-05 09H-34-33.mkv'  'OBS-2026-11-11 09H-52-22.mkv'  'OBS-2026-11-12 09H-40-25.mkv'  'OBS-2026-11-19 09H-37-35.mkv'  'OBS-2026-11-27 08H-37-26.mkv'
+'OBS-2025-07-26 18H-35-59.mkv'  'OBS-2026-07-29 08H-45-37.mkv'  'OBS-2026-11-09 09H-30-35.mkv'  'OBS-2026-11-11 19H-51-04.mkv'  'OBS-2026-11-12 09H-56-34.mkv'  'OBS-2026-11-19 09H-37-59.mkv'
+'OBS-2025-09-11 18H-23-42.mkv'  'OBS-2026-11-02 10H-19-34.mkv'  'OBS-2026-11-09 09H-31-55.mkv'  'OBS-2026-11-11 19H-57-33.mkv'  'OBS-2026-11-16 09H-11-06.mkv'  'OBS-2026-11-19 19H-31-03.mkv'
+'OBS-2025-11-10 22H-52-45.mkv'  'OBS-2026-11-03 10H-04-19.mkv'  'OBS-2026-11-09 09H-42-26.mkv'  'OBS-2026-11-11 19H-59-04.mkv'  'OBS-2026-11-16 09H-16-15.mkv'  'OBS-2026-11-26 10H-29-51.mkv'
+'OBS-2026-03-25 09H-37-50.mkv'  'OBS-2026-11-04 09H-35-15.mkv'  'OBS-2026-11-09 09H-42-59.mkv'  'OBS-2026-11-11 19H-59-19.mkv'  'OBS-2026-11-16 09H-17-10.mkv'  'OBS-2026-11-27 08H-08-39.mkv'
+'OBS-2026-04-16 13H-03-54.mp3'  'OBS-2026-11-04 19H-33-04.mkv'  'OBS-2026-11-10 09H-24-16.mkv'  'OBS-2026-11-11 19H-59-59.mkv'  'OBS-2026-11-17 10H-46-09.mkv'  'OBS-2026-11-27 08H-14-13.mkv'
+</code></pre>
+<ul>
+<li>Procurando todos arquivos OBS que foram gravados às 13 horas:</li>
+</ul>
+<pre><code>ls OBS* | grep 13H
+OBS-2026-04-16 13H-03-54.mp3
+</code></pre>
+<ul>
+<li>
+<p>Um sistema POSIX geralmente virá com um conjunto de ferramentas básicas que podem ser misturadas entre si para fazer coisas incríveis: <code>cat</code>, <code>sed</code>, <code>grep</code>, <code>ls</code>, <code>du</code>, <code>ps</code>, <code>man</code></p>
+<ul>
+<li>GNU/Linux, MacOS (atual), BSD</li>
+<li>Partes do Windows usam código e ideias do UNIX e é possível instalar um “ambiente POSIX” para trabalhar assim também no Windows (se você curte sofrer)</li>
+</ul>
+</li>
+<li>
+<p>Isso tudo não é só porque a gente gosta de arquivos de texto e digitar na telinha preta. Na realidade é uma maneira extremamente versátil e intuitiva de construir programas e interagir com o computador</p>
+<ul>
+<li>É uma filosofia de design que favorece fuçadores, programadores, a customização do sistema e etc…</li>
+<li>Mas em pleno 2026 isso também é mais fácil de explicar porque os agentes de IA usam quase exclusivamente texto e uma arquitetura de sistema assim é muito mais natural para trabalho com eles</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>"There is more Unix-nature in one line of shell script than there is in ten thousand lines of C."</strong> [<a href="http://www.catb.org/~esr/writings/unix-koans/ten-thousand.html">1</a>]</p>
+</blockquote>
+<h3 id="breve-comentário-sobre-o-sistema-de-arquivos"><a class="header" href="#breve-comentário-sobre-o-sistema-de-arquivos">Breve comentário sobre o sistema de arquivos</a></h3>
+<ul>
+<li>Sabendo de tudo isso e que o Linux é um sistema baseado em UNIX, o sistema de arquivos que é montado a partir da raiz <code>/</code> é mais importante do que parece, pois ele basicamente organiza e expõe todos os componentes do seu computador</li>
+</ul>
+<pre><code>ls /
+bin  boot  cdrom  dev  etc  home  lib  lib32
+lib64  libx32 lost+found  media  mnt  opt  proc
+root  run  sbin  snap  srv sys  tmp  usr  var
+</code></pre>
+<ul>
+<li>Por exemplo:</li>
+</ul>
+<pre><code># discos
+ls /dev/sd*
+
+# cameras ou dispositivos de captura
+ls /dev/video*
+
+# processos rodando
+ls /proc
+
+# drives externos
+ls /media
+ls /mnt
+</code></pre>
+<ul>
+<li>
+<p>Esses não são arquivos “normais”, eles são manipulados com chamadas de leitura e escrita do sistema operacional, são representações de fluxos de dados na memória e etc…</p>
+<ul>
+<li>Mas no geral eles se comportam como arquivos normais quando interagem com os comandos e ferramentas padrão do sistema</li>
+<li>Modular, ortogonal, elegante e etc…</li>
+</ul>
+</li>
+<li>
+<p>Obviamente o resto do que está ali são arquivos do sistema também e dependendo do seu  sabor de GNU/Linux você terá configurações levemente diferentes disso</p>
+<ul>
+<li>/var de dados e logs, /etc para configurações, /home para dados de usuários, /bin para executáveis …</li>
+</ul>
+</li>
+</ul>
+<h3 id="o-que-são-distribuições-gnulinux"><a class="header" href="#o-que-são-distribuições-gnulinux">O que são distribuições GNU/Linux?</a></h3>
+<ul>
+<li>
+<p>E daí estamos construindo as partes do nosso sistema operacional:</p>
+<ul>
+<li>Linux é o kernel: drivers de hardware, gerencia acesso ao componentes, gerencia processos e uso de memória, etc…</li>
+<li>Ferramentas GNU + ferramentas seguindo o padrão POSIX</li>
+<li>Interface gráfica</li>
+<li>Aplicativos de usuário</li>
+</ul>
+</li>
+<li>
+<p>As várias combinações desses diferentes componentes, empacotadas e distribuídas de uma maneira “pronta para uso” são chamadas <strong>distribuições</strong> ou <strong>distros</strong></p>
+</li>
+<li>
+<p>Distros geralmente definem um sistema gráfico, estrutura do sistema de arquivos, um sistema de pacotes, um conjunto de pacotes prontos e um repositório para encontrá-los</p>
+<ul>
+<li>Muitas vezes distros são construídas a partir de outras que usam padrões comuns</li>
+<li>Debian → Ubuntu → Zorin OS</li>
+<li>Debian → Ubuntu → Linux Mint</li>
+</ul>
+</li>
+<li>
+<p>Árvore genealógica das distros GNU/Linux:</p>
+</li>
+</ul>
+<p><a class="og-card" href="https://distrowatch.com/dwres.php?resource=family-tree" target="_blank" rel="noopener noreferrer"><span class="og-card-body"><strong class="og-card-title">DistroWatch.com: Put the fun back into computing. Use Linux, BSD.</strong><span class="og-card-description">News and feature lists of Linux and BSD distributions.</span><small class="og-card-source">distrowatch.com</small></span></a></p>
+<h3 id="conclusão"><a class="header" href="#conclusão">Conclusão:</a></h3>
+<ul>
+<li>Sim, essa foi a primeira parte da nossa série expicando o Linux.</li>
+<li>Os próximos episódios podem incluir uma parte mais prática demonstrando a instalação e uso do sistema</li>
+<li>Podemos falar sobre ferramentas comuns do dia a dia no Linux</li>
+<li>Podemos falar sobre usuários, arquivos, permissões, rede, interfaces de programação…</li>
+<li>Fica a pergunta pra vocês sobre o que gostariam</li>
+</ul>
+<h3 id="referências"><a class="header" href="#referências">Referências:</a></h3>
+<ul>
+<li>Documentário sobre a história do GNU/Linux:</li>
+</ul>
+<iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/errB71uSYLc"></iframe>
+<ul>
+<li>
+<p>The Cathedral and the Bazaar: <a href="http://www.catb.org/~esr/writings/cathedral-bazaar/">http://www.catb.org/~esr/writings/cathedral-bazaar/</a></p>
+<ul>
+<li>Texto clássico discutindo a maneira de desenvolver código aberto VS código proprietário e usando o Linux como estudo de caso</li>
+<li>Em portugês: <a href="http://www2.ic.uff.br/~otton/graduacao/informaticaI/catedralbazar.pdf">http://www2.ic.uff.br/~otton/graduacao/informaticaI/catedralbazar.pdf</a></li>
+</ul>
+</li>
+<li>
+<p>The Art of Unix Programming: <a href="http://www.catb.org/esr/writings/taoup/html/">http://www.catb.org/esr/writings/taoup/html/</a></p>
+</li>
+<li>
+<p>POSIX cheatsheet: <a href="https://pubs.opengroup.org/onlinepubs/9699919799/nframe.html">https://pubs.opengroup.org/onlinepubs/9699919799/nframe.html</a></p>
+</li>
+<li>
+<p>Manual do Oreio do Bash: <a href="https://aurelio.net/shell/">https://aurelio.net/shell/</a></p>
+</li>
+<li>
+<p>Consultar distribuições Linux: <a href="https://distrowatch.com/">https://distrowatch.com/</a></p>
+</li>
+<li>
+<p>Rodar uma VM com Linux online:</p>
+<ul>
+<li><a href="https://linuxcontainers.org/incus/try-it/">https://linuxcontainers.org/incus/try-it/</a></li>
+<li><a href="https://distrosea.com/">https://distrosea.com/</a></li>
+</ul>
+</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="anthropic-o-maior-ipo-de-todos-os-tempos-uuuuui"><a class="header" href="#anthropic-o-maior-ipo-de-todos-os-tempos-uuuuui">Anthropic: O maior IPO de todos os tempos UUUUUI</a></h1>
 <p>A maior empresa de IA (SI, desculpa Trump) do mundo está abrindo ações para o público em geral e o bagulho é complicado. Vamos tentar entender isso juntos.</p>
 <p><strong>Veja também no canal:</strong></p>
@@ -293,7 +554,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="referências"><a class="header" href="#referências">Referências:</a></h3>
+<h3 id="referências-1"><a class="header" href="#referências-1">Referências:</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/FhVbxweMaWM"></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/jAqT7bZdIbE"></iframe>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="jensen-huang-voltou"><a class="header" href="#jensen-huang-voltou">Jensen Huang voltou</a></h1>
@@ -630,7 +891,7 @@ Environment="OLLAMA_HOST=0.0.0.0:11434"
 <li>O exploit original já foi removido an última atualização (e ela estourou um fusível)</li>
 </ul>
 <p><a class="og-card" href="https://www.polygon.com/nintendo-switch-2-jailbreak-update/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/03/mario-clash.jpg?w=1600&amp;h=900&amp;fit=crop" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Nintendo Officially Shuts Down Switch 2 Jailbreak in New Update</strong><span class="og-card-description">Now we wait to see how long it takes hackers to find a new exploit</span><small class="og-card-source">Polygon.com</small></span></a></p>
-<h3 id=""><a class="header" href="#"></a></h3>
+<h3 id="-1"><a class="header" href="#-1"></a></h3>
 <p>O zelda OOT</p>
 <ul>
 <li>
@@ -803,7 +1064,7 @@ Environment="OLLAMA_HOST=0.0.0.0:11434"
 </li>
 </ul>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/GC0dAsRl0ao"></iframe>
-<h3 id="conclusão"><a class="header" href="#conclusão">Conclusão:</a></h3>
+<h3 id="conclusão-1"><a class="header" href="#conclusão-1">Conclusão:</a></h3>
 <ul>
 <li>
 <p>Incompetência, corrupção descarada e caos. Não podemos atribuir a ciberataques o que é facilmente explicado pelo resto todo… mas é uma hipótese a se entreter ainda. Vejamos nos próximos dias</p>
@@ -3367,7 +3628,7 @@ pm2 restart all
 <p>Um sistema “inteligente” e realmente buscando esse objetivo não revelaria suas intenções antes de ter força o suficiente para vencer um conflito assim.</p>
 </li>
 </ul>
-<h3 id="-1"><a class="header" href="#-1"></a></h3>
+<h3 id="-2"><a class="header" href="#-2"></a></h3>
 <ul>
 <li>
 <p>Porém, o que parece mais provável é que não estamos no ponto em que isso pode acontecer (mas podemos chegar lá)</p>
@@ -4498,7 +4759,7 @@ pm2 restart all
 <p>A gente ficou relativamente isolado dos efeitos no resto do mundo, mas se isso acontecer com os EUA a gente vai sentir.</p>
 </li>
 </ul>
-<h3 id="referências-1"><a class="header" href="#referências-1">Referências</a></h3>
+<h3 id="referências-2"><a class="header" href="#referências-2">Referências</a></h3>
 <p><a class="og-card" href="https://asiatimes.com/2026/07/why-south-korean-stocks-just-crashed/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://asiatimes.com/wp-content/uploads/2026/07/KOSPI-South-Korea.jpg" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Why South Korean stocks just crashed - Asia Times</strong><span class="og-card-description">Explaining stock market movements is always a little bit of a fool’s errand; no one really understands why stocks boom or crash on a given day or in a</span><small class="og-card-source">Asia Times</small></span></a></p>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/aFBzmWYxTrI"></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/nJtL9MBVj48"></iframe>
@@ -4907,7 +5168,7 @@ pm2 restart all
 <ul>
 <li>Como expor serviços para a rede externa?</li>
 </ul>
-<h3 id="referências-2"><a class="header" href="#referências-2">Referências</a></h3>
+<h3 id="referências-3"><a class="header" href="#referências-3">Referências</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/62Tmt1THacs "></iframe>
 <p><a href="https://docs.netbird.io/">https://docs.netbird.io/</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="a-apple-está-processando-a-openai"><a class="header" href="#a-apple-está-processando-a-openai">A Apple está processando a OpenAI</a></h1>
@@ -4946,7 +5207,7 @@ pm2 restart all
 <ul>
 <li>Na real isso é uma “terça feira” pra Apple que ja abriu diversos processos assim acusando os seus competidores. O que é curioso dessa vez é a petulância dos cavalos. Sintam só:</li>
 </ul>
-<h2 id="-2"><a class="header" href="#-2"></a></h2>
+<h2 id="-3"><a class="header" href="#-3"></a></h2>
 <blockquote>
 <p>Supostamente, quem comanda esse esquema de recrutamento é Tang Tan, que trabalhou por 24 anos na Apple antes de integrar a io Products — empresa de Jony Ive, ex-chefe de design da Apple — e, posteriormente, assumir o cargo de diretor de hardware da OpenAI em 2025.</p>
 <p>Segundo a Apple, Tan valeu-se de seu conhecimento interno — como o acesso a codinomes de projetos sigilosos — para levar funcionários da Apple a discutir produtos ainda não lançados durante entrevistas de emprego. Ele também teria utilizado um documento interno da Apple para elaborar uma lista de verificação destinada a ajudar funcionários que estavam de saída a burlar medidas de segurança ao subtrair segredos comerciais.</p>
@@ -5112,7 +5373,7 @@ horizonte temporal e com quais efeitos estruturantes.</p>
 <p>✅ Nós vamos receber investimentos em P&amp;D, teremos transferência de tecnologia, controle da operação com profissionais capacitados aqui e vocês recebem um % dos lucros operacionais</p>
 </li>
 </ul>
-<h3 id="conclusão-1"><a class="header" href="#conclusão-1">Conclusão</a></h3>
+<h3 id="conclusão-2"><a class="header" href="#conclusão-2">Conclusão</a></h3>
 <ul>
 <li>
 <p>Se eles tem bilhões de dólares para gastar comprando todo o estoque de memória RAM do mundo, eles tem o suficiente para um plano ambiental robusto e para arcar com um contrato “justo”</p>
@@ -5225,7 +5486,7 @@ horizonte temporal e com quais efeitos estruturantes.</p>
 <p><a href="https://xcancel.com/HalesFall/status/2085140029463257333">https://xcancel.com/HalesFall/status/2085140029463257333</a></p>
 <p>“Por favor devolvam a grana. Teremos que envolver o governo!”</p>
 <p><a href="https://xcancel.com/skysupersonic/status/2083912951027634204">https://xcancel.com/skysupersonic/status/2083912951027634204</a></p>
-<h3 id="conclusão-2"><a class="header" href="#conclusão-2">Conclusão</a></h3>
+<h3 id="conclusão-3"><a class="header" href="#conclusão-3">Conclusão</a></h3>
 <ul>
 <li>
 <p>As soluções descentralizadas são maravilhas tecnológicas e legitimamente muito interessantes de um ponto de vista técnico</p>
@@ -5321,8 +5582,8 @@ horizonte temporal e com quais efeitos estruturantes.</p>
 <ul>
 <li>Essa aproximação não se limita à Argentina, nós temos também o senhor Pedrinho fazendo visitas do mesmo teor ao Paraguai</li>
 </ul>
-<h3 id="conclusão-3"><a class="header" href="#conclusão-3">Conclusão</a></h3>
-<h2 id="-3"><a class="header" href="#-3"></a></h2>
+<h3 id="conclusão-4"><a class="header" href="#conclusão-4">Conclusão</a></h3>
+<h2 id="-4"><a class="header" href="#-4"></a></h2>
 <ul>
 <li>
 <p>Então o que a gente precisa entender é que isso não é uma coisa saindo do nada, nós já documentados essa tendência ao falar de:</p>
@@ -5341,7 +5602,7 @@ horizonte temporal e com quais efeitos estruturantes.</p>
 </li>
 </ul>
 <p><img src="./peter_thiel_argentina/luigi.gif" alt="image (3).png" /></p>
-<h3 id="referências-3"><a class="header" href="#referências-3">Referências</a></h3>
+<h3 id="referências-4"><a class="header" href="#referências-4">Referências</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/6iLf2h_fo-w "></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/KZsizKGLNpE "></iframe>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="anthropic-destruindo-livros-mensagens-vazadas-anthropic"><a class="header" href="#anthropic-destruindo-livros-mensagens-vazadas-anthropic">Anthropic destruindo livros, mensagens vazadas Anthropic</a></h1>
@@ -7095,7 +7356,7 @@ horizonte temporal e com quais efeitos estruturantes.</p>
 <p>Vamos ver como exemplo um circuito abaixador de tensão (<a href="https://ieeexplore.ieee.org/document/11421732">https://ieeexplore.ieee.org/document/11421732</a>) :</p>
 </li>
 </ul>
-<h5 id="-4"><a class="header" href="#-4"></a></h5>
+<h5 id="-5"><a class="header" href="#-5"></a></h5>
 <p>2.1.1 - Design - Nível lógico:</p>
 <p><img src="ceitec/image1.png" alt="" /></p>
 <p>Imagem 1: exemplo de esquemático a nível lógico de um sistema abaixador de tensão (entrada em 1.8V e saída em 1.2V com corrente de 100mA).</p>
@@ -7263,7 +7524,7 @@ horizonte temporal e com quais efeitos estruturantes.</p>
 <h4 id="como-estudar-pra-prova"><a class="header" href="#como-estudar-pra-prova">Como estudar pra prova?</a></h4>
 <p>Olhar o anexo 3 do edital, na trilha de interesse, e montar plano de estudo que cubra cada tópico listado. Não tem caminho fácil, mas é altamente enriquecedor.</p>
 <p>Não deixar de conferir o edital completo, disponível em: <a href="https://www.ufsm.br/pro-reitorias/prograd/editais/001-2026-2">https://www.ufsm.br/pro-reitorias/prograd/editais/001-2026-2</a></p>
-<h3 id="referências-4"><a class="header" href="#referências-4">Referências:</a></h3>
+<h3 id="referências-5"><a class="header" href="#referências-5">Referências:</a></h3>
 <ul>
 <li>Os Semicondutores, o Caminho para a Superação da Dependência<br />
 Tecnológica no Setor e o Papel da CEITEC <a href="https://lume.ufrgs.br/handle/10183/271585">https://lume.ufrgs.br/handle/10183/271585</a></li>
@@ -7382,7 +7643,7 @@ Tecnológica no Setor e o Papel da CEITEC <a href="https://lume.ufrgs.br/handle/
 <p>…</p>
 <p>Ou seja, na prática a subcontratação da empresa terceirizada significa que dinheiro público do município de São Paulo não teria sido usado apenas para garantir a instalação dos pontos de Wi-Fi e o acesso à conexão de internet, mas também para fazer propaganda de uma ação da gestão do prefeito enquanto ele era candidato. </p>
 </blockquote>
-<h3 id="-5"><a class="header" href="#-5"></a></h3>
+<h3 id="-6"><a class="header" href="#-6"></a></h3>
 <ul>
 <li>
 <p>Resumão do Dark Horse, WI FI, família Bolsonaro e Vorcaro</p>
@@ -7838,7 +8099,7 @@ portuguese sobre seu pre prompt
 <p>Segurança, setup em servidor, yadda yadda</p>
 </li>
 </ul>
-<h3 id="conclusão-4"><a class="header" href="#conclusão-4">Conclusão</a></h3>
+<h3 id="conclusão-5"><a class="header" href="#conclusão-5">Conclusão</a></h3>
 <ul>
 <li>
 <p>Espero que esse vídeo seja um pontapé inicial para quem quer testar o Nextcloud e outros softwares livres para fugir da experiência padrão dentro das bigtechs</p>
@@ -7850,7 +8111,7 @@ portuguese sobre seu pre prompt
 <p>Ideias, críticas e sugestões? Valeu!</p>
 </li>
 </ul>
-<h3 id="referências-5"><a class="header" href="#referências-5">Referências</a></h3>
+<h3 id="referências-6"><a class="header" href="#referências-6">Referências</a></h3>
 <ul>
 <li>Para quem quer um tutorial de instalação num servidor ‘do 0’ e realmente aprender o que cada componente faz. Experimentem esse vídeo</li>
 </ul>
@@ -7974,7 +8235,7 @@ portuguese sobre seu pre prompt
 <ul>
 <li>IA foi usada para ler os nomes dos estudantes numa formatura e pulou 100 nomes…</li>
 </ul>
-<p><a href="https://www.instagram.com/p/DYiHyqChw_g/">https://www.instagram.com/p/DYiHyqChw_g/</a></p>
+<p><a class="og-card" href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Instagram</strong><span class="og-card-description">Create an account or log in to Instagram - Share what you're into with the people who get you.</span><small class="og-card-source">Instagram</small></span></a></p>
 <h4 id="site-do-celular-para-trumpistas-é-hackeado"><a class="header" href="#site-do-celular-para-trumpistas-é-hackeado">Site do celular para Trumpistas é hackeado</a></h4>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/voxXDDq58Bk"></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/c8TwGH1B5wA "></iframe>
@@ -8429,7 +8690,7 @@ echo 3 &gt; /proc/sys/vm/drop_caches; true"
 </ul>
 </li>
 </ul>
-<h2 id="-6"><a class="header" href="#-6"></a></h2>
+<h2 id="-7"><a class="header" href="#-7"></a></h2>
 <ul>
 <li>Hoje esse tipo de vulnerabilidade, junto com ferramentas de CI, VPS, malwares distribuídos pela cadeia de suprimentos se torna bem mais desastroso e é por isso que administradores de sistemas passaram mais um final de semana arrancando os cabelos 🙂</li>
 </ul>
@@ -8509,7 +8770,7 @@ echo 3 &gt; /proc/sys/vm/drop_caches; true"
 </ul>
 <p><a class="og-card" href="https://g1.globo.com/economia/noticia/2025/06/29/o-que-sao-terras-raras-e-como-a-china-as-usa-como-arma-estrategica.ghtml" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://s2-g1.glbimg.com/LT-eL_QhZKtkoAuz2Fu3rY2EXJw=/1766x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/F/5/yICDOJSdum2mJAnokBvQ/captura-de-tela-2025-06-16-210020.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">O que são terras raras e como a China as usa como arma estratégica | G1</strong><span class="og-card-description">Domínio chinês sobre terras raras, essenciais para smartphones, carros elétricos e tecnologia militar, coloca país em situação de vantagem e expõe vulnerabilidades dos EUA e da UE.</span><small class="og-card-source">G1</small></span></a></p>
 <h3 id="e-por-que-não-pode-ser-a-gente"><a class="header" href="#e-por-que-não-pode-ser-a-gente">E por que não pode ser a gente?</a></h3>
-<h2 id="-7"><a class="header" href="#-7"></a></h2>
+<h2 id="-8"><a class="header" href="#-8"></a></h2>
 <ul>
 <li>
 <p>O  Brasil exporta minério bruto. A China exporta produto manufaturado. É essa a diferença kkkkk</p>
@@ -9171,7 +9432,7 @@ tem relação com o movimento de buscar coisas analógicas e fugir da tecnologia
 <p>Porque pode parecer só meme bobo, mas a repercussão foi tão grande que teve até teatro musical desses lixos de brainrot italiano, por exemplo. E como vocês viram isso movimenta milhões de visualizações no ecossistema YouTube, TikTok, Instagram, Kwai e etc…</p>
 </li>
 </ul>
-<p><a href="https://www.instagram.com/amigosbrainrots/">https://www.instagram.com/amigosbrainrots/</a></p>
+<p><a class="og-card" href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img class="og-card-image" src="https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png" alt="" loading="lazy"><span class="og-card-body"><strong class="og-card-title">Instagram</strong><span class="og-card-description">Create an account or log in to Instagram - Share what you're into with the people who get you.</span><small class="og-card-source">Instagram</small></span></a></p>
 <ul>
 <li>E isso significa que tem gente ganhando dinheiro com um produto da voz do Bruno, mas sem pagar nem referenciar ele de nenhuma maneira. E ao mesmo tempo essas ferramentas são usadas para criar uma alternativa ao trabalho dele
 <ul>
@@ -10200,7 +10461,7 @@ Because LinkedIn knows each user’s real name, employer, and job title, it is n
 <p>Então embora eu não quero saber de instalar essas coisas no meu computador e ache que no geral isso só tende a extremar ainda mais as medidas tomadas pela indústria... eu admiro os hackers e ativistas que mantém a tocha da pirataria acesa. Vocês são foda.</p>
 </li>
 </ul>
-<h3 id="referências-6"><a class="header" href="#referências-6">Referências</a></h3>
+<h3 id="referências-7"><a class="header" href="#referências-7">Referências</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/P1ZcUXknL8Y "></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/t_jyCBu0nUA "></iframe>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="demissão-em-massa-na-oracle-30-mil-pessoas"><a class="header" href="#demissão-em-massa-na-oracle-30-mil-pessoas">Demissão em massa na Oracle: 30 mil pessoas</a></h1>
@@ -10664,7 +10925,7 @@ Because LinkedIn knows each user’s real name, employer, and job title, it is n
 <p>Anúncios prematuros de produtos (Cairo, WinFS) para desencorajar concorrentes de investirem em soluções similares.</p>
 <p><strong>FUD (Fear, Uncertainty, Doubt):</strong> Campanhas sistemáticas contra competidores, especialmente DrDOS e posteriormente Linux.</p>
 <p><a href="http://www.roughlydrafted.com/RD/Q4.06/4E2A8848-5738-45B1-A659-AD7473899D7D.html">http://www.roughlydrafted.com/RD/Q4.06/4E2A8848-5738-45B1-A659-AD7473899D7D.html</a></p>
-<h3 id="-8"><a class="header" href="#-8"></a></h3>
+<h3 id="-9"><a class="header" href="#-9"></a></h3>
 <ul>
 <li>A Microsoft incluiu um código no Windows 3.1 que detectava DrDOS e exibia mensagens de erro falsas de incompatibilidade, mesmo quando o sistema funcionava perfeitamente.</li>
 </ul>
@@ -10893,7 +11154,7 @@ Because LinkedIn knows each user’s real name, employer, and job title, it is n
 <p>Então sim, eu quero o fim do capitalismo e todas big techs e multinacionais são horríveis. Mas eu quero muito o fim da Microsoft.</p>
 </li>
 </ul>
-<h3 id="referências-7"><a class="header" href="#referências-7">Referências</a></h3>
+<h3 id="referências-8"><a class="header" href="#referências-8">Referências</a></h3>
 <ul>
 <li><a href="https://www.propublica.org/article/ftc-investigating-microsoft-antitrust-cloud-computing">ProPublica Investigative Reporting</a></li>
 <li><a href="https://www.wired.com/story/at-age-50-microsoft-is-an-ai-giant-an-open-source-lover-and-bad-as-it-ever-was">WIRED - Microsoft at 50</a></li>
@@ -11204,7 +11465,7 @@ Because LinkedIn knows each user’s real name, employer, and job title, it is n
 <li>O custo energético e material para manter os gigantescos data centers de IA pode se tornar insustentável e se a energia e os componentes continuarem caros e escassos, podemos ver um estouro da bolha de investimentos em tecnologia e uma recessão focada no setor de serviços digitais</li>
 <li>Tenho ouvido uns rumores sobre uma aproximação da China com Taiwan devido às dificuldades de acesso à cadeia de suprimentos (os EUA não vão deixar isso nem a pau)</li>
 </ul>
-<h3 id="conclusão-5"><a class="header" href="#conclusão-5">Conclusão</a></h3>
+<h3 id="conclusão-6"><a class="header" href="#conclusão-6">Conclusão</a></h3>
 <ul>
 <li>
 <p>Em resumo, o conflito no Irã é um “microcosmo” das tensões e interdependências que são centrais no século XXI e a destruição da cadeia de suprimentos, hoje impulsionada por ações militares e geopolíticas, não é um evento isolado, mas um sintoma de um sistema global em crise.</p>
@@ -12001,7 +12262,7 @@ server {
 <ul>
 <li>Mas é isso pessoal, agora que eu mostrei o meu homelab a gente deixa aberto pra dúvidas aqui nos comentários e eu peço pra vocês me dizerem como estão construindo os seus. tmj</li>
 </ul>
-<h3 id="referências-8"><a class="header" href="#referências-8">Referências</a></h3>
+<h3 id="referências-9"><a class="header" href="#referências-9">Referências</a></h3>
 <p>Comandos Linux: <a href="https://aurelio.net/shell/">https://aurelio.net/shell/</a></p>
 <p>Chaves SSH: <a href="https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</a></p>
 <p>Guias de Homelab:</p>
@@ -12132,7 +12393,7 @@ server {
 <li>Funcionário da OpenAI demitido por vazar informações confidenciais para influenciar apos... previsões no Polymarket</li>
 </ul>
 <p><a href="https://techcrunch.com/2026/02/27/openai-fires-employee-for-using-confidential-info-on-prediction-markets/">https://techcrunch.com/2026/02/27/openai-fires-employee-for-using-confidential-info-on-prediction-markets/</a></p>
-<h3 id="conclusão-6"><a class="header" href="#conclusão-6">Conclusão</a></h3>
+<h3 id="conclusão-7"><a class="header" href="#conclusão-7">Conclusão</a></h3>
 <ul>
 <li>Agora o negócio tá meio desvairado mesmo, provavelmente a gente vai ver um backlash tremendo desse tipo de coisa e inclusive a espertona brasileira que é a cofundadora da Kalshi vai rodar hein.</li>
 <li>É socialismo ou barbárie, e a gente já tá vivendo a barbárie. Então é um dia de cada vez, se manter hidratado, ajudar a organizar a classe trabalhadora e vamo dale.</li>
@@ -13201,7 +13462,7 @@ No campo jurídico e regulatório, observamos abordagens notavelmente divergente
 <li>O interesse nesse tipo de solução e as contribuições e financiamento pra essas plataformas vão explodir agora.</li>
 <li>Pra quem sempre fala de contribuir e procura projetos para trabalhar junto com uma comunidade isso aqui é uma boa pedida.</li>
 </ul>
-<h3 id="referências-9"><a class="header" href="#referências-9">Referências</a></h3>
+<h3 id="referências-10"><a class="header" href="#referências-10">Referências</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/t1cxYtrz26M"></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/WeUPVaNR2vw"></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/qhxsE8dvbs4"></iframe>
@@ -13569,7 +13830,7 @@ No campo jurídico e regulatório, observamos abordagens notavelmente divergente
 <li>Hardware deles, empresas deles</li>
 </ul>
 <p><img src="./bolha_ia3/2.png" alt="2.png" /></p>
-<h3 id="referências-10"><a class="header" href="#referências-10">Referências</a></h3>
+<h3 id="referências-11"><a class="header" href="#referências-11">Referências</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ITxy2K-fhDU "></iframe>
 <p><a href="https://economictimes.indiatimes.com/tech/artificial-intelligence/rough-ride-for-ai-stocks-in-2026/articleshow/128035364.cms">https://economictimes.indiatimes.com/tech/artificial-intelligence/rough-ride-for-ai-stocks-in-2026/articleshow/128035364.cms</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="o-pessoal-de-ti-na-ilha"><a class="header" href="#o-pessoal-de-ti-na-ilha">O pessoal de TI na Ilha</a></h1>
@@ -13713,7 +13974,7 @@ No campo jurídico e regulatório, observamos abordagens notavelmente divergente
 <li>O Departamento de Justiça dos EUA achou uma foto do Epstein de bombeta comunista.</li>
 </ul>
 <p><a href="https://archive.is/20260203123340/https://oglobo.globo.com/mundo/noticia/2026/02/03/epstein-minimizou-crimes-sexuais-e-rejeitou-rotulo-de-diabo-em-entrevista-divulgada-pelo-governo-dos-eua.ghtml">https://archive.is/20260203123340/https://oglobo.globo.com/mundo/noticia/2026/02/03/epstein-minimizou-crimes-sexuais-e-rejeitou-rotulo-de-diabo-em-entrevista-divulgada-pelo-governo-dos-eua.ghtml</a></p>
-<h3 id="referências-11"><a class="header" href="#referências-11">Referências</a></h3>
+<h3 id="referências-12"><a class="header" href="#referências-12">Referências</a></h3>
 <p><a href="https://g1.globo.com/mundo/noticia/2026/02/05/quem-sao-os-bilionarios-e-poderosos-citados-nos-arquivos-de-epstein.ghtml">https://g1.globo.com/mundo/noticia/2026/02/05/quem-sao-os-bilionarios-e-poderosos-citados-nos-arquivos-de-epstein.ghtml</a></p>
 <p><a href="https://www.wired.com/story/epstein-files-tech-elites-gates-thiel-musk/">https://www.wired.com/story/epstein-files-tech-elites-gates-thiel-musk/</a></p>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/rpdTnPWFjDo "></iframe>
@@ -13925,7 +14186,7 @@ No campo jurídico e regulatório, observamos abordagens notavelmente divergente
 <p>É questão de dias até surgirem startups e alternativas a essa ferramenta. Algumas potencialmente mais seguras, porém muitas com certeza NÃO</p>
 </li>
 </ul>
-<h3 id="referências-12"><a class="header" href="#referências-12">Referências</a></h3>
+<h3 id="referências-13"><a class="header" href="#referências-13">Referências</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ITaBde9JcQ8 "></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/2PWFj50DcZU "></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/fM5LcS7VeL0 "></iframe>
@@ -14651,7 +14912,7 @@ EXPLOIT RESULTS
 <p>“if you program and want any longevity to your work, make a game. all else recycles, but people rewrite architectures to keep games alive.”<br />
 ― Why The Lucky Stiff</p>
 </blockquote>
-<h3 id="referências-13"><a class="header" href="#referências-13">Referências</a></h3>
+<h3 id="referências-14"><a class="header" href="#referências-14">Referências</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/zkDjLWsMg1A "></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/3yDXyW1WERg "></iframe>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="flock-alimenta-vigilância-criminosa-de-trump"><a class="header" href="#flock-alimenta-vigilância-criminosa-de-trump">Flock alimenta vigilância criminosa de Trump</a></h1>
@@ -14822,7 +15083,7 @@ EXPLOIT RESULTS
 </ul>
 <h3 id="consultar-o-endereço-dos-perfis"><a class="header" href="#consultar-o-endereço-dos-perfis">Consultar o endereço dos perfis</a></h3>
 <p><a href="https://okstupid.lol/">https://okstupid.lol/</a></p>
-<h3 id="referências-14"><a class="header" href="#referências-14">Referências</a></h3>
+<h3 id="referências-15"><a class="header" href="#referências-15">Referências</a></h3>
 <p><a href="https://chaos.social/@Back2theroot">https://chaos.social/@Back2theroot</a></p>
 <p><a href="https://cybernews.com/security/investigator-exposes-white-supremacist-sites-users/">https://cybernews.com/security/investigator-exposes-white-supremacist-sites-users/</a></p>
 <p><a href="https://futurism.com/artificial-intelligence/tinder-for-nazis-hacked">https://futurism.com/artificial-intelligence/tinder-for-nazis-hacked</a></p>
@@ -15135,7 +15396,7 @@ EXPLOIT RESULTS
 </ul>
 </li>
 </ul>
-<h3 id="referências-15"><a class="header" href="#referências-15">Referências</a></h3>
+<h3 id="referências-16"><a class="header" href="#referências-16">Referências</a></h3>
 <p><a href="https://abcnews.go.com/US/after-years-speculation-doj-faces-friday-deadline-release/story?id=128461125">https://abcnews.go.com/US/after-years-speculation-doj-faces-friday-deadline-release/story?id=12846112</a></p>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/R7i9KdVTFR4 "></iframe>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="a-merdificação-do-github"><a class="header" href="#a-merdificação-do-github">A merdificação do Github</a></h1>
@@ -15271,7 +15532,7 @@ EXPLOIT RESULTS
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ZQtJDqO2_oo "></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/cW2Mc5vBenk "></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/eAsxqnIBpK4 "></iframe>
-<h3 id="conclusão-7"><a class="header" href="#conclusão-7">Conclusão</a></h3>
+<h3 id="conclusão-8"><a class="header" href="#conclusão-8">Conclusão</a></h3>
 <ul>
 <li>
 <p>IA é roubo sim e muito mais do que pirataria. Se IA fosse bom não ia estar sendo abraçada assim pela burguesia.</p>
@@ -15449,7 +15710,7 @@ EXPLOIT RESULTS
 <p>Em resumo: eu não estou descrevendo nada novo aqui, mas existe uma maneira nova de financeirizar tudo e 'democratizar' o endividamente da classe trabalhadora e nós podemos estudar e prever isso olhando para os jogos online, jogos mobile e economia dos EUA onde diversas dessas inovações satânicas chegam primeiro.</p>
 </li>
 </ul>
-<h3 id="referências-16"><a class="header" href="#referências-16">Referências</a></h3>
+<h3 id="referências-17"><a class="header" href="#referências-17">Referências</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/9Ii1ROzeSwU "></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/Gq3v-Y6cvLI "></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/julHFXsKsdQ "></iframe>
@@ -15973,7 +16234,7 @@ EXPLOIT RESULTS
 <h3 id="e-o-banco-master"><a class="header" href="#e-o-banco-master">E o Banco Master?</a></h3>
 <p><a href="https://www.cnnbrasil.com.br/economia/mercado/caso-banco-master-entenda-o-que-ja-aconteceu-ate-agora/">https://www.cnnbrasil.com.br/economia/mercado/caso-banco-master-entenda-o-que-ja-aconteceu-ate-agora/</a></p>
 <p><a href="https://www.poder360.com.br/poder-economia/decisao-de-banco-central-e-cmn-deve-obrigar-nubank-a-mudar-de-nome/">https://www.poder360.com.br/poder-economia/decisao-de-banco-central-e-cmn-deve-obrigar-nubank-a-mudar-de-nome/</a></p>
-<h3 id="conclusão-8"><a class="header" href="#conclusão-8">Conclusão</a></h3>
+<h3 id="conclusão-9"><a class="header" href="#conclusão-9">Conclusão</a></h3>
 <ul>
 <li>Eu senti que esse dossiê não circulou tanto quanto os autores imaginaram e, pelo sentimento das pessoas que foram expostas a ele, o motivo parece ser:
 <ul>
@@ -16022,7 +16283,7 @@ EXPLOIT RESULTS
 <li>No final ela defende a necessidade da regulamentação da IA e cita a PL 2338. Temos vídeo no canal com o pessoal do UNIDAD falando sobre isso:</li>
 </ul>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/caB3WIl4jy0 "></iframe>
-<h3 id="conclusão-9"><a class="header" href="#conclusão-9">Conclusão</a></h3>
+<h3 id="conclusão-10"><a class="header" href="#conclusão-10">Conclusão</a></h3>
 <ul>
 <li>A reportagem se propõe a apresentar os 2 lados de uma questão complexa porém ao tratar isso de uma maneira puramente focada na 'inovação tecnológica' e fazer um imenso cherry picking nas entrevistas passa uma visão completamente distorcida do que os artistas realmente pensam.
 <ul>
@@ -16061,7 +16322,7 @@ EXPLOIT RESULTS
 <li>Esse é o nível de viralatismo que nós temos hoje no Brasil</li>
 <li>A gente não só vende os dados e o futuro dos nossos estudantes pras big techs como a gente faz isso num evento organizado porcamente e que prejudica o fluxo normal de ensino com os professores.</li>
 </ul>
-<h1 id="-9"><a class="header" href="#-9">🤡👍</a></h1>
+<h1 id="-10"><a class="header" href="#-10">🤡👍</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cloudflare-de-novo-aaaaaargg"><a class="header" href="#cloudflare-de-novo-aaaaaargg">Cloudflare de novo AAAAAARGG</a></h1>
 <p>A Cloudflare caiu de novo, manter a internet de pé é complicado. Nós já falamos disso algumas vezes no canal. Porém hoje eu trouxe alguns memes pra gente reagir.</p>
 <p><em>Veja no canal:</em></p>
@@ -16093,7 +16354,7 @@ EXPLOIT RESULTS
 <p><img src="./grokipedia/image.png" alt="image.png" /></p>
 <p><a href="https://www.wired.com/story/elon-musk-launches-grokipedia-wikipedia-competitor/">https://www.wired.com/story/elon-musk-launches-grokipedia-wikipedia-competitor/</a></p>
 <p><a href="https://www1.folha.uol.com.br/tec/2025/10/cofundador-da-wikipedia-inspira-elon-musk-a-criar-site-rival.shtml">https://www1.folha.uol.com.br/tec/2025/10/cofundador-da-wikipedia-inspira-elon-musk-a-criar-site-rival.shtml</a></p>
-<h3 id="-10"><a class="header" href="#-10"></a></h3>
+<h3 id="-11"><a class="header" href="#-11"></a></h3>
 <p>Wikipedia sobre a Grokipedia</p>
 <p><a href="https://en.wikipedia.org/wiki/Grokipedia">https://en.wikipedia.org/wiki/Grokipedia</a></p>
 <h3 id="exemplos-de-artigos-bizarros"><a class="header" href="#exemplos-de-artigos-bizarros">Exemplos de artigos bizarros</a></h3>
@@ -16167,7 +16428,7 @@ EXPLOIT RESULTS
 <p><a href="https://www.cnbc.com/2025/11/11/softbank-sells-its-entire-stake-in-nvidia-for-5point83-billion.html">https://www.cnbc.com/2025/11/11/softbank-sells-its-entire-stake-in-nvidia-for-5point83-billion.html</a></p>
 <p><strong>Peter Thiel, investidor extremamente influente no Vale do Silício, vende todas as ações da Nvidia que mantinha em seu fundo:</strong>  segundo ele, o hype em torno da IA está muito adiantado em relação aos  resultados econômicos reais e o mercado vive um cenário semelhante ao da  bolha de 1999 das empresas de internet (expectativas enormes sobre um  futuro que ainda levará anos para se concretizar). As ações da Nvidia  representavam 40% de seu portfólio. As informações são do site  TheStreet.</p>
 <p><a href="http://economictimes.indiatimes.com/tech/technology/peter-thiel-sells-entire-nvidia-stake-amid-ai-bubble-fears/articleshow/125379608.cms">http://economictimes.indiatimes.com/tech/technology/peter-thiel-sells-entire-nvidia-stake-amid-ai-bubble-fears/articleshow/125379608.cms</a></p>
-<h4 id="-11"><a class="header" href="#-11"></a></h4>
+<h4 id="-12"><a class="header" href="#-12"></a></h4>
 <h4 id="o-gargalo-seria-a-energia"><a class="header" href="#o-gargalo-seria-a-energia">O gargalo seria a energia?</a></h4>
 <p><strong>Dois  data centers recém-construídos no Vale do Silício – próximos da sede da  Nvidia – estão desligados porque não conseguem obter energia:</strong>  as instalações foram projetadas para suportar em conjunto quase 100 MW  de carga crítica, mas só poderão operar após a expansão da rede elétrica  local. Não há um cronograma firme para energização total, algo que pode  levar anos. Esse caso demonstra como a expansão da infraestrutura de IA  está descasado com projetos de geração e transmissão energia. As  informações são do site Tom’s Hardware.</p>
 <p><a href="https://www.tomshardware.com/tech-industry/data-centers-in-nvidias-hometown-sit-idle-as-grid-struggles-to-keep-up">https://www.tomshardware.com/tech-industry/data-centers-in-nvidias-hometown-sit-idle-as-grid-struggles-to-keep-up</a></p>
@@ -16290,7 +16551,7 @@ EXPLOIT RESULTS
 <li>Vamos continuar acompanhando os trabalhadores e contando as suas histórias e torcer para que as negociações com o sindicato de lá deem resultado.</li>
 <li>Sempre fiquem do lado dos trabalhadores</li>
 </ul>
-<h3 id="referências-17"><a class="header" href="#referências-17">Referências</a></h3>
+<h3 id="referências-18"><a class="header" href="#referências-18">Referências</a></h3>
 <p><a href="https://archive.is/t9zH3">https://archive.is/t9zH3</a></p>
 <p><a href="https://kotaku.com/inside-rockstar-games-culture-of-crunch-1829936466">https://kotaku.com/inside-rockstar-games-culture-of-crunch-1829936466</a></p>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/c9nOwjeznjI "></iframe>
@@ -16460,7 +16721,7 @@ Para chamar a atenção para as falhas percebidas da empresa, um funcionário co
 <p><a href="https://roxinhosjuntos.github.io/">https://roxinhosjuntos.github.io/</a></p>
 <h3 id="lembram-do-itaú"><a class="header" href="#lembram-do-itaú">Lembram do Itaú?</a></h3>
 <p><a href="https://www.migalhas.com.br/quentes/442263/apos-acordo-itau-indenizara-mais-de-mil-dispensados-por-produtividade">https://www.migalhas.com.br/quentes/442263/apos-acordo-itau-indenizara-mais-de-mil-dispensados-por-produtividade</a></p>
-<h3 id="conclusão-10"><a class="header" href="#conclusão-10">Conclusão</a></h3>
+<h3 id="conclusão-11"><a class="header" href="#conclusão-11">Conclusão</a></h3>
 <ul>
 <li>Eu tenho ouvido muitas análises sobre o porque, mas parece ser o mesmo de sempre:
 <ul>
@@ -16506,7 +16767,7 @@ Para chamar a atenção para as falhas percebidas da empresa, um funcionário co
 <blockquote>
 <p>Com poucos dias de diferença, as duas superpotências mundiais em inteligência artificial (IA) revelaram planos concorrentes para o futuro. Os Estados Unidos divulgaram seu abrangente Plano de Ação para IA, que prevê a desregulamentação, a expansão da indústria de semicondutores e pacotes de exportação de IA "completos" para aliados. Dias depois, a China apresentou sua proposta na Conferência Mundial de Inteligência Artificial em Xangai: um órgão global de governança de IA aberto ao Sul Global, um incentivo à colaboração em código aberto e uma crítica sutil à ideia de que a IA esteja se tornando "um jogo exclusivo" dominado por poucas nações.</p>
 </blockquote>
-<h3 id="referências-18"><a class="header" href="#referências-18">Referências</a></h3>
+<h3 id="referências-19"><a class="header" href="#referências-19">Referências</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ZP9lqjNa_BQ "></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/s_YfqQ_KHYA "></iframe>
 <h3 id="os-meus-testes"><a class="header" href="#os-meus-testes">Os meus testes...</a></h3>
@@ -16580,7 +16841,7 @@ Para chamar a atenção para as falhas percebidas da empresa, um funcionário co
 <blockquote>
 <p>Em 19 de setembro, a Ruby Central, uma organização sem fins lucrativos que administra o RubyGems.org, uma plataforma para compartilhamento de código e bibliotecas Ruby, assumiu o controle de vários repositórios do GitHub para Ruby Gems, bem como de outros projetos críticos de código aberto Ruby dos quais o restante da comunidade de desenvolvimento Ruby depende. Um grupo de desenvolvedores de código aberto que contribuiu para esses projetos e os manteve por anos teve suas permissões revogadas repentinamente. Quando esses desenvolvedores anunciaram nas redes sociais que seu acesso havia sido retirado, muitos desenvolvedores Ruby viram a decisão como uma traição às suas contribuições de anos para o ecossistema Ruby e para os princípios do código aberto em geral. Outros acusaram a Ruby Central de ceder à pressão corporativa de empresas como a Shopify, que, segundo eles, queriam mais controle sobre o projeto.</p>
 </blockquote>
-<h3 id="-12"><a class="header" href="#-12"></a></h3>
+<h3 id="-13"><a class="header" href="#-13"></a></h3>
 <blockquote>
 <p>O RubyGems.org e outras ferramentas essenciais do Ruby não foram interrompidos durante essa transição até o momento, mas o incidente revela uma verdade fundamental sobre a internet e o desenvolvimento de código aberto: grande parte da tecnologia que usamos diariamente e que consideramos garantida é mantida por um pequeno número de desenvolvedores que não são remunerados por esse trabalho ou recebem salários muito baixos em comparação com os das grandes empresas de tecnologia. O desenvolvimento de código aberto continua a viabilizar grande parte da internet, mas, à medida que algumas dessas ferramentas se tornam mais importantes e valiosas financeiramente, elas ficam sujeitas a maior escrutínio e pressão da comunidade, das organizações e das empresas que dependem delas.</p>
 </blockquote>
@@ -16609,7 +16870,7 @@ Para chamar a atenção para as falhas percebidas da empresa, um funcionário co
 <p>“Literalmente, só existe uma empresa que está fornecendo o dinheiro que mantém a Ruby Central funcionando, e é a Shopify”, Arko me disse. “Então, eu simplesmente não acho que haja outra explicação plausível além de a Shopify ter exigido isso.” Quando perguntei a Arko por que ele achava que a Ruby Central o removeu, se não fosse por motivos de segurança, Arko disse: “uma especulação totalmente impossível de provar é que o CEO da Shopify é o melhor amigo do DHH, que me odeia.” DHH também é membro do conselho da Shopify.</p>
 </blockquote>
 <h4 id="não-vamos-falar-de-política-no-trabalho"><a class="header" href="#não-vamos-falar-de-política-no-trabalho">"Não vamos falar de política no trabalho"</a></h4>
-<h4 id="-13"><a class="header" href="#-13"></a></h4>
+<h4 id="-14"><a class="header" href="#-14"></a></h4>
 <p><a href="https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy">https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy</a></p>
 <ul>
 <li>
@@ -16636,7 +16897,7 @@ Para chamar a atenção para as falhas percebidas da empresa, um funcionário co
 <li>Lembra vocês de alguém? Cada país tem o Elon Musk que merece não é mesmo?</li>
 </ul>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/qO7BI0UAj8c "></iframe>
-<h4 id="conclusão-11"><a class="header" href="#conclusão-11">Conclusão</a></h4>
+<h4 id="conclusão-12"><a class="header" href="#conclusão-12">Conclusão</a></h4>
 <ul>
 <li>O esforço de um fork provavelmente está fadado ao fracasso, uma análise muito parecida com a que eu faço da Godot. Porém os nomes apoiando essa cisão são muito mais pesados e essa crise não é algo menor... pode estourar de novo mais pra frente</li>
 <li>Fica a reflexão novamente sobre a dificuldade de conciliar um projeto de software livre (ou até mesmo aberto) e as pressões do mercado e políticas ditatoriais dos seus "donos"</li>
@@ -16826,7 +17087,7 @@ Para chamar a atenção para as falhas percebidas da empresa, um funcionário co
 </li>
 <li>
 <p>E se a gente adivinhar o "tempo do mercado" certinho o vídeo viraliza e:</p>
-<h1 id="-14"><a class="header" href="#-14">🤑</a></h1>
+<h1 id="-15"><a class="header" href="#-15">🤑</a></h1>
 </li>
 </ul>
 <h4 id="quando-o-sasha-aparece-na-timeline-eu-sei-que-o-bagulho-tá-sério"><a class="header" href="#quando-o-sasha-aparece-na-timeline-eu-sei-que-o-bagulho-tá-sério">Quando o Sasha aparece na timeline eu sei que o bagulho tá sério</a></h4>
@@ -16916,7 +17177,7 @@ Para chamar a atenção para as falhas percebidas da empresa, um funcionário co
 <ul>
 <li>Quando a bolha estourar podemos entrar num ciclo mais saudável de hype, mas eu tenho certeza que o capitalismo vai dar um jeito de nos surpreender :)</li>
 </ul>
-<h3 id="referências-19"><a class="header" href="#referências-19">Referências</a></h3>
+<h3 id="referências-20"><a class="header" href="#referências-20">Referências</a></h3>
 <p><a href="https://www.wheresyoured.at/the-case-against-generative-ai/">https://www.wheresyoured.at/the-case-against-generative-ai/</a></p>
 <p><a href="https://www.wheresyoured.at/the-haters-gui/">https://www.wheresyoured.at/the-haters-gui/</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="eu-adoro-o-audacity-ainda-mais-agora"><a class="header" href="#eu-adoro-o-audacity-ainda-mais-agora">Eu adoro o Audacity ainda mais agora</a></h1>
@@ -17200,7 +17461,7 @@ Para chamar a atenção para as falhas percebidas da empresa, um funcionário co
 <li>Dito isso sigam o nosso Bandcamp, é de longe a melhor rede para músicos. Se você tem banda linke a gente no perfil que vamos linkar vocês e etc...</li>
 </ul>
 <p><a href="https://mortticia.bandcamp.com/">https://mortticia.bandcamp.com/</a></p>
-<h3 id="conclusão-12"><a class="header" href="#conclusão-12">Conclusão</a></h3>
+<h3 id="conclusão-13"><a class="header" href="#conclusão-13">Conclusão</a></h3>
 <ul>
 <li>Streaming está morto, vida longa <del>à pirataria</del> ao compartilhamento!</li>
 <li>Mas, o problema é sempre o mesmo: precisamos desenvolver formas de financiar o trabalho de quem produz conteúdo que tem valor para nós.</li>
@@ -18299,7 +18560,7 @@ Para chamar a atenção para as falhas percebidas da empresa, um funcionário co
 <li>A internet não está quebrada porque você não consegue jogar seu joguinho pornô (facilmente). A internet está quebrada porque o nosso sistema econômico está quebrado e liberdade econômica condiciona liberdade de expressão</li>
 <li>Então, sim gamers nós estamos do mesmo lado, mas é porque eu estou do lado dos trabalhadores.</li>
 </ul>
-<h4 id="referências-20"><a class="header" href="#referências-20">Referências</a></h4>
+<h4 id="referências-21"><a class="header" href="#referências-21">Referências</a></h4>
 <p><a href="https://www.404media.co/steam-itchio-collective-shout-nsfw-games-campaign/?ref=daily-stories-newsletter">https://www.404media.co/steam-itchio-collective-shout-nsfw-games-campaign/?ref=daily-stories-newsletter</a></p>
 <p><a href="https://www.pcguide.com/news/valve-responds-to-payment-processor-controversy-hopes-devs-have-another-game-to-put-on-steam/">https://www.pcguide.com/news/valve-responds-to-payment-processor-controversy-hopes-devs-have-another-game-to-put-on-steam/</a></p>
 <p><a href="https://items.gog.com/freedomtobuy/index.html">https://items.gog.com/freedomtobuy/index.html</a></p>
@@ -18969,7 +19230,7 @@ trás deles.</p>
 <li>Como podemos pensar a legislação dessas ferramentas?Vocês acreditam que haverão empecilhos legais para o uso desses modelos no futuro?</li>
 <li>Por que essas ferramentas vem primariamente dos EUA, China e um pouquinho da Europa?</li>
 </ul>
-<h3 id="referências-21"><a class="header" href="#referências-21">Referências</a></h3>
+<h3 id="referências-22"><a class="header" href="#referências-22">Referências</a></h3>
 <p><a href="https://www.3blue1brown.com/topics/neural-networks">https://www.3blue1brown.com/topics/neural-networks</a></p>
 <p><a href="https://ainowinstitute.org/publications/ai-generated-business#h-from-safe-ai-to-agi-nbsp-and-the-hype-led-business-model-genesis">https://ainowinstitute.org/publications/ai-generated-business#h-from-safe-ai-to-agi-nbsp-and-the-hype-led-business-model-genesis</a></p>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/BQTXv5jm6s4 "></iframe>
@@ -19179,7 +19440,7 @@ não remoção de conteúdo</li>
 <p>Seria esse um caminho para uma coalisão maior adotar a luta por uma boa PL como a 2630/2023 ou a direita vai continuar usando o STF como bode expiatório?</p>
 </li>
 </ul>
-<h4 id="referências-22"><a class="header" href="#referências-22">Referências:</a></h4>
+<h4 id="referências-23"><a class="header" href="#referências-23">Referências:</a></h4>
 <p><a href="https://irisbh.com.br/wp-content/uploads/2024/12/IRIS-Nota-Tecnica-sobre-o-julgamento-art.-19-STF.pdf">https://irisbh.com.br/wp-content/uploads/2024/12/IRIS-Nota-Tecnica-sobre-o-julgamento-art.-19-STF.pdf</a></p>
 <p><a href="https://direitosnarede.org.br/2024/11/14/nota-sobre-constitucionalidade-do-art-19-do-mci/">https://direitosnarede.org.br/2024/11/14/nota-sobre-constitucionalidade-do-art-19-do-mci/</a></p>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/BbBgSN449Rg "></iframe>
@@ -19318,7 +19579,7 @@ não remoção de conteúdo</li>
 </ul>
 </li>
 </ul>
-<h3 id="conclusão-13"><a class="header" href="#conclusão-13"><strong>Conclusão</strong></a></h3>
+<h3 id="conclusão-14"><a class="header" href="#conclusão-14"><strong>Conclusão</strong></a></h3>
 <ul>
 <li>A Luta pela Soberania Digital é um dos aspectos maiores na luta pela libertação dos trabalhadores</li>
 </ul>
@@ -19550,7 +19811,7 @@ não remoção de conteúdo</li>
 <li>Cooperativismo digital e alternativas descentralizadas</li>
 <li>Como servidores e profissionais de TI podem atuar na luta pela soberania digital dentro e fora de seus ambientes (indicações de livros?)</li>
 </ul>
-<h3 id="conclusão-14"><a class="header" href="#conclusão-14"><strong>Conclusão</strong></a></h3>
+<h3 id="conclusão-15"><a class="header" href="#conclusão-15"><strong>Conclusão</strong></a></h3>
 <ul>
 <li>A Luta pela Soberania Digital é um dos aspectos maiores na libertação da nossa nação.</li>
 <li>Perguntas e debate?</li>
@@ -19578,7 +19839,7 @@ não remoção de conteúdo</li>
 </ul>
 <p><img src="./13_06_25/image.png" alt="image.png" /></p>
 <h3 id="mas-que-pra-é-essa"><a class="header" href="#mas-que-pra-é-essa">Mas que p**ra é essa?</a></h3>
-<h3 id="-15"><a class="header" href="#-15"></a></h3>
+<h3 id="-16"><a class="header" href="#-16"></a></h3>
 <p><a href="https://g1.globo.com/tecnologia/noticia/2025/04/29/governo-revela-projeto-para-brasileiros-venderem-dados-para-empresas-entenda.ghtml">https://g1.globo.com/tecnologia/noticia/2025/04/29/governo-revela-projeto-para-brasileiros-venderem-dados-para-empresas-entenda.ghtml</a></p>
 <p><a href="https://restofworld.org/2025/brazil-dwallet-user-data-pilot/">https://restofworld.org/2025/brazil-dwallet-user-data-pilot/</a></p>
 <blockquote>
@@ -19750,7 +20011,7 @@ não remoção de conteúdo</li>
 <li>Em breve no canal!</li>
 </ul>
 <h2 id="recomendação-de-vídeos-4"><a class="header" href="#recomendação-de-vídeos-4">Recomendação de vídeos</a></h2>
-<h4 id="-16"><a class="header" href="#-16"></a></h4>
+<h4 id="-17"><a class="header" href="#-17"></a></h4>
 <p>"Quando alguém vai fazer algo?"</p>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/zXrjlOE9e50"></iframe>
 <p>Sobre a Palantir</p>
@@ -20394,7 +20655,7 @@ Eu vou fazer um software que resolve X problema!</p>
 <p>Eu queria mostrar pra vocês uma coisa 'vibe code' que eu fiz, mas ele não conseguiu hu3hu3</p>
 <p>Eu queria que ele me fizesse uma biblioteca em Rust e todos LLM que testei isso não conseguiram, mas talvez um dia...</p>
 <h4 id="elon-musk-trabalhando-duro-pra-destruir-os-eua-kkkkkk"><a class="header" href="#elon-musk-trabalhando-duro-pra-destruir-os-eua-kkkkkk">Elon Musk trabalhando duro pra destruir os EUA kkkkkk</a></h4>
-<h4 id="-17"><a class="header" href="#-17"></a></h4>
+<h4 id="-18"><a class="header" href="#-18"></a></h4>
 <p><a href="https://www.wired.com/story/doge-rebuild-social-security-administration-cobol-benefits/">https://www.wired.com/story/doge-rebuild-social-security-administration-cobol-benefits/</a></p>
 <ul>
 <li>Musk e seus techbros acham que vão conseguir migrar o código do sistema de previdência dos EUA de Cobol para uma linguagem mais moderna, em alguns MESES</li>
@@ -20463,7 +20724,7 @@ Eu vou fazer um software que resolve X problema!</p>
 </ul>
 </li>
 </ul>
-<h5 id="referências-23"><a class="header" href="#referências-23">Referências:</a></h5>
+<h5 id="referências-24"><a class="header" href="#referências-24">Referências:</a></h5>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/LwGErMSYIAU"></iframe>
 <ul>
 <li>Como o governo britânico propôs quebrar a criptografia do WhatsApp: <a href="https://www.lawfaremedia.org/article/principles-more-informed-exceptional-access-debate">https://www.lawfaremedia.org/article/principles-more-informed-exceptional-access-debate</a></li>
@@ -20584,7 +20845,7 @@ Eu vou fazer um software que resolve X problema!</p>
 </ul>
 </li>
 </ul>
-<h4 id="-18"><a class="header" href="#-18"></a></h4>
+<h4 id="-19"><a class="header" href="#-19"></a></h4>
 <h3 id="deepseek-não-pára"><a class="header" href="#deepseek-não-pára">Deepseek não pára</a></h3>
 <p><a href="https://apidog.com/blog/deepseek-open-source-week/">https://apidog.com/blog/deepseek-open-source-week/</a></p>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/48GRiu-TMmg"></iframe>
@@ -20630,7 +20891,7 @@ Eu vou fazer um software que resolve X problema!</p>
 </code></pre>
 </li>
 </ul>
-<h4 id="referências-24"><a class="header" href="#referências-24">Referências</a></h4>
+<h4 id="referências-25"><a class="header" href="#referências-25">Referências</a></h4>
 <ul>
 <li>
 <p>Projeto no Github: <a href="https://github.com/rust-lang/rustlings/">https://github.com/rust-lang/rustlings/</a></p>
@@ -20709,7 +20970,7 @@ Eu vou fazer um software que resolve X problema!</p>
 <li>Como manter um projeto aberto e compromissado com internet livre, sem dinheiro, sem política e sem contradições?</li>
 </ul>
 <p><img src="./mozilla_firefox/image.png" alt="image.png" /></p>
-<h4 id="referências-25"><a class="header" href="#referências-25">Referências</a></h4>
+<h4 id="referências-26"><a class="header" href="#referências-26">Referências</a></h4>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/aw-XYrMFb0A"></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/pygWS1ihtF8"></iframe>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/Rc96ISKh2OM"></iframe>
@@ -20800,7 +21061,7 @@ Eu vou fazer um software que resolve X problema!</p>
 <li>Quem acha que isso tem a ver com a comunidade Rust exclusivamente claramente chegou no software aberto e livre ontém</li>
 <li>Não abdiquem dos seus cargos se vocês acreditam nos seus projetos. A luta também é para termos os melhores projetos tecnicamente.</li>
 </ul>
-<h3 id="referências-26"><a class="header" href="#referências-26">Referências</a></h3>
+<h3 id="referências-27"><a class="header" href="#referências-27">Referências</a></h3>
 <p><a href="https://www.phoronix.com/news/Hellwig-DMA-Helpers-Removed">https://www.phoronix.com/news/Hellwig-DMA-Helpers-Removed</a></p>
 <p><a href="https://www.phoronix.com/news/Torvalds-On-Rust-Maintainers">https://www.phoronix.com/news/Torvalds-On-Rust-Maintainers</a></p>
 <p><a href="https://www.phoronix.com/news/Greg-KH-On-New-Rust-Code">https://www.phoronix.com/news/Greg-KH-On-New-Rust-Code</a></p>
@@ -20907,7 +21168,7 @@ Eu vou fazer um software que resolve X problema!</p>
 <li>Como isso se relaciona com o mercado de trabalho em tecnologia?</li>
 <li>Como isso se relaciona com colonialismo digital e imperialismo?</li>
 </ul>
-<h4 id="conclusão-15"><a class="header" href="#conclusão-15">Conclusão</a></h4>
+<h4 id="conclusão-16"><a class="header" href="#conclusão-16">Conclusão</a></h4>
 <ul>
 <li>Os pesquisadores recomendam o desenvolvimento de ferramentas que incluam essas preocupações no seu desenvolvimento</li>
 <li>Eu recomendo ativar sempre uma visão crítica</li>
@@ -22195,7 +22456,7 @@ received-spf: Fail (protection.outlook.com: domain of hotmail.com does not
 <li>Fique atento a comportamentos estranhos em suas contas e logins / requisições de senhas suspeitas</li>
 <li>Use senhas seguras e diferenciadas. Busque aprender a usar um gerenciador de senhas</li>
 </ul>
-<h4 id="referências-27"><a class="header" href="#referências-27">Referências</a></h4>
+<h4 id="referências-28"><a class="header" href="#referências-28">Referências</a></h4>
 <p><a href="https://www.valimail.com/blog/what-is-spf/">https://www.valimail.com/blog/what-is-spf/</a></p>
 <p><a href="https://malwaretips.com/blogs/have-you-heard-about-pegasus-blackmail-email-scam/">https://malwaretips.com/blogs/have-you-heard-about-pegasus-blackmail-email-scam/</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="melhores-Álbuns-de-2024"><a class="header" href="#melhores-Álbuns-de-2024">Melhores Álbuns de 2024</a></h1>
@@ -23537,7 +23798,7 @@ They can come back in the future if sufficient documentation is provided.
 <p><a href="https://www-windowscentral-com.translate.goog/software-apps/google-drive-is-finally-coming-to-windows-on-arm?_x_tr_sl=es&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp">https://www-windowscentral-com.translate.goog/software-apps/google-drive-is-finally-coming-to-windows-on-arm?_x_tr_sl=es&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp</a></p>
 <p><strong>Após suspensão, Autoridade Nacional de Proteção de Dados autoriza Meta a coletar dados de usuários para treinar seus modelos:</strong>  a empresa deverá comunicar de maneira clara a ação, utilizando  notificações via e-mail, avisos de privacidade e banners específicos nos  aplicativos, além de incluir um processo simplificado permitindo que as  pessoas desativem o uso de seus dados. As informações são do site  Tecnoblog.</p>
 <p><a href="https://g1.globo.com/politica/noticia/2024/08/30/anpd-acata-plano-de-conformidade-da-meta-e-libera-uso-de-dados-de-brasileiros-para-treinar-ia-usuario-podera-negar-acesso.ghtml">https://g1.globo.com/politica/noticia/2024/08/30/anpd-acata-plano-de-conformidade-da-meta-e-libera-uso-de-dados-de-brasileiros-para-treinar-ia-usuario-podera-negar-acesso.ghtml</a></p>
-<h3 id="-19"><a class="header" href="#-19"></a></h3>
+<h3 id="-20"><a class="header" href="#-20"></a></h3>
 <p><strong>Moxie Marlinspike, criador do Signal, argumenta que metodologia Ágil compromete inovação no desenvolvimento de software:</strong>  segundo ele, a abordagem cria “camadas de abstração” que afastam os  programadores de um entendimento profundo do que estão construindo,  limitando a capacidade de serem criativos e inovadores. Marlinspike  também traça um paralelo entre desenvolvedores e pesquisadores de  segurança, alegando que o segundo se preocupa em entender como “as  coisas realmente funcionam”. Além disso, ele utiliza uma metáfora do  mundo de Harry Potter, comparando o entendimento profundo do software à  “magia”, capaz de “mudar o mundo”. As informações são do site The  Register.</p>
 <p><a href="https://www-theregister-com.translate.goog/2024/08/09/marlinspike/?_x_tr_sl=es&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp">https://www-theregister-com.translate.goog/2024/08/09/marlinspike/?_x_tr_sl=es&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapphttps://www-theregister-com.translate.goog/2024/08/09/marlinspike/?_x_tr_sl=es&amp;_x_tr_tl=pt&amp;_x_tr_hl=pt-BR&amp;_x_tr_pto=wapp</a></p>
 <p><strong>Ferramenta utilizada por desenvolvedores e pesquisadores de segurança é removida do Docker Hub a pedido da Apple:</strong>  com 750 mil downloads, o “Docker-OSX” possibilitava a virtualização do  macOS em sistemas Linux e Windows, podendo ser usado para testar  softwares ou encontrar vulnerabilidades. O código-fonte do projeto ainda  está disponível no repositório “sickcodes/Docker-OSX” do GitHub, mas  sem conter os binários de instalação do macOS, o que poderia evitar  futuros pedidos de remoção. As informações são do site BleepingComputer.</p>
@@ -23572,10 +23833,10 @@ They can come back in the future if sufficient documentation is provided.
 <p><a href="https://www.cnnbrasil.com.br/tecnologia/meta-anuncia-atualizacao-para-filtros-do-instagram-veja-o-que-muda/">https://www.cnnbrasil.com.br/tecnologia/meta-anuncia-atualizacao-para-filtros-do-instagram-veja-o-que-muda/</a></p>
 <p><strong>Bug em iPhones e iPads faz interface do iOS travar ao digitar apenas 4 caracteres:</strong>  o problema ocorre ao inserir uma sequência de aspas de abertura,  fechamento, e dois-pontos, seguido de qualquer outro caractere na barra  de pesquisa do aplicativo de configurações ou da biblioteca de apps,  fazendo com que a tela do dispositivo reinicie. Embora a falha cause uma  interrupção temporária, pesquisadores indicam que ela não representa  uma ameaça de segurança, pois não pode ser explorada remotamente por  terceiros. A Apple ainda não se pronunciou a respeito do problema. As  informações são do site TechCrunch.</p>
 <p><a href="https://techcrunch.com/2024/08/21/typing-these-four-characters-could-crash-your-iphone/">https://techcrunch.com/2024/08/21/typing-these-four-characters-could-crash-your-iphone/</a></p>
-<h4 id="-20"><a class="header" href="#-20">“”::</a></h4>
+<h4 id="-21"><a class="header" href="#-21">“”::</a></h4>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/aznM_NK15Vc"></iframe>
 <p><a href="https://www.tecmundo.com.br/ios/43918-blog-nao-salvo-espalha-o-caos-entre-usuarios-de-ios-com-codigo-via-twitter.htm">https://www.tecmundo.com.br/ios/43918-blog-nao-salvo-espalha-o-caos-entre-usuarios-de-ios-com-codigo-via-twitter.htm</a></p>
-<h3 id="-21"><a class="header" href="#-21"></a></h3>
+<h3 id="-22"><a class="header" href="#-22"></a></h3>
 <h3 id="greve-da-serpro"><a class="header" href="#greve-da-serpro">Greve da Serpro</a></h3>
 <p><a href="https://www.baguete.com.br/noticias/27/08/2024/serpro-entra-em-greve-hoje">https://www.baguete.com.br/noticias/27/08/2024/serpro-entra-em-greve-hoje</a></p>
 <p><a href="https://www.serpro.gov.br/menu/noticias/noticias-2024/serpro-garante-manutencao-servicos">https://www.serpro.gov.br/menu/noticias/noticias-2024/serpro-garante-manutencao-servicos</a></p>
@@ -24121,7 +24382,7 @@ next_price 4.775, 10 # 96.95025458670177
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tecnologia-e-classe-de-040724"><a class="header" href="#tecnologia-e-classe-de-040724">Tecnologia e Classe de 04/07/24</a></h1>
 <h3 id="polyfillio-comprometido"><a class="header" href="#polyfillio-comprometido">Polyfill.io comprometido</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/WCdgxAx4LUI "></iframe>
-<h1 id="-22"><a class="header" href="#-22"></a></h1>
+<h1 id="-23"><a class="header" href="#-23"></a></h1>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/ILvNG1STUZU "></iframe>
 <p><a href="https://polykill.io/chrome-extension">https://polykill.io/chrome-extension</a></p>
 <p><strong>Polyfill JS, adquirida por uma empresa chinesa em fevereiro, infecta mais de 100 mil sites com malware:</strong>  o código malicioso é ativado apenas em dispositivos móveis e  redireciona usuários para páginas falsas de apostas. Recomenda-se que a  biblioteca seja removida imediatamente dos projetos. Os domínios CDN do  Polyfill foram derrubados pela Namecheap, sua principal registradora. As  informações são do site da Sansec.</p>
@@ -24271,7 +24532,7 @@ next_price 4.775, 10 # 96.95025458670177
 <h3 id="o-que-essas-duas-tem-a-ver"><a class="header" href="#o-que-essas-duas-tem-a-ver">O que essas duas tem a ver?</a></h3>
 <p><strong>Estudo prevê que dados públicos para treinamento de IAs irão se esgotar até 2032:</strong>  projetos de IAs serão obrigados a utilizar informações confidenciais,  como e-mails e mensagens de texto, ou dados sintéticos, gerados por seus  próprios modelos de linguagem, dificultando a escalabilidade e  aprimoramento no longo prazo. As informações são do site Tech Xplore.</p>
 <p><strong>Advocacia-Geral  da União, responsável pela defesa dos Poderes Executivo, Legislativo e  Judiciário, vai utilizar modelos da OpenAI, por meio do Microsoft Azure,  para acelerar triagem e análise de processos judiciais:</strong> o  sistema sinalizará a necessidade de tomadas de decisão antes de decisões  finais em processos, mapeando tendências e potenciais áreas de ação, a  fim de evitar perdas judiciais que têm pesado no orçamento federal. Não  foi divulgado quanto o Brasil pagará pelos serviços. As informações são  da Reuters.</p>
-<h3 id="-23"><a class="header" href="#-23"></a></h3>
+<h3 id="-24"><a class="header" href="#-24"></a></h3>
 <h3 id="nubank--brasil-paralelo"><a class="header" href="#nubank--brasil-paralelo">NUBANK 🤝 Brasil Paralelo</a></h3>
 <p><a href="https://www.instagram.com/p/C8ZG971OsIn">https://www.instagram.com/p/C8ZG971OsIn</a></p>
 <p><a href="https://apublica.org/2024/06/diretor-da-brasil-paralelo-criou-forum-chan-que-promovia-crimes-de-odio/?share=true">https://apublica.org/2024/06/diretor-da-brasil-paralelo-criou-forum-chan-que-promovia-crimes-de-odio/?share=true</a></p>
@@ -24725,7 +24986,7 @@ next_price 4.775, 10 # 96.95025458670177
 <p><a href="https://gizmodo-com.translate.goog/amazon-reportedly-ditches-just-walk-out-grocery-stores-1851381116?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://gizmodo-com.translate.goog/amazon-reportedly-ditches-just-walk-out-grocery-stores-1851381116?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
 <h3 id="do-ideologia-californiana"><a class="header" href="#do-ideologia-californiana">Do "Ideologia Californiana"</a></h3>
 <p><img src="./04_04_24/ideologia.jpg" alt="ideologia.jpg" /></p>
-<h3 id="referências-28"><a class="header" href="#referências-28">Referências</a></h3>
+<h3 id="referências-29"><a class="header" href="#referências-29">Referências</a></h3>
 <p><a href="https://www.mturk.com/">https://www.mturk.com/</a></p>
 <p><a href="https://pt.wikipedia.org/wiki/O_Turco">https://pt.wikipedia.org/wiki/O_Turco</a></p>
 <p><img src="./04_04_24/800px-Racknitz_-_The_Turk_3.jpg" alt="800px-Racknitz_-_The_Turk_3.jpg" /></p>
@@ -24861,7 +25122,7 @@ next_price 4.775, 10 # 96.95025458670177
 <p>O que achar disso?</p>
 </li>
 </ul>
-<h4 id="referências-29"><a class="header" href="#referências-29">Referências:</a></h4>
+<h4 id="referências-30"><a class="header" href="#referências-30">Referências:</a></h4>
 <p><a href="https://www.keengamer.com/articles/features/opinion-pieces/kernel-level-anti-cheat-and-7-games-or-programs-that-use-it/">https://www.keengamer.com/articles/features/opinion-pieces/kernel-level-anti-cheat-and-7-games-or-programs-that-use-it/</a></p>
 <p><a href="https://www.pcgamer.com/according-to-experts-on-kernel-level-anticheat-two-things-are-abundantly-clear-1-its-not-perfect-and-2-its-not-going-anywhere/">https://www.pcgamer.com/according-to-experts-on-kernel-level-anticheat-two-things-are-abundantly-clear-1-its-not-perfect-and-2-its-not-going-anywhere/</a></p>
 <p><a href="https://levvvel.com/games-with-kernel-level-anti-cheat-software/">https://levvvel.com/games-with-kernel-level-anti-cheat-software/</a></p>
@@ -24968,7 +25229,7 @@ next_price 4.775, 10 # 96.95025458670177
 <h3 id="yuzu"><a class="header" href="#yuzu">Yuzu</a></h3>
 <iframe class="mdbook-embed-youtube" width="560" height="315" src="https://www.youtube.com/embed/gIv0AuKe01A "></iframe>
 <p><a href="https://www.tecmundo.com.br/voxel/280561-yuzu-popular-emulador-nintendo-switch-fechado-processo.htm">https://www.tecmundo.com.br/voxel/280561-yuzu-popular-emulador-nintendo-switch-fechado-processo.htm</a></p>
-<h3 id="-24"><a class="header" href="#-24"></a></h3>
+<h3 id="-25"><a class="header" href="#-25"></a></h3>
 <h3 id="devin-ai"><a class="header" href="#devin-ai">Devin AI</a></h3>
 <p><strong>Startup lança o que chama de “primeiro engenheiro de software baseado em IA” do mundo:</strong> o Devin, da Cognition Labs, é capaz de planejar e executar projetos de forma autônoma, contando com um terminal, editor de código e navegador próprio. O sistema também pode treinar suas próprias IAs para resolver problemas específicos. Desenvolvedores experientes podem tratar o Devin como um colaborador, permanecendo mais envolvido na tomada de decisões e design, ou simplesmente usá-lo como uma equipe de teste ou um especialista em documentação. Em comparação a outros modelos na resolução de problemas do mundo real com projetos de código aberto no GitHub, o Devin conseguiu resolver quase 14% das tarefas, seguido por Claude 2 (resolveu 4,8%) e GPT-4 (1,7%). Há, entretanto, preocupações sobre o uso de sistemas totalmente automatizados na manutenção de sistemas críticos, modificando uma base de código de maneiras que podem não ser totalmente compreendidas, com efeitos difíceis de serem previstos. O Devin se encontra ainda em acesso restrito à medida que a Cognition Labs aumenta sua capacidade. As informações são do site New Atlas.</p>
 <p><a href="https://www.cognition-labs.com/introducing-devin">https://www.cognition-labs.com/introducing-devin</a></p>
@@ -25021,7 +25282,7 @@ next_price 4.775, 10 # 96.95025458670177
 <li>Limitando a funcionalidade de smartwatches e carteiras digitais de terceiros</li>
 </ul>
 <p>A Apple diz: a gente é foda e a gente tá só pela inovação, vocês querem impedir a gente de inovar e querem que a gente fique igual a esse lixo que se chama Android.</p>
-<h1 id="-25"><a class="header" href="#-25"></a></h1>
+<h1 id="-26"><a class="header" href="#-26"></a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="220224"><a class="header" href="#220224">22/02/24</a></h1>
 <h2 id="vamos-sair-da-twitch"><a class="header" href="#vamos-sair-da-twitch">Vamos sair da Twitch?</a></h2>
 <p>Provavelmente.</p>
@@ -25087,7 +25348,7 @@ next_price 4.775, 10 # 96.95025458670177
 <p><strong>Confiança  em sistemas de biometria facial está em declínio devido ao aumento dos  ataques com imagens falsas geradas por inteligência artificial:</strong>  até 2026, 30% das empresas deixarão de utilizar esse método de  autenticação de forma isolada. Medidas adicionais, como identificação de  dispositivos e análise comportamental se mostrarão necessários para  aumentar as chances de detecção de fraudes. As informações são do site  Convergência Digital.</p>
 <h3 id="microsoft--activision-parte-2"><a class="header" href="#microsoft--activision-parte-2">Microsoft / Activision parte 2</a></h3>
 <p><a href="https://www.tecmundo.com.br/voxel/279744-xbox-microsoft-toma-bronca-ftc-realizar-demissoes-activision-blizzard.htm">https://www.tecmundo.com.br/voxel/279744-xbox-microsoft-toma-bronca-ftc-realizar-demissoes-activision-blizzard.htm</a></p>
-<h2 id="-26"><a class="header" href="#-26"></a></h2>
+<h2 id="-27"><a class="header" href="#-27"></a></h2>
 <h2 id="segurança-3"><a class="header" href="#segurança-3">Segurança</a></h2>
 <p><strong>FBI interrompe botnet usada por hackers que atacavam infraestruturas críticas nos EUA:</strong>  o grupo sequestrava roteadores e câmeras IP de pequenos escritórios e  residências, misturando atividades maliciosas com tráfego legítimo para  evitar detecção. Dispositivos de marcas como Netgear e Cisco foram  comprometidos. As informações são do site BleepingComputer.</p>
 <p><a href="https://www-bleepingcomputer-com.translate.goog/news/security/fbi-disrupts-chinese-botnet-by-wiping-malware-from-infected-routers/?_x_tr_sl=it&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">https://www-bleepingcomputer-com.translate.goog/news/security/fbi-disrupts-chinese-botnet-by-wiping-malware-from-infected-routers/?_x_tr_sl=it&amp;_x_tr_tl=pt&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp</a></p>
@@ -25166,7 +25427,7 @@ next_price 4.775, 10 # 96.95025458670177
 <h1 id="aaron-swartz"><a class="header" href="#aaron-swartz">Aaron Swartz</a></h1>
 <p><a href="https://jacobin.com.br/2023/01/o-guerrilheiro-do-conhecimento-livre/">https://jacobin.com.br/2023/01/o-guerrilheiro-do-conhecimento-livre/</a></p>
 <p><strong>Brasil registra redução de 60% nos acessos a sites piratas de filmes e séries nos últimos 5 anos:</strong>  a pesquisa aponta que a queda pode estar relacionada a esforços de  combate à pirataria, como a Operação 404, e ao crescimento de  plataformas de streaming no país. A queda no acesso à pirataria no  Brasil só fica atrás do Japão (-70%). O Canadá foi um destaque negativo,  classificado como um “hotspot” de pirataria, com crescimento de 40% no  acesso a conteúdo pirateado nos últimos anos. As informações são do site  Tecnoblog.</p>
-<h2 id="-27"><a class="header" href="#-27"></a></h2>
+<h2 id="-28"><a class="header" href="#-28"></a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="250124"><a class="header" href="#250124">25/01/24</a></h1>
 <h2 id="hardnews"><a class="header" href="#hardnews">HardNews</a></h2>
 <p><a href="https://folha.qconcursos.com/n/concurso-caixa-2024-cargos-confirmados-edital">https://folha.qconcursos.com/n/concurso-caixa-2024-cargos-confirmados-edital</a></p>
